@@ -40,6 +40,10 @@ if (_cap_to isEqualTo []) exitWith {};
         };
     } else {
         _closest setVariable ["occupied", true];
+        //ADDNOTIF OBJECTIVE LOST
+        [parseText "<t color='#FF3619' font='PuristaBold' align = 'right' shadow = '1.5' size='2'>- Objective Lost! </t>", [0, 0.5, 1, 1], nil, 5, 1.7, 0] remoteExec ["BIS_fnc_textTiles", 0];
+
+
         if (btc_debug) then {
             (format ["loc_%1", _closest getVariable "id"]) setMarkerColor "ColorRed";
         };

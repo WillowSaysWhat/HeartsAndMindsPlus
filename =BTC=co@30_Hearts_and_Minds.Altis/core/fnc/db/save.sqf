@@ -119,6 +119,9 @@ profileNamespace setVariable [format ["btc_hm_%1_cache", _name], +_array_cache];
 //REPUTATION
 profileNamespace setVariable [format ["btc_hm_%1_rep", _name], btc_global_reputation];
 
+//ECONOMY
+profileNamespace setVariable [format ["btc_hm_%1_eco", _name], btc_global_economy];
+
 //FOBS
 private _fobs = [];
 {
@@ -145,8 +148,7 @@ private _vehiclesInCargo = _vehicles - _vehiclesNotInCargo;
         ["_flagTexture", "", [""]],
         ["_turretMagazines", [], [[]]],
         ["_notuse", "", [""]],
-        ["_tagTexture", "", [""]],
-        ["_properties", [], [[]]]
+        ["_tagTexture", "", [""]]
     ];
 
     private _data = [];
@@ -164,7 +166,6 @@ private _vehiclesInCargo = _vehicles - _vehiclesNotInCargo;
     _data pushBack _flagTexture;
     _data pushBack _turretMagazines;
     _data pushBack _tagTexture;
-    _data pushBack _properties;
 
     private _fakeViV = isVehicleCargo attachedTo _x;
     if (
@@ -179,7 +180,7 @@ private _vehiclesInCargo = _vehicles - _vehiclesNotInCargo;
             _fakeViV
         };
         private _index = _vehiclesNotInCargo find _vehicleCargo;
-        ((_array_veh select _index) select 17) pushBack _data;
+        ((_array_veh select _index) select 16) pushBack _data;
     };
 
     if (btc_debug_log) then {

@@ -43,6 +43,26 @@ if (btc_debug) then {
 _city enableSimulation false;
 _city setVariable ["active", true];
 
+/*
+30 - 1 (100%)
+15 - 0.5 (50%)
+
+Min - 50% = 0.5
+Max - 100% = 1
+
+Max 0.5
+Min 1
+
+15x = 0.5
+30x = 1
+x = 0.03
+*/
+
+// Create Scaling Multiplier 
+private _CurrentPlayers = count allPlayers;
+//private _currentPlayers = west countSide allUnits;
+private _PlayerScale = ((_CurrentPlayers * 0.03) max 0.5) min 1;
+
 private _data_units = _city getVariable ["data_units", []];
 private _data_animals = _city getVariable ["data_animals", []];
 private _type = _city getVariable ["type", ""];
@@ -97,27 +117,27 @@ if (_data_units isNotEqualTo []) then {
 } else {
     // Maximum number of enemy group
     private _numberOfGroup = (switch _type do {
-        case "Hill" : {4};
-        case "VegetationFir" : {4};
-        case "BorderCrossing" : {7};
-        case "NameLocal" : {7};
-        case "StrongpointArea" : {8};
-        case "NameVillage" : {8};
-        case "NameCity" : {16};
-        case "NameCityCapital" : {32};
-        case "Airport" : {32};
-        case "NameMarine" : {4};
-        default {0};
+        case "Hill" : {20};
+        case "VegetationFir" : {20};
+        case "BorderCrossing" : {20};
+        case "NameLocal" : {20};
+        case "StrongpointArea" : {20};
+        case "NameVillage" : {20};
+        case "NameCity" : {25};
+        case "NameCityCapital" : {30};
+        case "Airport" : {30};
+        case "NameMarine" : {20};
+        default {20};
     });
 
     if (_has_en) then {
-        private _finalNumberOfGroup = _p_mil_group_ratio * _numberOfGroup;
+        private _finalNumberOfGroup = floor (_p_mil_group_ratio * _numberOfGroup * _PlayerScale);
         private _numberOfHouseGroup = _finalNumberOfGroup * btc_p_mil_wp_houseDensity;
         for "_i" from 1 to round _finalNumberOfGroup do {
             [
                 _city,
                 [_spawningRadius, _spawningRadius/2] select (_i <= _numberOfHouseGroup),
-                2 + round random 2,
+                2 + round random 3,
                 [["PATROL", "SENTRY"] selectRandomWeighted [0.7, 0.3], "HOUSE"] select (_i <= _numberOfHouseGroup)
             ] call btc_mil_fnc_create_group;
         };
@@ -143,15 +163,15 @@ if (_data_units isNotEqualTo []) then {
 
         // Spawn civilians
         private _numberOfCivi = (switch _type do {
-            case "VegetationFir" : {2};
-            case "BorderCrossing" : {0};
-            case "NameLocal" : {6};
+            case "VegetationFir" : {0};
+            case "BorderCrossing" : {2};
+            case "NameLocal" : {5};
             case "StrongpointArea" : {0};
-            case "NameVillage" : {12};
-            case "NameCity" : {20};
-            case "NameCityCapital" : {38};
-            case "Airport" : {12};
-            default {4};
+            case "NameVillage" : {10};
+            case "NameCity" : {10};
+            case "NameCityCapital" : {15};
+            case "Airport" : {10};
+            default {5};
         });
         [+_housesEntrerable, round (_p_civ_group_ratio * _numberOfCivi), _city] call btc_civ_fnc_populate;
     };
@@ -185,7 +205,7 @@ if (btc_p_animals_group_ratio > 0) then {
 
 if (_city getVariable ["spawn_more", false]) then {
     _city setVariable ["spawn_more", false];
-    private _finalNumberOfGroup = _p_mil_group_ratio * 5;
+    private _finalNumberOfGroup = _p_mil_group_ratio * 5; //* _PlayerScale; TET - CONFIG - Remove scaling from side mission response.
     private _numberOfHouseGroup = _finalNumberOfGroup * btc_p_mil_wp_houseDensity;
     for "_i" from 1 to round _finalNumberOfGroup do {
         [
@@ -196,7 +216,7 @@ if (_city getVariable ["spawn_more", false]) then {
         ] call btc_mil_fnc_create_group;
     };
     if (btc_p_veh_armed_spawn_more) then {
-        [[_city, _spawningRadius, 1, btc_type_motorized_armed, 1 + round random 2], btc_city_fnc_send] call btc_delay_fnc_exec;
+        [[_city, _spawningRadius, 1, btc_type_motorized_armed, 1 + round random 3], btc_city_fnc_send] call btc_delay_fnc_exec;
     };
 };
 
@@ -254,10 +274,14 @@ if !(_city getVariable ["has_suicider", false]) then {
             [[_city, _spawningRadius, getPosATL _city], btc_ied_fnc_drone_create] call btc_delay_fnc_exec;
         } else {
             [[_city, _spawningRadius], btc_ied_fnc_suicider_create] call btc_delay_fnc_exec;
+            [[_city, _spawningRadius, getPosATL _city], btc_ied_fnc_drone_create] call btc_delay_fnc_exec; 
         };
         _delay = _delay + btc_delay_unit;
     };
 };
+
+
+//CONFIG - Disable tags
 
 if (_city getVariable ["data_tags", []] isEqualTo []) then {
     private _tag_number = (switch _type do {

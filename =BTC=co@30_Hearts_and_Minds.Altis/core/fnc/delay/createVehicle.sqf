@@ -84,6 +84,7 @@ btc_delay_time = btc_delay_time + btc_delay_vehicle;
         [_group, _units_type select _i, _position, "CAN_COLLIDE", _veh] call btc_delay_fnc_createUnit;
     };
 
+
     ["btc_delay_vehicleInit", [_veh, _group]] call CBA_fnc_localEvent;
 }, _this, btc_delay_time - 0.01] call CBA_fnc_waitAndExecute;
 

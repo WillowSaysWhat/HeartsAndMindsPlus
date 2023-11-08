@@ -31,6 +31,7 @@ if (isNil "btc_vehicles") then {
 if (isNil {_veh getVariable "btc_EDENinventory"}) then {
     _veh setVariable ["btc_EDENinventory", _veh call btc_log_fnc_inventoryGet];
 };
+
 [{ace_common_settingsInitFinished}, {
     if (isNull _this) exitwith {};
     if (isNil {_this getVariable "btc_EDEN_defaultFuelCargo"}) then {
@@ -72,3 +73,4 @@ if (btc_p_respawn_location > 1) then {
         };
     };
 };
+

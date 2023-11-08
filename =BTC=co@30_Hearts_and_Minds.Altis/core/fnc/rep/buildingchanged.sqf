@@ -38,7 +38,8 @@ if (
     !(_from in btc_buildings_changed) ||
     {_classname isEqualTo ""} ||
     {_classname isKindOf "Wall"} ||
-    {"GATE" in _classname}
+    {"GATE" in _classname} ||
+    {"Mil" in _classname}
 ) exitWith {};
 
 btc_buildings_changed pushBack _to;
@@ -65,5 +66,8 @@ if (!_skipCategories) then {
 if (btc_debug) then {
     [format ["%1 to %2. Malus: %3", _classname, typeOf _to, _malus], __FILE__, [btc_debug, false]] call btc_debug_fnc_message;
 };
+
+//TEMP TET
+//[format ["Building Damage to %1", _classname, typeOf _to, _malus], "REP: ", [true, true, true]] call CBA_fnc_debug;
 
 _malus call btc_rep_fnc_change;

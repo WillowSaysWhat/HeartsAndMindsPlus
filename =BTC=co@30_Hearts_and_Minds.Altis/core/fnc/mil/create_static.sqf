@@ -13,11 +13,11 @@ Parameters:
     _city - City where the static is created. [Object]
 
 Returns:
-    _group - Created group. [Object]
+    _static - Created static. [Object]
 
 Examples:
     (begin example)
-        _group = [getPosATL player] call btc_mil_fnc_create_static;
+        _static = [getPosATL player] call btc_mil_fnc_create_static;
     (end)
 
 Author:
@@ -44,5 +44,3 @@ _group setCombatMode "RED";
 if (btc_debug_log) then {
     [format ["POS %1", _pos], __FILE__, [false]] call btc_debug_fnc_message;
 };
-
-_group

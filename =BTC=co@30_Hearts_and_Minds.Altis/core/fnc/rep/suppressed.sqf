@@ -58,6 +58,8 @@ if (
         [getPos _civ] remoteExecCall ["btc_rep_fnc_eh_effects", 2];
     };
 
+ //[format ["SUPRESSED %1", _civ], "REP: ", [true, true, true]] call CBA_fnc_debug;
+
     if (btc_debug_log) then {
         [format ["GREP %1 THIS = %2", btc_global_reputation, _this], __FILE__, [false]] call btc_debug_fnc_message;
     };

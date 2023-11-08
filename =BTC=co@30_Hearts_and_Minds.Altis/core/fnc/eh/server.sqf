@@ -74,8 +74,8 @@ addMissionEventHandler ["HandleDisconnect", {
 }];
 ["ace_unconscious", btc_slot_fnc_serializeState] call CBA_fnc_addEventHandler;
 ["btc_playerConnected", { 
-    params ["_player", "_ids"];
-    [_player, _player call btc_slot_fnc_createKey, _ids select 4] call btc_slot_fnc_deserializeState_s;
+    params ["_player"];
+    [_player, _player call btc_slot_fnc_createKey] call btc_slot_fnc_deserializeState_s;
 }] call CBA_fnc_addEventHandler;
 if (btc_p_auto_db) then {
     addMissionEventHandler ["HandleDisconnect", {
@@ -98,7 +98,7 @@ if (btc_p_chem) then {
 };
 
 ["GroundWeaponHolder", "InitPost", {btc_groundWeaponHolder append _this}] call CBA_fnc_addClassEventHandler;
-["acex_fortify_objectPlaced", {[_this select 2] call btc_log_fnc_init}] call CBA_fnc_addEventHandler;
+//["acex_fortify_objectPlaced", {[_this select 2] call btc_log_fnc_init}] call CBA_fnc_addEventHandler;
 if (btc_p_set_skill) then {
     ["CAManBase", "InitPost", btc_mil_fnc_set_skill] call CBA_fnc_addClassEventHandler;
 };
@@ -142,11 +142,27 @@ if (btc_p_respawn_ticketsAtStart >= 0) then {
 //Cargo
 [btc_fob_mat, "InitPost", {
     params ["_obj"];
-    [_obj, -1] call ace_cargo_fnc_setSpace;
+    [_obj, 0] call ace_cargo_fnc_setSpace; // CONFIG - Changed FOB container size
 }, true, [], true] call CBA_fnc_addClassEventHandler;
+
+
 {
     [_x, "InitPost", {
         params ["_obj"];
-        [_obj, 50] call ace_cargo_fnc_setSpace;
+        [_obj, 10] call ace_cargo_fnc_setSize;
     }, true, [], true] call CBA_fnc_addClassEventHandler;
-} forEach ["CUP_MTVR_Base", "Truck_01_base_F"];
+} forEach [
+    "rhs_pontoon_end_static",
+    "rhs_pontoon_static"
+];
+
+
+
+
+
+
+
+
+
+
+
