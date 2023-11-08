@@ -2,7 +2,7 @@
 [compileScript ["core\init.sqf"]] call CBA_fnc_directCall;
 
 
-//EDEN - ARSENAL 
+//ARSENAL 
 [] call compileFinal preprocessFileLineNumbers "scripts\rolearsenal.sqf";
 
 

@@ -74,8 +74,8 @@ addMissionEventHandler ["HandleDisconnect", {
 }];
 ["ace_unconscious", btc_slot_fnc_serializeState] call CBA_fnc_addEventHandler;
 ["btc_playerConnected", { 
-    params ["_player"];
-    [_player, _player call btc_slot_fnc_createKey] call btc_slot_fnc_deserializeState_s;
+    params ["_player", "_ids"];
+    [_player, _player call btc_slot_fnc_createKey, _ids select 4] call btc_slot_fnc_deserializeState_s;
 }] call CBA_fnc_addEventHandler;
 if (btc_p_auto_db) then {
     addMissionEventHandler ["HandleDisconnect", {
@@ -144,25 +144,9 @@ if (btc_p_respawn_ticketsAtStart >= 0) then {
     params ["_obj"];
     [_obj, 0] call ace_cargo_fnc_setSpace; // CONFIG - Changed FOB container size
 }, true, [], true] call CBA_fnc_addClassEventHandler;
-
-
 {
     [_x, "InitPost", {
         params ["_obj"];
-        [_obj, 10] call ace_cargo_fnc_setSize;
+        [_obj, 50] call ace_cargo_fnc_setSpace;
     }, true, [], true] call CBA_fnc_addClassEventHandler;
-} forEach [
-    "rhs_pontoon_end_static",
-    "rhs_pontoon_static"
-];
-
-
-
-
-
-
-
-
-
-
-
+} forEach ["CUP_MTVR_Base", "Truck_01_base_F"];

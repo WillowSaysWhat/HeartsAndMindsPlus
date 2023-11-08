@@ -1,6 +1,6 @@
 
-loadScreen = "res\1.paa"; //CONFIG - Loading Image
-author = "EDEN - Development team.";
+loadScreen = "res\1.paa";
+author = "Tetlys";
 onLoadName = $STR_BTC_HAM_DESCR_NAME;
 onLoadMission = $STR_BTC_HAM_DESCR_MISSION;
 enabledebugconsole = 1;
@@ -72,7 +72,7 @@ wreckManagerMode = 0;
 corpseManagerMode = 0;
 
 
-//EDEN - CONFIG - Channel remover [CHANNEL id, text, voice]
+//CONFIG - Channel remover [CHANNEL id, text, voice]
 disableChannels[] = {
     { 0, false, true },
     { 1, true, true },

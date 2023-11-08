@@ -71,22 +71,7 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
     };
 }] call CBA_fnc_waitUntilAndExecute;
 
-
-
-// Reserved Slots code [UNUSED]
-WHITELISTED = [
-    "76561198047333011", // Tetlys
-    "76561199182684233" // NARBAR
-
-];
-
-if (player getVariable ["Reserved", false]) then {
-    if !(getplayerUID player in WHITELISTED) then {"end1" call BIS_fnc_endMission;};
-};
-
-
 // PLAYER HUD
-//waitUntil { sleep 1; alive player };
 [] spawn
 	{
 		while {true} do

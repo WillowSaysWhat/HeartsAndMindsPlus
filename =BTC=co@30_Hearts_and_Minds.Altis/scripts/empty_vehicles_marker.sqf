@@ -7,23 +7,40 @@ _cfg = configFile >> "cfgVehicles";
 _vehtomark = [];
 
 _vehtomark = [
-// EDEN - CONFIG - VEHICLES TO BE MARKED
-"RHSGREF_A29B_HIDF", 
-"UK3CB_B_Bell412_Armed_dynamicLoadout_HIDF", 
-"UK3CB_B_C47_Cargo_HIDF", 
-"UK3CB_B_LAV25_HIDF", 
-"UK3CB_B_LAV25_HQ_HIDF", 
-"rhsgref_hidf_m1025_m2", 
-"UK3CB_B_M151_Jeep_HMG_HIDF", 
-"UK3CB_B_M151_Jeep_Open_HIDF", 
-"UK3CB_B_M151_Jeep_TOW_HIDF", 
-"UK3CB_B_M60A3_HIDF", 
-"UK3CB_B_M939_Reammo_HIDF", 
-"UK3CB_B_M939_Recovery_HIDF", 
-"UK3CB_B_M939_Refuel_HIDF", 
-"UK3CB_B_M939_Repair_HIDF", 
-"rhsgref_hidf_M998_2dr_halftop", 
-"rhs_uh1h_hidf"
+//CONFIG - VEHICLES TO BE MARKED
+            "rhsgref_hidf_m113a3_mk19",
+            "UK3CB_B_AAV_HIDF",
+            "UK3CB_B_LAV25_HIDF",
+            "rhsgref_hidf_m113a3_m2",
+            "rhsgref_hidf_rhib",
+            "rhsgref_hidf_m1025_m2",
+            "UK3CB_B_M151_Jeep_Closed_HIDF",
+            "UK3CB_B_M151_Jeep_HMG_HIDF",
+            "UK3CB_B_M151_Jeep_Open_HIDF",
+            "UK3CB_B_M151_Jeep_TOW_HIDF",
+            "rhsgref_hidf_M998_2dr_fulltop",
+            "rhsgref_hidf_M998_2dr_halftop",
+            "rhsgref_hidf_M998_4dr_fulltop",
+            "rhsgref_hidf_M998_4dr_halftop",
+            "UK3CB_B_M60A3_HIDF",
+            "UK3CB_B_M939_Closed_HIDF",
+            "UK3CB_B_M939_Guntruck_HIDF",
+            "UK3CB_B_M939_Open_HIDF",
+            "UK3CB_B_M939_Reammo_HIDF",
+            "UK3CB_B_M939_Recovery_HIDF",
+            "UK3CB_B_M939_Refuel_HIDF",
+            "UK3CB_B_M939_Repair_HIDF",
+            "UK3CB_B_M1030_HIDF",
+            "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
+            "rhsusf_M1084A1R_SOV_M2_D_fmtv_socom",
+            "UK3CB_B_Bell412_Armed_dynamicLoadout_HIDF",
+            "rhs_uh1h_hidf_gunship",
+            "RHSGREF_A29B_HIDF",
+            "RHS_C130J_Cargo",
+            "UK3CB_B_C47_Late_HIDF",
+            "UK3CB_B_C47_Cargo_Late_HIDF",
+            "UK3CB_B_Cessna_T41_HIDF",
+            "UK3CB_B_Mystere_HIDF"
 ];
 
 

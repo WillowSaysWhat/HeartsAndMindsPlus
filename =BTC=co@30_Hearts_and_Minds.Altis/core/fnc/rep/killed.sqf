@@ -46,7 +46,6 @@ if (isPlayer _instigator) then {
             _city setVariable ["btc_rep_civKilled", _civKilled];
         };
     };
-//[format ["UNIT KILLED %1 BY %2", _unit, _killer], "REP: ", [true, true, true]] call CBA_fnc_debug;
 
     if (btc_debug_log) then {
         [format ["GREP %1 THIS = %2", btc_global_reputation, _this], __FILE__, [false]] call btc_debug_fnc_message;

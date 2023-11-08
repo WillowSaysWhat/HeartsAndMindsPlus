@@ -43,24 +43,10 @@ if (btc_debug) then {
 _city enableSimulation false;
 _city setVariable ["active", true];
 
-/*
-30 - 1 (100%)
-15 - 0.5 (50%)
 
-Min - 50% = 0.5
-Max - 100% = 1
 
-Max 0.5
-Min 1
-
-15x = 0.5
-30x = 1
-x = 0.03
-*/
-
-// Create Scaling Multiplier 
+// Added Player Scaling Variable
 private _CurrentPlayers = count allPlayers;
-//private _currentPlayers = west countSide allUnits;
 private _PlayerScale = ((_CurrentPlayers * 0.03) max 0.5) min 1;
 
 private _data_units = _city getVariable ["data_units", []];
@@ -131,7 +117,7 @@ if (_data_units isNotEqualTo []) then {
     });
 
     if (_has_en) then {
-        private _finalNumberOfGroup = floor (_p_mil_group_ratio * _numberOfGroup * _PlayerScale);
+        private _finalNumberOfGroup = floor (_p_mil_group_ratio * _numberOfGroup * _PlayerScale); // Player Scaling Adjusted
         private _numberOfHouseGroup = _finalNumberOfGroup * btc_p_mil_wp_houseDensity;
         for "_i" from 1 to round _finalNumberOfGroup do {
             [
@@ -205,7 +191,7 @@ if (btc_p_animals_group_ratio > 0) then {
 
 if (_city getVariable ["spawn_more", false]) then {
     _city setVariable ["spawn_more", false];
-    private _finalNumberOfGroup = _p_mil_group_ratio * 5; //* _PlayerScale; TET - CONFIG - Remove scaling from side mission response.
+    private _finalNumberOfGroup = _p_mil_group_ratio * 5;
     private _numberOfHouseGroup = _finalNumberOfGroup * btc_p_mil_wp_houseDensity;
     for "_i" from 1 to round _finalNumberOfGroup do {
         [

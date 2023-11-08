@@ -3,22 +3,22 @@
     <Package name="Description">
         <Container name="Description: Main">
             <Key ID="STR_BTC_HAM_DESCR_NAME">
-                <Original>Eden Cinematic Universe</Original>
-                <Spanish>Hearts and Minds</Spanish>
-                <German>Hearts and Minds</German>
+                <Original>Hearts and Minds Plus</Original>
+                <Spanish>Hearts and Minds Plus</Spanish>
+                <German>Hearts and Minds Plus</German>
                 <Portuguese>Corações e Mentes</Portuguese>
                 <Chinesesimp>心灵与智慧</Chinesesimp>
-                <French>Hearts and Minds</French>
-                <Czech>Hearts and Minds</Czech>
+                <French>Hearts and Minds Plus</French>
+                <Czech>Hearts and Minds Plus</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_DESCR_MISSION">
-                <Original>The-Eden.xyz</Original>
-                <Spanish>github.com/Vdauphin/HeartsAndMinds</Spanish>
-                <German>github.com/Vdauphin/HeartsAndMinds</German>
-                <Portuguese>github.com/Vdauphin/HeartsAndMinds</Portuguese>
-                <Chinesesimp>github.com/Vdauphin/HeartsAndMinds</Chinesesimp>
-                <French>github.com/Vdauphin/HeartsAndMinds</French>
-                <Czech>github.com/Vdauphin/HeartsAndMinds</Czech>
+                <Original>github.com/Tetlys/HeartsAndMindsPlus</Original>
+                <Spanish>github.com/Tetlys/HeartsAndMindsPlus</Spanish>
+                <German>github.com/Tetlys/HeartsAndMindsPlus</German>
+                <Portuguese>github.com/Tetlys/HeartsAndMindsPlus</Portuguese>
+                <Chinesesimp>github.com/Tetlys/HeartsAndMindsPlus</Chinesesimp>
+                <French>github.com/Tetlys/HeartsAndMindsPlus</French>
+                <Czech>github.com/Tetlys/HeartsAndMindsPlus</Czech>
             </Key>
         </Container>
     </Package>

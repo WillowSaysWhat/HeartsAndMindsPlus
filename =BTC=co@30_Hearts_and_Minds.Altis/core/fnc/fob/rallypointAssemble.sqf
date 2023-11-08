@@ -40,8 +40,8 @@ switch (_nameEH) do {
             ["<img size='1' image='\A3\ui_f\data\igui\cfg\simpleTasks\types\wait_ca.paa' align='center'/>"]
         ] call CBA_fnc_notify;
 
-        //EDEN - Rally points now work for all players.
-        _units = allPlayers; // CONFIG - Can be changed to group instead of all players.
+        //Changed Rally points to work for all players
+        _units = allPlayers;
         _objectName = str _rallyPoint;
         [_rallyPoint,"createmarker",_objectName,_player] remoteExec ["BIS_fnc_initRespawnBackpack",_units];
 

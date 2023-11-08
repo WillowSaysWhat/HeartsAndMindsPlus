@@ -55,7 +55,7 @@ private _cities_status = +(profileNamespace getVariable [format ["btc_hm_%1_citi
         if (_city getVariable ["occupied", false]) then {
             _marker setMarkerColor "colorRed";
         } else {
-            _marker setMarkerColor "colorBLUFOR";
+            _marker setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors
         };
     };
     if (btc_debug_log) then {
@@ -134,7 +134,6 @@ btc_global_reputation = profileNamespace getVariable [format ["btc_hm_%1_rep", _
 //ECONOMY
 btc_global_economy = profileNamespace getVariable [format ["btc_hm_%1_eco", _name], 0];
 publicVariable "btc_global_economy";
-
 
 //Objects
 {deleteVehicle _x} forEach (getMissionLayerEntities "btc_vehicles" select 0);

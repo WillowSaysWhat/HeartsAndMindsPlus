@@ -26,6 +26,7 @@ params [
 
 private _locations = configfile >> "cfgworlds" >> worldname >> "names";
 
+//MAP CONFIG - Remove unwanted objective types
 private _citiesType = ["NameVillage", "NameCity", "NameCityCapital", /*"NameLocal", "Hill",*/ "Airport"/*, "StrongpointArea", "BorderCrossing", "VegetationFir"*/];
 if (btc_p_sea) then {_citiesType pushBack "NameMarine";};
 

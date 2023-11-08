@@ -44,8 +44,6 @@ private _EDENinventory = _veh getVariable ["btc_EDENinventory", []];
 
 btc_vehicles = btc_vehicles - [_veh];
 
-//btc_log_obj_created = btc_log_obj_created - [_veh];
-
 if (_marker != "") then {
     deleteMarker _marker;
     remoteExecCall ["", _marker];

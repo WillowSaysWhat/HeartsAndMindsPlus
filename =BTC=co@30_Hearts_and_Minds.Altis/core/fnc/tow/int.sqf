@@ -67,5 +67,3 @@ _action = [
     {!isNull (_target getVariable ["btc_towing", objNull]);}
 ] call ace_interact_menu_fnc_createAction;
 [_type, 0, ["ACE_MainActions", "Logistic"], _action] call ace_interact_menu_fnc_addActionToClass;
-
-

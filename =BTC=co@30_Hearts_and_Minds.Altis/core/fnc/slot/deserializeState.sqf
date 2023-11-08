@@ -39,8 +39,6 @@ Author:
         ["_field_rations", [], [[]]]
     ];
 
-    //EDEN - MOD - DISABLE DESERIALISATION APPLICATION
-
     if (
         player distance ASLToAGL _previousPos > 50 || // Don't set loadout when near main base
         btc_p_autoloadout isEqualTo 0

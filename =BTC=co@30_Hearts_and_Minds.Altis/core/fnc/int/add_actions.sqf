@@ -57,8 +57,6 @@ _action = ["Search_intel", localize "STR_A3_Showcase_Marksman_BIS_tskIntel_title
     [_object, 0, ["ACE_MainActions", "Logistic"], _action] call ace_interact_menu_fnc_addActionToObject;
     */
 
-    //FORTIFY TETLYS
-
     _action = ["Repair_wreck", localize "STR_BTC_HAM_ACTION_LOGPOINT_REPWRECK", "\A3\ui_f\data\igui\cfg\simpleTasks\types\repair_ca.paa", {
         params ["", "", "_params"];
         _params call btc_log_fnc_repair_wreck
@@ -141,15 +139,11 @@ _action = ["Shower_act", getText(configfile >> "CfgVehicles" >> "DeconShower_02_
     [_x, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
 } forEach ["DeconShower_01_F", "DeconShower_02_F"];
 
-
-
 //FOB
 _action = ["Mount_FOB", localize "STR_BTC_HAM_ACTION_FOB_MOUNT", "\A3\Ui_f\data\Map\Markers\NATO\b_hq.paa", {_target spawn btc_fob_fnc_create}, {!btc_log_placing && !(player getVariable ["ace_dragging_isCarrying", false])}] call ace_interact_menu_fnc_createAction;
 [btc_fob_mat, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
 _action = ["Dismantle_FOB", localize "STR_BTC_HAM_ACTION_FOB_DISMANTLE", "", {_target remoteExecCall ["btc_fob_fnc_dismantle_s", 2]}, {true}, {}, [], [0, 0, -2], 5] call ace_interact_menu_fnc_createAction;
 [btc_fob_flag, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
-
-
 
 //FORTIFY
 _action = ["salvage_menu", "Salvage Menu", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\D_ca.paa", {
@@ -163,8 +157,6 @@ _action = ["Build_Menu", "Build Menu", "\A3\ui_f\data\igui\cfg\simpleTasks\lette
     _params spawn tet_fortify_open
 }, {player getVariable ["allow_build", false]}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
-
-
 
 //Orders
 _action = ["Civil_Orders", localize "STR_BTC_HAM_ACTION_ORDERS_MAIN", "\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa", {}, {true}] call ace_interact_menu_fnc_createAction;
@@ -299,10 +291,7 @@ _action = ["set_night", localize "STR_BTC_HAM_ACTION_SET_NIGHT", "\A3\Ui_f\data\
 _action = ["set_weather", localize "STR_BTC_HAM_ACTION_CHANGE_WEATHER", "a3\3den\data\attributes\slidertimeday\sun_ca.paa", {[] remoteExecCall ["btc_fnc_changeWeather", 2]}, {btc_p_change_weather}] call ace_interact_menu_fnc_createAction; //&& player getVariable ["side_mission", false]
 [btc_gear_object, 0, ["ACE_MainActions","env_menu"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-
-//EDEN 
-//Loading Additions
-
+//Additional Loading
 {
   private _action = [
       "Logistic",
@@ -312,7 +301,7 @@ _action = ["set_weather", localize "STR_BTC_HAM_ACTION_CHANGE_WEATHER", "a3\3den
       {isNull isVehicleCargo attachedto _target && isNull isVehicleCargo _target}
   ] call ace_interact_menu_fnc_createAction;
   [_x, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
-} forEach Eden_Containers;
+} forEach btc_containers_log;
 {
   _action = [
       "log_tow",
@@ -325,7 +314,7 @@ _action = ["set_weather", localize "STR_BTC_HAM_ACTION_CHANGE_WEATHER", "a3\3den
       }
   ] call ace_interact_menu_fnc_createAction;
   [_x, 0, ["ACE_MainActions", "Logistic"], _action] call ace_interact_menu_fnc_addActionToClass;
-    } forEach Eden_Containers;
+    } forEach btc_containers_log;
     {
       _action = [
           "log_hook",
@@ -335,7 +324,7 @@ _action = ["set_weather", localize "STR_BTC_HAM_ACTION_CHANGE_WEATHER", "a3\3den
           {!isNull btc_tow_vehicleTowing && {btc_tow_vehicleTowing != _target}}
       ] call ace_interact_menu_fnc_createAction;
       [_x, 0, ["ACE_MainActions", "Logistic"], _action] call ace_interact_menu_fnc_addActionToClass;
-} forEach Eden_Containers;
+} forEach btc_containers_log;
 {
   _action = [
       "log_unhook",
@@ -345,6 +334,6 @@ _action = ["set_weather", localize "STR_BTC_HAM_ACTION_CHANGE_WEATHER", "a3\3den
       {!isNull (_target getVariable ["btc_towing", objNull]);}
   ] call ace_interact_menu_fnc_createAction;
   [_x, 0, ["ACE_MainActions", "Logistic"], _action] call ace_interact_menu_fnc_addActionToClass;
-} forEach Eden_Containers;
+} forEach btc_containers_log;
 
 

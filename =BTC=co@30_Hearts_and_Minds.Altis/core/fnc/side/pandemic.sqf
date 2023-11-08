@@ -51,9 +51,6 @@ for "_i" from 0 to (_minNumberOfSubTask + _extraCiv - 1) do {
     private _deconta_taskID = _taskID + "dc" + str _i;
     _tasksID pushBack _deconta_taskID;
 
-//KAT GAS
-//[getPos _city, 300, 3600] call digi_fnc_spawnGasSmoke;
-
     private _selectedCiv = _dataCivilian select _i;
     [[_deconta_taskID, _taskID], 41, _selectedCiv select 1 select 0, _selectedCiv select 2 select 0, false, false] call btc_task_fnc_create;
  

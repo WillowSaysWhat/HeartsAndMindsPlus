@@ -65,10 +65,6 @@ if ((random 1) > _ratio) then { //MOT
 //ADDNOTIF MILITIA CALLED
 [parseText "<t color='#FF3619' font='PuristaBold' align = 'right' shadow = '1.5' size='2'>- Militia Called! </t>", [0, 0.5, 1, 1], nil, 5, 1.7, 0] remoteExec ["BIS_fnc_textTiles", 0];
 
-
-//TEMP TET DEBUG
-//[format ["MILITIA CALLED %1", _group], "REP: ", [true, true, true]] call CBA_fnc_debug;
-
     if (btc_debug_log) then {
         [format ["INF %1", _group], __FILE__, [false]] call btc_debug_fnc_message;
     };

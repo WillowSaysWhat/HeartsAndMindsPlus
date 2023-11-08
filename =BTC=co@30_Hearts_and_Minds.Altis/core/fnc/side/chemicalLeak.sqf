@@ -140,9 +140,6 @@ _composition_pattern append [
 
 private _composition_objects = [_pos, random 360, _composition_pattern] call btc_fnc_create_composition;
 
-//KAT GAS
-//[getPos _city, 300, 3600] call digi_fnc_spawnGasSmoke;
-
 private _chemical = [];
 for "_i" from 1 to (5 + round random 5) do {
     private _m_pos = [_pos, _area_size - 14] call btc_fnc_randomize_pos;

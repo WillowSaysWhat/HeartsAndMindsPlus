@@ -46,9 +46,6 @@ if (btc_global_reputation < (btc_rep_level_low + 100)) then {
     };
 };
 
-//TEMP TET 
-//[format ["REP = %1 - RANDOM = %2 - RINF TIME = %3 - MILITIA/WEAPONS = %4/%5", _rep, _random, time > (btc_rep_militia_called + btc_rep_militia_call_time), _random > 3, _random > 4], "REP: ", [true, true, true]] call CBA_fnc_debug;
-
 if (btc_debug_log) then {
     [format ["REP = %1 - RANDOM = %2 - RINF TIME = %3 - MILITIA/WEAPONS = %4/%5", _rep, _random, time > (btc_rep_militia_called + btc_rep_militia_call_time), _random > 3, _random > 4], __FILE__, [false]] call btc_debug_fnc_message;
 };

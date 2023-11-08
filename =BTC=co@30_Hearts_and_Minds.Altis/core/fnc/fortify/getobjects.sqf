@@ -3,7 +3,7 @@
 Function: tet_fortify_getobjects
 
 Description:
-    Collects objects from the arrray and displays them within the dlg
+    Collects objects from the array and displays them within the dlg
 
 Parameters:
     _main_class - []

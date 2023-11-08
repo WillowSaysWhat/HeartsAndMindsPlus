@@ -3,7 +3,7 @@
 Function: tet_fortify_delete
 
 Description:
-    Delete object created by logistic point.
+    Deletes vehicles from the fortify array.
 
 Parameters:
     _veh - Object to delete. [Object]
@@ -16,7 +16,7 @@ Examples:
     (end)
 
 Author:
-    Vdauphin
+    Tetlys
 
 ---------------------------------------------------------------------------- */
 

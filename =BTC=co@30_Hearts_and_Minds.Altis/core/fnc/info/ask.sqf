@@ -92,6 +92,5 @@ switch (_info) do {
         [name _man, localize "STR_BTC_HAM_CON_INFO_ASK_CACHEMAP"] call btc_fnc_showSubtitle;
         sleep 2;
         [_info_type] remoteExecCall ["btc_info_fnc_cache", 2];
-        
     };
 };

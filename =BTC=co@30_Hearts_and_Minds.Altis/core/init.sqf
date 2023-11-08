@@ -17,9 +17,6 @@ if (!isDedicated && !hasInterface) then {
     [] call compileScript ["core\init_headless.sqf"];
 };
 
-
-
-
 /*           ACE            */
 
     ACE_maxWeightCarry = 5000;
