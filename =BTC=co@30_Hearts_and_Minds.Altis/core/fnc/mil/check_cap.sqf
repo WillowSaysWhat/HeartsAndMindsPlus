@@ -40,6 +40,7 @@ if (_cap_to isEqualTo []) exitWith {};
         };
     } else {
         _closest setVariable ["occupied", true];
+
         if (btc_debug) then {
             (format ["loc_%1", _closest getVariable "id"]) setMarkerColor "ColorRed";
         };

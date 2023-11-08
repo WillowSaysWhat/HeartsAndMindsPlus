@@ -38,7 +38,8 @@ if (
     !(_from in btc_buildings_changed) ||
     {_classname isEqualTo ""} ||
     {_classname isKindOf "Wall"} ||
-    {"GATE" in _classname}
+    {"GATE" in _classname} ||
+    {"Mil" in _classname}
 ) exitWith {};
 
 btc_buildings_changed pushBack _to;

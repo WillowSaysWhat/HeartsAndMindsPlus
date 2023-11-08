@@ -98,7 +98,7 @@ if (btc_p_chem) then {
 };
 
 ["GroundWeaponHolder", "InitPost", {btc_groundWeaponHolder append _this}] call CBA_fnc_addClassEventHandler;
-["acex_fortify_objectPlaced", {[_this select 2] call btc_log_fnc_init}] call CBA_fnc_addEventHandler;
+//["acex_fortify_objectPlaced", {[_this select 2] call btc_log_fnc_init}] call CBA_fnc_addEventHandler;
 if (btc_p_set_skill) then {
     ["CAManBase", "InitPost", btc_mil_fnc_set_skill] call CBA_fnc_addClassEventHandler;
 };
@@ -142,7 +142,7 @@ if (btc_p_respawn_ticketsAtStart >= 0) then {
 //Cargo
 [btc_fob_mat, "InitPost", {
     params ["_obj"];
-    [_obj, -1] call ace_cargo_fnc_setSpace;
+    [_obj, 0] call ace_cargo_fnc_setSpace; // CONFIG - Changed FOB container size
 }, true, [], true] call CBA_fnc_addClassEventHandler;
 {
     [_x, "InitPost", {

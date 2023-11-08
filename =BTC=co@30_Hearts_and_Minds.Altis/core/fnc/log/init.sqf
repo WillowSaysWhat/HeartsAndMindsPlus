@@ -30,6 +30,7 @@ if (btc_log_obj_created pushBackUnique _obj isEqualTo -1) exitWith {};
 } forEach allCurators;
 
 private _type = typeOf _obj;
+
 if (
     _type in btc_log_def_loadable &&
     {getNumber (configOf _obj >> "ace_cargo_canLoad") isEqualTo 0}
@@ -50,3 +51,4 @@ if (isNil {_obj getVariable "btc_EDEN_defaultFuelCargo"}) then {
 if (isNil {_obj getVariable "btc_EDEN_defaultSupply"}) then {
     _obj setVariable ["btc_EDEN_defaultSupply", _obj call ace_rearm_fnc_getSupplyCount, true];
 };
+ 

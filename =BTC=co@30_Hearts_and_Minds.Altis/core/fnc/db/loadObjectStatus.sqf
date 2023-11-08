@@ -36,8 +36,7 @@ _object_data params [
     ["_flagTexture", "", [""]],
     ["_turretMagazines", [], [[]]],
     ["_customName", "", [""]],
-    ["_tagTexture", "", [""]],
-    ["_properties", [], [[]]]
+    ["_tagTexture", "", [""]]
 ];
 
 private _obj = createVehicle [_type, ASLToATL _pos, [], 0, "CAN_COLLIDE"];
@@ -70,10 +69,6 @@ if (_customName isNotEqualTo "") then {
 
 if (_tagTexture isNotEqualTo "") then {
     [objNull, [], _tagTexture, _obj, objNull, "", "", true] call ace_tagging_fnc_createTag;
-};
-
-if (_properties isNotEqualTo []) then {
-    ([_obj] + _properties) call btc_veh_fnc_propertiesSet;
 };
 
 [_obj] call btc_log_fnc_init;

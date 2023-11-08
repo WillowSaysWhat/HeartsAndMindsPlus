@@ -296,6 +296,17 @@ btc_tow_fnc_int = compileScript ["core\fnc\tow\int.sqf"];
 //VEH
 btc_veh_fnc_init = compileScript ["core\fnc\veh\init.sqf"];
 
+//FORTIFY
+tet_fortify_getobjects = compileScript ["core\fnc\fortify\getobjects.sqf"];
+tet_fortify_select = compileScript ["core\fnc\fortify\select.sqf"];
+tet_fortify_load = compileScript ["core\fnc\fortify\load.sqf"];
+tet_fortify_open = compileScript ["core\fnc\fortify\open.sqf"];
+tet_fortify_loadsalvage = compileScript ["core\fnc\fortify\loadsalvage.sqf"];
+tet_fortify_opensalvage = compileScript ["core\fnc\fortify\opensalvage.sqf"];
+tet_fortify_salvage = compileScript ["core\fnc\fortify\salvage.sqf"];
+tet_fortify_eco = compileScript ["core\fnc\fortify\eco.sqf"];
+tet_fortify_delete = compileScript ["core\fnc\fortify\delete.sqf"];
+
 /////////////////////CLIENT\\\\\\\\\\\\\\\\\\\\\
 if (!isDedicated) then {
     //BODY

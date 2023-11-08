@@ -13,6 +13,7 @@ Parameters:
     _city - City where the static is created. [Object]
 
 Returns:
+    rns:
     _group - Created group. [Object]
 
 Examples:

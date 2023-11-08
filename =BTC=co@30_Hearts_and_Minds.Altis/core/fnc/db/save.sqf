@@ -119,6 +119,9 @@ profileNamespace setVariable [format ["btc_hm_%1_cache", _name], +_array_cache];
 //REPUTATION
 profileNamespace setVariable [format ["btc_hm_%1_rep", _name], btc_global_reputation];
 
+//ECONOMY
+profileNamespace setVariable [format ["btc_hm_%1_eco", _name], btc_global_economy];
+
 //FOBS
 private _fobs = [];
 {

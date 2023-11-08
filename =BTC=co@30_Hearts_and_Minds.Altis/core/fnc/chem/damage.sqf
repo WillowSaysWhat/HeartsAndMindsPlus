@@ -35,6 +35,17 @@ private _backpack = backpack _unit;
 private _uniform = toLower uniform _unit;
 private _protection = 0;
 
+
+/*
+// OPTIONAL : DLC Remover
+if (
+      [
+// Add custom gas mask types here to avoid DLC
+      ] findIf {_googles isKindOf [_x, _cfgGlasses]} > -1 
+    ) then { _protection = _protection + 1; 
+};
+*/
+
 if (
     [
         "G_Respirator_base_F"
