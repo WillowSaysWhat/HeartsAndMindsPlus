@@ -1,22 +1,10 @@
 <p align="center">
-:arrow_right:
-<a href="http://vdauphin.github.io/HeartsAndMinds/">
-:book: Documentation</a> |
-<a href="https://github.com/Vdauphin/HeartsAndMinds/discussions">:speech_balloon: Discussions</a> |
- <a href="https://www.battlemetrics.com/servers/arma3?q=hearts%2Band%2Bminds%20||%20%22H%26M%22&status=online&sort=-players">
-:video_game: Play</a>
- :arrow_left:
-</p>
-
-<p align="center">
-    <img src="https://data.bistudio.com/assets/img/badges/medal/MWFMP.png" width="85">
-    <img src="https://user-images.githubusercontent.com/14364400/120066018-bd52ed80-c074-11eb-87d6-61cdeada32f8.png" width="210">
-    <img src="https://data.bistudio.com/assets/img/badges/medal/MWFMP.png" width="85">
+    <img src="https://the-eden.xyz/wp-content/uploads/2023/03/EdenLogo.png" width="210">
 </p>
 
 <p align="center">
 <b>
-Post war anti insurgency dynamic mission with focus on good relations with civilian population.
+A fully custom take on Hearts and Minds by Vdauphin modified by the Eden development team for use on a private server.
 </b>
 </p>
 
@@ -47,12 +35,41 @@ Bad actions cause bad effects.
 Infact there's a reputation system: helping the local population, fighting the "Oplitas", disarming IED will rise your reputation; killing civilians, mutilate alive/dead civilian, firing near civilians for no reason, remove banana, damaging/destroying buildings, breaking locked door, losing vehicles, respawns will decrease your reputation.
 At the beginning you have a very low reputation level, so civilians won't help you revealing important information about Oplitas, they will likely lie instead.
 
-<p align="center">
-    <img src="https://user-images.githubusercontent.com/14364400/28997116-bfcec8a6-7a0d-11e7-911f-b52edb841ae3.png" width="400">
-    <img src="https://user-images.githubusercontent.com/14364400/29193966-d8306378-7e27-11e7-97cb-df76dfc08e53.png" width="400">
-</p>
-
 # :sparkles: Features:
+
+## :memo: EDEN specific Changes
+- CAS Script
+    - Based on INC AWP CAS script
+    - AI air support for low population scenarios
+    - Potential to add custom munitions
+    - Realistic request sequence using radio triggers and action menu
+- Custom Arsenal
+    - Ability to whitelist and blacklist all arsenal items for each role
+    - Easily allows different mission equipment for different maps/scenarios
+- Modified Reputation System
+    - Custom take on the existing code
+    - Suitable for larger multiplayer environments
+- Economy System
+    - ACE fortify based system
+    - Allows players to purchase heavier assets with procured points
+    - Interchangeable asset list
+    - Configurable scoring capacity
+- Revised Rally Point System
+    - Changed to be multiplayer ready for dedicated servers
+- Custom map marker system
+    - Added markers for objectives to suit longer sessions
+    - Added empty vehicle markers to track BLUFOR assets around the map
+- Medevac Support System
+    - Modification of the BIS support module to be suitable for dedicated servers
+    - Added due to the scenarios created using more complex medical mods/systems
+    - Allows medics to call in a MEDEVAC helicopter to their location to pick up casualties
+- Reworked Contamination System
+    - Removed DLC dependencies to be more accessible for other playerbases
+- Advanced Player Scaling
+    - Added code to scale AI group numbers depending on population of the server
+    - Scales from 1-4x in a linear manner, for every 5 players up to 20 connected clients
+
+## :book: Original Features
 
 - **Dedicated server support only**
 - Dynamic battlefield
@@ -88,10 +105,10 @@ At the beginning you have a very low reputation level, so civilians won't help y
     - Full saving Database ([even player markers](http://vdauphin.github.io/HeartsAndMinds/InGame-documentation#headless--database))
     - Easy map change (See [here](http://vdauphin.github.io/HeartsAndMinds/Change-MAP-of-Hearts-and-Minds))
     - ACE Headless support
-- Something I forgot for sure
 
 # :clap: Credits:
 - =BTC= clan
+- Full credit to the original [Creator](https://github.com/Vdauphin)
 - [Contributors](https://github.com/Vdauphin/HeartsAndMinds/graphs/contributors)
 
 Any support or feedback is always welcome and appreciated!
