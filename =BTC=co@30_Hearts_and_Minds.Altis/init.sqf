@@ -203,7 +203,7 @@ true
 
 ["acex_fortify_objectDeleted", {
   params ["_player", "_side", "_objectDeleted"];
-   [] spawn { sleep 5; btc_global_economy = [west] call acex_fortify_fnc_getBudget;}
+   [] spawn { sleep 5; btc_global_economy = [west] call acex_fortify_fnc_getBudget;};
   if (_objectPlaced isKindof "AllVehicles")then{
     btc_vehicles = btc_vehicles - [_objectDeleted];
   };
@@ -212,15 +212,9 @@ true
   }; 
 }] call CBA_fnc_addEventHandler;
 
-["ace_fortify_deployCanceled", {
-  params ["_player"];
-   //_player removeitemfromuniform "ACE_Fortify";
-}] call CBA_fnc_addEventHandler;
-
 [{
     params ["_unit", "_object", "_cost"];
     private _return = (getPosATL _object) select 2 < 1;
-    //Add blocked for distance to other vehicles
     _return
 }] call ace_fortify_fnc_addDeployHandler;
 
