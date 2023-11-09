@@ -3,7 +3,7 @@
 
 
 //ARSENAL 
-[] call compileFinal preprocessFileLineNumbers "scripts\rolearsenal.sqf";
+[] call compileFinal preprocessFileLineNumbers "core\def\rolearsenal.sqf";
 
 
 

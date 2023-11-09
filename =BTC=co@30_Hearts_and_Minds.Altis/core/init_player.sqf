@@ -12,7 +12,7 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
 
 [{!isNull player}, {
     [] call compileScript ["core\doc.sqf"];
-    execVM "scripts\empty_vehicles_marker.sqf";
+    execVM "core\common\empty_vehicles_marker.sqf";
 
     btc_respawn_marker setMarkerPosLocal player;
     player addRating 9999;
