@@ -149,6 +149,7 @@ true
     ["B_Static_Designator_01_F", 100, "Static"],
     ["UK3CB_B_AAV_HIDF", 1000, "Ground Vehicles"],
     ["UK3CB_B_LAV25_HIDF",1200, "Ground Vehicles"],
+    ["B_APC_Tracked_01_CRV_F",1000,"Ground Vehicles"],
     ["rhsgref_hidf_m113a3_m2", 800, "Ground Vehicles"],
     ["rhsgref_hidf_m113a3_mk19",1500, "Ground Vehicles"],
     ["rhsgref_hidf_rhib", 500, "Ground Vehicles"],

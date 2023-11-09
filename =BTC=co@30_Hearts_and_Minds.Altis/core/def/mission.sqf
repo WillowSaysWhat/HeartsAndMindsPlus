@@ -461,7 +461,6 @@ btc_type_hazmat = ["HazmatBag_01_F", "Land_MetalBarrel_F"] + (_allClassSorted se
 
 //Containers
 btc_containers_mat = ["Land_Cargo20_military_green_F", "Land_Cargo40_military_green_F", "B_Slingload_01_Cargo_F"];
-btc_containers_log = ["Land_Cargo20_military_green_F", "Land_Cargo40_military_green_F", "B_Slingload_01_Cargo_F", "B_Slingload_01_Repair_F", "B_Slingload_01_Ammo_F", "B_Slingload_01_Fuel_F"];
 
 //Player
 btc_player_side = west;
@@ -489,6 +488,7 @@ btc_construction_array =
             "rhsgref_hidf_m113a3_mk19",
             "UK3CB_B_AAV_HIDF",
             "UK3CB_B_LAV25_HIDF",
+            "B_APC_Tracked_01_CRV_F",
             "rhsgref_hidf_m113a3_m2",
             "rhsgref_hidf_rhib",
             "rhsgref_hidf_m1025_m2",
@@ -620,6 +620,7 @@ btc_tow_vehicleTowing = objNull;
 btc_log_placing_max_h = 12;
 btc_log_placing = false;
 btc_log_obj_created = [];
+btc_containers_log = btc_log_def_placeable + _cAmmobox;
 
 btc_log_fnc_get_nottowable = {
     params ["_tower"];
