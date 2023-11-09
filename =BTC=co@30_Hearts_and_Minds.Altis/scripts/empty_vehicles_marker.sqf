@@ -6,10 +6,7 @@ _markedveh1 = [];
 _cfg = configFile >> "cfgVehicles";
 _vehtomark = [];
 
-_vehtomark1 = (btc_construction_array select 1) select 0;
-_vehtomark2 = (btc_construction_array select 1) select 0;
-_vehtomark = _vehtomark1 + _vehtomark2;
-
+_vehtomark = btc_vehicles + btc_veh_respawnable;
 
 // Misc variables
 markers_reset = [99999,99999,0];
@@ -18,7 +15,7 @@ while { true } do {
 
     _markedveh = [];
     {
-        if (alive _x && (typeof _x) in _vehtomark && (_x distance2d btc_gear_object) > 250 && (count (crew _x)) == 0) then {
+        if (alive _x && _x in _vehtomark && (_x distance2d btc_gear_object) > 100 && (count (crew _x)) == 0) then {
             _markedveh pushback _x;
         };
     } foreach vehicles;
