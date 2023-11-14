@@ -212,7 +212,7 @@
         </Container>
         <Container name="Documentation: Hideout">
             <Key ID="STR_BTC_HAM_DOC_HIDEOUT_TEXT">
-                <Original>The hideouts are a place where the Gangs organize their movements.&lt;br/&gt;They send reinforcements from here and can attack the closest city.&lt;br/&gt;If you notice a lot of activity in an area, probably there is an hideout closeby.&lt;br/&gt;If you want to defeat the Gangs, you need to destroy all their hideouts.&lt;br/&gt;Here an example of an hideout:&lt;br/&gt;&lt;br/&gt;&lt;img image='core\img\hideout.jpg' width='306' height='256'/&gt;&lt;br/&gt;&lt;br/&gt;To destroy an hideout just place a satchel near the ammo box, it's close to the flag, and blow it off!</Original>
+                <Original>The hideouts are a place where the military organize their movements.&lt;br/&gt;They send reinforcements from here and can attack the closest city.&lt;br/&gt;If you notice a lot of activity in an area, probably there is an hideout closeby.&lt;br/&gt;If you want to defeat the military, you need to destroy all their hideouts.&lt;br/&gt;Here an example of an hideout:&lt;br/&gt;&lt;br/&gt;&lt;img image='core\img\hideout.jpg' width='306' height='256'/&gt;&lt;br/&gt;&lt;br/&gt;To destroy an hideout just place a satchel near the ammo box, it's close to the flag, and blow it off!</Original>
                 <Spanish>Los escondites son un lugar donde los Oplitas organizan sus movimientos.&lt;br/&gt;Enviarán refuerzos desde aquí y podrán atacar la ciudad más cercana.&lt;br/&gt;Si usted nota mucha actividad en un área, probablemente hay un escondite cerca.Si quieres derrotar a los Oplitas, tienes que destruir todos sus escondites.&lt;br/&gt;Aquí un ejemplo de un escondite:&lt;br/&gt;&lt;br/&gt;&lt;img image='core\img\hideout.jpg' width='306' height='256'/&gt;&lt;br/&gt;&lt;br/&gt;Para destruir un escondite sólo tienes que colocar una explosivo tipo satchel cerca de la caja de municiones, cerca de la bandera, y volarla!</Spanish>
                 <German>In den Verstecken planen und organisieren die Oplitas ihre Einstäze und Bewegungen.&lt;br/&gt;Von hier wird Verstärkung auf umliegende Gebiete verteilt. Ebenso ist ein Angriff auf die nächste Stadt von hier aus möglich.&lt;br/&gt;Sollten Sie eine erhöhte feindliche Aktivität in der Gegend festestellen, so befindet sich möglicherweise ein Versteck in der Nähe.&lt;br/&gt;Wenn Sie die Oplitas besiegen wollen, so müssen Sie alle Verstecke zerstören.&lt;br/&gt;Hier ein kleines Beispiel für ein Versteck:&lt;br/&gt;&lt;br/&gt;&lt;img image='core\img\hideout.jpg' width='306' height='256'/&gt;&lt;br/&gt;&lt;br/&gt;Das Versteck kann zerstört werden in dem man eine Sprengladung in der Nähe der Munitionskiste oder der Flagge zündet!</German>
                 <Portuguese>Os esconderijos são um lugar onde as inimigos organizam seus movimentos.&lt;br/&gt;Daqui eles enviam reforços e podem atacar as cidades mais próximas.&lt;br/&gt;Se você notar muita atividade em uma área, provavelmente há um esconderijo por perto.&lt;br/&gt;Se você quiser derrotar o inimigo, terá que destruir todos os esconderijos.&lt;br/&gt;Veja um exemplo de um esconderijo:&lt;br/&gt;&lt;br/&gt;&lt;img image='core\img\hideout.jpg' width='306' height='256'/&gt;&lt;br/&gt;&lt;br/&gt;Para destruir um esconderijo, basta colocar uma bolsa de explosivos perto da caixa de munição (que fica perto da bandeira) e explodí-lo!</Portuguese>
@@ -254,7 +254,7 @@
                 <Czech>Reputace</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_DOC_REPUTATION_TEXT">
-                <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;System:&lt;/marker&gt;&lt;br/&gt; At the beginning you have a very low reputation level, so civilians won't help you in revealing important information about the Gangs, they will likely lie instead. Reputation can be ask to civilian. &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_Orange\Logos\arma3_orange_picture_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Good actions:&lt;/marker&gt;&lt;br/&gt; Helping the local population by fighting the Gangs, disarming IED's, heal civilians, give banana, remove tag with spraypaint , remove tag with spraypaint red, succed side mission and destroy cache/hideout will rise your reputation. &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\missions_f_orange\Data\Img\AAN\aan_3_4_co.paa' width='355' height='200' /&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\Ui_f\data\GUI\Cfg\Debriefing\endDefault_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Bad actions:&lt;/marker&gt;&lt;br/&gt; Bad actions cause bad effects: killing civilians/animals, mutilating alive/dead civilians/animals, firing near civilians for no reason, firing to civilian car, remove wheels, remove banana, damaging/destroying buildings, breaking door lock, losing player's vehicles and player respawns will decrease your reputation. Aborting a side mission does not affect reputation. &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\missions_f_orange\Data\Img\AAN\aan_3_3_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_Orange\Logos\arma3_orange_artwork.jpg' width='362' height='512' /&gt; </Original>
+                <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;System:&lt;/marker&gt;&lt;br/&gt; At the beginning you have a very low reputation level, so civilians won't help you in revealing important information about the military, they will likely lie instead. Reputation can be ask to civilian. &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_Orange\Logos\arma3_orange_picture_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Good actions:&lt;/marker&gt;&lt;br/&gt; Helping the local population by fighting the military, disarming IED's, heal civilians, give banana, remove tag with spraypaint , remove tag with spraypaint red, succed side mission and destroy cache/hideout will rise your reputation. &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\missions_f_orange\Data\Img\AAN\aan_3_4_co.paa' width='355' height='200' /&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\Ui_f\data\GUI\Cfg\Debriefing\endDefault_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Bad actions:&lt;/marker&gt;&lt;br/&gt; Bad actions cause bad effects: killing civilians/animals, mutilating alive/dead civilians/animals, firing near civilians for no reason, firing to civilian car, remove wheels, remove banana, damaging/destroying buildings, breaking door lock, losing player's vehicles and player respawns will decrease your reputation. Aborting a side mission does not affect reputation. &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\missions_f_orange\Data\Img\AAN\aan_3_3_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_Orange\Logos\arma3_orange_artwork.jpg' width='362' height='512' /&gt; </Original>
                 <Spanish>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa' width='20' height='20'/&gt; La reputación se puede solicitar a los civiles&lt;br/&gt; Las malas acciones causan malos efectos sobre la reputacion.&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; Ayudar a la población local luchando contra los Oplitas y desarmando los artefactos explosivos improvisados aumentará tu reputación; matar civiles, mutilar civiles vivos/muertos, disparar cerca de civiles sin razón alguna, disparar a vehículos civiles, dañar/destruir edificios, perder vehículos, respawns de jugadores disminuirá tu reputación. Al principio tienes un nivel de reputación muy bajo, por lo que los civiles no te ayudarán a revelar información importante sobre los Oplitas, es probable que mientan en su lugar.&lt;br/&gt; Abortar una misión secundaria no afecta a la reputación.</Spanish>
                 <German>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa' width='20' height='20'/&gt; Ihr Ansehen bei der Bevölkerung können Sie bei Zivilisten erfragen &lt;br/&gt; Schlechte bzw. böse Handlungen habe zur Folge das ihr Ansehen sinkt. &lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; Das Unterstützen der lokalen Bevölkerung, das Entschärfen von IEDs und der aktive Kampf gegen die Oplitas wird sich positiv auf ihr Ansehen auswirken. Negative Aktionen wie zb. das Töten oder verstümmeln von Zivlisten, das grundlose Abfeueren einer Waffe in der Nähe von Zivilisten, das Zerstören oder Beschädigen von Gebäuden, der Angriff auf zivile Fahrzeuge, der Verlust von Fahrzeugen im Allgemeinen oder das Respawnen haben hingegen einen nicht so guten Effekt. Zu Beginn ist Ihr Ansehen nur recht gering, weshalb es sein kann das Zivlisten eher zruückhaltend mit Informationen sind. In manchen Fällen werden die Zivilisten Sie auch einfach belügen.&lt;br/&gt; Das Abbrechen von Nebenaufgaben hat keine Auswirkung auf Ihr Ansehen.</German>
                 <Portuguese>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa' width='20' height='20'/&gt; A Reputação entre a população é obtida por meio dos civis &lt;br/&gt; Ações ruins ou más fazem a reputação diminuir. &lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; Ajudar a população local combatendo os inimigos e desarmando os IED's aumentará sua reputação. Matar civis, mutilar civis vivos/mortos, atirar perto de civis sem motivo, atirar nos veículos civis, danificar/destruir prédios, perder veículos civis, respawns de jogadores diminuirão a reputação. No começo, o nível de reputação é muito baixo, então, os civis não irão ajudá-lo a revelar informações importantes sobre os inimigos ou provavelmente irão mentir.&lt;br/&gt; Cancelar tarefas secundárias não afeta a reputação.</Portuguese>
@@ -1121,7 +1121,7 @@
                 <Czech>Hlavní úkol</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_MISSION_DEFEAT_TITLE">
-                <Original>Defeat the Gangs</Original>
+                <Original>Defeat the military</Original>
                 <Spanish>Derrotar a los Oplitas</Spanish>
                 <German>Besiege die Oplitas</German>
                 <Portuguese>Derrote os Inimigos</Portuguese>
@@ -1130,7 +1130,7 @@
                 <Czech>Porazte Oplitas</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_MISSION_DEFEAT_DESC">
-                <Original>Defeat the Gangs once and for all</Original>
+                <Original>Defeat the military once and for all</Original>
                 <Spanish>Derrotar a los Oplitas de una vez por todas</Spanish>
                 <German>Besiegen Sie die Oplitas ein für allemal</German>
                 <Portuguese>Derrote todos os inimigos de uma vez por todas</Portuguese>
@@ -1139,7 +1139,7 @@
                 <Czech>Porazte Oplitas jednou provždy</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_MISSION_DEFEAT_WIN_TEXT">
-                <Original>The Gangs have been finally defeated!    Mission accomplished!</Original>
+                <Original>The military have been finally defeated!    Mission accomplished!</Original>
                 <Spanish>Las Oplitas han sido finalmente derrotados!    Misión cumplida!</Spanish>
                 <German>Die Oplitas wurde endgültig besiegt!    Mission erfüllt!</German>
                 <Portuguese>Todos os inimigos foram derrotados! Missão cumprida!</Portuguese>
@@ -1150,7 +1150,7 @@
         </Container>
         <Container name="Mission: Destroy all the hideouts">
             <Key ID="STR_BTC_HAM_MISSION_DESTROY_DESC">
-                <Original>Destroy all the hideouts of the Gangs</Original>
+                <Original>Destroy all the hideouts of the military</Original>
                 <Spanish>Destruye todos los escondites de los Oplitas</Spanish>
                 <German>Zerstören Sie sämtliche Verstecke der Oplitas</German>
                 <Portuguese>Destrua todos os esconderijos dos inimigos</Portuguese>
@@ -2683,7 +2683,7 @@
                 <Czech>Intel o nalezeném úkrytu!</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_O_COMMON_SHOWHINTS_6">
-                <Original>In the last hideout we found important intel about all the cities occupied by the Gangs! Size the last positions held by the enemies and defeat them once and for all</Original>
+                <Original>In the last hideout we found important intel about all the cities occupied by the military! Size the last positions held by the enemies and defeat them once and for all</Original>
                 <Spanish>En el último escondite encontramos información importante sobre todas las ciudades ocupadas por los Oplitas! Evalúa las últimas posiciones de los enemigos y derrótalos de una vez por todas.</Spanish>
                 <German>Im letzten Versteck haben wir wichtige Informationen über alle durch die Oplitas besetzten Städte gefunden! Greife die letzten Überreste des Feindes an und besiege ihn endgültig.</German>
                 <Portuguese>No último esconderijo encontramos informações importantes sobre as cidades ocupadas pelos inimigos! Conquites as últimas posições dos inimigos e derrote-os de uma vez por todas</Portuguese>
@@ -2853,7 +2853,7 @@
         </Container>
         <Container name="Other: Endmission">
             <Key ID="STR_BTC_HAM_O_COMMON_ENDMISSION">
-                <Original>All the hideouts are destroyed, finally the Gangs have been defeated! Mission accomplished</Original>
+                <Original>All the hideouts are destroyed, finally the military have been defeated! Mission accomplished</Original>
                 <Spanish>Todos los escondites fueron destruidos, finalmente el Oplitas han sido derrotados! Misión cumplida</Spanish>
                 <German>Alle Verstecke sind zerstört, nun sind die Oplitas besiegt! Mission erfüllt</German>
                 <Portuguese>Todos os esconderijos foram destruídos, finalmente os inimigos foram derrotados! Missão cumprida</Portuguese>
@@ -3069,6 +3069,9 @@
                 <Chinesesimp>附近没有残骸</Chinesesimp>
                 <French>Aucune épave trouvée</French>
                 <Czech>Nebyl nalezen žádný vrak</Czech>
+            </Key>
+                <Key ID="STR_BTC_HAM_LOG_RWRECK_NOWRECK_FUNDS">
+                <Original>Not Enough Funds!</Original>
             </Key>
             <Key ID="STR_BTC_HAM_LOG_RWRECK_NOTWRECK">
                 <Original>It is not a wreck!</Original>

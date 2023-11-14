@@ -47,6 +47,7 @@ if (btc_vehicles pushBackUnique _veh isEqualTo -1) exitWith {
         ["Vehicle added more than once in btc_vehicles", __FILE__, [btc_debug, btc_debug_log, true]] call btc_debug_fnc_message;
     }; 
 };
+publicVariable "btc_vehicles";
 
 _veh setVariable ["btc_dont_delete", true];
 

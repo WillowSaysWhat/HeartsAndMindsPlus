@@ -63,6 +63,8 @@ if (unitIsUAV _veh) then {
     createVehicleCrew _veh;
 };
 
+
+
 //Remove Item inv
 clearItemCargoGlobal _veh;
 

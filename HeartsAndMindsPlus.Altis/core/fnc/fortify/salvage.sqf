@@ -21,15 +21,13 @@ Author:
 [{
 params ["_object"];
 
-
 	_obj = missionNamespace getVariable [_object, objNull];
     _type = typeOf _obj;
-    _vehicle = btc_vehicles;
-    _friendly = flatten (btc_construction_array select 1);
-    _enemy = btc_type_motorized + btc_type_motorized_armed;
+    _vehicle = btc_fortify_vehicles;
+    _friendly = btc_all_obj;
+    _enemy = fortify_enemy_vehicles;
 
-    if (_obj in _vehicles) then {
-        btc_vehicles = btc_vehicles - [_obj];
+    if (_type in _vehicle) then {
         [_obj] remoteExecCall ["tet_fortify_delete", [2]];
     };
 
@@ -41,7 +39,6 @@ params ["_object"];
         [_obj] remoteExecCall ["tet_fortify_delete", [2]];
     };
 
-    
 	closeDialog 0;
 
 }, [lbData [85, lbCurSel 85]], 0.5] call CBA_fnc_waitAndExecute;

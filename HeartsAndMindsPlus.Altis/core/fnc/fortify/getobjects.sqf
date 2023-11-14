@@ -40,9 +40,6 @@ for "_i" from 0 to ((count _category) - 1) do {
         case "Land_Cargo20_IDAP_F": {
             _classname = "Side Mission Supplies";
         };
-        case "C_supplyCrate_F": {
-            _classname = "Arsenal";
-        };
         case "Land_RepairDepot_01_green_F": {
             _classname = "Salvage Station";
         };

@@ -4,7 +4,7 @@ btc_version = [
     22.1,
     8
 ];
-diag_log format (["=BTC= HEARTS AND MINDS VERSION %1.%2.%3"] + btc_version);
+diag_log format (["HEARTS AND MINDS PLUS VERSION %1.%2.%3"] + btc_version);
 
 //Param
 //<< Time options >>
@@ -154,7 +154,7 @@ if (isServer) then {
     btc_civ_veh_active = [];
 
     //Database
-    btc_db_serverCommandPassword = "goaskryan"; //Define the same password in server.cfg like this: serverCommandPassword = "btc_password";
+    btc_db_serverCommandPassword = "btc_password"; //Define the same password in server.cfg like this: serverCommandPassword = "btc_password";
     btc_db_warningTimeAutoRestart = 15;
     btc_db_warningTimeAutoRestart1 = 30;
 
@@ -166,7 +166,7 @@ if (isServer) then {
     };
     btc_hideout_safezone = 4000;
     btc_hideout_range = 3500;
-    btc_hideout_cap_time = 2200; // CONFIG CHANGED BY TET
+    btc_hideout_cap_time = 2200;
     btc_hideout_minRange = btc_hideout_range;
 
     //IED
@@ -319,14 +319,14 @@ if (isServer) then {
     btc_buildings_categories_multipliers = [
         ["Shed", 1], ["Slum", 1], ["Small", 1], ["Big", 1], ["Villa", 1], ["Main", 1], ["Tower", 1],
         ["HouseBlock", 1], ["Panelak", 1], ["Tenement", 1],
-        ["Barn", 1], ["School", 1], ["Office", 1], ["Shop", 1], ["Store", 1], ["Hospital", 10.0],
-        ["Castle", 1], ["Chapel", 5.0], ["Minaret", 5.0], ["Mosque", 5.0], ["Church", 5], ["Kostel", 5],
-        ["Lighthouse", 5],
+        ["Barn", 1], ["School", 1], ["Office", 1], ["Shop", 1], ["Store", 1], ["Hospital", 2],
+        ["Castle", 1], ["Chapel", 2], ["Minaret", 2], ["Mosque", 2], ["Church", 2], ["Kostel", 2],
+        ["Lighthouse", 1],
         ["Airport", 1], ["Hangar", 1], ["ControlTower", 1], ["Terminal", 1],
         ["Hopper", 1], ["Tank", 1], ["Factory", 1], ["Transformer", 1],
-        ["FuelStation", 5.0],
+        ["FuelStation", 2],
         ["Barracks", 1],
-        ["spp", 1], ["Powerstation", 5],
+        ["spp", 1], ["Powerstation", 2],
         ["Pump", 1]
     ];
     btc_buildings_changed = [];
@@ -459,170 +459,59 @@ btc_type_hazmat = ["HazmatBag_01_F", "Land_MetalBarrel_F"] + (_allClassSorted se
     {_x isKindOf "PlasticCase_01_base_F"}
 });
 
-//Containers
-btc_containers_mat = ["Land_Cargo20_military_green_F", "Land_Cargo40_military_green_F", "B_Slingload_01_Cargo_F"];
-
 //Player
 btc_player_side = west;
 btc_respawn_marker = "respawn_west";
 btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, independent] find btc_player_side);
 
-//Economy Prices
-[west, btc_global_economy, [
-//enemy
-    ["UK3CB_ION_O_Urban_M113_M240", 1150, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M113_M2_90", 1200, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M113_M2", 1200, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M113_supply", 1000, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M113_AMB", 1000, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M113_MK19_90", 1250, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M113_MK19", 1250, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_MB4WD_Unarmed", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M113_unarmed", 1000, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Landcruiser", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_LR_Closed", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_LR_Open", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_LR_M2", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M998_2DR", 600, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M1025", 600, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M1025_M2", 800, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M1025_MK19", 800, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M1025_TOW", 800, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_M1030", 400, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Hilux_Ambulance", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Hilux", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Hilux_Open", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Hilux_M2", 650, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Offroad", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Offroad_Covered", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Offroad_Comms", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Offroad_Service", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Offroad_M2", 750, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_LSV_01", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_LSV_01_Light", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_LSV_02", 600, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_LSV_02_AT", 850, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_LSV_02_Armed", 750, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_MaxxPro_M2", 1050, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_MaxxPro_MK19", 1150, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_MB4WD_LMG", 650, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Quadbike", 400, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Pickup", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Pickup_M2", 650, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_SUV", 500, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_SUV_Armed", 700, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_SUV_Armoured", 600, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_T810_Closed", 600, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_T810_Open", 600, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_T810_Reammo", 800, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_T810_Recovery", 800, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_T810_Refuel", 800, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_T810_Repair", 800, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Transit_Transport", 600, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Transit_Medevac", 600, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_Transit_Service", 600, "Enemy Vehicles"],
-    ["UK3CB_ION_O_Urban_MB4WD_Unarmed", 500, "Enemy Vehicles"],
-//DONOTREMOVE
-    //["DeconShower_01_F", 80, "Logistics"],
-    ["Land_Cargo20_blue_F", 1000, "Logistics"], // FOB
-    ["Land_RepairDepot_01_green_F", 500, "Logistics"], // SALVAGE STATION
-    ["Land_Cargo20_IDAP_F", 0, "Logistics"], // SUPPLIES
-    // BTC CONTAINERS
-      ["Land_Cargo20_military_green_F", 50, "Logistics"],
-      ["Land_Cargo40_military_green_F", 100, "Logistics"],
-      ["B_Slingload_01_Cargo_F", 50, "Logistics"],
-//blufor
-    ["Land_BagBunker_Small_F", 5, "Fortification"],
-    ["Land_BagFence_Corner_F", 5, "Fortification"],
-    ["Land_BagFence_End_F", 5, "Fortification"],
-    ["Land_BagFence_Long_F", 5, "Fortification"],
-    ["Land_BagFence_Round_F", 5, "Fortification"],
-    ["Land_BagFence_Short_F", 5, "Fortification"],
-    ["Land_HBarrier_1_F", 5, "Fortification"],
-    ["Land_HBarrier_3_F", 5, "Fortification"],
-    ["Land_HBarrier_5_F", 5, "Fortification"],
-    ["Land_HBarrierBig_F", 5, "Fortification"],
-    ["Land_Razorwire_F", 5, "Fortification"],
-    ["Land_CncBarrier_F", 5, "Fortification"],
-    ["Land_CncBarrierMedium_F", 5, "Fortification"],
-    ["Land_CncBarrierMedium4_F", 5, "Fortification"],
-    ["Land_CncWall1_F", 5, "Fortification"],
-    ["Land_CncWall4_F", 5, "Fortification"],
-    ["Land_Mil_ConcreteWall_F", 5, "Fortification"],
-    ["Land_Mil_WallBig_4m_F", 5, "Fortification"],
-    ["Land_Mil_WallBig_Corner_F", 5, "Fortification"],
-    ["Land_PortableLight_double_F", 5, "Fortification"],
-    ["Land_Net_Fence_Gate_F", 5, "Fortification"],
-    ["Land_LampHarbour_F", 5, "Fortification"],
-    ["Land_Camping_Light_F", 5, "Fortification"],
-    ["Land_DragonsTeeth_01_4x2_new_redwhite_F", 5, "Fortification"],
-    ["Land_ConcreteHedgehog_01_F", 5, "Fortification"],
-    ["Land_Plank_01_8m_F", 5, "Fortification"],
-    ["Land_Plank_01_4m_F", 5, "Fortification"],
-    ["Land_Cargo_House_V1_F", 15, "Fortification"],
-    ["WireFence", 5, "Fortification"],
-    ["Wire", 5, "Fortification"],
-    ["Land_LampShabby_F", 5, "Fortification"],
-    ["rhs_pontoon_end_static", 15, "Fortification"],
-    ["rhs_pontoon_static", 15, "Fortification"],
-    ["rhs_pontoon_float", 15, "Fortification"],
-    ["Box_NATO_AmmoOrd_F", 10, "Logistics"],
-    ["ACE_Box_82mm_Mo_HE", 15, "Logistics"],
-    ["ACE_Box_82mm_Mo_Illum", 10, "Logistics"],
-    ["ACE_Box_82mm_Mo_Smoke", 10, "Logistics"],
-    ["B_Slingload_01_Repair_F", 400, "Logistics"],
-    ["B_Slingload_01_Ammo_F", 400, "Logistics"],
-    ["B_Slingload_01_Fuel_F", 400, "Logistics"],
-    ["C_supplyCrate_F", 100, "Logistics"],
-    ["ACE_Box_Chemlights", 15, "Logistics"],
-    ["ACE_medicalSupplyCrate_advanced", 15, "Logistics"],
-    ["ACE_medicalSupplyCrate", 10, "Logistics"],
-    ["ACE_Wheel", 10, "Logistics"],
-    ["ACE_fastropingSupplyCrate", 5, "Logistics"],
-    ["ACE_Track", 10, "Logistics"],
-    ["RHS_M252_USMC_D", 350, "Static"],
-    ["RHS_Stinger_AA_pod_USMC_D", 500, "Static"],
-    ["RHS_M2StaticMG_USMC_D", 300, "Static"],
-    ["RHS_M2StaticMG_MiniTripod_USMC_D", 300, "Static"],
-    ["RHS_TOW_TriPod_USMC_D", 400, "Static"],
-    ["RHS_MK19_TriPod_USMC_D", 350, "Static"],
-    ["RHS_M119_D", 700, "Static"],
-    ["B_Static_Designator_01_F", 100, "Static"],
-    ["UK3CB_B_AAV_HIDF", 1000, "Ground Vehicles"],
-    ["UK3CB_B_LAV25_HIDF",1200, "Ground Vehicles"],
-    ["B_APC_Tracked_01_CRV_F",1000,"Ground Vehicles"],
-    ["rhsgref_hidf_m113a3_m2", 800, "Ground Vehicles"],
-    ["rhsgref_hidf_m113a3_mk19",1500, "Ground Vehicles"],
-    ["rhsgref_hidf_rhib", 500, "Ground Vehicles"],
-    ["UK3CB_B_M1030_HIDF", 100, "Ground Vehicles"],
-    ["rhsgref_hidf_m1025_m2", 500, "Ground Vehicles"],
-    ["UK3CB_B_M151_Jeep_Closed_HIDF", 300, "Ground Vehicles"],
-    ["UK3CB_B_M151_Jeep_HMG_HIDF", 400, "Ground Vehicles"],
-    ["UK3CB_B_M151_Jeep_Open_HIDF", 300, "Ground Vehicles"],
-    ["UK3CB_B_M151_Jeep_TOW_HIDF", 500, "Ground Vehicles"],
-    ["rhsgref_hidf_M998_2dr_fulltop", 400, "Ground Vehicles"],
-    ["rhsgref_hidf_M998_2dr_halftop", 400, "Ground Vehicles"],
-    ["rhsgref_hidf_M998_4dr_fulltop", 400, "Ground Vehicles"],
-    ["rhsgref_hidf_M998_4dr_halftop", 400, "Ground Vehicles"],
-    ["UK3CB_B_M60A3_HIDF", 700, "Ground Vehicles"],
-    ["UK3CB_B_M939_Closed_HIDF", 700, "Ground Vehicles"],
-    ["UK3CB_B_M939_Guntruck_HIDF", 700, "Ground Vehicles"],
-    ["UK3CB_B_M939_Open_HIDF", 700, "Ground Vehicles"],
-    ["UK3CB_B_M939_Reammo_HIDF", 700, "Ground Vehicles"],
-    ["UK3CB_B_M939_Recovery_HIDF", 700, "Ground Vehicles"],
-    ["UK3CB_B_M939_Refuel_HIDF", 700, "Ground Vehicles"],
-    ["UK3CB_B_M939_Repair_HIDF", 700, "Ground Vehicles"],
-    ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom", 700, "Ground Vehicles"],
-    ["rhsusf_M1084A1R_SOV_M2_D_fmtv_socom", 700, "Ground Vehicles"],
-    ["UK3CB_B_Bell412_Armed_dynamicLoadout_HIDF", 1000, "Air Vehicles"],
-    ["RHS_C130J_Cargo", 1500, "Air Vehicles"],
-    ["rhs_uh1h_hidf_gunship", 1300, "Air Vehicles"],
-    ["RHSGREF_A29B_HIDF", 1000, "Air Vehicles"],
-    ["UK3CB_B_C47_Late_HIDF", 1500, "Air Vehicles"],
-    ["UK3CB_B_C47_Cargo_Late_HIDF", 1500, "Air Vehicles"],
-    ["UK3CB_B_Cessna_T41_HIDF", 1000, "Air Vehicles"],
-    ["UK3CB_B_Mystere_HIDF", 1000, "Air Vehicles"]
-]] call acex_fortify_fnc_registerObjects;
+fortify_enemy_vehicles = [
+"UK3CB_ARD_O_Hilux_GMG",
+"UK3CB_ARD_O_Hilux_Rocket_Arty",
+"UK3CB_ARD_O_Hilux_Dshkm",
+"UK3CB_ARD_O_Hilux_M2",
+"UK3CB_ARD_O_Hilux_Metis",
+"UK3CB_ARD_O_Hilux_Mortar",
+"UK3CB_ARD_O_Hilux_Pkm",
+"UK3CB_ARD_O_Hilux_Spg9",
+"UK3CB_ARD_O_Hilux_Zu23_Front",
+"UK3CB_ARD_O_Hilux_Zu23",
+"UK3CB_ARD_O_UAZ_AGS30",
+"UK3CB_ARD_O_UAZ_MG",
+"UK3CB_ARD_O_UAZ_SPG9",
+"UK3CB_ARD_O_2S6M_Tunguska",
+"UK3CB_ARD_O_MTLB_ZU23",
+"UK3CB_ARD_O_Ural_Zu23",
+"UK3CB_ARD_O_ZsuTank",
+"UK3CB_ARD_O_BMP1",
+"UK3CB_ARD_O_BMP2",
+"UK3CB_ARD_O_BMP2K",
+"UK3CB_ARD_O_BRM1K",
+"UK3CB_ARD_O_BTR40",
+"UK3CB_ARD_O_BTR40_MG",
+"UK3CB_ARD_O_BTR60",
+"UK3CB_ARD_O_BTR70",
+"UK3CB_ARD_O_BTR80",
+"UK3CB_ARD_O_BTR80a",
+"UK3CB_ARD_O_MTLB_Cannon",
+"UK3CB_ARD_O_MTLB_BMP",
+"UK3CB_ARD_O_MTLB_KPVT",
+"UK3CB_ARD_O_MAZ_543_SCUD",
+"UK3CB_ARD_O_BM21",
+"UK3CB_ARD_O_BRDM2",
+"UK3CB_ARD_O_BRDM2_ATGM",
+"UK3CB_ARD_O_BRDM2_HQ",
+"UK3CB_ARD_O_GAZ_Vodnik_Cannon",
+"UK3CB_ARD_O_GAZ_Vodnik_KVPT",
+"UK3CB_ARD_O_GAZ_Vodnik_PKT",
+"UK3CB_ARD_O_T34",
+"UK3CB_ARD_O_T55",
+"UK3CB_ARD_O_T72A",
+"UK3CB_ARD_O_T72B",
+"UK3CB_ARD_O_T72BM",
+"UK3CB_ARD_O_T72BA",
+"UK3CB_ARD_O_T72BB",
+"UK3CB_ARD_O_T72BC"
+];
 
 //Log  
 btc_construction_array =
@@ -641,125 +530,127 @@ btc_construction_array =
     [
         [
             //"Ground Vehicles"
-            "rhsgref_hidf_m113a3_mk19",
-            "UK3CB_B_AAV_HIDF",
-            "UK3CB_B_LAV25_HIDF",
-            "B_APC_Tracked_01_CRV_F",
-            "rhsgref_hidf_m113a3_m2",
-            "rhsgref_hidf_rhib",
-            "rhsgref_hidf_m1025_m2",
-            "UK3CB_B_M151_Jeep_Closed_HIDF",
-            "UK3CB_B_M151_Jeep_HMG_HIDF",
-            "UK3CB_B_M151_Jeep_Open_HIDF",
-            "UK3CB_B_M151_Jeep_TOW_HIDF",
-            "rhsgref_hidf_M998_2dr_fulltop",
-            "rhsgref_hidf_M998_2dr_halftop",
-            "rhsgref_hidf_M998_4dr_fulltop",
-            "rhsgref_hidf_M998_4dr_halftop",
-            "UK3CB_B_M60A3_HIDF",
-            "UK3CB_B_M939_Closed_HIDF",
-            "UK3CB_B_M939_Guntruck_HIDF",
-            "UK3CB_B_M939_Open_HIDF",
-            "UK3CB_B_M939_Reammo_HIDF",
-            "UK3CB_B_M939_Recovery_HIDF",
-            "UK3CB_B_M939_Refuel_HIDF",
-            "UK3CB_B_M939_Repair_HIDF",
-            "UK3CB_B_M1030_HIDF",
+            "rhsusf_mrzr4_d",
+            "rhsusf_m1045_d",
+            "rhsusf_m998_d_2dr_fulltop",
+            "rhsusf_m998_d_2dr_halftop",
+            "rhsusf_m998_d_2dr",
+            "rhsusf_m998_d_4dr_fulltop",
+            "rhsusf_m998_d_4dr_halftop",
+            "rhsusf_m1152_usarmy_d",
+            "rhsusf_m1043_d_m2",
+            "rhsusf_m1151_m2_v1_usarmy_d",
+            "rhsusf_m1151_m2_v2_usarmy_d",
+            "rhsusf_m1165a1_gmv_m2_m240_socom_d",
             "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
-            "rhsusf_M1084A1R_SOV_M2_D_fmtv_socom"
+            "UK3CB_B_M939_Closed_DES",
+            "UK3CB_B_M939_Guntruck_DES",
+            "UK3CB_B_M939_Open_DES",
+            "UK3CB_B_M939_Reammo_DES",
+            "UK3CB_B_M939_Recovery_DES",
+            "UK3CB_B_M939_Refuel_DES",
+            "UK3CB_B_M939_Repair_DES",
+            "rhsusf_stryker_m1127_m2_d",
+            "rhsusf_M1220_usarmy_d",
+            "rhsusf_m1240a1_m2_uik_usarmy_d",
+            "UK3CB_B_MaxxPro_M2_US",
+            "B_APC_Tracked_01_CRV_F",
+            "rhsusf_M1220_M2_usarmy_d",
+            "rhsusf_M1230_M2_usarmy_d",
+            "rhsusf_M1232_M2_usarmy_d",
+            "RHS_M2A2",
+            "RHS_M2A2_BUSKI",
+            "RHS_M2A3_BUSKIII",
+            "rhsusf_m1a2sep2d_usarmy"
         ],
         [
             //"Air Vehicles"
-            "UK3CB_B_Bell412_Armed_dynamicLoadout_HIDF",
-            "rhs_uh1h_hidf_gunship",
-            "RHSGREF_A29B_HIDF",
-            "RHS_C130J_Cargo",
-            "UK3CB_B_C47_Late_HIDF",
-            "UK3CB_B_C47_Cargo_Late_HIDF",
-            "UK3CB_B_Cessna_T41_HIDF",
-            "UK3CB_B_Mystere_HIDF"
+            "RHS_MELB_MH6M",
+            "RHS_MELB_AH6M",
+            "RHS_CH_47F_10",
+            "RHS_UH60M_d",
+            "RHS_C130J",
+            "B_Plane_Fighter_01_F",
+            "RHS_AH64D"
         ],
         [
             //"Fortifications"
-            "Land_BagBunker_Small_F",
-            "Land_BagFence_Corner_F",
             "Land_BagFence_End_F",
             "Land_BagFence_Long_F",
             "Land_BagFence_Round_F",
             "Land_BagFence_Short_F",
-            "Land_HBarrier_1_F",
+            "Land_Razorwire_F",
+            "Land_Net_Fence_Gate_F",
             "Land_HBarrier_3_F",
             "Land_HBarrier_5_F",
-            "Land_HBarrierBig_F",
-            "Land_Razorwire_F",
-            "Land_CncBarrier_F",
-            "Land_CncBarrierMedium_F",
-            "Land_CncBarrierMedium4_F",
-            "Land_CncWall1_F",
-            "Land_CncWall4_F",
-            "Land_Mil_ConcreteWall_F",
-            "Land_Mil_WallBig_4m_F",
-            "Land_Mil_WallBig_Corner_F",
-            "Land_PortableLight_double_F",
-            "Land_Net_Fence_Gate_F",
-            "Land_LampHarbour_F",
-            "Land_Camping_Light_F",
-            "Land_DragonsTeeth_01_4x2_new_redwhite_F",
+            "Land_HBarrier_Big_F",
+            "Land_HBarrier_1_F",
+            "Land_Concrete_SmallWall_8m_F",
+            "Land_Concrete_SmallWall_4m_F",
             "Land_ConcreteHedgehog_01_F",
-            "Land_Plank_01_8m_F",
+            "Land_DragonsTeeth_01_4x2_new_F",
+            "BlockConcrete_F",
+            "Land_RampConcrete_F",
+            "Land_CncShelter_F",
+            "Land_HBarrierWall_corridor_F",
+            "Land_HBarrierWall_corner_F",
+            "Land_HBarrierWall6_F",
+            "Land_HBarrierWall4_F",
+            "Land_CncWall4_F",
+            "Land_CncWall1_F",
+            "Land_BagBunker_Small_F",
             "Land_Plank_01_4m_F",
-            "Land_Cargo_House_V1_F",
-            "WireFence",
-            "Wire",
-            "Land_LampShabby_F",
-            "rhs_pontoon_end_static",
-            "rhs_pontoon_static",
-            "rhs_pontoon_float"
+            "Land_Plank_01_8m_F"
         ],
         [
             //"Static"
-            "RHS_M252_USMC_D",
-            "RHS_Stinger_AA_pod_USMC_D",
-            "RHS_M2StaticMG_USMC_D",
-            "RHS_M2StaticMG_MiniTripod_USMC_D",
-            "RHS_TOW_TriPod_USMC_D",
-            "RHS_MK19_TriPod_USMC_D",
-            "RHS_M119_D",
-            "B_Static_Designator_01_F"
+            "UK3CB_B_Searchlight_NATO",
+            "B_Static_Designator_01_F",
+            "RHS_M2StaticMG_D",
+            "RHS_M2StaticMG_MiniTripod_D",
+            "RHS_Stinger_AA_pod_D",
+            "RHS_TOW_TriPod_D",
+            "RHS_M252_D",
+            "RHS_M119_D"
         ],
         [
             //"Ammobox"
-            "Box_NATO_AmmoOrd_F",
-            "ACE_Box_82mm_Mo_HE",
+            "ACE_medicalSupplyCrate",
+            "ACE_medicalSupplyCrate_advanced",
+            "ACE_Box_Chemlights",
+            "ACE_Box_82mm_Mo_Combo",
             "ACE_Box_82mm_Mo_Illum",
-            "ACE_Box_82mm_Mo_Smoke"
+            "ACE_Box_82mm_Mo_HE",
+            "ACE_Box_82mm_Mo_Smoke",
+            "Land_WoodenBox_F"
 
         ],
         [
             //"Containers"
             "B_Slingload_01_Repair_F",
+            "B_Slingload_01_Fuel_F",
             "B_Slingload_01_Ammo_F",
-            "B_Slingload_01_Fuel_F"
-        ] + btc_containers_mat,
+            "B_Slingload_01_Cargo_F"
+        ],
         [
             //"Supplies"
-            btc_supplies_cargo,
-            "ACE_Box_Chemlights",
-            "ACE_medicalSupplyCrate_advanced",
-            "ACE_medicalSupplyCrate"
+            "Land_Cargo20_IDAP_F" // btc_supplies_cargo
+
         ],
         [
             //"FOB"
-            btc_fob_mat,
-            btc_recovery,
-            "C_supplyCrate_F"
+            "Land_Medevac_house_V1_F",
+            "Land_RepairDepot_01_green_F", // btc_recovery
+            "Land_Cargo20_blue_F" // btc_fob_mat
         ],
         [
             //"Vehicle logistic"
+            "ACE_Track",
             "ACE_Wheel",
+            "FlexibleTank_01_sand_F",
             "ACE_fastropingSupplyCrate",
-            "ACE_Track"
-        ] + (_allClassSorted select {_x isKindOf "FlexibleTank_base_F"})
+            "Box_NATO_AmmoVeh_F"
+        ]
     ]
 ];
 
@@ -776,7 +667,10 @@ btc_tow_vehicleTowing = objNull;
 btc_log_placing_max_h = 12;
 btc_log_placing = false;
 btc_log_obj_created = [];
+btc_fortify_vehicles = _cGround_Vehicles + _cAir_Vehicles;
+btc_containers_mat = _cContainers;
 btc_containers_log = btc_log_def_placeable + _cAmmobox;
+btc_all_obj = _cVehicle_logistic + _cFOB + _cSupplies + _cContainers + _cAmmobox + _cStatics + _cFortifications;
 
 btc_log_fnc_get_nottowable = {
     params ["_tower"];
@@ -902,9 +796,9 @@ btc_rep_malus_civ_hd = - 2;
 btc_rep_malus_animal_hd = - 1;
 btc_rep_malus_civ_killed = - 10;
 btc_rep_malus_animal_killed = - 5;
-btc_rep_malus_civ_suppressed = - 4;
+btc_rep_malus_civ_suppressed = - 0;
 btc_rep_malus_player_respawn = - 5;
-btc_rep_malus_building_damaged = - 2.5;
+btc_rep_malus_building_damaged = - 0;
 btc_rep_malus_building_destroyed = - 20;
 btc_rep_malus_foodRemove = - btc_rep_bonus_foodGive;
 btc_rep_malus_breakDoor = - 1;

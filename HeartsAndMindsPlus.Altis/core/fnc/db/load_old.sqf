@@ -142,6 +142,7 @@ if !(isNil "btc_vehicles") then {
     {deleteVehicle _x} forEach btc_vehicles;
     btc_vehicles = [];
 };
+publicVariable "btc_vehicles";
 
 private _objs = +(profileNamespace getVariable [format ["btc_hm_%1_objs", _name], []]);
 [{ // Can't use ace_cargo for objects created during first frame.

@@ -103,17 +103,17 @@ if (_data_units isNotEqualTo []) then {
 } else {
     // Maximum number of enemy group
     private _numberOfGroup = (switch _type do {
-        case "Hill" : {20};
-        case "VegetationFir" : {20};
-        case "BorderCrossing" : {20};
+        case "Hill" : {10};
+        case "VegetationFir" : {10};
+        case "BorderCrossing" : {15};
         case "NameLocal" : {20};
         case "StrongpointArea" : {20};
         case "NameVillage" : {20};
         case "NameCity" : {25};
-        case "NameCityCapital" : {30};
+        case "NameCityCapital" : {40};
         case "Airport" : {30};
-        case "NameMarine" : {20};
-        default {20};
+        case "NameMarine" : {10};
+        default {0};
     });
 
     if (_has_en) then {
@@ -260,7 +260,6 @@ if !(_city getVariable ["has_suicider", false]) then {
             [[_city, _spawningRadius, getPosATL _city], btc_ied_fnc_drone_create] call btc_delay_fnc_exec;
         } else {
             [[_city, _spawningRadius], btc_ied_fnc_suicider_create] call btc_delay_fnc_exec;
-            [[_city, _spawningRadius, getPosATL _city], btc_ied_fnc_drone_create] call btc_delay_fnc_exec; 
         };
         _delay = _delay + btc_delay_unit;
     };
