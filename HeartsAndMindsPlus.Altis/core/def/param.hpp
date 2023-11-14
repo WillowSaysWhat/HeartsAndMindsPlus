@@ -273,7 +273,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_IED_DRONE"]);
         values[]={0, 1};
         texts[]={$STR_DISABLED,$STR_ENABLED};
-        default = 0;
+        default = 1;
     };
     class btc_p_hideout_cache_title { // << Hideout/Cache options >>
         title = $STR_BTC_HAM_PARAM_HIDE_TITLE;
