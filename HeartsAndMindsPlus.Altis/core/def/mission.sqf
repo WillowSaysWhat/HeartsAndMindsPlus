@@ -756,6 +756,9 @@ btc_type_motorized_armed = _allclasse select 6;
 btc_type_mg = _allclasse select 7;
 btc_type_gl = _allclasse select 8;
 
+//TempFix
+btc_type_gl = btc_type_mg;
+
 //btc_type_crewmen = "Blabla";
 
 //Sometimes you need to remove units: - ["Blabla","moreBlabla"];

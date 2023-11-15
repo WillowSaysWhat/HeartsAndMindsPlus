@@ -116,6 +116,7 @@ if isServer then
 		while {true} do
 		{
         publicVariable "btc_global_economy";
+        publicVariable "btc_global_reputation";
         sleep 10;
 		};
 	};
