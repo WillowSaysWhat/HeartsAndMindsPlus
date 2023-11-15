@@ -6,7 +6,7 @@ _markedveh1 = [];
 _cfg = configFile >> "cfgVehicles";
 _vehtomark = [];
 
-_vehtomark = btc_vehicles + btc_veh_respawnable;
+_vehtomark = btc_fortify_vehicles + ["rhsusf_m113d_usarmy_medical", "RHS_CH_47F_10_cargo"]; // Manually added two respawnable vics for now.
 
 // Misc variables
 markers_reset = [99999,99999,0];
@@ -15,7 +15,7 @@ while { true } do {
 
     _markedveh = [];
     {
-        if (alive _x && _x in _vehtomark && (_x distance2d btc_gear_object) > 100 && (count (crew _x)) == 0) then {
+        if (alive _x && (typeof _x) in _vehtomark && (_x distance2d btc_gear_object) > 100 && (count (crew _x)) == 0) then {
             _markedveh pushback _x;
         };
     } foreach vehicles;
