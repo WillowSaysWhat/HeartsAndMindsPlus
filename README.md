@@ -4,7 +4,7 @@
 
 <p align="center">
 <b>
-A fully custom take on Hearts and Minds by Vdauphin modified by the Eden development team for use on a private server.
+A custom take on Hearts and Minds by Vdauphin modified by Tetlys and the Eden Development team for use on a private server - Later released due to growing list of modifications and changes.
 </b>
 </p>
 
