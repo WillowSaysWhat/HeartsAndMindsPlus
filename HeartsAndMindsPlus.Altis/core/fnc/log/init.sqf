@@ -42,7 +42,7 @@ if (
     _type in btc_log_def_can_load &&
     {getNumber (configOf _obj >> "ace_cargo_hasCargo") isEqualTo 0}
 ) then {
-    [_obj, round ((sizeOf _type)/1.3)] call ace_cargo_fnc_setSpace;
+    [_obj, round ((sizeOf _type)*2)] call ace_cargo_fnc_setSpace;
 };
 
 if (isNil {_obj getVariable "btc_EDEN_defaultFuelCargo"}) then {

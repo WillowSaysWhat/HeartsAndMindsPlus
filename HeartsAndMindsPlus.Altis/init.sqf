@@ -24,7 +24,7 @@ true,
 true
 ] call CBA_fnc_addClassEventHandler;
 
-//Economy Prices
+//Economy Prices 
 [west, btc_global_economy, [
 ["rhsusf_mrzr4_d",75],
 ["rhsusf_m1045_d",100],
@@ -116,7 +116,7 @@ true
 ["Land_RepairDepot_01_green_F",500],
 ["Land_Cargo20_blue_F",1000],
 ["ACE_Track",5],
-["ACE_Wheel",5],
+["ACE_Wheel",5], 
 ["FlexibleTank_01_sand_F",10],
 ["ACE_fastropingSupplyCrate",25],
 ["Box_NATO_AmmoVeh_F",50],

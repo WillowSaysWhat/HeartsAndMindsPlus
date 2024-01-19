@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=372;
+		nextID=379;
 	};
 	class Camera
 	{
-		pos[]={9183.0469,31.806656,21619.105};
-		dir[]={-0.50295383,-0.47509196,0.72202843};
-		up[]={-0.27155304,0.87993616,0.38983503};
-		aside[]={0.82054639,0,0.57157993};
+		pos[]={9179.8281,25.554459,21656.98};
+		dir[]={-0.79906791,-0.60030866,-0.03410542};
+		up[]={-0.59976667,0.79976141,-0.025599696};
+		aside[]={-0.042644169,-3.5291305e-007,0.99911267};
 	};
 };
 binarizationWanted=0;
@@ -16920,7 +16920,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={9159.376,15.184696,21642.637};
+								position[]={9159.9775,15.181057,21642.605};
 								angles[]={0.0021001773,1.4537013,6.2787504};
 							};
 							side="Empty";
@@ -16932,7 +16932,6 @@ class Mission
 							};
 							id=1258;
 							type="Land_PortableCabinet_01_7drawers_olive_F";
-							atlOffset=0.0010385513;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17033,8 +17032,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9158.6943,14.770075,21642.73};
-										angles[]={0.0021001773,3.3547223,6.2787504};
+										position[]={9160.6748,14.532905,21643.25};
+										angles[]={0.021328852,0.95259774,6.2778478};
 									};
 									side="West";
 									flags=6;
@@ -17743,7 +17742,7 @@ class Mission
 						};
 					};
 					id=1335;
-					atlOffset=0.067560196;
+					atlOffset=0.069842339;
 				};
 				class Item1
 				{
@@ -19944,11 +19943,11 @@ class Mission
 						};
 					};
 					id=1339;
-					atlOffset=185.97;
+					atlOffset=0.021642685;
 				};
 			};
 			id=1334;
-			atlOffset=5.8536148;
+			atlOffset=65.332146;
 		};
 	};
 	class Connections

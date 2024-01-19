@@ -1,4 +1,4 @@
-roleArsenal = {
+roleArsenal = { 
 	params ["_box", "_player"];
 
 	Private _UnitRole = roleDescription _player;

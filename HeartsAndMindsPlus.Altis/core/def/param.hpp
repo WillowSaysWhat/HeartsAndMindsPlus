@@ -1,4 +1,4 @@
-class Params {
+class Params { 
     class btc_p_time_title { // << Time options >>
         title = $STR_BTC_HAM_PARAM_TIME_TITLE;
         values[]={0};
@@ -163,15 +163,15 @@ class Params {
     };
     class btc_p_civ { // Civil type: [Guide to add more in docs]
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_FAC_CTYPE"]);
-        values[]={0,1,2,3,4,5};
-        texts[]={"0 - Bohemia Interactive: Civilians (Side: CIV)","1 - Bohemia Interactive: Other (Side: CIV)","2 - ORANGE Bohemia Interactive: IDAP (Side: CIV)","3 - UK3CB_Factions www.3commandobrigade.com: 3CB African Desert Civilians (Side: CIV)","4 - UK3CB_Factions www.3commandobrigade.com: 3CB Chernarus Civilians (Side: CIV)","5 - UK3CB_Factions www.3commandobrigade.com: 3CB Takistan Civilians (Side: CIV)"};
-        default = 1;
+        values[]={0,1};
+        texts[]={"0 - Bohemia Interactive: Civilians (Side: CIV)","1 - Bohemia Interactive: Other (Side: CIV)"};
+        default = 0;
     };
     class btc_p_civ_veh { // Civil vehicle type: [Guide to add more in docs]
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_FAC_CTYPEVEH"]);
-        values[]={0,1,2,3,4,5};
-        texts[]={"0 - Bohemia Interactive: Civilians (Side: CIV)","1 - Bohemia Interactive: Other (Side: CIV)","2 - ORANGE Bohemia Interactive: IDAP (Side: CIV)","3 - UK3CB_Factions www.3commandobrigade.com: 3CB African Desert Civilians (Side: CIV)","4 - UK3CB_Factions www.3commandobrigade.com: 3CB Chernarus Civilians (Side: CIV)","5 - UK3CB_Factions www.3commandobrigade.com: 3CB Takistan Civilians (Side: CIV)"};
-        default = 3;
+        values[]={0,1};
+        texts[]={"0 - Bohemia Interactive: Civilians (Side: CIV)","1 - Bohemia Interactive: Other (Side: CIV)"};
+        default = 0;
     };
     class btc_p_spawn_title { // << Spawn options >>
         title = $STR_BTC_HAM_PARAM_SPAWN_TITLE;

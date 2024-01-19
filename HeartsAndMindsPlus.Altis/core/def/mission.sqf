@@ -387,7 +387,7 @@ if (isServer) then {
 //Civ
 // Get all faction from mod there are currently running
 //copyToClipboard str (["CIV"] call btc_fnc_get_class);
-private _allfaction = ["CIV_F","DEFAULT","CIV_IDAP_F","UK3CB_ADC_C","UK3CB_CHC_C","UK3CB_TKC_C"]; //All factions
+private _allfaction = ["CIV_F","DEFAULT"]; //All factions
 _p_civ = _allfaction select _p_civ; //Select faction selected from mission parameter
 _p_civ_veh = _allfaction select _p_civ_veh; //Select faction selected from mission parameter
 private _allclasse = [[_p_civ]] call btc_civ_fnc_class; //Create classes from factions, you can combine factions from the SAME side : [[_p_civ, "btc_ac","LOP_TAK_CIV"]] call btc_civ_fnc_class.
@@ -458,11 +458,12 @@ btc_type_hazmat = ["HazmatBag_01_F", "Land_MetalBarrel_F"] + (_allClassSorted se
     {_x isKindOf "CBRNContainer_01_base_F"} ||
     {_x isKindOf "PlasticCase_01_base_F"}
 });
-
+ 
 //Player
 btc_player_side = west;
 btc_respawn_marker = "respawn_west";
 btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, independent] find btc_player_side);
+
 
 fortify_enemy_vehicles = [
 "UK3CB_ARD_O_Hilux_GMG",
