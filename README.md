@@ -5,7 +5,6 @@
 Enhanced air support, player scaling, custom UI, dynamic economy, and more! 🌟
 
 [![GitHub Release](https://img.shields.io/github/v/release/Tetlys/HeartsAndMindsPlus?include_prereleases&color=success)](https://github.com/Tetlys/HeartsAndMindsPlus/releases/tag/Beta1.0)
-[![Required Mods](https://img.shields.io/badge/required%20mods-CBA%20%7C%20ACE%20%7C%20H%26M%2BCompat-blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)  
 [![Discord](https://img.shields.io/discord/1234567890?label=Discord&logo=discord&color=blue)](https://discord.gg/4DdMKvJjMa)
 
 ## Overview 🌐
