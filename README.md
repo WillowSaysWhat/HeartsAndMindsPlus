@@ -13,7 +13,7 @@ HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the 
 
 ### Features 🛠️
 
-- **Custom CAS Script:** In-depth air support with laser, smoke, and tracking effects. Full ROE and collateral damage chat response.
+- **CAS Script:** In-depth air support with laser, smoke, and tracking effects. Full ROE and collateral damage chat response - Created by ARJay.
 - **Player Scaling:** Adjust AI count based on current online players.
 - **Custom UI:** Revamped shop and salvage interfaces.
 - **Build System:** Construct at any FOB using the all-new economy.
