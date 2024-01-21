@@ -23,6 +23,7 @@ HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the 
 - **Role-Specific Arsenal:** Tailored loadouts for different roles.
 - **Improved VIV and Object Loading:** Enhancements for better gameplay.
 - **Modified Map Markers:** - Changed to better suit larger groups of players.
+- **Building Damage Modifiers changed:** - Changed to better suit larger full warefare scenarios. 
 
 ### Deprecated Features ⚠️
 
