@@ -63,6 +63,28 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
     };
 }] call CBA_fnc_waitUntilAndExecute;
 
+//SUPPORT CODE
+
+Private _UnitRole = roleDescription player;
+
+private _uid = getplayeruid player; 
+private _NAME = name player;
+private _OUTPUT = [_name, "False:False:False:0:0"] joinstring ":";
+private _PLAYER = BTC_Player_array getOrDefault [_UID, _OUTPUT, true];
+
+_index = _PLAYER splitstring ":";
+
+_NAME = _index select 0;
+_BUILDPERM = _index select 1;
+_SALVAGEPERM = _index select 2;
+_COMMANDPERM = _index select 3;
+
+player setVariable ["interpreter",true];
+
+if (_BUILDPERM == "true") then {player setVariable ["allow_build",true];};
+if (_SALVAGEPERM == "true") then {player setVariable ["allow_salvage",true];};
+if (_COMMANDPERM == "true") then {player setVariable ["side_mission",true]; player setVariable ["APW_initAddaction",true]; [player,"initPlayer"] call APW_fnc_APWMain;};
+
 // PLAYER HUD
 [] spawn
 	{
@@ -79,7 +101,7 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
             _myHudControl ctrlSetFont "PuristaSemiBold";
             _myHudControl ctrlSetTextColor [1,1,1,1]; 
             
-            _respawnTickets = [missionNamespace] call BIS_fnc_respawnTickets;
+            _respawnTickets = [] call BIS_fnc_respawnTickets;
             //if (btc_p_respawn_ticketsAtStart == 0) then {
             //    _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3", _myNumber, _currentplayers, btc_global_reputation]; 
             //} else {

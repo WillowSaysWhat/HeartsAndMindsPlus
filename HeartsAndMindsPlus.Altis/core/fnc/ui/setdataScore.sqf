@@ -44,6 +44,6 @@ params ["_Change","_UID"];
 
 	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_KILLS,_DEATHS]joinString ":";
 	BTC_Player_array set [_UID,_OUTPUT];
-	hint _output;
+    publicVariable "btc_player_array";
 
 

@@ -59,8 +59,8 @@ CHANGE = _change;
 
 	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_KILLS,_DEATHS]joinString ":";
 	BTC_Player_array set [_UID,_OUTPUT];
-	hint _output;
-
+	publicVariable "btc_player_array";
 	[] call tet_ui_loadperms;
+	
 
 }, [lbData [88, lbCurSel 88]], 0.5] call CBA_fnc_waitAndExecute;
