@@ -60,6 +60,7 @@ CHANGE = _change;
 	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_KILLS,_DEATHS]joinString ":";
 	BTC_Player_array set [_UID,_OUTPUT];
 	publicVariable "btc_player_array";
+	
 	[] call tet_ui_loadperms;
 	
 
