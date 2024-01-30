@@ -84,6 +84,8 @@ player setVariable ["interpreter",true];
 if (_BUILDPERM == "true") then {player setVariable ["allow_build",true];};
 if (_SALVAGEPERM == "true") then {player setVariable ["allow_salvage",true];};
 if (_COMMANDPERM == "true") then {player setVariable ["side_mission",true]; player setVariable ["APW_initAddaction",true]; [player,"initPlayer"] call APW_fnc_APWMain;};
+publicVariable "btc_player_array";
+
 
 // PLAYER HUD
 [] spawn
