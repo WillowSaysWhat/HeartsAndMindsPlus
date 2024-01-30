@@ -41,6 +41,3 @@ player setVariable ["interpreter",true];
 if (parseNumber _BUILDPERM == 1) then {_player setVariable ["allow_build",true];};;
 if (parseNumber _SALVAGEPERM == 1) then {_player setVariable ["allow_salvage",true];};
 if (parseNumber _COMMANDPERM == 1) then {_player setVariable ["side_mission",true]; _player setVariable ["APW_initAddaction",true]; [_player,"initPlayer"] call APW_fnc_APWMain;};
-
-
-publicVariable "btc_player_array";
