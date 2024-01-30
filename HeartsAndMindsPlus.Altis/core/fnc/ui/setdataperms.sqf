@@ -38,22 +38,22 @@ CHANGE = _change;
 
 	switch (CHANGE) do {
 			case "AllowBuild" : {
-				_BUILDPERM = true;
+				_BUILDPERM = 1;
 		};
 			case "DenyBuild" : {
-				_BUILDPERM = false;
+				_BUILDPERM = 0;
 		};
 			case "AllowSalvage" : {
-				_SALVAGEPERM = true;
+				_SALVAGEPERM = 1;
 		};
 			case "DenySalvage" : {
-				_SALVAGEPERM = false;
+				_SALVAGEPERM = 0;
 		};
 			case "AllowCommand" : {
-				_COMMANDPERM = true;
+				_COMMANDPERM = 1;
 		};
 			case "DenyCommand" : {
-				_COMMANDPERM = false;
+				_COMMANDPERM = 0;
 		};
 	};
 
