@@ -12,11 +12,20 @@
 
 Private _UnitRole = roleDescription player;
 
-if (_UnitRole == "Commander") then {
-[player, BIS_requesterMod, BIS_providerMod] call BIS_fnc_addSupportLink;
-};
-
 private _uid = getplayeruid player; 
 private _NAME = name player;
 private _OUTPUT = [_name, "False:False:False:0:0"] joinstring ":";
-BTC_Player_array getOrDefault [_UID, _OUTPUT, true];
+private _PLAYER = BTC_Player_array getOrDefault [_UID, _OUTPUT, true];
+
+_index = _PLAYER splitstring ":";
+
+_NAME = _index select 0;
+_BUILDPERM = _index select 1;
+_SALVAGEPERM = _index select 2;
+_COMMANDPERM = _index select 3;
+
+player setVariable ["interpreter",true];
+
+if (_BUILDPERM == "true") then {player setVariable ["allow_build",true];};
+if (_SALVAGEPERM == "true") then {player setVariable ["allow_salvage",true];};
+if (_COMMANDPERM == "true") then {player setVariable ["side_mission",true]; player setVariable ["APW_initAddaction",true]; [player,"initPlayer"] call APW_fnc_APWMain;};

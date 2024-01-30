@@ -46,6 +46,8 @@ addMissionEventHandler ["BuildingChanged", btc_rep_fnc_buildingchanged];
 ["btc_respawn_player", {
     params ["", "_player"];
     [btc_rep_malus_player_respawn, _player] call btc_rep_fnc_change;
+    _uid = getplayerUID _player;
+    ["DEATH",_uid] call tet_ui_setdatascore;
     btc_slots_serialized set [
         _player getVariable ["btc_slot_key", [0, 0, 0]],
         [] // Reset serialized data if slot died

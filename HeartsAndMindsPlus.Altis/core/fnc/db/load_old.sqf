@@ -136,6 +136,10 @@ publicVariable "btc_global_reputation";
 btc_global_economy = profileNamespace getVariable [format ["btc_hm_%1_eco", _name], 0];
 publicVariable "btc_global_economy";
 
+//UI
+btc_player_array = profileNamespace getVariable [format ["btc_hm_%1_playerdb", _name], 0];
+publicVariable "btc_player_array";
+
 //Objects
 {deleteVehicle _x} forEach (getMissionLayerEntities "btc_vehicles" select 0);
 if !(isNil "btc_vehicles") then {

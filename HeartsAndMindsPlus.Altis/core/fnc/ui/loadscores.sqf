@@ -36,7 +36,7 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _DEATHS = _index select 5;
 
 
-    private _displayout = [_NAME,"Kills:",_KILLS,"Deaths:",_DEATHS] joinString " ";
+    private _displayout = [_NAME,"    |     ","Kills:",_KILLS,"    |     ","Deaths:",_DEATHS] joinString " ";
     
     private _index = lbAdd [89, _displayout];
     lbSetData [89, _index, _selected];

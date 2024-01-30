@@ -122,6 +122,10 @@ profileNamespace setVariable [format ["btc_hm_%1_rep", _name], btc_global_reputa
 //ECONOMY
 profileNamespace setVariable [format ["btc_hm_%1_eco", _name], btc_global_economy];
 
+//PLAYERDATA
+profileNamespace setVariable [format ["btc_hm_%1_playerdb", _name], btc_player_array];
+
+
 //FOBS
 private _fobs = [];
 {

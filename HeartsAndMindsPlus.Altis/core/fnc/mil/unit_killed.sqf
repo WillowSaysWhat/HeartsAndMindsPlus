@@ -32,6 +32,8 @@ if (random 100 > btc_info_intel_chance) then {
 
 if (isPlayer _instigator) then {
     [btc_rep_bonus_mil_killed, _instigator] call btc_rep_fnc_change;
+    _uid = getplayerUID _instigator;
+    ["KILL", _uid] call tet_ui_setdatascore;
     //ECONOMY
     [west, 1, false] call acex_fortify_fnc_updateBudget;
     btc_global_economy = btc_global_economy + 1;

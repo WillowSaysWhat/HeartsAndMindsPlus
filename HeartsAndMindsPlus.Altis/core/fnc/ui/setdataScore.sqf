@@ -11,7 +11,7 @@ Returns:
 
 Examples:
     (begin example)
-        _result = [kill] call tet_ui_setdatascore;
+        _result = ["kill"] call tet_ui_setdatascore;
     (end)
 
 Author:
@@ -19,11 +19,31 @@ Author:
 
 ---------------------------------------------------------------------------- */
 
-params ["_Change","_playerID"];
+params ["_Change","_UID"];
 
-	private _uid = _selected select 0;
-	private _name = _selected select 1;
+	_player = BTC_Player_array get _UID;
+    _index = _player splitstring ":";
+    _NAME = _index select 0;
+    _BUILDPERM = _index select 1;
+    _SALVAGEPERM = _index select 2;
+    _COMMANDPERM = _index select 3;
+    _KILLS = _index select 4;
+    _DEATHS = _index select 5;
 
-	
-	BTC_Player_array set [_uid,_data];
+    _NUMKILLS = parseNumber _KILLS;
+    _NUMDEATHS = parseNumber _DEATHS;
+
+	switch (_Change) do {
+			case "KILL" : {
+				_KILLS = _NUMKILLS + 1;
+		};
+			case "DEATH" : {
+				_DEATHS = _NUMDEATHS + 1;
+		};
+	};
+
+	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_KILLS,_DEATHS]joinString ":";
+	BTC_Player_array set [_UID,_OUTPUT];
+	hint _output;
+
 

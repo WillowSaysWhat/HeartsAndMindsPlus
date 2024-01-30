@@ -146,16 +146,32 @@ _action = ["Dismantle_FOB", localize "STR_BTC_HAM_ACTION_FOB_DISMANTLE", "", {_t
 [btc_fob_flag, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
 
 //FORTIFY
-_action = ["salvage_menu", "Salvage Menu", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\D_ca.paa", {
+_action = ["salvage_menu", "Salvage Menu", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\S_ca.paa", {
 params ["", "", "_params"];
 _params spawn tet_fortify_opensalvage
 }, {true}] call ace_interact_menu_fnc_createAction;
 [btc_recovery, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
 
-_action = ["Build_Menu", "Build Menu", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\D_ca.paa", {
+_action = ["Build_Menu", "Build Menu", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\B_ca.paa", {
     params ["", "", "_params"];
     _params spawn tet_fortify_open
 }, {player getVariable ["allow_build", false]}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+
+// SCOREBOARD
+
+_action = ["Score_Board", "Score Board", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\S_ca.paa", {
+    params ["", "", "_params"];
+    [] call tet_ui_openscores;
+}, {true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+
+// PERMISSIONS
+
+_action = ["Permissions", "Permissions", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\P_ca.paa", {
+    params ["", "", "_params"];
+    [] call tet_ui_openperms;
+}, {serverCommandAvailable "#logout"}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 //Orders

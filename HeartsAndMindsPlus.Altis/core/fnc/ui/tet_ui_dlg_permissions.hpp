@@ -114,7 +114,7 @@ class tet_ui_dlg_permissions
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[AllowBuild] call tet_ui_setdata;";
+			onButtonClick = "['AllowBuild'] call tet_ui_setdataperms;";
 			
 		};
 		class Button_1_copy2
@@ -146,7 +146,7 @@ class tet_ui_dlg_permissions
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[DenyBuild] call tet_ui_setdata;";
+			onButtonClick = "['DenyBuild'] call tet_ui_setdataperms;";
 			
 		};
 		class Button_1_copy3
@@ -178,7 +178,7 @@ class tet_ui_dlg_permissions
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[AllowSalvage] call tet_ui_setdata;";
+			onButtonClick = "['AllowSalvage'] call tet_ui_setdataperms;";
 			
 		};
 		class Button_1_copy4
@@ -210,7 +210,7 @@ class tet_ui_dlg_permissions
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[DenySalvage] call tet_ui_setdata;";
+			onButtonClick = "['DenySalvage'] call tet_ui_setdataperms;";
 			
 		};
 		class Button_1_copy5
@@ -242,7 +242,7 @@ class tet_ui_dlg_permissions
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[AllowCommand] call tet_ui_setdata;";
+			onButtonClick = "['AllowCommand'] call tet_ui_setdataperms;";
 			
 		};
 		class Button_1_copy6
@@ -274,7 +274,7 @@ class tet_ui_dlg_permissions
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[DenyCommand] call tet_ui_setdata;";
+			onButtonClick = "['DenyCommand'] call tet_ui_setdataperms;";
 			
 		};
 		class PERMISSIONS

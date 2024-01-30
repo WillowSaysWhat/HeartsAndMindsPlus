@@ -31,14 +31,6 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
         player createDiarySubject ["btc_diarylog", localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG", '\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa'];
     };
 
-    // CAS SCRIPT
-    Private _UnitRole = roleDescription player;
-    if (_UnitRole == "Commander") then {
-    player setVariable ["APW_initAddaction",true];
-    [player,"initPlayer"] call APW_fnc_APWMain;
-    };
-
-
     switch (btc_p_autoloadout) do {
         case 1: {
             player setUnitLoadout ([_arsenal_trait select 0] call btc_arsenal_fnc_loadout);
