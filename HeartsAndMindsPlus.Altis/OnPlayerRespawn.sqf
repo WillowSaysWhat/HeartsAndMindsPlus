@@ -7,3 +7,6 @@
         [_box, player] call roleArsenal;
     };
 } forEach ARSENAL_CRATES;
+
+//UI
+[player] remoteExec ["tet_ui_init",2];
