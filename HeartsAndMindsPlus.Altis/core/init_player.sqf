@@ -64,7 +64,7 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
 }] call CBA_fnc_waitUntilAndExecute;
 
 //UI
-[player] remoteExec ["tet_ui_init",2];
+[player] call tet_ui_init;
 
 
 // PLAYER HUD

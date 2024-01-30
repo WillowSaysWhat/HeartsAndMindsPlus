@@ -9,4 +9,4 @@
 } forEach ARSENAL_CRATES;
 
 //UI
-[player] remoteExec ["tet_ui_init",2];
+[player] call tet_ui_init;

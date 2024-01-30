@@ -24,8 +24,6 @@ params ["_player"];
 
 //SUPPORT CODE
 
-Private _UnitRole = roleDescription _player;
-
 private _uid = getplayeruid _player; 
 private _NAME = name _player;
 private _OUTPUT = [_name, "0:0:0:0:0"] joinstring ":";
