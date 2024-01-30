@@ -101,7 +101,7 @@ if (_COMMANDPERM == "true") then {player setVariable ["side_mission",true]; play
             _myHudControl ctrlSetFont "PuristaSemiBold";
             _myHudControl ctrlSetTextColor [1,1,1,1]; 
             
-            _respawnTickets = [] call BIS_fnc_respawnTickets;
+            _respawnTickets = [player, nil, true] call BIS_fnc_respawnTickets;
             //if (btc_p_respawn_ticketsAtStart == 0) then {
             //    _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3", _myNumber, _currentplayers, btc_global_reputation]; 
             //} else {
