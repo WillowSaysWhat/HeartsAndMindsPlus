@@ -87,8 +87,15 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
             _myHudControl ctrlSetFont "PuristaSemiBold";
             _myHudControl ctrlSetTextColor [1,1,1,1]; 
             
+            _respawnTickets = [missionNamespace] call BIS_fnc_respawnTickets;
+            //if (btc_p_respawn_ticketsAtStart == 0) then {
+            //    _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3", _myNumber, _currentplayers, btc_global_reputation]; 
+            //} else {
+                _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3 | Player Tickets : %4", _myNumber, _currentplayers, btc_global_reputation, _respawnTickets]; 
+            //};
+            
             // Update the HUD item with the latest UI number 
-            _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3", _myNumber, _currentplayers, btc_global_reputation]; 
+            //_myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3", _myNumber, _currentplayers, btc_global_reputation]; 
             //_myHudControl ctrlSetStructuredText parseText format["<t align='center'>Online Players : %2 | Current Funds : $%1 | Current Rep : %3</t>", _myNumber, _currentplayers, btc_global_reputation];
             _hudX = safeZoneX + 0.35 * safeZoneW; 
             _hudY = safeZoneY; 

@@ -1,6 +1,7 @@
 
 [compileScript ["core\init.sqf"]] call CBA_fnc_directCall;
 
+BTC_Player_array = createHashMap;
 
 //ARSENAL 
 [] call compileFinal preprocessFileLineNumbers "core\def\rolearsenal.sqf";
