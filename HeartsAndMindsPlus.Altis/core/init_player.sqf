@@ -16,8 +16,11 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
     
     btc_respawn_marker setMarkerPosLocal player;
     player addRating 9999;
-    //["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 
+    //UI
+    [player] call tet_ui_init;
+
+    // ACTIONS
     [player] call btc_eh_fnc_player;
 
     // ARSNEAL SCRIPTS
@@ -62,9 +65,6 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
         }] call CBA_fnc_waitUntilAndExecute;
     };
 }] call CBA_fnc_waitUntilAndExecute;
-
-//UI
-[player] call tet_ui_init;
 
 
 // PLAYER HUD

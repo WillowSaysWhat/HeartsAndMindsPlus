@@ -371,6 +371,12 @@ if (isServer) then {
 
     btc_groundWeaponHolder = [];
 
+    //UI
+
+    BTC_Player_array = createHashMap;
+    
+    BTC_UID_array = createHashMap;
+
     //Respawn
     btc_respawn_tickets = createHashMap;
 

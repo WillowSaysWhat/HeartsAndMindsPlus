@@ -308,6 +308,7 @@ tet_fortify_eco = compileScript ["core\fnc\fortify\eco.sqf"];
 tet_fortify_delete = compileScript ["core\fnc\fortify\delete.sqf"];
 
 //UI
+tet_ui_KEY = compileScript ["core\fnc\ui\KEY.sqf"];
 tet_ui_init = compileScript ["core\fnc\ui\init.sqf"];
 tet_ui_setdataperms = compileScript ["core\fnc\ui\setdataperms.sqf"];
 tet_ui_setdatascore = compileScript ["core\fnc\ui\setdatascore.sqf"];

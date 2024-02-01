@@ -117,6 +117,8 @@ if isServer then
 		{
         publicVariable "btc_global_economy";
         publicVariable "btc_global_reputation";
+        publicvariable "BTC_PLAYER_array";
+        publicvariable "BTC_UID_array";
         sleep 10;
 		};
 	};

@@ -7,6 +7,3 @@
         [_box, player] call roleArsenal;
     };
 } forEach ARSENAL_CRATES;
-
-//UI
-[player] call tet_ui_init;

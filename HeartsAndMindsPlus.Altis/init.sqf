@@ -1,9 +1,6 @@
 
 [compileScript ["core\init.sqf"]] call CBA_fnc_directCall;
 
-BTC_Player_array = createHashMap;
-publicVariable "btc_player_array";
-
 //ARSENAL 
 [] call compileFinal preprocessFileLineNumbers "core\def\rolearsenal.sqf";
 
@@ -210,4 +207,6 @@ true
   params ["_player", "_object", "_cost"];
    _object enableSimulation false;
 }] call CBA_fnc_addEventHandler;
+ 
+
  

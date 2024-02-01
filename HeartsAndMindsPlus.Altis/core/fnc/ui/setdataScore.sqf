@@ -21,8 +21,9 @@ Author:
 
 params ["_Change","_UID"];
 
-	_player = BTC_Player_array get _UID;
-    _index = _player splitstring ":";
+	_PlayerKey = [_UID] call tet_ui_KEY;
+	_playerdata = BTC_Player_array get _PlayerKey;
+    _index = _playerdata splitstring ":";
     _NAME = _index select 0;
     _BUILDPERM = _index select 1;
     _SALVAGEPERM = _index select 2;
@@ -44,6 +45,6 @@ params ["_Change","_UID"];
 
 	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_KILLS,_DEATHS]joinString ":";
 	BTC_Player_array set [_UID,_OUTPUT];
-    publicVariable "btc_player_array";
 
-
+    publicvariable "BTC_PLAYER_array";
+    publicvariable "BTC_UID_array";

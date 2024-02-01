@@ -24,9 +24,11 @@ lbClear 88;
 for "_i" from 0 to ((count BTC_Player_array) -1) do {
 
     _array = keys BTC_Player_array;
-    _UID =  _array select _i;
-    _player = BTC_Player_array get _UID;
-    _index = _player splitstring ":";
+    _PLAYERKEY =  _array select _i;
+    _playerdata = BTC_Player_array get _PLAYERKEY;
+    _index = _playerdata splitstring ":";
+
+    _UID = BTC_UID_array get _PLAYERKEY;
 
     _NAME = _index select 0;
     _BUILDPERM = _index select 1;

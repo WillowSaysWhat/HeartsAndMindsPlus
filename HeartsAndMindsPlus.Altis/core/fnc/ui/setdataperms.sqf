@@ -26,9 +26,9 @@ CHANGE = _change;
 [{
     params ["_UID"];
 
-
-	_player = BTC_Player_array get _UID;
-    _index = _player splitstring ":";
+	_PlayerKey = [_UID] call tet_ui_KEY;
+	_playerdata = BTC_Player_array get _PlayerKey;
+    _index = _playerdata splitstring ":";
     _NAME = _index select 0;
     _BUILDPERM = _index select 1;
     _SALVAGEPERM = _index select 2;
@@ -58,10 +58,11 @@ CHANGE = _change;
 	};
 
 	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_KILLS,_DEATHS]joinString ":";
-	BTC_Player_array set [_UID,_OUTPUT];
-	publicVariable "btc_player_array";
-	
-	[] call tet_ui_loadperms;
-	
+	BTC_Player_array set [_PlayerKey,_OUTPUT];
+
+	call tet_ui_loadperms;
+
+	publicvariable "BTC_PLAYER_array";
+	publicvariable "BTC_UID_array";
 
 }, [lbData [88, lbCurSel 88]], 0.5] call CBA_fnc_waitAndExecute;

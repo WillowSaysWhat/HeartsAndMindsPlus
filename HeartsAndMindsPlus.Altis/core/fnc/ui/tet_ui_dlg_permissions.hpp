@@ -8,10 +8,10 @@ class tet_ui_dlg_permissions
 		{
 			type = 0;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.11927084;
-			y = safeZoneY + safeZoneH * 0.16296297;
-			w = safeZoneW * 0.76197917;
-			h = safeZoneH * 0.7212963;
+			x = -0.42297978;
+			y = -0.11178449;
+			w = 1.84722224;
+			h = 1.31144782;
 			style = 0;
 			text = "";
 			colorBackground[] = {0.1725,0.2431,0.3137,0.75};
@@ -24,36 +24,7 @@ class tet_ui_dlg_permissions
 	};
 	class Controls
 	{
-		class BODY
-		{
-			type = 5;
-			idc = 88;
-			x = safeZoneX + safeZoneW * 0.12792969;
-			y = safeZoneY + safeZoneH * 0.26215278;
-			w = safeZoneW * 0.58886719;
-			h = safeZoneH * 0.50520834;
-			style = 16;
-			colorBackground[] = {0.2039,0.2863,0.3686,1};
-			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelect[] = {0.9059,0.298,0.2353,1};
-			colorText[] = {0.7412,0.7647,0.7804,1};
-			font = "PuristaMedium";
-			maxHistoryDelay = 0;
-			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
-			class ListScrollBar
-			{
-				color[] = {0.498,0.549,0.5529,1};
-				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
-				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
-				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
-				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
-				
-			};
-			
-		};
-		class Button_0_Close
+		class CloseButton
 		{
 			type = 1;
 			idc = -1;
@@ -85,14 +56,14 @@ class tet_ui_dlg_permissions
 			onButtonClick = "closeDialog 0;";
 			
 		};
-		class Button_1_copy1
+		class AllowBuild
 		{
 			type = 1;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.12760417;
-			y = safeZoneY + safeZoneH * 0.78148149;
-			w = safeZoneW * 0.09010417;
-			h = safeZoneH * 0.08425926;
+			x = -0.40277771;
+			y = 1.01178453;
+			w = 0.21843436;
+			h = 0.15319866;
 			style = 2;
 			text = "ALLOW BUILD";
 			borderSize = 0;
@@ -117,13 +88,13 @@ class tet_ui_dlg_permissions
 			onButtonClick = "['AllowBuild'] call tet_ui_setdataperms;";
 			
 		};
-		class Button_1_copy2
+		class DenyBuild
 		{
 			type = 1;
 			idc = -1;
-			x = -0.16277776;
+			x = -0.14393937;
 			y = 1.01178453;
-			w = 0.22843436;
+			w = 0.22853537;
 			h = 0.15319866;
 			style = 2;
 			text = "DENY BUILD";
@@ -149,14 +120,14 @@ class tet_ui_dlg_permissions
 			onButtonClick = "['DenyBuild'] call tet_ui_setdataperms;";
 			
 		};
-		class Button_1_copy3
+		class AllowSalvage
 		{
 			type = 1;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.32864584;
-			y = safeZoneY + safeZoneH * 0.78148149;
-			w = safeZoneW * 0.09010417;
-			h = safeZoneH * 0.08425926;
+			x = 0.13373741;
+			y = 1.01178453;
+			w = 0.21843436;
+			h = 0.15319866;
 			style = 2;
 			text = "ALLOW SALVAGE";
 			borderSize = 0;
@@ -181,14 +152,14 @@ class tet_ui_dlg_permissions
 			onButtonClick = "['AllowSalvage'] call tet_ui_setdataperms;";
 			
 		};
-		class Button_1_copy4
+		class DenySalvage
 		{
 			type = 1;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.4265625;
-			y = safeZoneY + safeZoneH * 0.78148149;
-			w = safeZoneW * 0.09010417;
-			h = safeZoneH * 0.08425926;
+			x = 0.40015152;
+			y = 1.01178453;
+			w = 0.21843436;
+			h = 0.15319866;
 			style = 2;
 			text = "DENY SALVAGE";
 			borderSize = 0;
@@ -213,14 +184,14 @@ class tet_ui_dlg_permissions
 			onButtonClick = "['DenySalvage'] call tet_ui_setdataperms;";
 			
 		};
-		class Button_1_copy5
+		class AllowCommand
 		{
 			type = 1;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.52447917;
-			y = safeZoneY + safeZoneH * 0.78148149;
-			w = safeZoneW * 0.09010417;
-			h = safeZoneH * 0.08425926;
+			x = 0.66646467;
+			y = 1.01178453;
+			w = 0.21843436;
+			h = 0.15319866;
 			style = 2;
 			text = "ALLOW COMMAND";
 			borderSize = 0;
@@ -245,14 +216,14 @@ class tet_ui_dlg_permissions
 			onButtonClick = "['AllowCommand'] call tet_ui_setdataperms;";
 			
 		};
-		class Button_1_copy6
+		class DenyCommand
 		{
 			type = 1;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.6234375;
-			y = safeZoneY + safeZoneH * 0.78148149;
-			w = safeZoneW * 0.09010417;
-			h = safeZoneH * 0.08425926;
+			x = 0.92636364;
+			y = 1.01178453;
+			w = 0.21843436;
+			h = 0.15319866;
 			style = 2;
 			text = "DENY COMMAND";
 			borderSize = 0;
@@ -277,22 +248,84 @@ class tet_ui_dlg_permissions
 			onButtonClick = "['DenyCommand'] call tet_ui_setdataperms;";
 			
 		};
-		class PERMISSIONS
+		class DeleteUser
+		{
+			type = 1;
+			idc = -1;
+			x = 1.18636365;
+			y = 1.01178453;
+			w = 0.21843436;
+			h = 0.15319866;
+			style = 2;
+			text = "DELETE USER";
+			borderSize = 0;
+			colorBackground[] = {0.2039,0.2863,0.3686,1};
+			colorBackgroundActive[] = {0.1725,0.2431,0.3137,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0,0,0,0};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.1725,0.2431,0.3137,1};
+			colorShadow[] = {0.1725,0.2431,0.3137,1};
+			colorText[] = {0.7412,0.7647,0.7804,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onButtonClick = "FILL ME IN";
+			
+		};
+		class PermissionsTop
 		{
 			type = 0;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.1296875;
-			y = safeZoneY + safeZoneH * 0.17222223;
-			w = safeZoneW * 0.54270834;
-			h = safeZoneH * 0.0462963;
+			x = -0.39772727;
+			y = -0.09595958;
+			w = 1.73565663;
+			h = 0.0841751;
 			style = 0;
-			text = "PERMISSIONS";
+			text = "PERMISSIONS                                     ( ALL CHANGES REQUIRE USER TO RELOG TO TAKE EFFECT )";
 			colorBackground[] = {0.1725,0.2431,0.3137,1};
 			colorText[] = {0.7412,0.7647,0.7804,1};
 			font = "PuristaBold";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
+		class PermissionsBody
+		{
+			type = 5;
+			idc = 88;
+			x = -0.40277776;
+			y = 0.00734009;
+			w = 1.80676779;
+			h = 0.97919193;
+			style = 16;
+			colorBackground[] = {0.2039,0.2863,0.3686,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorSelect[] = {0.9059,0.298,0.2353,1};
+			colorText[] = {0.7412,0.7647,0.7804,1};
+			font = "PuristaMedium";
+			maxHistoryDelay = 0;
+			rowHeight = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
+			class ListScrollBar
+			{
+				color[] = {0.498,0.549,0.5529,1};
+				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+				
+			};
+			
+		};
+		
 	};
 	
 };
