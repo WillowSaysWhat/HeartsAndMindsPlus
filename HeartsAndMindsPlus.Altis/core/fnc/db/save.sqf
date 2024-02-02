@@ -124,6 +124,7 @@ profileNamespace setVariable [format ["btc_hm_%1_eco", _name], btc_global_econom
 
 //PLAYERDATA
 profileNamespace setVariable [format ["btc_hm_%1_playerdb", _name], btc_player_array];
+profileNamespace setVariable [format ["btc_hm_%1_playeruid", _name], btc_uid_array];
 
 
 //FOBS
