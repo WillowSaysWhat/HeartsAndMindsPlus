@@ -1,6 +1,7 @@
 
 [compileScript ["core\init.sqf"]] call CBA_fnc_directCall;
 
+
 //ARSENAL 
 [] call compileFinal preprocessFileLineNumbers "core\def\rolearsenal.sqf";
 
@@ -169,6 +170,7 @@ true
 
 ["acex_fortify_objectPlaced", {
   params ["_player", "_side", "_objectPlaced"];
+  [_objectPlaced,_objectPlaced] call ace_common_fnc_claim;
     if (_objectPlaced isKindof "AllVehicles")then{
       _objectPlaced call btc_veh_fnc_add;
       _type = typeOf _objectPlaced;
@@ -207,6 +209,4 @@ true
   params ["_player", "_object", "_cost"];
    _object enableSimulation false;
 }] call CBA_fnc_addEventHandler;
- 
-
  

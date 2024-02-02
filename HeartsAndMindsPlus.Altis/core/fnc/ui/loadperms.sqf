@@ -34,8 +34,14 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _BUILDPERM = _index select 1;
     _SALVAGEPERM = _index select 2;
     _COMMANDPERM = _index select 3;
-    _KILLS = _index select 4;
-    _DEATHS = _index select 5;
+    _MANKILLS = _index select 4;
+    _VICKILLS = _index select 5;
+    _AIRKILLS = _index select 6;
+    _SEAKILLS = _index select 7;
+    _CIVKILLS =  _index select 8;
+    _DEATHS = _index select 9;
+    _REPUTATION = _index select 10;
+
 
 
 	private _displayout = [_NAME,"    |     ","CanBuild: ",_BUILDPERM,"    |     ","CanSalvage: ",_SALVAGEPERM,"    |     ","CanCommand: ",_COMMANDPERM] joinString "";

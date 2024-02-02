@@ -19,13 +19,16 @@ Author:
     Tetlys
 
 ---------------------------------------------------------------------------- */
+// NAME, BUILD, SALVAGE, COMMAND, DEATHS, CIV KILLS, MAN KILLS, VEHICLE KILLS, AIR KILLS, BOAT KILLS, REPEFFECT
+// [Name:BuildPerm,SalvPerm,CommandPerm,RepEffect,ManKills,VehicleKills,AirKills,BoatKills,CivKills,Deaths]
+// [_name,"0:0:0:0:0:0:0:0:0:0"]
 
 params ["_player"];
 
 _UID = getplayeruid _player; 
 _NAME = name _player;
 _UIDARRAY = keys BTC_UID_array;
-_OUTPUT = [_name, "0:0:0:0:0"] joinstring ":";
+_OUTPUT = [_name,"0:0:0:0:0:0:0:0:0:0"] joinstring ":";
 _ALLKEYS = keys BTC_UID_array;   
 _KEYCOUNT = count _ALLKEYS;
 
@@ -40,6 +43,13 @@ _NAME = _index select 0;
 _BUILDPERM = _index select 1;
 _SALVAGEPERM = _index select 2;
 _COMMANDPERM = _index select 3;
+_MANKILLS = _index select 4;
+_VICKILLS = _index select 5;
+_AIRKILLS = _index select 6;
+_SEAKILLS = _index select 7;
+_CIVKILLS =  _index select 8;
+_DEATHS = _index select 9;
+_REPUTATION = _index select 10;
 
 
 _player setVariable ["interpreter",true];

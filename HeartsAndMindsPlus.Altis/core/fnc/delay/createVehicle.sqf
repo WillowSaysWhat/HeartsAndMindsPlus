@@ -45,6 +45,7 @@ btc_delay_time = btc_delay_time + btc_delay_vehicle;
 
     private _isAir = _vehicle_type isKindOf "Air";
     private _veh = createVehicle [_vehicle_type, _position, [], 0, ["CAN_COLLIDE", "FLY"] select _isAir];
+
     if !(_isAir) then {
         _veh setDir _direction;
         if (_surfaceNormal isEqualTo []) then {
@@ -76,6 +77,8 @@ btc_delay_time = btc_delay_time + btc_delay_vehicle;
             };
         };
     };
+
+    _veh addMPEventHandler ["MPKilled", {_this spawn tet_ui_kill}];
     _group selectLeader (driver _veh);
     (units _group) joinSilent _group;
 

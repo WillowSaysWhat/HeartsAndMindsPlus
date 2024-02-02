@@ -692,7 +692,7 @@ btc_log_fnc_get_nottowable = {
             [];
         };
         case (_tower isKindOf "Ship") : {
-            [];
+            ["Ship"];
         };
         case (_tower isKindOf "Car") : {
             ["Truck", "Truck_F", "Tank", "Helicopter" ]; //The tower is a car so it can't tow: truck, tank, plane and helicopter
@@ -799,8 +799,9 @@ btc_rep_bonus_IEDCleanUp = 10;
 btc_rep_bonus_removeTag = 3;
 btc_rep_bonus_removeTagLetter = 0.5;
 btc_rep_bonus_foodGive = 0.5;
-btc_rep_malus_veh_killed = 10;
+btc_rep_bonus_vehicle = 5;
 
+btc_rep_malus_veh_killed = - 10;
 btc_rep_malus_civ_hd = - 2;
 btc_rep_malus_animal_hd = - 1;
 btc_rep_malus_civ_killed = - 10;

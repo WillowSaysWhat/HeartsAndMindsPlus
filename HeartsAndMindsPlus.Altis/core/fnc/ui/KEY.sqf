@@ -28,7 +28,8 @@ _KEYCOUNT = count _ALLKEYS;
   
 if (_KEYCOUNT == 0) exitwith {    
     BTC_UID_array set [0, _UID];    
-    publicvariable "BTC_UID_array";   
+    publicvariable "BTC_UID_array";
+    0
 };      
 {    
     _COLLECTED = BTC_UID_array get _x;      
