@@ -35,7 +35,7 @@ params ["_Change","_UID","_type","_reputationchange"];
         _SEAKILLS = _index select 7;
         _CIVKILLS =  _index select 8;
         _DEATHS = _index select 9;
-        _REPUTATION = _index select 10;
+        _REPUTATION1 = _index select 10;
 
         _NUMCIVKILLS = parseNumber _CIVKILLS;
         _NUMMANKILLS = parseNumber _MANKILLS;
@@ -43,7 +43,7 @@ params ["_Change","_UID","_type","_reputationchange"];
         _NUMLANDKILLS = parseNumber _VICKILLS;
         _NUMSEAKILLS = parseNumber _SEAKILLS;
         _NUMDEATHS = parseNumber _DEATHS;
-        _NUMREP = parseNumber _REPUTATION;
+        _NUMREP = parseNumber _REPUTATION1;
 
 	switch (_Change) do {
                 case "KILL" : {
@@ -56,12 +56,12 @@ params ["_Change","_UID","_type","_reputationchange"];
         	case "DEATH" : {
                 _DEATHS = _NUMDEATHS + 1;
 		};
-                case "REP" : {
-                _REPUTATION = _NUMREP + _reputationchange;
+            case "REP" : {
+            _REPUTATION1 = _NUMREP + _reputationchange;
 		};
 	};
 
-	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION]joinString ":";
+	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION1]joinString ":";
 	BTC_Player_array set [_PlayerKey,_OUTPUT];
 
         publicvariable "BTC_PLAYER_array";

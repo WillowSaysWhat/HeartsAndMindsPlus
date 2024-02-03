@@ -40,7 +40,7 @@ CHANGE = _change;
     _SEAKILLS = _index select 7;
     _CIVKILLS =  _index select 8;
     _DEATHS = _index select 9;
-	_REPUTATION = _index select 10;
+	_REPUTATION2 = _index select 10;
 
 	switch (CHANGE) do {
 			case "AllowBuild" : {
@@ -63,7 +63,7 @@ CHANGE = _change;
 		};
 	};
 
-	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION]joinString ":";
+	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION2]joinString ":";
 	BTC_Player_array set [_PlayerKey,_OUTPUT];
 
 	publicvariable "BTC_PLAYER_array";
