@@ -470,54 +470,6 @@ btc_respawn_marker = "respawn_west";
 btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, independent] find btc_player_side);
 
 
-fortify_enemy_vehicles = [
-"UK3CB_ARD_O_Hilux_GMG",
-"UK3CB_ARD_O_Hilux_Rocket_Arty",
-"UK3CB_ARD_O_Hilux_Dshkm",
-"UK3CB_ARD_O_Hilux_M2",
-"UK3CB_ARD_O_Hilux_Metis",
-"UK3CB_ARD_O_Hilux_Mortar",
-"UK3CB_ARD_O_Hilux_Pkm",
-"UK3CB_ARD_O_Hilux_Spg9",
-"UK3CB_ARD_O_Hilux_Zu23_Front",
-"UK3CB_ARD_O_Hilux_Zu23",
-"UK3CB_ARD_O_UAZ_AGS30",
-"UK3CB_ARD_O_UAZ_MG",
-"UK3CB_ARD_O_UAZ_SPG9",
-"UK3CB_ARD_O_2S6M_Tunguska",
-"UK3CB_ARD_O_MTLB_ZU23",
-"UK3CB_ARD_O_Ural_Zu23",
-"UK3CB_ARD_O_ZsuTank",
-"UK3CB_ARD_O_BMP1",
-"UK3CB_ARD_O_BMP2",
-"UK3CB_ARD_O_BMP2K",
-"UK3CB_ARD_O_BRM1K",
-"UK3CB_ARD_O_BTR40",
-"UK3CB_ARD_O_BTR40_MG",
-"UK3CB_ARD_O_BTR60",
-"UK3CB_ARD_O_BTR70",
-"UK3CB_ARD_O_BTR80",
-"UK3CB_ARD_O_BTR80a",
-"UK3CB_ARD_O_MTLB_Cannon",
-"UK3CB_ARD_O_MTLB_BMP",
-"UK3CB_ARD_O_MTLB_KPVT",
-"UK3CB_ARD_O_MAZ_543_SCUD",
-"UK3CB_ARD_O_BM21",
-"UK3CB_ARD_O_BRDM2",
-"UK3CB_ARD_O_BRDM2_ATGM",
-"UK3CB_ARD_O_BRDM2_HQ",
-"UK3CB_ARD_O_GAZ_Vodnik_Cannon",
-"UK3CB_ARD_O_GAZ_Vodnik_KVPT",
-"UK3CB_ARD_O_GAZ_Vodnik_PKT",
-"UK3CB_ARD_O_T34",
-"UK3CB_ARD_O_T55",
-"UK3CB_ARD_O_T72A",
-"UK3CB_ARD_O_T72B",
-"UK3CB_ARD_O_T72BM",
-"UK3CB_ARD_O_T72BA",
-"UK3CB_ARD_O_T72BB",
-"UK3CB_ARD_O_T72BC"
-];
 
 //Log  
 btc_construction_array =
@@ -629,7 +581,6 @@ btc_construction_array =
             "ACE_Box_82mm_Mo_HE",
             "ACE_Box_82mm_Mo_Smoke",
             "Land_WoodenBox_F"
-
         ],
         [
             //"Containers"
@@ -852,38 +803,7 @@ _alltopricearray = [];
 ALLTOPRICETOTAL = [];
  
 _CustomPrices = [ 
-["rhsusf_mrzr4_d",75],
-["rhsusf_m1045_d",100],
-["rhsusf_m998_d_2dr_fulltop",100],
-["rhsusf_m998_d_2dr_halftop",100],
-["rhsusf_m998_d_2dr",100],
-["rhsusf_m998_d_4dr_fulltop",100],
-["rhsusf_m998_d_4dr_halftop",100],
-["rhsusf_m1152_usarmy_d",100],
-["rhsusf_m1043_d_m2",150],
-["rhsusf_m1151_m2_v1_usarmy_d",150],
-["rhsusf_m1151_m2_v2_usarmy_d",150],
-["rhsusf_m1165a1_gmv_m2_m240_socom_d",250],
-["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",250],
-["UK3CB_B_M939_Closed_DES",250],
-["UK3CB_B_M939_Guntruck_DES",250],
-["UK3CB_B_M939_Open_DES",250],
-["UK3CB_B_M939_Reammo_DES",250],
-["UK3CB_B_M939_Recovery_DES",250],
-["UK3CB_B_M939_Refuel_DES",250],
-["UK3CB_B_M939_Repair_DES",250],
-["rhsusf_stryker_m1127_m2_d",500],
-["rhsusf_M1220_usarmy_d",500],
-["rhsusf_m1240a1_m2_uik_usarmy_d",500],
-["UK3CB_B_MaxxPro_M2_US",500],
-["B_APC_Tracked_01_CRV_F",500],
-["rhsusf_M1220_M2_usarmy_d",750],
-["rhsusf_M1230_M2_usarmy_d",750],
-["rhsusf_M1232_M2_usarmy_d",750],
-["RHS_M2A2",1000],
-["RHS_M2A2_BUSKI",1500],
-["RHS_M2A3_BUSKIII",2000],
-["rhsusf_m1a2sep2d_usarmy",2500],
+
 ["RHS_MELB_MH6M",500],
 ["RHS_MELB_AH6M",750],
 ["RHS_CH_47F_10",1000],
@@ -956,8 +876,9 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
 {  
     _cfgVehicles = configFile >> "CfgVehicles";  
     _cost = getNumber(_cfgVehicles >> _x >> "cost");
+    // If less than 10, set to 10.
     // Probably need some sort of type modifier here.
-    _alltopricearray pushback [_x,_cost/1000];  
+    _alltopricearray pushback [_x,_cost/1000];
 } foreach _alltoprice;
 
 ALLTOPRICETOTAL = _alltopricearray + _customprices;

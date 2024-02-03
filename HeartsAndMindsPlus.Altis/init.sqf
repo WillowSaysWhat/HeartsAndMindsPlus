@@ -25,6 +25,20 @@ true
 ] call CBA_fnc_addClassEventHandler;
 
 
+[Arsenal_typename, "init",
+{
+    private _box = (_this select 0);
+    private _player = player;
+
+    
+
+},
+true,
+[],
+true
+] call CBA_fnc_addClassEventHandler;
+
+
 ["acex_fortify_objectPlaced", {
   params ["_player", "_side", "_objectPlaced"];
 // Need to find a way to remove, and then place back the same vehicle here.
