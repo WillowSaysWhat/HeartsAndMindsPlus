@@ -93,7 +93,7 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
             // Update the HUD item with the latest UI number 
             //_myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3", _myNumber, _currentplayers, btc_global_reputation]; 
             //_myHudControl ctrlSetStructuredText parseText format["<t align='center'>Online Players : %2 | Current Funds : $%1 | Current Rep : %3</t>", _myNumber, _currentplayers, btc_global_reputation];
-            _hudX = safeZoneX + 0.35 * safeZoneW; 
+            _hudX = safeZoneX + 0.31 * safeZoneW; 
             _hudY = safeZoneY; 
             _hudW = safeZoneW * 0.5;
             _hudH = safeZoneH / 40;
