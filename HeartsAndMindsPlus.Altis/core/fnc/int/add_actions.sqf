@@ -170,6 +170,13 @@ _action = ["Permissions", "Permissions", "\A3\ui_f\data\igui\cfg\simpleTasks\let
 }, {player getVariable ["side_mission", false]}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
+// PERMISSIONS ADMIN
+
+_action = ["PermissionsAdmin", "Permissions Admin", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\P_ca.paa", {
+    [] call tet_ui_openperms;
+}, {serverCommandAvailable "#logout"}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+
 // ADMIN ARSENAL 
 
 _action = ["AdminArsenal", "Admin Arsenal", "\A3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa", {
