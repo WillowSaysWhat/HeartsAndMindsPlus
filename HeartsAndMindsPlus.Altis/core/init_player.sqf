@@ -75,7 +75,9 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
             // Define the UI number 
 
             _myNumber = [west] call acex_fortify_fnc_getBudget;
-            _CurrentPlayers = count allPlayers; 
+            //_CurrentPlayers = count allPlayers; 
+            _CurrentPlayers = 0; 
+            {if (isPlayer _x) then {_CurrentPlayers = _CurrentPlayers +1;};}forEach allUnits;
             
             // Get the display and create a new control for the HUD item 
             _myDisplay = uiNamespace getVariable "RscDisplayMission"; 
