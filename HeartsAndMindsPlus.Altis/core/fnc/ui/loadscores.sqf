@@ -30,6 +30,8 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
 
     _UID = BTC_UID_array get _PLAYERKEY;
 
+    if (isnil "_UID") exitwith {};
+ 
     _NAME = _index select 0;
     _BUILDPERM = _index select 1;
     _SALVAGEPERM = _index select 2;
