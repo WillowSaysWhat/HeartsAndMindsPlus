@@ -48,6 +48,7 @@ profileNamespace setVariable [format ["btc_hm_%1_eco", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_playerdb", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_UID", _name], nil];
 
+saveProfileNamespace;
 
 if (_showHint) then {
     [10] remoteExecCall ["btc_fnc_show_hint", 0];

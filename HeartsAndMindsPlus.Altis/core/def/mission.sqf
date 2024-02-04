@@ -883,4 +883,3 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
 
 ALLTOPRICETOTAL = _alltopricearray + _customprices;
 
-[west, btc_global_economy, ALLTOPRICETOTAL] call acex_fortify_fnc_registerObjects;

@@ -5,6 +5,8 @@
 //ARSENAL 
 [] call compileFinal preprocessFileLineNumbers "core\def\rolearsenal.sqf";
 
+[west, btc_global_economy, ALLTOPRICETOTAL] call acex_fortify_fnc_registerObjects;
+
 ARSENAL_CRATES = [];
 Arsenal_typename = "C_supplyCrate_F"; // CONFIG - ARSENAL TYPE
 
