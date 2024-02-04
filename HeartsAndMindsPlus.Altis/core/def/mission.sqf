@@ -876,7 +876,7 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
 {  
     _cfgVehicles = configFile >> "CfgVehicles";  
     _cost = getNumber(_cfgVehicles >> _x >> "cost");
-    // If less than 10, set to 10.
+    // Set a min of 10, and a max of 1000, Round up to nearest 10.
     // Probably need some sort of type modifier here.
     _alltopricearray pushback [_x,_cost/1000];
 } foreach _alltoprice;

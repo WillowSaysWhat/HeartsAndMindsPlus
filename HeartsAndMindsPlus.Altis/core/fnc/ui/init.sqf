@@ -56,7 +56,7 @@ _player setVariable ["interpreter",true];
 
 if (parseNumber _BUILDPERM == 1) then {_player setVariable ["allow_build",true];};;
 if (parseNumber _SALVAGEPERM == 1) then {_player setVariable ["allow_salvage",true];};
-if (parseNumber _COMMANDPERM == 1) then {_player setVariable ["side_mission",true]; _player setVariable ["APW_initAddaction",true]; [_player,"initPlayer"] call APW_fnc_APWMain;[player, BIS_requesterMod, BIS_providerMod] call BIS_fnc_addSupportLink;};
+if (parseNumber _COMMANDPERM == 1) then {_player setVariable ["side_mission",true]; _player setVariable ["APW_initAddaction",true]; [_player,"initPlayer"] call APW_fnc_APWMain;};
 
 publicvariable "BTC_PLAYER_array";
 publicvariable "BTC_UID_array"; 
