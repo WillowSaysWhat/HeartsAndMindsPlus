@@ -30,8 +30,6 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
 
     _UID = BTC_UID_array get _PLAYERKEY;
 
-    if (isnil "_UID") exitwith {};
-
     _NAME = _index select 0;
     _BUILDPERM = _index select 1;
     _SALVAGEPERM = _index select 2;
@@ -44,11 +42,10 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _DEATHS = _index select 9;
     _REPUTATION = _index select 10;
 
-
-
-	private _displayout = [_NAME,"    |     ","CanBuild: ",_BUILDPERM,"    |     ","CanSalvage: ",_SALVAGEPERM,"    |     ","CanCommand: ",_COMMANDPERM] joinString "";
-
+    if !(isnil "_UID") then {
+    private _displayout = [_NAME,"    |     ","CanBuild: ",_BUILDPERM,"    |     ","CanSalvage: ",_SALVAGEPERM,"    |     ","CanCommand: ",_COMMANDPERM] joinString "";
     private _index = lbAdd [88, _displayout];
     lbSetData [88, _index, _UID];
     if (_i isEqualTo 0) then {lbSetCurSel [88, _index];};
+    };
 };
