@@ -49,7 +49,7 @@ _AIRKILLS = _index select 6;
 _SEAKILLS = _index select 7;
 _CIVKILLS =  _index select 8;
 _DEATHS = _index select 9;
-_REPUTATION = _index select 10;
+_REPUTATION3 = _index select 10;
 
 
 _player setVariable ["interpreter",true];
