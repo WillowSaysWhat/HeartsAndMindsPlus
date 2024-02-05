@@ -469,6 +469,14 @@ btc_player_side = west;
 btc_respawn_marker = "respawn_west";
 btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, independent] find btc_player_side);
 
+// GroundVehiclesVariable = [["xyz",250]]
+// {_veh = _x select 1; _groundvehiclesarray pushBackUnique _veh;} foreach GroundVehiclesVariable
+
+// Repeate for each category -> place into btc_construction_array
+// Add all unmodified arrays together to build the custom price array.
+
+// Add a further "Price Overwrite" category for adding custom vehicles
+
 
 
 //Log  
@@ -876,8 +884,9 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
 {  
     _cfgVehicles = configFile >> "CfgVehicles";  
     _cost = getNumber(_cfgVehicles >> _x >> "cost");
-    // Set a min of 10, and a max of 1000, Round up to nearest 10.
-    // Probably need some sort of type modifier here.
+
+    // Set a min of 10, and a max of 1000, Round up to nearest 10 - if type is plane 800, if type is tank 600, if type is etc.
+
     _alltopricearray pushback [_x,_cost/1000];
 } foreach _alltoprice;
 
