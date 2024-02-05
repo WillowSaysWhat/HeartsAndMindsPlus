@@ -34,7 +34,7 @@ if (_KEYCOUNT == 0) exitwith {
 {    
     _COLLECTED = BTC_UID_array get _x;      
     if (_COLLECTED == _UID) exitwith {_x}; 
-    _KEYCOUNT +1   
+    _KEYCOUNT   
 } foreach _ALLKEYS;     
 
 
