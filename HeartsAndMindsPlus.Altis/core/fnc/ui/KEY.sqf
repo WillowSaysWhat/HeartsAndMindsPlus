@@ -24,18 +24,18 @@ Author:
   params ["_UID"];
 
 _ALLKEYS = keys BTC_UID_array;    
-_KEYCOUNT = count _ALLKEYS;    
+_KEYCOUNT = count _ALLKEYS;
   
 if (_KEYCOUNT == 0) exitwith {    
     BTC_UID_array set [0, _UID];    
     publicvariable "BTC_UID_array";
     0
-};      
+};    
 {    
-    _COLLECTED = BTC_UID_array get _x;      
-    if (_COLLECTED == _UID) exitwith {_x}; 
+    _COLLECTED = BTC_UID_array get _x; 
+    if (_COLLECTED == _UID) exitwith {_x};
     _KEYCOUNT   
-} foreach _ALLKEYS;     
+} foreach _ALLKEYS;
 
 
  

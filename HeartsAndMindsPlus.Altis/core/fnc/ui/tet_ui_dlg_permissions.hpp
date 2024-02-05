@@ -248,38 +248,6 @@ class tet_ui_dlg_permissions
 			onButtonClick = "['DenyCommand'] call tet_ui_setdataperms;";
 			
 		};
-		class DeleteUser
-		{
-			type = 1;
-			idc = -1;
-			x = 1.18636365;
-			y = 1.01178453;
-			w = 0.21843436;
-			h = 0.15319866;
-			style = 2;
-			text = "DELETE USER";
-			borderSize = 0;
-			colorBackground[] = {0.2039,0.2863,0.3686,1};
-			colorBackgroundActive[] = {0.1725,0.2431,0.3137,1};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
-			colorBorder[] = {0,0,0,0};
-			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorFocused[] = {0.1725,0.2431,0.3137,1};
-			colorShadow[] = {0.1725,0.2431,0.3137,1};
-			colorText[] = {0.7412,0.7647,0.7804,1};
-			font = "PuristaBold";
-			offsetPressedX = 0.01;
-			offsetPressedY = 0.01;
-			offsetX = 0.01;
-			offsetY = 0.01;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
-			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
-			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
-			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[] call tet_ui_remove;";
-			
-		};
 		class PermissionsTop
 		{
 			type = 0;
