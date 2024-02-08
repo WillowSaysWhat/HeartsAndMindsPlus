@@ -21,6 +21,9 @@ Author:
 ---------------------------------------------------------------------------- */
 
 lbClear 89;
+
+// Try changing to for each statements to avoid miscount fails
+
 for "_i" from 0 to ((count BTC_Player_array) -1) do {
 
     _array = keys BTC_Player_array;
@@ -42,7 +45,7 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _DEATHS = _index select 9;
     _REPUTATION4 = _index select 10;
 
-    if !(isnil "_UID") then {
+    if (!(isnil "_UID") && !(isNil "_NAME")) then {
     private _displayout = [_NAME," |  Kills: ",_MANKILLS," |  Vehicle Kills: ",_VICKILLS," |  Aircraft Kills: ",_AIRKILLS," |  Boat Kills: ",_SEAKILLS," |  Civ Kills: ",_CIVKILLS," |  Deaths: ",_DEATHS, " | Reputation Change: ", _REPUTATION4] joinString ""; //,"    |     ",
     private _index = lbAdd [89, _displayout];
     lbSetData [89, _index, _selected];

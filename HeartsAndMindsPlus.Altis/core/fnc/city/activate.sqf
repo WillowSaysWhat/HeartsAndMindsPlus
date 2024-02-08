@@ -44,6 +44,10 @@ _city enableSimulation false;
 _city setVariable ["active", true];
 
 
+// _citysound = getpos _city 
+// Use with playsound3D to loop a sound aslong as the city remains active. May need to call a seperate script with a loop checking if it is still active.
+// Play sounds based on the type of objective. E.G jungle etc.
+
 
 // Added Player Scaling Variable
 private _CurrentPlayers = count allPlayers;

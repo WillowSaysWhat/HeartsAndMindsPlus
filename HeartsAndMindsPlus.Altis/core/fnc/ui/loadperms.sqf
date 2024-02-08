@@ -42,7 +42,7 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _DEATHS = _index select 9;
     _REPUTATION = _index select 10;
 
-    if !(isnil "_UID") then {
+    if (!(isnil "_UID") && !(isNil "_NAME")) then {
     private _displayout = [_NAME,"    |     ","CanBuild: ",_BUILDPERM,"    |     ","CanSalvage: ",_SALVAGEPERM,"    |     ","CanCommand: ",_COMMANDPERM] joinString "";
     private _index = lbAdd [88, _displayout];
     lbSetData [88, _index, _UID];
