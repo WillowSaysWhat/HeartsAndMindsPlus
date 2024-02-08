@@ -604,10 +604,11 @@ _VehLogisticsArray = [ // Vehicle Logistics
 ];
 
 
-_CustomPriceOverride = [];
+
 
 
 // LEAVE BLANK!
+_CustomPriceOverride = [];
 _GroundVeh = [];
 _AirVeh = [];
 _Forts = [];
@@ -684,7 +685,7 @@ btc_log_fnc_get_nottowable = {
 
     switch (true) do {
         case (_tower isKindOf "Tank") : {
-            [];
+            ["Tank", "Plane", "Helicopter", "Ship"];
         };
         case (_tower isKindOf "Truck_F") : {
             [];
@@ -693,7 +694,7 @@ btc_log_fnc_get_nottowable = {
             [];
         };
         case (_tower isKindOf "Ship") : {
-            ["Ship"];
+            ["Car", "Truck", "Truck_F", "Tank", "Plane", "Helicopter", "Ship"];
         };
         case (_tower isKindOf "Car") : {
             ["Truck", "Truck_F", "Tank", "Helicopter" ]; //The tower is a car so it can't tow: truck, tank, plane and helicopter
@@ -766,23 +767,6 @@ btc_type_gl = _allclasse select 8;
 //TempFix
 btc_type_gl = btc_type_mg;
 
-//btc_type_crewmen = "Blabla";
-
-//Sometimes you need to remove units: - ["Blabla","moreBlabla"];
-//Sometimes you need to add units: + ["Blabla","moreBlabla"]; 
-switch (_p_en) do {
-    /*case "Myfactionexemple" : {
-        btc_type_units = btc_type_units - ["Blabla","moreBlabla"];
-        btc_type_divers = btc_type_divers + ["Blabla","moreBlabla"];
-        btc_type_crewmen = "Blabla";
-        btc_type_boats = btc_type_boats;
-        btc_type_motorized = btc_type_motorized;
-        btc_type_mg = btc_type_mg;
-        btc_type_gl = btc_type_gl;
-    };*/
-   
-};
-
 //Chem
 btc_chem_range = 5;
 
@@ -842,8 +826,7 @@ btc_body_prisonerTicket = 3;
 
 btc_startDate = [1990, 5, 17, 12, 15];
 
-
-// Build Menu + Salvage Prices.
+// Object Array builder
 
 _alltoprice = flatten btc_type_boats + flatten btc_type_motorized + flatten btc_type_motorized_armed; 
 _alltopricearray = []; 
@@ -857,10 +840,8 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
 {  
     _cfgVehicles = configFile >> "CfgVehicles";  
     _cost = getNumber(_cfgVehicles >> _x >> "cost");
-
-    // Set a min of 10, and a max of 1000, Round up to nearest 10 - if type is plane 800, if type is tank 600, if type is etc.
-
-    _alltopricearray pushback [_x,_cost/1000];
+    _finalcost = (_cost min 10) max 1000;
+    _alltopricearray pushback [_x,_finalcost/1000];
 } foreach _alltoprice;
 
 ALLTOPRICETOTAL = _alltopricearray + _customprices;
