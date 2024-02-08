@@ -16,8 +16,11 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
     
     btc_respawn_marker setMarkerPosLocal player;
     player addRating 9999;
-    //["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 
+    //UI
+    [player] call tet_ui_init;
+
+    // ACTIONS
     [player] call btc_eh_fnc_player;
 
     // ARSNEAL SCRIPTS
@@ -30,14 +33,6 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
     if (player getVariable ["interpreter", false]) then {
         player createDiarySubject ["btc_diarylog", localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG", '\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa'];
     };
-
-    // CAS SCRIPT
-    Private _UnitRole = roleDescription player;
-    if (_UnitRole == "Commander") then {
-    player setVariable ["APW_initAddaction",true];
-    [player,"initPlayer"] call APW_fnc_APWMain;
-    };
-
 
     switch (btc_p_autoloadout) do {
         case 1: {
@@ -71,6 +66,7 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
     };
 }] call CBA_fnc_waitUntilAndExecute;
 
+
 // PLAYER HUD
 [] spawn
 	{
@@ -79,7 +75,9 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
             // Define the UI number 
 
             _myNumber = [west] call acex_fortify_fnc_getBudget;
-            _CurrentPlayers = count allPlayers; 
+            //_CurrentPlayers = count allPlayers; 
+            _CurrentPlayers = 0; 
+            {if (isPlayer _x) then {_CurrentPlayers = _CurrentPlayers +1;};}forEach allUnits;
             
             // Get the display and create a new control for the HUD item 
             _myDisplay = uiNamespace getVariable "RscDisplayMission"; 
@@ -87,10 +85,17 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
             _myHudControl ctrlSetFont "PuristaSemiBold";
             _myHudControl ctrlSetTextColor [1,1,1,1]; 
             
+            _respawnTickets = [player, nil, true] call BIS_fnc_respawnTickets;
+            //if (btc_p_respawn_ticketsAtStart == 0) then {
+            //    _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3", _myNumber, _currentplayers, btc_global_reputation]; 
+            //} else {
+                _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3 | Player Tickets : %4", _myNumber, _currentplayers, btc_global_reputation, _respawnTickets]; 
+            //};
+            
             // Update the HUD item with the latest UI number 
-            _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3", _myNumber, _currentplayers, btc_global_reputation]; 
+            //_myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Current Rep : %3", _myNumber, _currentplayers, btc_global_reputation]; 
             //_myHudControl ctrlSetStructuredText parseText format["<t align='center'>Online Players : %2 | Current Funds : $%1 | Current Rep : %3</t>", _myNumber, _currentplayers, btc_global_reputation];
-            _hudX = safeZoneX + 0.35 * safeZoneW; 
+            _hudX = safeZoneX + 0.31 * safeZoneW; 
             _hudY = safeZoneY; 
             _hudW = safeZoneW * 0.5;
             _hudH = safeZoneH / 40;

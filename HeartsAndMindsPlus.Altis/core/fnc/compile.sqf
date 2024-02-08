@@ -307,6 +307,17 @@ tet_fortify_salvage = compileScript ["core\fnc\fortify\salvage.sqf"];
 tet_fortify_eco = compileScript ["core\fnc\fortify\eco.sqf"];
 tet_fortify_delete = compileScript ["core\fnc\fortify\delete.sqf"];
 
+//UI
+tet_ui_kill = compileScript ["core\fnc\ui\kill.sqf"];
+tet_ui_KEY = compileScript ["core\fnc\ui\KEY.sqf"];
+tet_ui_init = compileScript ["core\fnc\ui\init.sqf"];
+tet_ui_setdataperms = compileScript ["core\fnc\ui\setdataperms.sqf"];
+tet_ui_setdatascore = compileScript ["core\fnc\ui\setdatascore.sqf"];
+tet_ui_loadperms = compileScript ["core\fnc\ui\loadperms.sqf"];
+tet_ui_loadscores = compileScript ["core\fnc\ui\loadscores.sqf"];
+tet_ui_openperms = compileScript ["core\fnc\ui\openperms.sqf"];
+tet_ui_openscores = compileScript ["core\fnc\ui\openscores.sqf"];
+
 /////////////////////CLIENT\\\\\\\\\\\\\\\\\\\\\
 if (!isDedicated) then {
     //BODY

@@ -24,14 +24,21 @@ Author:
 
 params ["_unit", "_causeOfDeath", "_killer", "_instigator"];
 
+if (isPlayer _instigator) then {
+_uid = getplayerUID _instigator;
+["KILL", _uid, _unit] call tet_ui_setdatascore;
+};
+
 if (side group _unit isNotEqualTo btc_enemy_side) exitWith {};
 
 if (random 100 > btc_info_intel_chance) then {
     _unit setVariable ["intel", true];
 };
 
+
 if (isPlayer _instigator) then {
     [btc_rep_bonus_mil_killed, _instigator] call btc_rep_fnc_change;
+
     //ECONOMY
     [west, 1, false] call acex_fortify_fnc_updateBudget;
     btc_global_economy = btc_global_economy + 1;

@@ -371,6 +371,12 @@ if (isServer) then {
 
     btc_groundWeaponHolder = [];
 
+    //UI
+
+    BTC_Player_array = createHashMap;
+    
+    BTC_UID_array = createHashMap;
+
     //Respawn
     btc_respawn_tickets = createHashMap;
 
@@ -464,54 +470,167 @@ btc_respawn_marker = "respawn_west";
 btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, independent] find btc_player_side);
 
 
-fortify_enemy_vehicles = [
-"UK3CB_ARD_O_Hilux_GMG",
-"UK3CB_ARD_O_Hilux_Rocket_Arty",
-"UK3CB_ARD_O_Hilux_Dshkm",
-"UK3CB_ARD_O_Hilux_M2",
-"UK3CB_ARD_O_Hilux_Metis",
-"UK3CB_ARD_O_Hilux_Mortar",
-"UK3CB_ARD_O_Hilux_Pkm",
-"UK3CB_ARD_O_Hilux_Spg9",
-"UK3CB_ARD_O_Hilux_Zu23_Front",
-"UK3CB_ARD_O_Hilux_Zu23",
-"UK3CB_ARD_O_UAZ_AGS30",
-"UK3CB_ARD_O_UAZ_MG",
-"UK3CB_ARD_O_UAZ_SPG9",
-"UK3CB_ARD_O_2S6M_Tunguska",
-"UK3CB_ARD_O_MTLB_ZU23",
-"UK3CB_ARD_O_Ural_Zu23",
-"UK3CB_ARD_O_ZsuTank",
-"UK3CB_ARD_O_BMP1",
-"UK3CB_ARD_O_BMP2",
-"UK3CB_ARD_O_BMP2K",
-"UK3CB_ARD_O_BRM1K",
-"UK3CB_ARD_O_BTR40",
-"UK3CB_ARD_O_BTR40_MG",
-"UK3CB_ARD_O_BTR60",
-"UK3CB_ARD_O_BTR70",
-"UK3CB_ARD_O_BTR80",
-"UK3CB_ARD_O_BTR80a",
-"UK3CB_ARD_O_MTLB_Cannon",
-"UK3CB_ARD_O_MTLB_BMP",
-"UK3CB_ARD_O_MTLB_KPVT",
-"UK3CB_ARD_O_MAZ_543_SCUD",
-"UK3CB_ARD_O_BM21",
-"UK3CB_ARD_O_BRDM2",
-"UK3CB_ARD_O_BRDM2_ATGM",
-"UK3CB_ARD_O_BRDM2_HQ",
-"UK3CB_ARD_O_GAZ_Vodnik_Cannon",
-"UK3CB_ARD_O_GAZ_Vodnik_KVPT",
-"UK3CB_ARD_O_GAZ_Vodnik_PKT",
-"UK3CB_ARD_O_T34",
-"UK3CB_ARD_O_T55",
-"UK3CB_ARD_O_T72A",
-"UK3CB_ARD_O_T72B",
-"UK3CB_ARD_O_T72BM",
-"UK3CB_ARD_O_T72BA",
-"UK3CB_ARD_O_T72BB",
-"UK3CB_ARD_O_T72BC"
+// Repeate for each category -> place into btc_construction_array
+// Add all unmodified arrays together to build the custom price array.
+
+// Add a further "Price Overwrite" category for adding custom vehicles
+
+_GroundVehArray = [ // Ground Vehicles
+    ["rhsusf_mrzr4_d",75],
+    ["rhsusf_m1045_d",100],
+    ["rhsusf_m998_d_2dr_fulltop",100],
+    ["rhsusf_m998_d_2dr_halftop",100],
+    ["rhsusf_m998_d_2dr",100],
+    ["rhsusf_m998_d_4dr_fulltop",100],
+    ["rhsusf_m998_d_4dr_halftop",100],
+    ["rhsusf_m1152_usarmy_d",100],
+    ["rhsusf_m1043_d_m2",150],
+    ["rhsusf_m1151_m2_v1_usarmy_d",150],
+    ["rhsusf_m1151_m2_v2_usarmy_d",150],
+    ["rhsusf_m1165a1_gmv_m2_m240_socom_d",250],
+    ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",250],
+    ["UK3CB_B_M939_Closed_DES",250],
+    ["UK3CB_B_M939_Guntruck_DES",250],
+    ["UK3CB_B_M939_Open_DES",250],
+    ["UK3CB_B_M939_Reammo_DES",250],
+    ["UK3CB_B_M939_Recovery_DES",250],
+    ["UK3CB_B_M939_Refuel_DES",250],
+    ["UK3CB_B_M939_Repair_DES",250],
+    ["rhsusf_stryker_m1127_m2_d",500],
+    ["rhsusf_M1220_usarmy_d",500],
+    ["rhsusf_m1240a1_m2_uik_usarmy_d",500],
+    ["UK3CB_B_MaxxPro_M2_US",500],
+    ["B_APC_Tracked_01_CRV_F",500],
+    ["rhsusf_M1220_M2_usarmy_d",750],
+    ["rhsusf_M1230_M2_usarmy_d",750],
+    ["rhsusf_M1232_M2_usarmy_d",750],
+    ["RHS_M2A2",1000],
+    ["RHS_M2A2_BUSKI",1500],
+    ["RHS_M2A3_BUSKIII",2000],
+    ["rhsusf_m1a2sep2d_usarmy",2500]
 ];
+
+_AirVehArray = [ // Aircraft
+    ["RHS_MELB_MH6M",500],
+    ["RHS_MELB_AH6M",750],
+    ["RHS_CH_47F_10",1000],
+    ["RHS_UH60M_d",1000],
+    ["RHS_C130J",1000],
+    ["B_Plane_Fighter_01_F",2000],
+    ["RHS_AH64D",2500]
+];
+
+
+_FortsArray = [ // Fortifications
+    ["Land_BagFence_End_F",1],
+    ["Land_BagFence_Long_F",1],
+    ["Land_BagFence_Round_F",1],
+    ["Land_BagFence_Short_F",1],
+    ["Land_Razorwire_F",5],
+    ["Land_Net_Fence_Gate_F",5],
+    ["Land_HBarrier_3_F",5],
+    ["Land_HBarrier_5_F",5],
+    ["Land_HBarrier_Big_F",5],
+    ["Land_HBarrier_1_F",5],
+    ["Land_Concrete_SmallWall_8m_F",5],
+    ["Land_Concrete_SmallWall_4m_F",5],
+    ["Land_ConcreteHedgehog_01_F",10],
+    ["Land_DragonsTeeth_01_4x2_new_F",10],
+    ["BlockConcrete_F",10],
+    ["Land_RampConcrete_F",10],
+    ["Land_CncShelter_F",10],
+    ["Land_HBarrierWall_corridor_F",10],
+    ["Land_HBarrierWall_corner_F",10],
+    ["Land_HBarrierWall6_F",10],
+    ["Land_HBarrierWall4_F",10],
+    ["Land_CncWall4_F",10],
+    ["Land_CncWall1_F",10],
+    ["Land_BagBunker_Small_F",15],
+    ["Land_Plank_01_4m_F",25],
+    ["Land_Plank_01_8m_F",50]
+];
+
+
+_StaticsArray = [ // Statics
+    ["UK3CB_B_Searchlight_NATO",25],
+    ["B_Static_Designator_01_F",25],
+    ["RHS_M2StaticMG_D",50],
+    ["RHS_M2StaticMG_MiniTripod_D",50],
+    ["RHS_Stinger_AA_pod_D",100],
+    ["RHS_TOW_TriPod_D",100],
+    ["RHS_M252_D",150],
+    ["RHS_M119_D",250]
+];
+
+
+_AmmoBoxesArray =  [ // Ammo Boxes / Storage Boxes
+    ["ACE_medicalSupplyCrate",20],
+    ["ACE_medicalSupplyCrate_advanced",25],
+    ["ACE_Box_Chemlights",25],
+    ["ACE_Box_82mm_Mo_Combo",25],
+    ["ACE_Box_82mm_Mo_Illum",25],
+    ["ACE_Box_82mm_Mo_HE",25],
+    ["ACE_Box_82mm_Mo_Smoke",25],
+    ["Land_WoodenBox_F",25]
+];
+
+
+_Containers1Array = [ // Storage/Transport Containers
+    ["B_Slingload_01_Repair_F",100],
+    ["B_Slingload_01_Fuel_F",100],
+    ["B_Slingload_01_Ammo_F",100],
+    ["B_Slingload_01_Cargo_F",100]
+];
+
+
+_SupplysArray = [ // Side Supplies
+    ["Land_Cargo20_IDAP_F",100]
+];
+
+
+_FobStuffArray = [ // FOB Crate + FOB Objects
+    ["Land_Medevac_house_V1_F",250],
+    ["Land_RepairDepot_01_green_F",500],
+    ["Land_Cargo20_blue_F",1000]
+];
+
+
+_VehLogisticsArray = [ // Vehicle Logistics
+    ["ACE_Track",5],
+    ["ACE_Wheel",5], 
+    ["FlexibleTank_01_sand_F",10],
+    ["ACE_fastropingSupplyCrate",25],
+    ["Box_NATO_AmmoVeh_F",50]
+];
+
+
+_CustomPriceOverride = [];
+
+
+// LEAVE BLANK!
+_GroundVeh = [];
+_AirVeh = [];
+_Forts = [];
+_Statics = [];
+_AmmoBoxes = [];
+_Containers1 = [];
+_Supplys = [];
+_FobStuff = [];
+_vehLogistics = [];
+
+{_obj = _x select 0; _GroundVeh pushBackUnique _obj;} foreach _GroundVehArray;
+{_obj = _x select 0; _AirVeh pushBackUnique _obj;} foreach _AirVehArray;
+{_obj = _x select 0; _Forts pushBackUnique _obj;} foreach _FortsArray;
+{_obj = _x select 0; _Statics pushBackUnique _obj;} foreach _StaticsArray;
+{_obj = _x select 0; _AmmoBoxes pushBackUnique _obj;} foreach _AmmoBoxesArray;
+{_obj = _x select 0; _Containers1 pushBackUnique _obj;} foreach _Containers1Array;
+{_obj = _x select 0; _Supplys pushBackUnique _obj;} foreach _SupplysArray;
+{_obj = _x select 0; _FobStuff pushBackUnique _obj;} foreach _FobStuffArray;
+{_obj = _x select 0; _vehLogistics pushBackUnique _obj;} foreach _VehLogisticsArray;
+
+
+_CustomPrices = _GroundVehArray + _AirVehArray + _FortsArray + _StaticsArray + _AmmoBoxesArray + _Containers1Array + _SupplysArray + _FobStuffArray + _VehLogisticsArray + _CustomPriceOverride;
+
 
 //Log  
 btc_construction_array =
@@ -528,131 +647,19 @@ btc_construction_array =
         "Vehicle Logistic"
     ],
     [
-        [
-            //"Ground Vehicles"
-            "rhsusf_mrzr4_d",
-            "rhsusf_m1045_d",
-            "rhsusf_m998_d_2dr_fulltop",
-            "rhsusf_m998_d_2dr_halftop",
-            "rhsusf_m998_d_2dr",
-            "rhsusf_m998_d_4dr_fulltop",
-            "rhsusf_m998_d_4dr_halftop",
-            "rhsusf_m1152_usarmy_d",
-            "rhsusf_m1043_d_m2",
-            "rhsusf_m1151_m2_v1_usarmy_d",
-            "rhsusf_m1151_m2_v2_usarmy_d",
-            "rhsusf_m1165a1_gmv_m2_m240_socom_d",
-            "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
-            "UK3CB_B_M939_Closed_DES",
-            "UK3CB_B_M939_Guntruck_DES",
-            "UK3CB_B_M939_Open_DES",
-            "UK3CB_B_M939_Reammo_DES",
-            "UK3CB_B_M939_Recovery_DES",
-            "UK3CB_B_M939_Refuel_DES",
-            "UK3CB_B_M939_Repair_DES",
-            "rhsusf_stryker_m1127_m2_d",
-            "rhsusf_M1220_usarmy_d",
-            "rhsusf_m1240a1_m2_uik_usarmy_d",
-            "UK3CB_B_MaxxPro_M2_US",
-            "B_APC_Tracked_01_CRV_F",
-            "rhsusf_M1220_M2_usarmy_d",
-            "rhsusf_M1230_M2_usarmy_d",
-            "rhsusf_M1232_M2_usarmy_d",
-            "RHS_M2A2",
-            "RHS_M2A2_BUSKI",
-            "RHS_M2A3_BUSKIII",
-            "rhsusf_m1a2sep2d_usarmy"
-        ],
-        [
-            //"Air Vehicles"
-            "RHS_MELB_MH6M",
-            "RHS_MELB_AH6M",
-            "RHS_CH_47F_10",
-            "RHS_UH60M_d",
-            "RHS_C130J",
-            "B_Plane_Fighter_01_F",
-            "RHS_AH64D"
-        ],
-        [
-            //"Fortifications"
-            "Land_BagFence_End_F",
-            "Land_BagFence_Long_F",
-            "Land_BagFence_Round_F",
-            "Land_BagFence_Short_F",
-            "Land_Razorwire_F",
-            "Land_Net_Fence_Gate_F",
-            "Land_HBarrier_3_F",
-            "Land_HBarrier_5_F",
-            "Land_HBarrier_Big_F",
-            "Land_HBarrier_1_F",
-            "Land_Concrete_SmallWall_8m_F",
-            "Land_Concrete_SmallWall_4m_F",
-            "Land_ConcreteHedgehog_01_F",
-            "Land_DragonsTeeth_01_4x2_new_F",
-            "BlockConcrete_F",
-            "Land_RampConcrete_F",
-            "Land_CncShelter_F",
-            "Land_HBarrierWall_corridor_F",
-            "Land_HBarrierWall_corner_F",
-            "Land_HBarrierWall6_F",
-            "Land_HBarrierWall4_F",
-            "Land_CncWall4_F",
-            "Land_CncWall1_F",
-            "Land_BagBunker_Small_F",
-            "Land_Plank_01_4m_F",
-            "Land_Plank_01_8m_F"
-        ],
-        [
-            //"Static"
-            "UK3CB_B_Searchlight_NATO",
-            "B_Static_Designator_01_F",
-            "RHS_M2StaticMG_D",
-            "RHS_M2StaticMG_MiniTripod_D",
-            "RHS_Stinger_AA_pod_D",
-            "RHS_TOW_TriPod_D",
-            "RHS_M252_D",
-            "RHS_M119_D"
-        ],
-        [
-            //"Ammobox"
-            "ACE_medicalSupplyCrate",
-            "ACE_medicalSupplyCrate_advanced",
-            "ACE_Box_Chemlights",
-            "ACE_Box_82mm_Mo_Combo",
-            "ACE_Box_82mm_Mo_Illum",
-            "ACE_Box_82mm_Mo_HE",
-            "ACE_Box_82mm_Mo_Smoke",
-            "Land_WoodenBox_F"
-
-        ],
-        [
-            //"Containers"
-            "B_Slingload_01_Repair_F",
-            "B_Slingload_01_Fuel_F",
-            "B_Slingload_01_Ammo_F",
-            "B_Slingload_01_Cargo_F"
-        ],
-        [
-            //"Supplies"
-            "Land_Cargo20_IDAP_F" // btc_supplies_cargo
-
-        ],
-        [
-            //"FOB"
-            "Land_Medevac_house_V1_F",
-            "Land_RepairDepot_01_green_F", // btc_recovery
-            "Land_Cargo20_blue_F" // btc_fob_mat
-        ],
-        [
-            //"Vehicle logistic"
-            "ACE_Track",
-            "ACE_Wheel",
-            "FlexibleTank_01_sand_F",
-            "ACE_fastropingSupplyCrate",
-            "Box_NATO_AmmoVeh_F"
-        ]
+        _GroundVeh,
+        _AirVeh,
+        _Forts,
+        _Statics,
+        _AmmoBoxes,
+        _Containers1,
+        _Supplys,
+        _FobStuff,
+        _vehLogistics
     ]
 ];
+
+// seperate arrays for pricing into seperate variables. Add variables together for pricing. Use the select code to seperate the classnames into modified arrays to build the btc_construction_array
 
 (btc_construction_array select 1) params [
     "_cGround_vehicles","_cAir_vehicles", "_cFortifications", "_cStatics", "_cAmmobox",
@@ -686,7 +693,7 @@ btc_log_fnc_get_nottowable = {
             [];
         };
         case (_tower isKindOf "Ship") : {
-            [];
+            ["Ship"];
         };
         case (_tower isKindOf "Car") : {
             ["Truck", "Truck_F", "Tank", "Helicopter" ]; //The tower is a car so it can't tow: truck, tank, plane and helicopter
@@ -793,8 +800,9 @@ btc_rep_bonus_IEDCleanUp = 10;
 btc_rep_bonus_removeTag = 3;
 btc_rep_bonus_removeTagLetter = 0.5;
 btc_rep_bonus_foodGive = 0.5;
-btc_rep_malus_veh_killed = 10;
+btc_rep_bonus_vehicle = 5;
 
+btc_rep_malus_veh_killed = - 10;
 btc_rep_malus_civ_hd = - 2;
 btc_rep_malus_animal_hd = - 1;
 btc_rep_malus_civ_killed = - 10;
@@ -833,3 +841,27 @@ btc_body_bagTicketPlayer = 1;
 btc_body_prisonerTicket = 3;
 
 btc_startDate = [1990, 5, 17, 12, 15];
+
+
+// Build Menu + Salvage Prices.
+
+_alltoprice = flatten btc_type_boats + flatten btc_type_motorized + flatten btc_type_motorized_armed; 
+_alltopricearray = []; 
+ALLTOPRICETOTAL = [];
+ 
+for "_i" from 0 to count _customPrices - 1 do { 
+_class = (_customprices select _i) select 0; 
+if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);}; 
+}; 
+ 
+{  
+    _cfgVehicles = configFile >> "CfgVehicles";  
+    _cost = getNumber(_cfgVehicles >> _x >> "cost");
+
+    // Set a min of 10, and a max of 1000, Round up to nearest 10 - if type is plane 800, if type is tank 600, if type is etc.
+
+    _alltopricearray pushback [_x,_cost/1000];
+} foreach _alltoprice;
+
+ALLTOPRICETOTAL = _alltopricearray + _customprices;
+

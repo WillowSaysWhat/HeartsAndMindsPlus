@@ -30,6 +30,8 @@ if (btc_debug || btc_debug_log) then {
     [format ["GLOBAL %1 - CHANGE %2 - %3", btc_global_reputation, _reputation, name _player], __FILE__, [btc_debug, btc_debug_log, true]] call btc_debug_fnc_message;
 };
 
+_UID = getplayerUID _player;
+if !(isNil "_UID") then {["REP",_UID,nil,_reputation] call tet_ui_setdatascore;};
 
 btc_global_reputation = btc_global_reputation + _reputation;
 

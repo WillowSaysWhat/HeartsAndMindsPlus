@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=379;
+		nextID=442;
 	};
 	class Camera
 	{
-		pos[]={9179.8281,25.554459,21656.98};
-		dir[]={-0.79906791,-0.60030866,-0.03410542};
-		up[]={-0.59976667,0.79976141,-0.025599696};
-		aside[]={-0.042644169,-3.5291305e-007,0.99911267};
+		pos[]={9135.082,66.85041,21573.57};
+		dir[]={0.46188936,-0.62744039,0.62693679};
+		up[]={0.37216869,0.77865714,0.50515574};
+		aside[]={0.80512422,8.2614133e-007,-0.59316891};
 	};
 };
 binarizationWanted=0;
@@ -47,7 +47,6 @@ addons[]=
 	"tfar_handhelds",
 	"rhsusf_c_troops",
 	"ace_compat_rhs_usf3",
-	"cTab",
 	"ace_attach",
 	"ace_hearing",
 	"ace_medical_treatment",
@@ -61,7 +60,6 @@ addons[]=
 	"CUP_CA_Config",
 	"A3_Ui_F",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Modules_F_Supports",
 	"ace_goggles",
 	"ace_fortify",
 	"ace_flashlights"
@@ -70,7 +68,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=33;
+		items=31;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -177,116 +175,104 @@ class AddonsMetaData
 		};
 		class Item15
 		{
-			className="cTab";
-			name="cTab";
-		};
-		class Item16
-		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item18
+		class Item17
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item19
+		class Item18
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item19
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item21
+		class Item20
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item22
+		class Item21
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item22
 		{
 			className="Desert";
 			name="Desert";
 		};
-		class Item24
+		class Item23
 		{
 			className="rhsusf_c_m113";
 			name="M113A3 APC";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item25
+		class Item24
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item26
+		class Item25
 		{
 			className="CUP_CA_Config";
 			name="CUP_CA_Config";
 		};
-		class Item27
+		class Item26
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item27
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
-		{
-			className="A3_Modules_F";
-			name="Arma 3 Alpha - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item30
+		class Item28
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item31
+		class Item29
 		{
 			className="ace_fortify";
 			name="ace_fortify";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item32
+		class Item30
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
@@ -17871,7 +17857,7 @@ class Mission
 					name="Modules";
 					class Entities
 					{
-						items=6;
+						items=4;
 						class Item0
 						{
 							dataType="Logic";
@@ -17978,181 +17964,6 @@ class Mission
 								nAttributes=4;
 							};
 						};
-						class Item4
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={11371.141,339.49149,24481.211};
-							};
-							name="BIS_providerMod";
-							id=830;
-							type="SupportProvider_Virtual_Transport";
-							atlOffset=501.28717;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="SupportProvider_Virtual_Transport_BIS_SUPP_filter";
-									expression="_this setVariable ['BIS_SUPP_filter',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Side";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="SupportProvider_Virtual_Transport_BIS_SUPP_vehicles";
-									expression="_this setVariable ['BIS_SUPP_vehicles',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="[""UK3CB_UN_B_Bell412_Mil_Medic""]";
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="SupportProvider_Virtual_Transport_BIS_SUPP_vehicleInit";
-									expression="_this setVariable ['BIS_SUPP_vehicleInit',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="SupportProvider_Virtual_Transport_BIS_SUPP_cooldown";
-									expression="_this setVariable ['BIS_SUPP_cooldown',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=60;
-										};
-									};
-								};
-								nAttributes=4;
-							};
-						};
-						class Item5
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={11205.271,294.37769,24480.516};
-							};
-							name="BIS_requesterMod";
-							id=831;
-							type="SupportRequester";
-							atlOffset=445.16156;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="SupportRequester_BIS_SUPP_limit_UAV";
-									expression="_this setVariable ['BIS_SUPP_limit_UAV',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="0";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="SupportRequester_BIS_SUPP_custom_HQ";
-									expression="_this setVariable ['BIS_SUPP_custom_HQ',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="SupportRequester_BIS_SUPP_limit_Transport";
-									expression="_this setVariable ['BIS_SUPP_limit_Transport',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="1";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="SupportRequester_BIS_SUPP_limit_Drop";
-									expression="_this setVariable ['BIS_SUPP_limit_Drop',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="0";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="SupportRequester_BIS_SUPP_limit_CAS_Heli";
-									expression="_this setVariable ['BIS_SUPP_limit_CAS_Heli',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="0";
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="SupportRequester_BIS_SUPP_limit_Artillery";
-									expression="_this setVariable ['BIS_SUPP_limit_Artillery',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="0";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="SupportRequester_BIS_SUPP_limit_CAS_Bombing";
-									expression="_this setVariable ['BIS_SUPP_limit_CAS_Bombing',_value,true];";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="0";
-										};
-									};
-								};
-								nAttributes=7;
-							};
-						};
 					};
 					id=1338;
 					atlOffset=357.25571;
@@ -18176,14 +17987,14 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9146.6592,14.686923,21654.867};
-										angles[]={0,3.8418612,0};
+										position[]={9146.6592,14.68653,21654.867};
+										angles[]={0,3.8418536,0};
 									};
 									side="West";
 									flags=7;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""side_mission"",true];" \n "this setVariable [""allow_salvage"",true];" \n "this setVariable [""allow_build"",true];" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Commander";
 										isPlayable=1;
 										class Inventory
@@ -18217,7 +18028,7 @@ class Mission
 									};
 									id=1180;
 									type="B_Survivor_F";
-									atlOffset=0.021642685;
+									atlOffset=0.021249771;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -18261,7 +18072,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18309,7 +18120,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18387,7 +18198,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18435,7 +18246,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18483,7 +18294,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18531,7 +18342,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18579,7 +18390,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18627,7 +18438,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18674,7 +18485,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18722,7 +18533,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18770,7 +18581,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18818,7 +18629,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Rifleman";
 										isPlayable=1;
 										class Inventory
@@ -18866,7 +18677,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "this setVariable [""allow_salvage"",true];" \n "this setVariable [""allow_build"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Engineer";
 										isPlayable=1;
 										class Inventory
@@ -18970,7 +18781,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "this setVariable [""allow_salvage"",true];" \n "this setVariable [""allow_build"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Engineer";
 										isPlayable=1;
 										class Inventory
@@ -19074,7 +18885,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "this setVariable [""allow_salvage"",true];" \n "this setVariable [""allow_build"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Engineer";
 										isPlayable=1;
 										class Inventory
@@ -19178,7 +18989,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "this setVariable [""allow_salvage"",true];" \n "this setVariable [""allow_build"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Engineer";
 										isPlayable=1;
 										class Inventory
@@ -19282,7 +19093,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Autorifleman";
 										isPlayable=1;
 										class Inventory
@@ -19330,7 +19141,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Autorifleman";
 										isPlayable=1;
 										class Inventory
@@ -19378,7 +19189,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Autorifleman";
 										isPlayable=1;
 										class Inventory
@@ -19456,7 +19267,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Autorifleman";
 										isPlayable=1;
 										class Inventory
@@ -19504,7 +19315,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Medic";
 										isPlayable=1;
 										class Inventory
@@ -19569,7 +19380,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Medic";
 										isPlayable=1;
 										class Inventory
@@ -19634,7 +19445,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Medic";
 										isPlayable=1;
 										class Inventory
@@ -19699,7 +19510,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];" \n "";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Medic";
 										isPlayable=1;
 										class Inventory
@@ -19790,7 +19601,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Pilot";
 										isPlayable=1;
 										class Inventory
@@ -19868,7 +19679,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="call{group this setgroupid [""COMPANY""];};" \n "this setVariable [""interpreter"",true];";
+										init="call{group this setgroupid [""COMPANY""];};" \n "";
 										description="Pilot";
 										isPlayable=1;
 										class Inventory
@@ -19939,46 +19750,15 @@ class Mission
 							{
 							};
 							id=1207;
-							atlOffset=0.021642685;
+							atlOffset=0.021249771;
 						};
 					};
 					id=1339;
-					atlOffset=0.021642685;
+					atlOffset=0.021249771;
 				};
 			};
 			id=1334;
-			atlOffset=65.332146;
-		};
-	};
-	class Connections
-	{
-		class LinkIDProvider
-		{
-			nextID=2;
-		};
-		class Links
-		{
-			items=2;
-			class Item0
-			{
-				linkID=0;
-				item0=831;
-				item1=830;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1
-			{
-				linkID=1;
-				item0=831;
-				item1=1180;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
+			atlOffset=65.331947;
 		};
 	};
 };

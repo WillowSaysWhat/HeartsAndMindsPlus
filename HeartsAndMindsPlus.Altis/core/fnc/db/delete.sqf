@@ -43,6 +43,11 @@ profileNamespace setVariable [format ["btc_hm_%1_slotsSerialized", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_markers", _name], nil];
 profileNamespace setVariable [format ["btc_hm_%1_db", _name], nil];
 
+profileNamespace setVariable [format ["btc_hm_%1_rep", _name], nil];
+profileNamespace setVariable [format ["btc_hm_%1_eco", _name], nil];
+profileNamespace setVariable [format ["btc_hm_%1_playerdb", _name], nil];
+profileNamespace setVariable [format ["btc_hm_%1_UID", _name], nil];
+
 saveProfileNamespace;
 
 if (_showHint) then {

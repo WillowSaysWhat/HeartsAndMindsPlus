@@ -8,8 +8,11 @@ enabledebugconsole = 1;
 #include "core\fnc\common\dlg.hpp"
 #include "core\fnc\fob\dlg.hpp"
 #include "core\fnc\log\dlg.hpp"
-#include "core\fnc\fortify\dlg.hpp"
 #include "core\fnc\debug\defines.hpp"
+#include "core\fnc\ui\tet_fortify_dlg_salvage.hpp"
+#include "core\fnc\ui\tet_fortify_dlg.hpp"
+#include "core\fnc\ui\tet_ui_dlg_permissions.hpp"
+#include "core\fnc\ui\tet_ui_dlg_scoreboard.hpp"
 
 class RscTitles {
     class Default {

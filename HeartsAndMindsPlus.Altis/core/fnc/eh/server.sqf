@@ -40,12 +40,15 @@ addMissionEventHandler ["BuildingChanged", btc_rep_fnc_buildingchanged];
         [_this select 0, "HandleDamage", btc_rep_fnc_hd] call CBA_fnc_addBISEventHandler;
     }, false] call CBA_fnc_addClassEventHandler;
 } forEach btc_civ_type_veh;
+
 ["ace_killed", btc_mil_fnc_unit_killed] call CBA_fnc_addEventHandler;
 ["ace_repair_setWheelHitPointDamage", btc_rep_fnc_wheelChange] call CBA_fnc_addEventHandler;
 ["ace_disarming_dropItems", btc_rep_fnc_foodRemoved] call CBA_fnc_addEventHandler;
 ["btc_respawn_player", {
     params ["", "_player"];
     [btc_rep_malus_player_respawn, _player] call btc_rep_fnc_change;
+    _uid = getplayerUID _player;
+    ["DEATH",_uid] call tet_ui_setdatascore;
     btc_slots_serialized set [
         _player getVariable ["btc_slot_key", [0, 0, 0]],
         [] // Reset serialized data if slot died

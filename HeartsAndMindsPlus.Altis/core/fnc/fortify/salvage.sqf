@@ -25,7 +25,7 @@ params ["_object"];
     _type = typeOf _obj;
     _vehicle = btc_fortify_vehicles;
     _friendly = btc_all_obj;
-    _enemy = fortify_enemy_vehicles;
+    _enemy = flatten btc_type_boats + flatten btc_type_motorized + flatten btc_type_motorized_armed;
 
     if (_type in _vehicle) then {
         [_obj] remoteExecCall ["tet_fortify_delete", [2]];
