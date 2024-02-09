@@ -61,8 +61,10 @@ params ["_Change","_UID","_type","_reputationchange"];
 		};
 	};
 
+    if (!(isnil "_UID") && !(isNil "_NAME")) then {
 	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION1]joinString ":";
 	BTC_Player_array set [_PlayerKey,_OUTPUT];
+    };
 
         publicvariable "BTC_PLAYER_array";
         publicvariable "BTC_UID_array";

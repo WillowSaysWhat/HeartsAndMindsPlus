@@ -45,8 +45,7 @@ _city setVariable ["active", true];
 
 
 // _citysound = getpos _city 
-// Use with playsound3D to loop a sound aslong as the city remains active. May need to call a seperate script with a loop checking if it is still active.
-// Play sounds based on the type of objective. E.G jungle etc.
+// Attach the sound name as a variable - Use _city to get pos for a playsound3D
 
 
 // Added Player Scaling Variable
