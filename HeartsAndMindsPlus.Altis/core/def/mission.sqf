@@ -476,48 +476,23 @@ btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, i
 // Add a further "Price Overwrite" category for adding custom vehicles
 
 _GroundVehArray = [ // Ground Vehicles
-    ["rhsusf_mrzr4_d",75],
-    ["rhsusf_m1045_d",100],
-    ["rhsusf_m998_d_2dr_fulltop",100],
-    ["rhsusf_m998_d_2dr_halftop",100],
-    ["rhsusf_m998_d_2dr",100],
-    ["rhsusf_m998_d_4dr_fulltop",100],
-    ["rhsusf_m998_d_4dr_halftop",100],
-    ["rhsusf_m1152_usarmy_d",100],
-    ["rhsusf_m1043_d_m2",150],
-    ["rhsusf_m1151_m2_v1_usarmy_d",150],
-    ["rhsusf_m1151_m2_v2_usarmy_d",150],
-    ["rhsusf_m1165a1_gmv_m2_m240_socom_d",250],
-    ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",250],
-    ["UK3CB_B_M939_Closed_DES",250],
-    ["UK3CB_B_M939_Guntruck_DES",250],
-    ["UK3CB_B_M939_Open_DES",250],
-    ["UK3CB_B_M939_Reammo_DES",250],
-    ["UK3CB_B_M939_Recovery_DES",250],
-    ["UK3CB_B_M939_Refuel_DES",250],
-    ["UK3CB_B_M939_Repair_DES",250],
-    ["rhsusf_stryker_m1127_m2_d",500],
-    ["rhsusf_M1220_usarmy_d",500],
-    ["rhsusf_m1240a1_m2_uik_usarmy_d",500],
-    ["UK3CB_B_MaxxPro_M2_US",500],
-    ["B_APC_Tracked_01_CRV_F",500],
-    ["rhsusf_M1220_M2_usarmy_d",750],
-    ["rhsusf_M1230_M2_usarmy_d",750],
-    ["rhsusf_M1232_M2_usarmy_d",750],
-    ["RHS_M2A2",1000],
-    ["RHS_M2A2_BUSKI",1500],
-    ["RHS_M2A3_BUSKIII",2000],
-    ["rhsusf_m1a2sep2d_usarmy",2500]
+    ["B_APC_Wheeled_01_cannon_F",2500],
+    ["B_APC_Tracked_01_CRV_F",2000],
+    ["B_MBT_01_cannon_F",1500],
+    ["B_MRAP_01_F",1000],
+    ["B_MRAP_01_gmg_F",1000],
+    ["B_MRAP_01_hmg_F",1000],
+    ["B_LSV_01_unarmed_F",1000],
+    ["B_Truck_01_ammo_F",500],
+    ["B_Truck_01_fuel_F",500],
+    ["B_Truck_01_Repair_F",500]
 ];
 
 _AirVehArray = [ // Aircraft
-    ["RHS_MELB_MH6M",500],
-    ["RHS_MELB_AH6M",750],
-    ["RHS_CH_47F_10",1000],
-    ["RHS_UH60M_d",1000],
-    ["RHS_C130J",1000],
-    ["B_Plane_Fighter_01_F",2000],
-    ["RHS_AH64D",2500]
+    ["B_Heli_Light_01_dynamicLoadout_F",1000],
+    ["B_Heli_Light_01_F",1000],
+    ["B_Heli_Transport_03_F",1000],
+    ["B_Heli_Transport_01_F",1000]
 ];
 
 
@@ -552,14 +527,14 @@ _FortsArray = [ // Fortifications
 
 
 _StaticsArray = [ // Statics
-    ["UK3CB_B_Searchlight_NATO",25],
-    ["B_Static_Designator_01_F",25],
-    ["RHS_M2StaticMG_D",50],
-    ["RHS_M2StaticMG_MiniTripod_D",50],
-    ["RHS_Stinger_AA_pod_D",100],
-    ["RHS_TOW_TriPod_D",100],
-    ["RHS_M252_D",150],
-    ["RHS_M119_D",250]
+    ["B_GMG_01_A_F",1000],
+    ["B_static_AA_F",250],
+    ["B_static_AT_F",250],
+    ["B_Mortar_01_F",250],
+    ["B_GMG_01_F",250],
+    ["B_HMG_01_high_F",200],
+    ["B_GMG_01_high_F",200],
+    ["B_HMG_01_F",150]
 ];
 
 
