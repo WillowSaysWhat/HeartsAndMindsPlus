@@ -2,7 +2,7 @@
 
 **Custom Arma 3 Gamemode by Tetlys** 🎮
 
-Enhanced air support, player scaling, custom UI, dynamic economy, and more! 🌟
+Enhanced air support, player scaling, permissions, custom UI, dynamic economy, and more! 🌟
 
 [![GitHub Release](https://img.shields.io/github/v/release/Tetlys/HeartsAndMindsPlus?include_prereleases&color=success)](https://github.com/Tetlys/HeartsAndMindsPlus/releases/tag/Beta1.0)
 [![Discord](https://img.shields.io/discord/1234567890?label=Discord&logo=discord&color=blue)](https://discord.gg/4DdMKvJjMa)
@@ -24,6 +24,9 @@ HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the 
 - **Improved VIV and Object Loading:** Enhancements for better gameplay.
 - **Modified Map Markers:** - Changed to better suit larger groups of players.
 - **Building Damage Modifiers changed:** - Changed to better suit larger full warefare scenarios. 
+- **Permissions** - Added a full suit permissions system for handling of Build,Salvage and Command actions with custom ingame UI interactables.
+- **Imrpoved Map Markers** - Improved on the existing system towards a large multiplayer environment.
+- **Automation** - Lots of QOL improvmenets to missions creators, E.g: Enemy vehicles self fill to the salvage array.
 
 ### Deprecated Features ⚠️
 
@@ -31,9 +34,17 @@ HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the 
 - Auto Loadout
 - Arsenal on Death Screen
 
+
+### COMING SOON!
+
+- Dynamic objective sounds
+- Dynamic civilian interaction improvmenets
+- Removal of selectivly deprecated code.
+- 
+
 ## Installation 🚀
 
-1. [Download the latest release](https://github.com/Tetlys/HeartsAndMindsPlus/releases/tag/Beta1.0)
+1. [Download the latest release](https://github.com/Tetlys/HeartsAndMindsPlus/releases/tag/Beta2.0)
 2. Install required mods:
    - [CBA](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
    - [ACE](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
