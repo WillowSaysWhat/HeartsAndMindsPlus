@@ -41,4 +41,4 @@ params ["_object"];
 
 	closeDialog 0;
 
-}, [lbData [85, lbCurSel 85]], 0.5] call CBA_fnc_waitAndExecute;
+}, [lbData [85, lbCurSel 85]], 0.5] call CBA_fnc_waitAndExecute; 

@@ -34,4 +34,4 @@ Author:
 
     [_veh] call CBA_fnc_deleteEntity;
 
-    true
+    true 

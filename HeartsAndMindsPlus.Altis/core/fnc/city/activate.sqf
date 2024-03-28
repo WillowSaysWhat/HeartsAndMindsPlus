@@ -49,8 +49,8 @@ _city setVariable ["active", true];
 
 
 // Added Player Scaling Variable
-private _CurrentPlayers = count allPlayers;
-private _PlayerScale = ((_CurrentPlayers * 0.03) max 0.5) min 1;
+//private _CurrentPlayers = count allPlayers;
+//private _PlayerScale = ((_CurrentPlayers * 0.03) max 0.5) min 1;
 
 private _data_units = _city getVariable ["data_units", []];
 private _data_animals = _city getVariable ["data_animals", []];
@@ -120,7 +120,7 @@ if (_data_units isNotEqualTo []) then {
     });
 
     if (_has_en) then {
-        private _finalNumberOfGroup = floor (_p_mil_group_ratio * _numberOfGroup * _PlayerScale); // Player Scaling Adjusted
+        private _finalNumberOfGroup = floor (_p_mil_group_ratio * _numberOfGroup); // Player Scaling Adjusted  * _PlayerScale
         private _numberOfHouseGroup = _finalNumberOfGroup * btc_p_mil_wp_houseDensity;
         for "_i" from 1 to round _finalNumberOfGroup do {
             [
@@ -154,11 +154,11 @@ if (_data_units isNotEqualTo []) then {
         private _numberOfCivi = (switch _type do {
             case "VegetationFir" : {0};
             case "BorderCrossing" : {2};
-            case "NameLocal" : {5};
+            case "NameLocal" : {6};
             case "StrongpointArea" : {0};
-            case "NameVillage" : {10};
-            case "NameCity" : {10};
-            case "NameCityCapital" : {15};
+            case "NameVillage" : {12};
+            case "NameCity" : {15};
+            case "NameCityCapital" : {20};
             case "Airport" : {10};
             default {5};
         });

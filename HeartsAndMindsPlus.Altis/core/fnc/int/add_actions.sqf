@@ -87,16 +87,19 @@ _action = ["Search_intel", localize "STR_A3_Showcase_Marksman_BIS_tskIntel_title
     //Tool
     _action = ["Tool", localize "str_3den_display3den_menubar_tools_text", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\T_ca.paa", {}, {true}] call ace_interact_menu_fnc_createAction;
     [_object, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+    /*
     _action = ["Copy_container", localize "STR_BTC_HAM_ACTION_COPYPASTE_COPY", "\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa", {
         params ["", "", "_params"];
         _params call btc_log_fnc_copy
     }, {true}, {}, [_helipad], [0, 0, 0.4], 5] call ace_interact_menu_fnc_createAction;
     [_object, 0, ["ACE_MainActions", "Tool"], _action] call ace_interact_menu_fnc_addActionToObject;
+    
     _action = ["Paste_container", localize "STR_BTC_HAM_ACTION_COPYPASTE_PASTE", "\A3\ui_f\data\igui\cfg\simpleTasks\types\upload_ca.paa", {
         params ["", "", "_params"];
         [btc_copy_container, _params] call btc_log_fnc_paste
     }, {!isNil "btc_copy_container"}, {}, _helipad, [0, 0, 0.4], 5] call ace_interact_menu_fnc_createAction;
     [_object, 0, ["ACE_MainActions", "Tool"], _action] call ace_interact_menu_fnc_addActionToObject;
+    */
     _action = ["Copy_inventory", localize "STR_BTC_HAM_ACTION_COPYPASTE_COPYI", "\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa", {
         params ["", "", "_params"];
         _params call btc_log_fnc_inventoryCopy
@@ -163,16 +166,9 @@ _action = ["Score_Board", "Score Board", "\A3\ui_f\data\igui\cfg\simpleTasks\let
 }, {true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-// PERMISSIONS
-
-_action = ["Permissions", "Permissions", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\P_ca.paa", {
-    [] call tet_ui_openperms;
-}, {player getVariable ["side_mission", false]}] call ace_interact_menu_fnc_createAction;
-[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
-
 // PERMISSIONS ADMIN
 
-_action = ["PermissionsAdmin", "Permissions Admin", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\P_ca.paa", {
+_action = ["Permissions", "Permissions", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\P_ca.paa", {
     [] call tet_ui_openperms;
 }, {serverCommandAvailable "#logout"}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
@@ -181,7 +177,7 @@ _action = ["PermissionsAdmin", "Permissions Admin", "\A3\ui_f\data\igui\cfg\simp
 
 _action = ["AdminArsenal", "Admin Arsenal", "\A3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa", {
     [player, player, true] call ace_arsenal_fnc_openBox;
-}, {player getVariable ["side_mission", false]}, {}, [], [0, 0, -2], 5] call ace_interact_menu_fnc_createAction;
+}, {serverCommandAvailable "#logout"}, {}, [], [0, 0, -2], 5] call ace_interact_menu_fnc_createAction;
 [Arsenal_typename, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
 
 //Orders

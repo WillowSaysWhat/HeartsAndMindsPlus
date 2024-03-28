@@ -36,4 +36,4 @@ if !(_veh in _allowlist) exitWith {
 	[west, _costadjusted, false] call acex_fortify_fnc_updateBudget; 
 	btc_global_economy = btc_global_economy + _costadjusted;
 [_veh getVariable ["ace_cargo_loaded", []], _allowlist deleteAt (_allowlist find _veh)] call CBA_fnc_deleteEntity;
-true
+true 

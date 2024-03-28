@@ -46,6 +46,6 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     private _displayout = [_NAME,"    |     ","CanBuild: ",_BUILDPERM,"    |     ","CanSalvage: ",_SALVAGEPERM,"    |     ","CanCommand: ",_COMMANDPERM] joinString "";
     private _index = lbAdd [88, _displayout];
     lbSetData [88, _index, _UID];
-    if (_i isEqualTo 0) then {lbSetCurSel [88, _index];};
+    //if (_i isEqualTo 0) then {lbSetCurSel [88, _index];};
     };
 };

@@ -56,6 +56,10 @@ if (btc_debug_log) then {
 if ((random 1) > _ratio) then { //MOT
     [_start_pos, _pos, 1] call btc_mil_fnc_send;
 
+//ADDNOTIF MILITIA CALLED
+[parseText "<t color='#FF3619' font='PuristaBold' align = 'right' shadow = '1.5' size='2'>- Militia Spotted! </t>", [0, 0.5, 1, 1], nil, 5, 1.7, 0] remoteExec ["BIS_fnc_textTiles", 0];
+
+
     if (btc_debug_log) then {
         [format ["MOT %1 POS %2", _group, _pos], __FILE__, [false]] call btc_debug_fnc_message;
     };
@@ -63,7 +67,7 @@ if ((random 1) > _ratio) then { //MOT
     [_start_pos, _pos, 0, "", "WEDGE"] call btc_mil_fnc_send;
 
 //ADDNOTIF MILITIA CALLED
-[parseText "<t color='#FF3619' font='PuristaBold' align = 'right' shadow = '1.5' size='2'>- Militia Called! </t>", [0, 0.5, 1, 1], nil, 5, 1.7, 0] remoteExec ["BIS_fnc_textTiles", 0];
+[parseText "<t color='#FF3619' font='PuristaBold' align = 'right' shadow = '1.5' size='2'>- Militia Spotted! </t>", [0, 0.5, 1, 1], nil, 5, 1.7, 0] remoteExec ["BIS_fnc_textTiles", 0];
 
     if (btc_debug_log) then {
         [format ["INF %1", _group], __FILE__, [false]] call btc_debug_fnc_message;

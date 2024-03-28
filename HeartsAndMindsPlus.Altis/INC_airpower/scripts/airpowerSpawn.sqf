@@ -153,7 +153,7 @@ if ((_percentage > (random 100)) && ((!_nightTimeOnly) || (daytime >= APW_sunset
     sleep (2 + (random 4));
 
     //Otherwise, say how many missiles remaining
-    (format ["%1: 'Equipped with %2 GBU-12 LGB and %3 Hellfire LGM. Playtime %4, abort in the clear.'",_airCallsign,_bomb,_missile,(round (_timeOnTarget/60))]) remoteExec ["systemChat",_caller];
+    (format ["%1: 'Equipped with %2 GBU-HE LGB and %3 Hellfire LGM. Playtime %4, abort in the clear.'",_airCallsign,_bomb,_missile,(round (_timeOnTarget/60))]) remoteExec ["systemChat",_caller];
 
     if (_fullVP) then {
         sleep 4;

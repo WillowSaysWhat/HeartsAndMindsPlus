@@ -316,7 +316,7 @@ if (isServer) then {
 
     // The multipliers are applied on top of each other, so "Chapel" and "Small" will both multiply the malus value
     btc_buildings_categories_multipliers = [
-        ["Shed", 1], ["Slum", 1], ["Small", 1], ["Big", 1], ["Villa", 1], ["Main", 1], ["Tower", 1],
+        ["Shed", 1], ["Slum", 1], ["Small", 1], ["Big", 2], ["Villa", 2], ["Main", 1], ["Tower", 1],
         ["HouseBlock", 1], ["Panelak", 1], ["Tenement", 1],
         ["Barn", 1], ["School", 1], ["Office", 1], ["Shop", 1], ["Store", 1], ["Hospital", 2],
         ["Castle", 1], ["Chapel", 2], ["Minaret", 2], ["Mosque", 2], ["Church", 2], ["Kostel", 2],
@@ -476,23 +476,53 @@ btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, i
 // Add a further "Price Overwrite" category for adding custom vehicles
 
 _GroundVehArray = [ // Ground Vehicles
-    ["B_APC_Wheeled_01_cannon_F",2500],
-    ["B_APC_Tracked_01_CRV_F",2000],
-    ["B_MBT_01_cannon_F",1500],
-    ["B_MRAP_01_F",1000],
-    ["B_MRAP_01_gmg_F",1000],
-    ["B_MRAP_01_hmg_F",1000],
-    ["B_LSV_01_unarmed_F",1000],
-    ["B_Truck_01_ammo_F",500],
-    ["B_Truck_01_fuel_F",500],
-    ["B_Truck_01_Repair_F",500]
+    ["rhsusf_mrzr4_d",100],
+    ["rhsusf_m1045_d",450],
+    ["rhsusf_m998_d_2dr_fulltop",450],
+    ["rhsusf_m998_d_2dr_halftop",450],
+    ["rhsusf_m998_d_2dr",450],
+    ["UK3CB_B_M939_Recovery_DES",500],
+    ["rhsusf_m998_d_4dr_fulltop",550],
+    ["rhsusf_m998_d_4dr_halftop",550],
+    ["rhsusf_m1152_usarmy_d",550],
+    ["UK3CB_FIA_B_Hilux_Ambulance",600],
+    ["rhsusf_m1151_m2_v1_usarmy_d",850],
+    ["rhsusf_m1151_m2_v2_usarmy_d",850],
+    ["rhsusf_m1043_d_m2",1000],
+    ["rhsusf_m1165a1_gmv_m2_m240_socom_d",1500],
+	["B_APC_Tracked_01_CRV_F",1500],
+    ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",1500],
+    ["rhsusf_M1117_D",1800],
+    ["rhsusf_m1151_mk19_v2_usarmy_d",2000],
+    ["rhsusf_m1151_mk19_v1_usarmy_d",2000],
+    ["UK3CB_B_M939_Closed_DES",2000],
+    ["UK3CB_B_M939_Guntruck_DES",2500],
+    ["UK3CB_B_M939_Open_DES",2000],
+    ["UK3CB_B_M939_Reammo_DES",2500],
+    ["UK3CB_B_M939_Refuel_DES",2500],
+    ["UK3CB_B_M939_Repair_DES",2500],
+    ["rhsusf_stryker_m1127_m2_d",3000],
+    ["rhsusf_M1220_usarmy_d",3000],
+    ["rhsusf_m1240a1_m2_uik_usarmy_d",3000],
+    ["UK3CB_B_MaxxPro_M2_US",3000],
+    ["rhsusf_M1220_M2_usarmy_d",3500],
+    ["rhsusf_M1230_M2_usarmy_d",3500],
+    ["rhsusf_M1232_M2_usarmy_d",3500],
+    ["RHS_M2A2",5000],
+    ["RHS_M2A2_BUSKI",6000],
+    ["RHS_M2A3_BUSKIII",8000],
+    ["rhsusf_m1a2sep2d_usarmy",10000]
 ];
 
 _AirVehArray = [ // Aircraft
-    ["B_Heli_Light_01_dynamicLoadout_F",1000],
-    ["B_Heli_Light_01_F",1000],
-    ["B_Heli_Transport_03_F",1000],
-    ["B_Heli_Transport_01_F",1000]
+    ["RHS_MELB_MH6M",2000],
+    ["RHS_UH60M_d",4000],
+    ["RHSGREF_A29B_HIDF",5000],
+    ["RHS_CH_47F_10",6000],
+    ["RHS_C130J",7000],
+    ["RHS_MELB_AH6M",8000],
+    ["B_Plane_Fighter_01_F",12000],
+    ["RHS_AH64D",10000]
 ];
 
 
@@ -522,19 +552,20 @@ _FortsArray = [ // Fortifications
     ["Land_CncWall1_F",10],
     ["Land_BagBunker_Small_F",15],
     ["Land_Plank_01_4m_F",25],
-    ["Land_Plank_01_8m_F",50]
+    ["Land_Plank_01_8m_F",50],
+    ["Land_Camping_Light_F",10]
 ];
 
 
 _StaticsArray = [ // Statics
-    ["B_GMG_01_A_F",1000],
-    ["B_static_AA_F",250],
-    ["B_static_AT_F",250],
-    ["B_Mortar_01_F",250],
-    ["B_GMG_01_F",250],
-    ["B_HMG_01_high_F",200],
-    ["B_GMG_01_high_F",200],
-    ["B_HMG_01_F",150]
+    ["UK3CB_B_Searchlight_NATO",25],
+    ["B_Static_Designator_01_F",25],
+    ["RHS_M2StaticMG_D",50],
+    ["RHS_M2StaticMG_MiniTripod_D",50],
+    ["RHS_Stinger_AA_pod_D",100],
+    ["RHS_TOW_TriPod_D",100],
+    ["RHS_M252_D",150],
+    ["RHS_M119_D",250]
 ];
 
 
@@ -542,10 +573,6 @@ _AmmoBoxesArray =  [ // Ammo Boxes / Storage Boxes
     ["ACE_medicalSupplyCrate",20],
     ["ACE_medicalSupplyCrate_advanced",25],
     ["ACE_Box_Chemlights",25],
-    ["ACE_Box_82mm_Mo_Combo",25],
-    ["ACE_Box_82mm_Mo_Illum",25],
-    ["ACE_Box_82mm_Mo_HE",25],
-    ["ACE_Box_82mm_Mo_Smoke",25],
     ["Land_WoodenBox_F",25]
 ];
 
@@ -571,8 +598,8 @@ _FobStuffArray = [ // FOB Crate + FOB Objects
 
 
 _VehLogisticsArray = [ // Vehicle Logistics
-    ["ACE_Track",5],
-    ["ACE_Wheel",5], 
+    ["ACE_Track",1],
+    ["ACE_Wheel",1], 
     ["FlexibleTank_01_sand_F",10],
     ["ACE_fastropingSupplyCrate",25],
     ["Box_NATO_AmmoVeh_F",50]
@@ -618,7 +645,7 @@ btc_construction_array =
         "Static",
         "Ammobox",
         "Containers",
-        "Supplies",
+        "Side Missions",
         "FOB",
         "Vehicle Logistic"
     ],
@@ -660,7 +687,7 @@ btc_log_fnc_get_nottowable = {
 
     switch (true) do {
         case (_tower isKindOf "Tank") : {
-            ["Tank", "Plane", "Helicopter", "Ship"];
+            [];
         };
         case (_tower isKindOf "Truck_F") : {
             [];
@@ -750,26 +777,26 @@ btc_spect_range = 1000;
 btc_spect_updateOn = -1;
 
 //Rep
-btc_rep_bonus_cache = 200;
+btc_rep_bonus_cache = 100;
 btc_rep_bonus_civ_hh = 3;
 btc_rep_bonus_disarm = 15;
 btc_rep_bonus_hideout = 200;
 btc_rep_bonus_mil_killed = 0.25;
 btc_rep_bonus_IEDCleanUp = 10;
-btc_rep_bonus_removeTag = 3;
+btc_rep_bonus_removeTag = 1;
 btc_rep_bonus_removeTagLetter = 0.5;
-btc_rep_bonus_foodGive = 0.5;
-btc_rep_bonus_vehicle = 5;
+btc_rep_bonus_foodGive = 1;
+btc_rep_bonus_vehicle = 10;
 
 btc_rep_malus_veh_killed = - 10;
-btc_rep_malus_civ_hd = - 2;
+btc_rep_malus_civ_hd = - 5;
 btc_rep_malus_animal_hd = - 1;
-btc_rep_malus_civ_killed = - 10;
+btc_rep_malus_civ_killed = - 100;
 btc_rep_malus_animal_killed = - 5;
 btc_rep_malus_civ_suppressed = - 0;
 btc_rep_malus_player_respawn = - 5;
 btc_rep_malus_building_damaged = - 0;
-btc_rep_malus_building_destroyed = - 20;
+btc_rep_malus_building_destroyed = - 50;
 btc_rep_malus_foodRemove = - btc_rep_bonus_foodGive;
 btc_rep_malus_breakDoor = - 1;
 btc_rep_malus_wheelChange = - 0;
@@ -797,7 +824,7 @@ btc_flag_textures = [
 
 //Respawn
 btc_body_bagTicketPlayer = 1;
-btc_body_prisonerTicket = 3;
+btc_body_prisonerTicket = 5;
 
 btc_startDate = [1990, 5, 17, 12, 15];
 
@@ -815,7 +842,7 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
 {  
     _cfgVehicles = configFile >> "CfgVehicles";  
     _cost = getNumber(_cfgVehicles >> _x >> "cost");
-    _finalcost = ((_cost/1000) max 10) min 1000;
+    _finalcost = ((_cost/1000) max 160) min 1600;
     _alltopricearray pushback [_x,_finalcost];
 } foreach _alltoprice;
 
