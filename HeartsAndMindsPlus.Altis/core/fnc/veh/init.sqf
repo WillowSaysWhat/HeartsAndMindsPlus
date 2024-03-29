@@ -34,6 +34,7 @@ switch true do {
         _type call btc_tow_fnc_int;
 
         _type call btc_flag_fnc_int;
+        
     };
     case (_type isKindOf "Helicopter") : {
         _type call btc_tow_fnc_int;
@@ -60,6 +61,13 @@ switch true do {
         _type call btc_tow_fnc_int;
     };
 };
+/*
+    _action = [
+        "Open_Garage", "Open Garage",
+        "\A3\ui_f\data\map\vehicleicons\iconCar_ca.paa",
+        {[] call zen_garage_fnc_openGarage;},
+        {player getVariable ["side_mission", false]}
+    ] call ace_interact_menu_fnc_createAction;
+    [_type, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
 
-
-
+*/
