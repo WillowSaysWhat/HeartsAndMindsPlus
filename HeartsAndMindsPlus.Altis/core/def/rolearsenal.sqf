@@ -450,6 +450,7 @@ roleArsenal = {
 		"rhsusf_20Rnd_762x51_SR25_m62_Mag",
 		"rhsusf_20Rnd_762x51_SR25_m993_Mag",
 		"rhsusf_20Rnd_762x51_SR25_mk316_special_Mag",
+		"rhs_weap_SCARH_USA_STD",
 		//SECONDARY
 		"rhs_weap_M320",
 		 //LAUNCHER

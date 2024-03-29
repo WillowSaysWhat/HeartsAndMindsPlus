@@ -493,6 +493,7 @@ _GroundVehArray = [ // Ground Vehicles
 	["B_APC_Tracked_01_CRV_F",1500],
     ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",1500],
     ["rhsusf_M1117_D",1800],
+    ["B_T_Boat_Armed_01_minigun_F",2000],
     ["rhsusf_m1151_mk19_v2_usarmy_d",2000],
     ["rhsusf_m1151_mk19_v1_usarmy_d",2000],
     ["UK3CB_B_M939_Closed_DES",2000],
@@ -516,6 +517,7 @@ _GroundVehArray = [ // Ground Vehicles
 
 _AirVehArray = [ // Aircraft
     ["RHS_MELB_MH6M",2000],
+    ["B_UAV_02_F", 3000],
     ["RHS_UH60M_d",4000],
     ["RHSGREF_A29B_HIDF",5000],
     ["RHS_CH_47F_10",6000],
@@ -524,7 +526,6 @@ _AirVehArray = [ // Aircraft
     ["B_Plane_Fighter_01_F",12000],
     ["RHS_AH64D",10000]
 ];
-
 
 _FortsArray = [ // Fortifications
     ["Land_BagFence_End_F",1],
@@ -554,10 +555,11 @@ _FortsArray = [ // Fortifications
     ["Land_Plank_01_4m_F",25],
     ["Land_Plank_01_8m_F",50],
     ["Land_Camping_Light_F",10],
+    ["Land_TyreBarrier_01_line_x6_F",10],
+    ["Land_ConcreteKerb_03_BW_long_F",5],
     ["PortableHelipadLight_01_white_F", 10],
     ["PortableHelipadLight_01_blue_F",10]
 ];
-
 
 _StaticsArray = [ // Statics
     ["UK3CB_B_Searchlight_NATO",25],
@@ -568,9 +570,9 @@ _StaticsArray = [ // Statics
     ["RHS_TOW_TriPod_D",100],
     ["RHS_M252_D",150],
     ["RHS_M119_D",250],
-    ["B_HMG_01_A_F",300]
+    ["B_HMG_01_A_F",300],
+    ["B_GMG_01_A_F",500]
 ];
-
 
 _AmmoBoxesArray =  [ // Ammo Boxes / Storage Boxes
     ["ACE_medicalSupplyCrate",20],
@@ -596,7 +598,8 @@ _SupplysArray = [ // Side Supplies
 _FobStuffArray = [ // FOB Crate + FOB Objects
     ["Land_Medevac_house_V1_F",250],
     ["Land_RepairDepot_01_green_F",500],
-    ["Land_Cargo20_blue_F",1000]
+    ["Land_Cargo20_blue_F",1000],
+    ["Land_Cargo_Patrol_V1_F", 100]
 ];
 
 
