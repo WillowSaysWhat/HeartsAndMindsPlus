@@ -72,6 +72,9 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
 	{
 		while {true} do
 		{
+
+            // Add a check for "hud enabled" variable on a player, allow player to set variable with radio scrolls
+
             // Define the UI number 
 
             _myNumber = [west] call acex_fortify_fnc_getBudget;

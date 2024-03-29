@@ -1,22 +1,22 @@
-class tet_ui_dlg_scoreboard
+class tet_fortify_preview
 {
 	idd = -1;
 	
 	class ControlsBackground
 	{
-		class BackgroundControl
+		class Background
 		{
 			type = 0;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.29375;
-			y = safeZoneY + safeZoneH * 0.22444445;
-			w = safeZoneW * 0.4125;
-			h = safeZoneH * 0.55;
+			x = 0;
+			y = 0;
+			w = 1;
+			h = 1;
 			style = 0;
 			text = "";
-			colorBackground[] = {0.1393,0.1382,0.1382,0.7059};
+			colorBackground[] = {0.1412,0.1373,0.1373,0.7059};
 			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
+			font = "PuristaBold";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
@@ -31,13 +31,13 @@ class tet_ui_dlg_scoreboard
 			x = safeZoneX + safeZoneW * 0.29375;
 			y = safeZoneY + safeZoneH * 0.22444445;
 			w = safeZoneW * 0.4125;
-			h = safeZoneH * 0.03222223;
+			h = safeZoneH * 0.02666667;
 			style = 0;
-			text = "Scoreboard";
+			text = "Preview";
 			colorBackground[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
 			font = "PuristaBold";
-			sizeEx = (((((safezoneW / safezoneH) min 0.9) / 1.2) / 18) * 1.3);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.5) / 22) * 1.5);
 			
 		};
 		class Close
@@ -47,18 +47,18 @@ class tet_ui_dlg_scoreboard
 			x = safeZoneX + safeZoneW * 0.69375;
 			y = safeZoneY + safeZoneH * 0.22444445;
 			w = safeZoneW * 0.0125;
-			h = safeZoneH * 0.03;
+			h = safeZoneH * 0.02;
 			style = 0;
 			text = "X";
 			borderSize = 0;
 			colorBackground[] = {0,0,0,1};
 			colorBackgroundActive[] = {1,0.8745,0.0941,1};
-			colorBackgroundDisabled[] = {0,0,0,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,1};
-			colorText[] = {0.702,0.702,0.702,1};
+			colorText[] = {0.8,0.8,0.8,1};
 			font = "PuristaBold";
 			offsetPressedX = 0.01;
 			offsetPressedY = 0.01;
@@ -74,38 +74,21 @@ class tet_ui_dlg_scoreboard
 		};
 		class MainBody
 		{
-			type = 5;
-			idc = 89;
+			type = 0;
+			idc = 95;
 			x = safeZoneX + safeZoneW * 0.30375;
 			y = safeZoneY + safeZoneH * 0.26444445;
 			w = safeZoneW * 0.3925;
-			h = safeZoneH * 0.49555556;
-			style = 16;
-			colorBackground[] = {0.3402,0.3402,0.3402,0.4824};
-			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelect[] = {1,0.8745,0.0941,1};
+			h = safeZoneH * 0.49;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.3412,0.3412,0.3412,0.5059};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			maxHistoryDelay = 0;
-			rowHeight = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
-			class ListScrollBar
-			{
-				color[] = {1,1,1,1};
-				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
-				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
-				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
-				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
-				
-			};
 			
 		};
 		
-	};
-	
-};
-
 	};
 	
 };
