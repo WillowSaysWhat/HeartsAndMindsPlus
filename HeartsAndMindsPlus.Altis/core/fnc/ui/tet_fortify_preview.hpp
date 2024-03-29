@@ -80,12 +80,12 @@ class tet_fortify_preview
 			y = safeZoneY + safeZoneH * 0.26444445;
 			w = safeZoneW * 0.3925;
 			h = safeZoneH * 0.49;
-			style = 0;
+			style = 48;
 			text = "";
-			colorBackground[] = {0.3412,0.3412,0.3412,0.5059};
+			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			sizeEx = 0;
 			
 		};
 		

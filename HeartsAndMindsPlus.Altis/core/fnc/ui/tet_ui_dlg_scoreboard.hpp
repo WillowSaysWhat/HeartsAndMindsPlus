@@ -105,7 +105,3 @@ class tet_ui_dlg_scoreboard
 	};
 	
 };
-
-	};
-	
-};

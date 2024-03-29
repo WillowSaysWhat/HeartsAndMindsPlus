@@ -23,11 +23,13 @@ Author:
 [{
     params ["_class"];
 
-	closeDialog 0;
-	createDialog "Tet_fortify_dlg_preview";
-	waitUntil {dialog};
+    
 
-	//Use current selection, Set Image of preview window with preview image from config file of selected class
+	_img = getText ( configFile >> "cfgVehicles" >> _class >> "editorPreview");
+    
+    createDialog "Tet_fortify_preview";
+	waitUntil {dialog};
+    ctrlSetText [95, _img]; // for Dialogs
 
 
 }, [lbData [82, lbCurSel 82]], 0.5] call CBA_fnc_waitAndExecute;
