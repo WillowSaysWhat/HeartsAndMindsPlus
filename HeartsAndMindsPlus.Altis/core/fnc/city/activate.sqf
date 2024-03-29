@@ -106,16 +106,16 @@ if (_data_units isNotEqualTo []) then {
 } else {
     // Maximum number of enemy group
     private _numberOfGroup = (switch _type do {
-        case "Hill" : {10};
-        case "VegetationFir" : {10};
-        case "BorderCrossing" : {15};
-        case "NameLocal" : {20};
-        case "StrongpointArea" : {20};
-        case "NameVillage" : {20};
-        case "NameCity" : {25};
-        case "NameCityCapital" : {40};
-        case "Airport" : {30};
-        case "NameMarine" : {10};
+        case "Hill" : {8};
+        case "VegetationFir" : {8};
+        case "BorderCrossing" : {12};
+        case "NameLocal" : {16};
+        case "StrongpointArea" : {18};
+        case "NameVillage" : {18};
+        case "NameCity" : {20};
+        case "NameCityCapital" : {30};
+        case "Airport" : {25};
+        case "NameMarine" : {5};
         default {0};
     });
 

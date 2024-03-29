@@ -316,10 +316,10 @@ if (isServer) then {
 
     // The multipliers are applied on top of each other, so "Chapel" and "Small" will both multiply the malus value
     btc_buildings_categories_multipliers = [
-        ["Shed", 1], ["Slum", 1], ["Small", 1], ["Big", 2], ["Villa", 2], ["Main", 1], ["Tower", 1],
+        ["Shed", 1], ["Slum", 1], ["Small", 1], ["Big", 1], ["Villa", 2], ["Main", 1], ["Tower", 1],
         ["HouseBlock", 1], ["Panelak", 1], ["Tenement", 1],
         ["Barn", 1], ["School", 1], ["Office", 1], ["Shop", 1], ["Store", 1], ["Hospital", 2],
-        ["Castle", 1], ["Chapel", 2], ["Minaret", 2], ["Mosque", 2], ["Church", 2], ["Kostel", 2],
+        ["Castle", 1], ["Chapel", 2], ["Minaret", 1], ["Mosque", 2], ["Church", 2], ["Kostel", 1],
         ["Lighthouse", 1],
         ["Airport", 1], ["Hangar", 1], ["ControlTower", 1], ["Terminal", 1],
         ["Hopper", 1], ["Tank", 1], ["Factory", 1], ["Transformer", 1],
@@ -553,7 +553,9 @@ _FortsArray = [ // Fortifications
     ["Land_BagBunker_Small_F",15],
     ["Land_Plank_01_4m_F",25],
     ["Land_Plank_01_8m_F",50],
-    ["Land_Camping_Light_F",10]
+    ["Land_Camping_Light_F",10],
+    ["PortableHelipadLight_01_white_F", 10],
+    ["PortableHelipadLight_01_blue_F",10]
 ];
 
 
@@ -565,7 +567,8 @@ _StaticsArray = [ // Statics
     ["RHS_Stinger_AA_pod_D",100],
     ["RHS_TOW_TriPod_D",100],
     ["RHS_M252_D",150],
-    ["RHS_M119_D",250]
+    ["RHS_M119_D",250],
+    ["B_HMG_01_A_F",300]
 ];
 
 
