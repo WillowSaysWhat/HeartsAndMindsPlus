@@ -17,6 +17,9 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
     btc_respawn_marker setMarkerPosLocal player;
     player addRating 9999;
 
+    //INC UNDERCOVER
+    [player] execVM "INC_undercover\Scripts\initUCR.sqf";
+
     //UI
     [player] call tet_ui_init;
 
