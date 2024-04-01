@@ -17,6 +17,10 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
     btc_respawn_marker setMarkerPosLocal player;
     player addRating 9999;
 
+    //PERMISSIONS
+    player addEventHandler ["GetInMan", {[_this select 2] call tet_perms;}];
+    player addEventHandler ["SeatSwitchedMan", {[_this select 2] call tet_perms;}];
+
     //UI
     [player] call tet_ui_init;
 

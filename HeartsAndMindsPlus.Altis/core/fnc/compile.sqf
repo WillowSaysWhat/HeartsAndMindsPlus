@@ -318,6 +318,7 @@ tet_ui_loadperms = compileScript ["core\fnc\ui\loadperms.sqf"];
 tet_ui_loadscores = compileScript ["core\fnc\ui\loadscores.sqf"];
 tet_ui_openperms = compileScript ["core\fnc\ui\openperms.sqf"];
 tet_ui_openscores = compileScript ["core\fnc\ui\openscores.sqf"];
+tet_perms = compileScript ["core\fnc\ui\tetperms.sqf"];
 
 /////////////////////CLIENT\\\\\\\\\\\\\\\\\\\\\
 if (!isDedicated) then {
