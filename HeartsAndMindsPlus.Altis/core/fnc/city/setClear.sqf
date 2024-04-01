@@ -40,11 +40,14 @@ if (_remainEnemyUnits isNotEqualTo []) then {
 };
 
 if (_city getVariable ["marker", ""] != "") then {
-    (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors
+    (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors - CLEARED
 };
 
 if (btc_final_phase) then {
     btc_city_remaining = btc_city_remaining - [_city];
+    if (_city getVariable ["marker", ""] != "") then {
+    (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors - CLEARED - ENDGAME
+};
 };
 
 //ADDNOTIF OBJ CLEAR
@@ -54,5 +57,5 @@ if (btc_final_phase) then {
 
 if (btc_debug) then {
     private _id = _city getVariable "id";
-    (format ["loc_%1", _id]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors
+    (format ["loc_%1", _id]) setMarkerColor "colorBLUFOR";
 };
