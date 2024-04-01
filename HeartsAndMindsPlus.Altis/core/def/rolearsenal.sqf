@@ -418,6 +418,9 @@ roleArsenal = {
 		"ACE_1Rnd_82mm_Mo_HE_LaserGuided",
 		"ToolKit",
 		"tfw_rf3080Item",
+		"ACE_SpareBarrel",
+		"ACE_WaterBottle",
+		"ACE_TacticalLadder_Pack",
 		"ItemWatch"
     ];
 
