@@ -22,7 +22,7 @@ Author:
 
 closeDialog 0;
 
-if !(player getVariable ["allow_salvage", false]) exitWith {["Salvage not allowed!"] spawn BIS_fnc_guiMessage;};
+//if !(player getVariable ["allow_salvage", false]) exitWith {["Salvage not allowed!"] spawn BIS_fnc_guiMessage;};
 
 disableSerialization;
 closeDialog 0;

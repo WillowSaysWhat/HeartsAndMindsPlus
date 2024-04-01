@@ -19,15 +19,16 @@ Author:
     Tetlys
 
 ---------------------------------------------------------------------------- */
-// NAME, BUILD, SALVAGE, COMMAND, DEATHS, CIV KILLS, MAN KILLS, VEHICLE KILLS, AIR KILLS, BOAT KILLS, REPEFFECT
-// [_name,"0:0:0:0:0:0:0:0:0:0"]
+// Change the 0 to a 1 to enable by default
+// NAME, BUILD, SALVAGE, COMMAND, DEATHS, CIV KILLS, MAN KILLS, VEHICLE KILLS, AIR KILLS, BOAT KILLS, REPEFFECT, airperms, tankperms
+// [_name,"0:0:0:0:0:0:0:0:0:0:0:0"]
 
 params ["_player"];
 
 _UID = getplayeruid _player; 
 _NAME = name _player;
 _UIDARRAY = keys BTC_UID_array;
-_OUTPUT = [_name,"0:0:0:0:0:0:0:0:0:0:0:0"] joinstring ":";
+_OUTPUT = [_name,"0:0:1:0:0:0:0:0:0:0:0:0"] joinstring ":";
 _ALLKEYS = keys BTC_UID_array;   
 _KEYCOUNT = count _ALLKEYS;
 
