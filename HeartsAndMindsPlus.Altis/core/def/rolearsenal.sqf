@@ -307,6 +307,12 @@ roleArsenal = {
 		"rhsusf_100Rnd_762x51_m62_tracer",
 		"rhsusf_100Rnd_762x51_m61_ap",
 		"rhsusf_100Rnd_762x51_m80a1epr",
+		"rhsusf_mag_6Rnd_M397_HET",
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		"rhsusf_mag_6Rnd_M441_HE",
+		"rhsusf_mag_6Rnd_m4009",
+		"rhsusf_mag_6Rnd_M714_white",
+		"rhsusf_mag_6Rnd_M583A1_white",
 		//SECAMMO
 		"rhsusf_mag_17Rnd_9x19_FMJ",
 		"rhsusf_mag_17Rnd_9x19_JHP",
