@@ -52,7 +52,7 @@ if (
 
 _action = [
     "log_hook",
-    localize "STR_ACE_Towing_attach",
+    "Take Tow Rope",
     "\z\ace\addons\attach\UI\attach_ca.paa",
     {[btc_tow_vehicleTowing, _target] call btc_tow_fnc_ropeCreate;},
     {!isNull btc_tow_vehicleTowing && {btc_tow_vehicleTowing != _target}}

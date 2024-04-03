@@ -445,7 +445,7 @@ switch (_operation) do {
 		if ([_callingObject,"HasEnoughAmmo",["missile",(_missileTargets + 1)]] call APW_fnc_APWMain) then {
 
 			APW_selectMissile = _callingObject addAction [
-				"<t color='#00FFC9'>Request Missile</t>", {
+				"<t color='#00FFC9'>Request Hellfire</t>", {
 					_callingObject = _this select 0;
 					private _ammoActions = (_callingObject getVariable "APW_ammoActionArray");
 					{_callingObject removeAction _x} forEach _ammoActions;
@@ -462,7 +462,7 @@ switch (_operation) do {
 		if ([_callingObject,"HasEnoughAmmo",["bomb",(_bombTargets + 1)]] call APW_fnc_APWMain) then {
 
 			APW_selectBomb = _callingObject addAction [
-				"<t color='#FFDC00'>Request Bomb</t>", {
+				"<t color='#FFDC00'>Request JDAM</t>", {
 					_callingObject = _this select 0;
 					private _ammoActions = (_callingObject getVariable "APW_ammoActionArray");
 					{_callingObject removeAction _x} forEach _ammoActions;
