@@ -40,7 +40,7 @@ roleArsenal = {
 		"rhsusf_weap_m1911a1",
 		"rhsusf_weap_m9",
 		"UK3CB_BHP",
-		"hgun_esd_01_F",
+		"hgun_esd_01_F", 
 		"ACE_VMH3",
         //HELM
 		"rhsusf_ach_bare_semi",
