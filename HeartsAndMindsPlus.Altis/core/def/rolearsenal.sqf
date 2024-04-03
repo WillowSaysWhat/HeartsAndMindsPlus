@@ -167,6 +167,7 @@ roleArsenal = {
 		"B_Kitbag_tan",
 		"B_Bergen_mcamo_F",
 		"B_Bergen_hex_F",
+		"B_Parachute",
 		//TFARbackpack
 		"TFAR_anarc164",
 		"TFAR_anarc210",
@@ -174,22 +175,10 @@ roleArsenal = {
 		"TFAR_mr3000_multicam",
 		"TFAR_rt1523g_big_rhs",
 		"TFAR_rt1523g_black",
-		"tfw_ilbe_a_coy",
-		"tfw_ilbe_coy",
-		"tfw_ilbe_blade_coy",
-		"tfw_ilbe_dd_coy",
-		"tfw_ilbe_a_gr",
-		"tfw_ilbe_gr",
-		"tfw_ilbe_blade_gr",
-		"tfw_ilbe_dd_gr",
-		"tfw_ilbe_a_d",
-		"tfw_ilbe_d",
-		"tfw_ilbe_blade_d",
-		"tfw_ilbe_dd_d",
-		"tfw_ilbe_a_wd",
-		"tfw_ilbe_wd",
-		"tfw_ilbe_blade_wd",
-		"tfw_ilbe_dd_wd",
+		"tfw_ilbe_whip_coy",
+		"tfw_ilbe_whip_d",
+		"tfw_ilbe_whip_gr",
+		"tfw_ilbe_whip_wd",
         //FACEWARE
 		"G_Balaclava_blk",
 		"G_Balaclava_combat",
@@ -318,6 +307,12 @@ roleArsenal = {
 		"rhsusf_100Rnd_762x51_m62_tracer",
 		"rhsusf_100Rnd_762x51_m61_ap",
 		"rhsusf_100Rnd_762x51_m80a1epr",
+		"rhsusf_mag_6Rnd_M397_HET",
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		"rhsusf_mag_6Rnd_M441_HE",
+		"rhsusf_mag_6Rnd_m4009",
+		"rhsusf_mag_6Rnd_M714_white",
+		"rhsusf_mag_6Rnd_M583A1_white",
 		//SECAMMO
 		"rhsusf_mag_17Rnd_9x19_FMJ",
 		"rhsusf_mag_17Rnd_9x19_JHP",
@@ -421,6 +416,9 @@ roleArsenal = {
 		"ACE_SpareBarrel",
 		"ACE_WaterBottle",
 		"ACE_TacticalLadder_Pack",
+		"tfw_blade",
+		"tfw_whip",
+		"tfw_dd",
 		"ItemWatch"
     ];
 
@@ -619,6 +617,7 @@ roleArsenal = {
 		"rhs_weap_m16a4_imod_M203",
 		"rhs_weap_mk17_LB",
 		"rhs_weap_mk17_CQC",
+		"rhs_weap_m32",
 		//SECONDARY
 		"rhs_weap_M320",
 		 //LAUNCHER
