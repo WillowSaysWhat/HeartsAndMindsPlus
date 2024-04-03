@@ -28,16 +28,16 @@ _altitudeMin = 5000;                    //Minimum altitude of ordnance launch
 _altitudeRandom = 5000;                 //Random additional altitude above minimum for ordnance launch
 _radius = 1500;                         //Radius of launch position around player in meters
 _rtbOnNoAmmo = true; 					//Should the unit RTB when out of ammo? (Set to false if you want the unit to continue tracking after it has run out of ammo)
-_playTime = 30;                         //Amount of time aircraft will remain on station (in minutes) - i.e. over the target area
-_playTimeVar = 15;                      //Variation in minutes for time on station (must be significantly less than _playtime to avoid errors)
+_playTime = 5;                         //Amount of time aircraft will remain on station (in minutes) - i.e. over the target area
+_playTimeVar = 2;                      //Variation in minutes for time on station (must be significantly less than _playtime to avoid errors)
 _requestInterval = 5;                  //Maximum amount of time in minutes between unsuccessful aircraft requests (will be able to request again once this timer is done)
-_maxSorties = 100;                        //Max number of sorties
+_maxSorties = 1000;                        //Max number of sorties
 _timeout = 60;                          //Radio message timout in seconds (player must communicate before this runs out or the mission will abort - the final strike confirmation will be 15 times this value to enable coordination)
-_rearmTime = 15;                         //Amount of time (in minutes) the aircraft will take to rearm and refuel after a sortie
+_rearmTime = 10;                         //Amount of time (in minutes) the aircraft will take to rearm and refuel after a sortie
 
 //Ordnance options
-_bomb = 4;							    //How many GBUs will the air unit carry?
-_missile = 6;                           //How many AT missiles the air unit carry?
+_bomb = 2;							    //How many GBUs will the air unit carry?
+_missile = 4;                           //How many AT missiles the air unit carry?
 
 //Allow targeting of sensetive targets (put "this setVariable ["APW_sensetiveTarget",true,true];" without quotation marks in the sensitive unit's init)
 _allowSensitive = false;
