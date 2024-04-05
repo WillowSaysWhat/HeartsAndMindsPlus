@@ -7,36 +7,11 @@ if (!hasInterface) exitWith {};
 //1 : Activate when player is near vehicles those are in list.
 //2 : Activate when player is in certain marker area. (Marker name should be like "VAM_service_area_0", "VAM_service_area_1". You could have multiple marker area.)
 //3 : Activate when player is near KP Liberation FOB
-VAM_condition_check_options = [];
-VAM_repair_vehicle_list = [
-	"B_APC_Tracked_01_CRV_F",
-	"B_T_APC_Tracked_01_CRV_F",
-	"B_Slingload_01_Repair_F",
-	"B_Truck_01_Repair_F",
-	"B_T_Truck_01_Repair_F",
-	"I_Truck_02_box_F",
-	"B_G_Offroad_01_repair_F",
-	"O_G_Offroad_01_repair_F",
-	"I_G_Offroad_01_repair_F",
-	"Land_Pod_Heli_Transport_04_repair_F",
-	"O_Heli_Transport_04_repair_F",
-	"O_Truck_03_repair_F",
-	"O_T_Truck_03_repair_ghex_F",
-	"O_Truck_02_box_F",
-	"C_Truck_02_box_F"
-];
+VAM_condition_check_options = [2];
+VAM_repair_vehicle_list = [];
 
 //Exception for bug fix and additional cosmetic change. Check out fnc_VAM_GUI_check.sqf.
-VAM_exceptions = [
-	"I_APC_Wheeled_03_cannon_F","B_APC_Wheeled_03_cannon_F",
-	"I_LT_01_AT_F","I_LT_01_scout_F","I_LT_01_AA_F","I_LT_01_cannon_F",
-	"O_APC_Wheeled_02_rcws_F","O_T_APC_Wheeled_02_rcws_ghex_F",
-	"O_APC_Wheeled_02_rcws_v2_F","O_T_APC_Wheeled_02_rcws_v2_ghex_F",
-	"B_Heli_Light_01_dynamicLoadout_F","B_Heli_Light_01_armed_F","B_Heli_Light_01_F",
-	"B_Heli_Attack_01_dynamicLoadout_F","B_Heli_Attack_01_F",
-	"O_Heli_Light_02_dynamicLoadout_F","O_Heli_Light_02_F","O_Heli_Light_02_unarmed_F","O_Heli_Light_02_v2_F",
-	"B_UGV_01_rcws_F","B_T_UGV_01_rcws_olive_F","O_UGV_01_rcws_F","O_T_UGV_01_rcws_ghex_F","I_UGV_01_rcws_F"
-];
+VAM_exceptions = [];
 
 //Function preload
 fnc_VAM_GUI_check = compileFinal preprocessFileLineNumbers "VAM_GUI\functions\fnc_VAM_GUI_check.sqf";

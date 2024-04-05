@@ -15,7 +15,7 @@ while {true} do {
 	if (2 in VAM_condition_check_options) then {
 		VAM_condition_2 = false;
 		{
-			if (_x find "VAM_service_area_" > -1) then {
+			if (_x find "btc_garage_" > -1) then {
 				if !(VAM_condition_2) then {
 					if (player inArea _x && alive player) then {
 						VAM_condition_2 = true;
