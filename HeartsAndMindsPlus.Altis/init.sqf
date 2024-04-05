@@ -83,3 +83,5 @@ true
    _object enableSimulation false;
 }] call CBA_fnc_addEventHandler;
  
+ //VIRTUAL GARAGE
+ [] execVM "VAM_GUI\VAM_GUI_init.sqf";
