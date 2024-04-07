@@ -39,7 +39,7 @@ if (
 ) then {
     _action = [
         "log_tow",
-        localize "STR_ACE_Towing_displayName",
+        "Take Tow Rope", 
         "",
         {btc_tow_vehicleTowing = _target; (localize "STR_BTC_HAM_TOW_HOOK") call CBA_fnc_notify;},
         {
@@ -52,7 +52,7 @@ if (
 
 _action = [
     "log_hook",
-    "Take Tow Rope",
+    "Attach Tow Rope",
     "\z\ace\addons\attach\UI\attach_ca.paa",
     {[btc_tow_vehicleTowing, _target] call btc_tow_fnc_ropeCreate;},
     {!isNull btc_tow_vehicleTowing && {btc_tow_vehicleTowing != _target}}

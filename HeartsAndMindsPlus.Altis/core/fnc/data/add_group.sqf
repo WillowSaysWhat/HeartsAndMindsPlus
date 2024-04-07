@@ -36,7 +36,7 @@ _city setVariable ["occupied", true];
 
 if (_city getVariable ["marker", ""] != "") then {
     private _marker = _city getVariable ["marker", ""];
-    _marker setMarkerColor "ColorRed";
+    _marker setMarkerColor "ColorUNKNOWN"; // CONFIG OBJ Colors
 };
 
 private _wp = if (vehicle leader _group isEqualTo leader _group) then {

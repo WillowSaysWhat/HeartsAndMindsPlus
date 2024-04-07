@@ -59,6 +59,7 @@ true
     clearWeaponCargoGlobal _objectPlaced;
     clearMagazineCargoGlobal _objectPlaced;
     clearBackpackCargoGlobal _objectPlaced;
+    [_objectPlaced] call tet_fortify_fill;
 }] call CBA_fnc_addEventHandler;
 
 ["acex_fortify_objectDeleted", {

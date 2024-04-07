@@ -26,7 +26,7 @@ VAM_action = compileFinal "
 			0 = createDialog 'VAM_GUI';
 		},
 		[], 0, false, true, '',
-		'VAM_condition_result && (VAM_cursor_condition || (!(player isEqualTo vehicle player) && (player isEqualTo driver vehicle player)))',
+		'VAM_condition_result && (!(player isEqualTo vehicle player) && (player isEqualTo driver vehicle player)) && player getVariable ['side_mission', false]',
 		-1
 	];
 ";

@@ -308,6 +308,7 @@ tet_fortify_salvage = compileScript ["core\fnc\fortify\salvage.sqf"];
 tet_fortify_eco = compileScript ["core\fnc\fortify\eco.sqf"];
 tet_fortify_delete = compileScript ["core\fnc\fortify\delete.sqf"];
 tet_fortify_openpreview = compileScript ["core\fnc\fortify\openpreview.sqf"];
+tet_fortify_fill = compileScript ["core\fnc\fortify\fill.sqf"];
 
 //UI
 tet_ui_kill = compileScript ["core\fnc\ui\kill.sqf"];
