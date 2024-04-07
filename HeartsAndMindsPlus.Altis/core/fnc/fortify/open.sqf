@@ -23,7 +23,7 @@ Author:
 
 closeDialog 0;
 
-if !(player getVariable ["allow_build", false]) exitWith {["Building not allowed!"] spawn BIS_fnc_guiMessage;};
+//if !(player getVariable ["allow_build", false]) exitWith {["Building not allowed!"] spawn BIS_fnc_guiMessage;};
 
 // CHANGE TO GIVE BUILD TOOL IF NOT POSSESSED!
 if (!([player, "ACE_Fortify"] call BIS_fnc_hasItem)) then {player addItem "ACE_Fortify";};

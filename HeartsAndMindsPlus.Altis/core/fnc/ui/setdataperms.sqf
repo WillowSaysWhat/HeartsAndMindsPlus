@@ -41,6 +41,8 @@ CHANGE = _change;
     _CIVKILLS =  _index select 8;
     _DEATHS = _index select 9;
 	_REPUTATION2 = _index select 10;
+	_FLIGHTPERM = _index select 11;
+	_ARMOURPERM = _index select 12;
 
 	switch (CHANGE) do {
 			case "AllowBuild" : {
@@ -61,10 +63,22 @@ CHANGE = _change;
 			case "DenyCommand" : {
 				_COMMANDPERM = 0;
 		};
+			case "AllowFlight" : {
+				_FLIGHTPERM = 1;
+		};
+			case "DenyFlight" : {
+				_FLIGHTPERM = 0;
+		};
+			case "AllowArmour" : {
+				_ARMOURPERM = 1;
+		};
+			case "DenyArmour" : {
+				_ARMOURPERM = 0;
+		};
 	};
 
 	if (!(isnil "_UID") && !(isNil "_NAME")) then {
-	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION2]joinString ":";
+	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION2, _FLIGHTPERM, _ARMOURPERM]joinString ":";
 	BTC_Player_array set [_PlayerKey,_OUTPUT];
 	};
 

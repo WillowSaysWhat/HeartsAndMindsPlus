@@ -41,9 +41,11 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _CIVKILLS =  _index select 8;
     _DEATHS = _index select 9;
     _REPUTATION = _index select 10;
+    _FLIGHTPERM = _index select 11;
+    _ARMOURPERM = _index select 12;
 
     if (!(isnil "_UID") && !(isNil "_NAME")) then {
-    private _displayout = [_NAME,"    |     ","CanBuild: ",_BUILDPERM,"    |     ","CanSalvage: ",_SALVAGEPERM,"    |     ","CanCommand: ",_COMMANDPERM] joinString "";
+    private _displayout = ["CanBuild: ",_BUILDPERM,"  |  ","CanSalvage: ",_SALVAGEPERM,"  |  ","CanCommand: ",_COMMANDPERM,"  |  ","CanFlight: ",_FLIGHTPERM,"  |  ","CanArmour: ",_ARMOURPERM,"  |  ",_NAME] joinString "";
     private _index = lbAdd [88, _displayout];
     lbSetData [88, _index, _UID];
     //if (_i isEqualTo 0) then {lbSetCurSel [88, _index];};

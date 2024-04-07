@@ -4,18 +4,18 @@ class tet_ui_dlg_scoreboard
 	
 	class ControlsBackground
 	{
-		class Background
+		class BackgroundControl
 		{
 			type = 0;
 			idc = -1;
-			x = -0.42297978;
-			y = -0.11178449;
-			w = 1.84722224;
-			h = 1.31144782;
+			x = safeZoneX + safeZoneW * 0.24375;
+			y = safeZoneY + safeZoneH * 0.18444445;
+			w = safeZoneW * 0.5125;
+			h = safeZoneH * 0.63;
 			style = 0;
 			text = "";
-			colorBackground[] = {0.1725,0.2431,0.3137,0.75};
-			colorText[] = {0.0275,0.7333,0.2745,1};
+			colorBackground[] = {0.1393,0.1382,0.1382,0.7059};
+			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
@@ -24,31 +24,47 @@ class tet_ui_dlg_scoreboard
 	};
 	class Controls
 	{
-		class CloseButton
+		class Title
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.24375;
+			y = safeZoneY + safeZoneH * 0.18444445;
+			w = safeZoneW * 0.5125;
+			h = safeZoneH * 0.03222223;
+			style = 0;
+			text = "Scoreboard";
+			colorBackground[] = {0,0,0,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaBold";
+			sizeEx = (((((safezoneW / safezoneH) min 1.3) / 1.1) / 25) * 1.3);
+			
+		};
+		class Close
 		{
 			type = 1;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.8515625;
-			y = safeZoneY + safeZoneH * 0.17685186;
-			w = safeZoneW * 0.02135417;
-			h = safeZoneH * 0.03796297;
+			x = safeZoneX + safeZoneW * 0.743125;
+			y = safeZoneY + safeZoneH * 0.18555556;
+			w = safeZoneW * 0.0125;
+			h = safeZoneH * 0.03;
 			style = 2;
 			text = "X";
 			borderSize = 0;
-			colorBackground[] = {0.1725,0.2431,0.3137,1};
-			colorBackgroundActive[] = {0.7529,0.2235,0.1686,1};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBackground[] = {0,0,0,1};
+			colorBackgroundActive[] = {1,0.8745,0.0941,1};
+			colorBackgroundDisabled[] = {0,0,0,1};
 			colorBorder[] = {0,0,0,0};
-			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorDisabled[] = {0.2,0.2,0.2,0};
 			colorFocused[] = {0.2,0.2,0.2,1};
-			colorShadow[] = {0.1725,0.2431,0.3137,1};
-			colorText[] = {0.7412,0.7647,0.7804,1};
-			font = "PuristaMedium";
-			offsetPressedX = 0.01;
-			offsetPressedY = 0.01;
-			offsetX = 0.01;
-			offsetY = 0.01;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			colorShadow[] = {0,0,0,0};
+			colorText[] = {0.702,0.702,0.702,1};
+			font = "PuristaBold";
+			offsetPressedX = 0;
+			offsetPressedY = 0;
+			offsetX = 0;
+			offsetY = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.4) / 1.8) / 18) * 1.5);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -56,43 +72,28 @@ class tet_ui_dlg_scoreboard
 			onButtonClick = "closeDialog 0;";
 			
 		};
-		class ScoreBoard
-		{
-			type = 0;
-			idc = -1;
-			x = -0.39772727;
-			y = -0.09595958;
-			w = 1.73565663;
-			h = 0.0841751;
-			style = 0;
-			text = "SCORE BOARD";
-			colorBackground[] = {0.1725,0.2431,0.3137,1};
-			colorText[] = {0.7412,0.7647,0.7804,1};
-			font = "PuristaBold";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
-		class ScoreBody
+		class MainBody
 		{
 			type = 5;
 			idc = 89;
-			x = -0.40277776;
-			y = 0.00774412;
-			w = 1.80681819;
-			h = 1.16161617;
+			x = safeZoneX + safeZoneW * 0.25375;
+			y = safeZoneY + safeZoneH * 0.23444445;
+			w = safeZoneW * 0.4925;
+			h = safeZoneH * 0.55555556;
 			style = 16;
-			colorBackground[] = {0.2039,0.2863,0.3686,1};
+			colorBackground[] = {0.3402,0.3402,0.3402,0.4824};
 			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelect[] = {0.9059,0.298,0.2353,1};
-			colorText[] = {0.7412,0.7647,0.7804,1};
-			font = "PuristaMedium";
+			colorSelect[] = {1,0.8745,0.0941,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaBold";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.3) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
+			colorSelectBackground[] = {1,1,1,0.5059};
 			class ListScrollBar
 			{
-				color[] = {0.498,0.549,0.5529,1};
+				color[] = {1,1,1,1};
 				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
 				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
 				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";

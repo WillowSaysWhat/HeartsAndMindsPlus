@@ -36,6 +36,8 @@ params ["_Change","_UID","_type","_reputationchange"];
         _CIVKILLS =  _index select 8;
         _DEATHS = _index select 9;
         _REPUTATION1 = _index select 10;
+        _FLIGHTPERM = _index select 11;
+	    _ARMOURPERM = _index select 12;
 
         _NUMCIVKILLS = parseNumber _CIVKILLS;
         _NUMMANKILLS = parseNumber _MANKILLS;
@@ -62,7 +64,7 @@ params ["_Change","_UID","_type","_reputationchange"];
 	};
 
     if (!(isnil "_UID") && !(isNil "_NAME")) then {
-	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION1]joinString ":";
+	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION2, _FLIGHTPERM, _ARMOURPERM]joinString ":";
 	BTC_Player_array set [_PlayerKey,_OUTPUT];
     };
 

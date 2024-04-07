@@ -44,12 +44,15 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _CIVKILLS =  _index select 8;
     _DEATHS = _index select 9;
     _REPUTATION4 = _index select 10;
+    _FLIGHTPERM = _index select 11;
+    _ARMOURPERM = _index select 12;
+
 
     if (!(isnil "_UID") && !(isNil "_NAME")) then {
-    private _displayout = [_NAME," |  Kills: ",_MANKILLS," |  Vehicle Kills: ",_VICKILLS," |  Aircraft Kills: ",_AIRKILLS," |  Boat Kills: ",_SEAKILLS," |  Civ Kills: ",_CIVKILLS," |  Deaths: ",_DEATHS, " | Reputation Change: ", _REPUTATION4] joinString ""; //,"    |     ",
+    private _displayout = [_NAME,"  |  Kills: ",_MANKILLS," |  Vic Kills: ",_VICKILLS," |  Air Kills: ",_AIRKILLS," |  Boat Kills: ",_SEAKILLS," |  Civ Kills: ",_CIVKILLS," |  Deaths: ",_DEATHS, " | Rep Change: ", _REPUTATION4] joinString ""; //,"    |     ",
     private _index = lbAdd [89, _displayout];
     lbSetData [89, _index, _selected];
-    if (_i isEqualTo 0) then {lbSetCurSel [89, _index];};
+    //if (_i isEqualTo 0) then {lbSetCurSel [89, _index];};
     };
 };
 
