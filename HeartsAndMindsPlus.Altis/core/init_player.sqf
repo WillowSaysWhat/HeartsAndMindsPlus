@@ -20,6 +20,9 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
     //PERMISSIONS
     player addEventHandler ["GetInMan", {[_this select 2] call tet_perms;}];
     player addEventHandler ["SeatSwitchedMan", {[_this select 2] call tet_perms;}];
+    
+    //INC UNDERCOVER
+    [player] execVM "INC_undercover\Scripts\initUCR.sqf";
 
     //UI
     [player] call tet_ui_init;
