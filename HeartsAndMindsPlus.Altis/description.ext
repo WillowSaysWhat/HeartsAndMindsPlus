@@ -14,6 +14,9 @@ enabledebugconsole = 1;
 #include "core\fnc\ui\tet_ui_dlg_permissions.hpp"
 #include "core\fnc\ui\tet_ui_dlg_scoreboard.hpp"
 #include "core\fnc\ui\tet_fortify_preview.hpp"
+#include "VAM_GUI\defines.hpp"
+#include "VAM_GUI\VAM_GUI_controls.hpp"
+#include "VAM_GUI\VAM_GUI_classes.hpp"
 
 class RscTitles {
     class Default {
