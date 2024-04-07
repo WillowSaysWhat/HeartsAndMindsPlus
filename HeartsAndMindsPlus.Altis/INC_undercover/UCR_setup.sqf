@@ -52,13 +52,13 @@ _civilianVehicleArray = [];
 
 _HMDallowed = false; //(Bool - true or false) Are HMDs (night vision goggles etc.) safe to wear for units pretending to be civilians? Set to false if wearing HMDs will cause suspicion (must be stored in backpack).
 
-_noOffRoad = false; //Civilian vehicles driving at speed more than 50 meters from the nearest road will immediately be considered hostile (even if false, this will be seen as suspicious)
+_noOffRoad = true; //Civilian vehicles driving at speed more than 50 meters from the nearest road will immediately be considered hostile (even if false, this will be seen as suspicious)
 
 
 //-------------------------Enemy Disguise settings-------------------------
 
 // copyToClipboard str ([] call btc_fnc_get_classeast);
-_incogFactions = ["OPF_F","OPF_G_F","OPF_R_F","OPF_T_F","OPF_GEN_F","RHS_FACTION_VMF","RHS_FACTION_MSV","RHS_FACTION_RVA","RHS_FACTION_TV","RHS_FACTION_VDV","RHS_FACTION_VPVO","RHS_FACTION_VV","RHS_FACTION_VVS_C","RHS_FACTION_VVS","RHSSAF_FACTION_ARMY_OPFOR","RHSSAF_FACTION_AIRFORCE_OPFOR","RHSGREF_FACTION_TLA","UK3CB_AAF_O","UK3CB_ADA_O","UK3CB_ADR_O","UK3CB_ADG_O","UK3CB_ADC_O","UK3CB_ADE_O","UK3CB_ADM_O","UK3CB_ADP_O","UK3CB_APD_O","UK3CB_ARD_O","UK3CB_CHD_O","UK3CB_CHD_W_O","UK3CB_CHC_O","UK3CB_CCM_O","UK3CB_CPD_O","UK3CB_CW_SOV_O_EARLY","UK3CB_CW_SOV_O_LATE","UK3CB_CSAT_A_O","UK3CB_CSAT_W_O","UK3CB_CSAT_M_O","UK3CB_CSAT_B_O","UK3CB_CSAT_N_O","UK3CB_CSAT_F_O","UK3CB_CSAT_G_O","UK3CB_CSAT_U_O","UK3CB_CSAT_S_O","UK3CB_FIA_O","UK3CB_GAF_O","UK3CB_ION_O_DESERT","UK3CB_ION_O_URBAN","UK3CB_ION_O_WINTER","UK3CB_ION_O_WOODLAND","UK3CB_KRG_O","UK3CB_KDF_O","UK3CB_LDF_O","UK3CB_LFR_O","UK3CB_LSM_O","UK3CB_LNM_O","UK3CB_MDF_O","UK3CB_MEC_O","UK3CB_MEE_O","UK3CB_MEI_O","UK3CB_NAP_O","UK3CB_NFA_O","UK3CB_NPD_O","UK3CB_TKC_O","UK3CB_TKM_O","UK3CB_TKA_O","UK3CB_TKP_O","RHSGREF_FACTION_CHDKZ"]; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
+_incogFactions = []; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
 
  //Names of additional markers for areas that would be considered trespassing (any with "INC_tre" - case sensitive - somewhere in the marker name will automatically be included)
 _trespassMarkers = [];

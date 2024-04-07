@@ -42,7 +42,7 @@ _unit addEventHandler["Killed", {
 
 	params["_unit"];
 
-	if (uniform _unit in ((missionNamespace getVariable ["INC_incogUniforms",[]]) + (missionNamespace getVariable ["INC_civilianUniforms",[]]))) then {
+	if (uniform _unit in (/*(missionNamespace getVariable ["INC_incogUniforms",[]]) +*/ (missionNamespace getVariable ["INC_civilianUniforms",[]]))) then {
 
 		[_unit, [
 			"<t color='#FFC300'>Take uniform from dead unit</t>", {

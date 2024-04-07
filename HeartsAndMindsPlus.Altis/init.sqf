@@ -44,9 +44,9 @@ true
 ["acex_fortify_objectPlaced", {
   params ["_player", "_side", "_objectPlaced"];
 // Need to find a way to remove, and then place back the same vehicle here.
+    _type = typeOf _objectPlaced;
     if (_objectPlaced isKindof "AllVehicles")then{
       _objectPlaced call btc_veh_fnc_add;
-      _type = typeOf _objectPlaced;
       [_type] call btc_veh_fnc_init;
     };
     if !(_objectPlaced isKindof "AllVehicles")then{
@@ -55,6 +55,8 @@ true
     if (unitIsUAV _objectPlaced) then {
       createVehicleCrew _objectPlaced;
     };
+    if (_type in btc_log_def_loadable) then {[_objectPlaced, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSize;};
+    if (_type in btc_log_def_can_load) then {[_objectPlaced, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSpace;};
     btc_global_economy = [west] call acex_fortify_fnc_getBudget;
     clearWeaponCargoGlobal _objectPlaced;
     clearMagazineCargoGlobal _objectPlaced;

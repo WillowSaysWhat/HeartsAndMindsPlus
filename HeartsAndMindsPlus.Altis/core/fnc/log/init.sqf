@@ -31,20 +31,6 @@ if (btc_log_obj_created pushBackUnique _obj isEqualTo -1) exitWith {};
 
 private _type = typeOf _obj;
 
-if (
-    _type in btc_log_def_loadable
-//     && {getNumber (configOf _obj >> "ace_cargo_canLoad") isEqualTo 0}
-) then {
-    [_obj, round ((sizeOf _type)/1.3)] call ace_cargo_fnc_setSize;
-};
-
-if (
-    _type in btc_log_def_can_load
-//    && {getNumber (configOf _obj >> "ace_cargo_hasCargo") isEqualTo 0}
-) then {
-    [_obj, round ((sizeOf _type)*2)] call ace_cargo_fnc_setSpace;
-};
-
 if (isNil {_obj getVariable "btc_EDEN_defaultFuelCargo"}) then {
     _obj setVariable ["btc_EDEN_defaultFuelCargo", _obj call ace_refuel_fnc_getFuel, true];
 };
