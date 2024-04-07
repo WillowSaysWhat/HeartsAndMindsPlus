@@ -40,7 +40,7 @@ if (_remainEnemyUnits isNotEqualTo []) then {
 };
 
 if (_city getVariable ["marker", ""] != "") then {
-    (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors - CLEARED
+    (_city getVariable ["marker", ""]) setMarkerColor "ColorUNKNOWN"; // CONFIG OBJ Colors - CLEARED
 };
 
 if (btc_final_phase) then {
