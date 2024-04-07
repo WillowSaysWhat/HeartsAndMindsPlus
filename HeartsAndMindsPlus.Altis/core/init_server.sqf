@@ -82,11 +82,11 @@ if (_y getVariable ["type", ""] != "NameMarine") then {
     //_marker setMarkerBrush "SolidBorder";
     _marker setMarkerAlpha 0.5; 
     if (_y getVariable ["occupied", false]) then { 
-        _marker setMarkerColor "colorRed"; 
+        _marker setMarkerColor "colorRed";  // CONFIG OBJ Colors - MAIN MARKERS
         btc_city_remaining pushBack _y;
         _marker setMarkerAlpha 0.5; 
     } else {
-        _marker setMarkerColor "colorBLUFOR"; 
+        _marker setMarkerColor "colorBLUFOR";  // CONFIG OBJ Colors - MAIN MARKERS
         _marker setMarkerAlpha 0.5; 
     };
     _y setVariable ["marker", _marker]; 
