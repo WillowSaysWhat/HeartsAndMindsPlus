@@ -308,15 +308,12 @@ if (isServer) then {
     // If there's a hit in btc_buildings_multiplier, btc_buildings_categories_multipliers will NOT be run
     btc_buildings_multipliers = [
         // Specific buildings that need to have a custom modifier.
-        //["Land_BellTower", 0.2 ], ["Land_WIP", 1.5], ["Land_u_Addon_01", 0.2],
-        //["Land_Airport_Tower", 10.0], ["Land_Mil_ControlTower", 10.0],
-        //["Land_TentHangar", 7.0], ["Land_i_Shed_Ind", 1.5], ["Land_u_Shed_Ind", 1.5],
-        //["Land_TTowerBig", 6.0], ["Land_TTowerSmall", 4.5], ["Land_cmp_Tower", 4.0]
+        ["Wire", 0]
     ];
 
     // The multipliers are applied on top of each other, so "Chapel" and "Small" will both multiply the malus value
     btc_buildings_categories_multipliers = [
-        ["Shed", 1], ["Slum", 1], ["Small", 1], ["Big", 1], ["Villa", 1], ["Main", 1], ["Tower", 1],
+        ["Shed", 1], ["Slum", 1], ["Small", 0.5], ["Big", 1], ["Villa", 1], ["Main", 1], ["Tower", 1],
         ["HouseBlock", 1], ["Panelak", 1], ["Tenement", 1],
         ["Barn", 1], ["School", 1], ["Office", 1], ["Shop", 1], ["Store", 1], ["Hospital", 1],
         ["Castle", 1], ["Chapel", 1], ["Minaret", 1], ["Mosque", 1], ["Church", 1], ["Kostel", 1],
@@ -329,6 +326,8 @@ if (isServer) then {
         ["Pump", 1]
     ];
     btc_buildings_changed = [];
+    tet_buildings_changed = [];
+    tet_limiter = false;
 
     //TAGS
     btc_type_tags = ["Land_Graffiti_01_F", "Land_Graffiti_02_F", "Land_Graffiti_03_F", "Land_Graffiti_04_F", "Land_Graffiti_05_F"];
@@ -784,29 +783,29 @@ btc_spect_range = 1000;
 btc_spect_updateOn = -1;
 
 //Rep
-btc_rep_bonus_cache = 100;
-btc_rep_bonus_civ_hh = 3;
-btc_rep_bonus_disarm = 15;
-btc_rep_bonus_hideout = 200;
-btc_rep_bonus_mil_killed = 0.25;
-btc_rep_bonus_IEDCleanUp = 10;
-btc_rep_bonus_removeTag = 1;
-btc_rep_bonus_removeTagLetter = 0.5;
-btc_rep_bonus_foodGive = 1;
-btc_rep_bonus_vehicle = 10;
+btc_rep_bonus_cache = 50; // WAI
+btc_rep_bonus_civ_hh = 0; // DISABLED
+btc_rep_bonus_disarm = 15; // WAI
+btc_rep_bonus_hideout = 100; // WAI
+btc_rep_bonus_mil_killed = 1; // WAI
+btc_rep_bonus_IEDCleanUp = 5; // WAI
+btc_rep_bonus_removeTag = 5; // WAI
+btc_rep_bonus_removeTagLetter = 1; // WAI
+btc_rep_bonus_foodGive = 2; // WAI
+btc_rep_bonus_vehicle = 10; // WAI
 
-btc_rep_malus_veh_killed = - 10;
-btc_rep_malus_civ_hd = - 5;
-btc_rep_malus_animal_hd = - 1;
-btc_rep_malus_civ_killed = - 100;
-btc_rep_malus_animal_killed = - 5;
-btc_rep_malus_civ_suppressed = - 0;
-btc_rep_malus_player_respawn = - 5;
-btc_rep_malus_building_damaged = - 0;
-btc_rep_malus_building_destroyed = - 50;
-btc_rep_malus_foodRemove = - btc_rep_bonus_foodGive;
-btc_rep_malus_breakDoor = - 1;
-btc_rep_malus_wheelChange = - 0;
+btc_rep_malus_veh_killed = 0; // DISABLE
+btc_rep_malus_civ_hd = 0 ; // DISABLE
+btc_rep_malus_animal_hd = 0 ; // DISABLE
+btc_rep_malus_civ_killed = - 50 ; // HIGH
+btc_rep_malus_animal_killed = - 10; // MID
+btc_rep_malus_civ_suppressed = 0 ; // DISABLED
+btc_rep_malus_player_respawn = - 2; // LOW
+btc_rep_malus_building_damaged = - 3; // LOW
+btc_rep_malus_building_destroyed = - 20; // HIGH
+btc_rep_malus_foodRemove = - btc_rep_bonus_foodGive; // WAI
+btc_rep_malus_breakDoor = - 0.5; // WAI
+btc_rep_malus_wheelChange = 0; // DISABLED
 
 btc_rep_level_veryLow = 0;
 btc_rep_level_low = 200;
