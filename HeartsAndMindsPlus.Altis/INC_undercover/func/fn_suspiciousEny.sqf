@@ -112,7 +112,7 @@ _this spawn {
 
 				_pos = _suspiciousEnemy getHideFrom _unit;
 
-				[_suspiciousEnemy,([_pos,10] call CBA_fnc_Randpos)] remoteExec ["doMove",2];
+				//[_suspiciousEnemy,([_pos,10] call CBA_fnc_Randpos)] remoteExec ["doMove",2];
 			};
 
 			_reactionTime = ((_unit distance _suspiciousEnemy) - (_unit getVariable ["INC_disguiseValue",1]));
