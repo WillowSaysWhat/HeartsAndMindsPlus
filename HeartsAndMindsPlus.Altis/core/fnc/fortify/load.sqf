@@ -52,6 +52,9 @@ for "_i" from 0 to ((count _category) - 1) do {
         case "Land_RepairDepot_01_green_F": {
             _classname = "Salvage Station";
         };
+        case "C_supplyCrate_F": {
+            _classname = "Arsenal";
+        };
         default {
             _classname = _display;
         };

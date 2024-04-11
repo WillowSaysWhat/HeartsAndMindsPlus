@@ -71,10 +71,8 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
             ((findDisplay 12) displayCtrl 51) ctrlAddEventHandler ["Draw", btc_debug_fnc_marker];
         }] call CBA_fnc_waitUntilAndExecute;
     };
-}] call CBA_fnc_waitUntilAndExecute;
 
-
-// PLAYER HUD
+    // PLAYER HUD
 [] spawn
 	{
 		while {true} do
@@ -127,3 +125,8 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
             ctrlDelete (_display displayctrl 69420);
 	    };
 };
+
+
+}] call CBA_fnc_waitUntilAndExecute;
+
+

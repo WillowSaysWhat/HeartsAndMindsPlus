@@ -26,12 +26,14 @@ VAM_action = compileFinal "
 			0 = createDialog 'VAM_GUI';
 		},
 		[], 0, false, true, '',
-		'VAM_condition_result && (!(player isEqualTo vehicle player) && (player isEqualTo driver vehicle player))',
+		'VAM_condition_result && (!(player isEqualTo vehicle player) && (player isEqualTo driver vehicle player))', 
 		-1
 	];
 ";
 
 [] spawn VAM_action;
+
+// && (player getvariable ['side_mission',false])
 
 player addEventHandler ["Respawn", {[] spawn VAM_action;}];
 

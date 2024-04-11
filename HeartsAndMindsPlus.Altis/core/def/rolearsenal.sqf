@@ -11,7 +11,7 @@ roleArsenal = {
 
 	_Role = [];
 
-	if (_UnitRole == "Commander") then
+	if (_UnitRole == "Commander@COMPANY") then
 	{_Role = "CO"};
 
 	if (_UnitRole == "Rifleman") then
@@ -26,7 +26,7 @@ roleArsenal = {
 	if (_UnitRole == "Engineer") then
 	{_Role = "ENGINEER"};
 
-	if (_UnitRole == "Pilot") then
+	if (_UnitRole == "Pilot@PILOTS") then
 	{_Role = "PILOT"};
 
 

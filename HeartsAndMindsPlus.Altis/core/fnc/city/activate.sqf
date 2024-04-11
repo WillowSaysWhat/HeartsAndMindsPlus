@@ -113,8 +113,8 @@ if (_data_units isNotEqualTo []) then {
         case "StrongpointArea" : {18};
         case "NameVillage" : {18};
         case "NameCity" : {20};
-        case "NameCityCapital" : {30};
-        case "Airport" : {25};
+        case "NameCityCapital" : {25};
+        case "Airport" : {20};
         case "NameMarine" : {5};
         default {0};
     });
@@ -139,11 +139,11 @@ if (_data_units isNotEqualTo []) then {
             private _numberOfStatic = (switch _type do {
                 case "VegetationFir" : {3};
                 case "BorderCrossing" : {6};
-                case "NameLocal" : {3};
+                case "NameLocal" : {4};
                 case "StrongpointArea" : {6};
                 case "NameVillage" : {6};
-                case "NameCity" : {12};
-                case "NameCityCapital" : {15};
+                case "NameCity" : {8};
+                case "NameCityCapital" : {10};
                 case "Airport" : {6};
                 default {0};
             });
@@ -154,11 +154,11 @@ if (_data_units isNotEqualTo []) then {
         private _numberOfCivi = (switch _type do {
             case "VegetationFir" : {0};
             case "BorderCrossing" : {2};
-            case "NameLocal" : {6};
+            case "NameLocal" : {10};
             case "StrongpointArea" : {0};
-            case "NameVillage" : {12};
-            case "NameCity" : {15};
-            case "NameCityCapital" : {20};
+            case "NameVillage" : {15};
+            case "NameCity" : {20};
+            case "NameCityCapital" : {25};
             case "Airport" : {10};
             default {5};
         });

@@ -163,7 +163,7 @@ _this spawn {
 		    _trespassMarkers pushBack _x;
 
 		} forEach (allMapMarkers select {
-		    ((_x find "INC_tre") >= 0)
+		    ((_x find "cityt_") >= 0)
 		});
 
 		{

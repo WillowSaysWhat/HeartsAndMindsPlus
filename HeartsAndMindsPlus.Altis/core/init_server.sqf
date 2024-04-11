@@ -69,28 +69,54 @@ if (
 
 //MAP MARKERS
 { 
-if (_y getVariable ["type", ""] != "NameMarine") then { 
     if (_y getVariable ["marker", ""] != "") then { 
         deleteMarker (_y getVariable ["marker", ""]); 
     }; 
+
+    private _type = _y getVariable ["type", ""];
     private _cachingRadius = _y getVariable ["cachingRadius", 500]; 
     private _marker = createMarker [format ["city_%1", position _y], position _y]; 
-    _marker setMarkerType "mil_box_noShadow";
-    // For objective areas swap the above
-    //_marker setMarkerSize [_cachingRadius, _cachingRadius]; 
-    //_marker setMarkerShape "ELLIPSE"; 
-    //_marker setMarkerBrush "SolidBorder";
-    _marker setMarkerAlpha 0.5; 
-    if (_y getVariable ["occupied", false]) then { 
-        _marker setMarkerColor "ColorUNKNOWN";  // CONFIG OBJ Colors - MAIN MARKERS - OCCUPIED
-        btc_city_remaining pushBack _y;
-        _marker setMarkerAlpha 0.5; 
-    } else {
-        _marker setMarkerColor "ColorUNKNOWN";  // CONFIG OBJ Colors - MAIN MARKERS - UNOCCUPIED
-        _marker setMarkerAlpha 0.5; 
-    };
+    private _name = _y getVariable ["name",""]; //  _marker setMarkerText _name;
+
+    (switch _type do {
+        case "Hill" : {_marker setMarkerType "o_unknown";};
+        case "VegetationFir" : {_marker setMarkerType "o_unknown";};
+        case "BorderCrossing" : {_marker setMarkerType "o_unknown";};
+        case "NameLocal" : {_marker setMarkerType "o_installation";};
+        case "StrongpointArea" : {_marker setMarkerType "o_art";};
+        case "NameVillage" : {_marker setMarkerType "o_inf";};
+        case "NameCity" : {_marker setMarkerType "o_med";};
+        case "NameCityCapital" : {_marker setMarkerType "o_motor_inf";};
+        case "Airport" : {_marker setMarkerType "o_air";};
+        case "NameMarine" : {_marker setMarkerType "o_naval";};
+        default {_marker setMarkerType "o_unknown";};
+    });
+
+    _marker setMarkerColor "ColorCIV";
+    _marker setMarkerAlpha 1;
     _y setVariable ["marker", _marker]; 
-};
+    
+} forEach btc_city_all;
+
+//MAP MARKERS
+{ 
+    if (_y getVariable ["markert", ""] != "") then { 
+        deleteMarker (_y getVariable ["markert", ""]); 
+    }; 
+m
+    private _type = _y getVariable ["type", ""];
+    private _cachingRadius = _y getVariable ["cachingRadius", 500]; 
+
+    if (_y getVariable ["spawn_more", false]) then {
+    private _tresspass = createMarker [format ["cityt_%1", position _y], position _y];
+    _tresspass setMarkerSize [_cachingRadius/1.5, _cachingRadius1.5];
+    _tresspass setMarkerShape "ELLIPSE"; 
+    _tresspass setMarkerBrush "SolidBorder";
+    _tresspass setMarkerAlpha 0;
+    };
+
+    _y setVariable ["markert", _tresspass]; 
+    
 } forEach btc_city_all;
 
 if isServer then

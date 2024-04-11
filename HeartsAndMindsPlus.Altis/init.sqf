@@ -17,7 +17,9 @@ Arsenal_typename = "C_supplyCrate_F"; // CONFIG - ARSENAL TYPE
 
     diag_log format ["ROLE ARSENAL EH Role: %1", roleDescription _player];
 
-
+    [_this,999] call ace_cargo_fnc_setSize;
+    [_this,0]call ace_cargo_fnc_setSpace;
+    [_this]call ace_common_fnc_claim;
     ARSENAL_CRATES pushback _box;
     [roleArsenal, [_box, _player], 5] call CBA_fnc_waitAndExecute;
 },
@@ -26,24 +28,8 @@ true,
 true
 ] call CBA_fnc_addClassEventHandler;
 
-
-[Arsenal_typename, "init",
-{
-    private _box = (_this select 0);
-    private _player = player;
-
-    
-
-},
-true,
-[],
-true
-] call CBA_fnc_addClassEventHandler;
-
-
 ["acex_fortify_objectPlaced", {
   params ["_player", "_side", "_objectPlaced"];
-// Need to find a way to remove, and then place back the same vehicle here.
     _type = typeOf _objectPlaced;
     if (_objectPlaced isKindof "AllVehicles")then{
       _objectPlaced call btc_veh_fnc_add;
