@@ -275,6 +275,8 @@ roleArsenal = {
 		"optic_ERCO_snd_F",
 		"rhsusf_acc_su230a_mrds",
 		"rhsusf_acc_su230a_mrds_c",
+		"rhsusf_acc_su230_mrds",
+		"rhsusf_acc_su230_mrds_c",
 		"rhsusf_acc_ACOG_RMR",
 		"rhsusf_acc_ACOG_d",
 		"rhsusf_acc_eotech_xps3",
