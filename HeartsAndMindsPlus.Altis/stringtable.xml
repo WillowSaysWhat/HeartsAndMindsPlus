@@ -1170,7 +1170,7 @@
         </Container>
         <Container name="Mission: Seize the last positions">
             <Key ID="STR_BTC_HAM_MISSION_SEIZE_TITLE">
-                <Original>Seize the last Gang positions</Original>
+                <Original>Seize the last OPFOR positions</Original>
                 <Spanish>Toma las últimas posiciones de Oplitas</Spanish>
                 <German>Erobern Sie die letzten Stellungen</German>
                 <Portuguese>Conquiste as últimas posições inimigas</Portuguese>
@@ -1332,7 +1332,7 @@
                 <Czech>Konec konvoje</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_CONVOY_TITLE">
-                <Original>Destroy Gang convoy</Original>
+                <Original>Destroy OPFOR convoy</Original>
                 <Spanish>Destruir el convoy de Oplitas atacando %1</Spanish>
                 <German>Bewaffneter Konvoi unterwegs nach %1</German>
                 <Portuguese>Destrua o comboio armado inimigo %1</Portuguese>
@@ -1341,7 +1341,7 @@
                 <Czech>Zničte konvoj Oplitas útočící na %1</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_CONVOY_DESC">
-                <Original>An armed Gang convoy is going to attack. Local population is asking for your help to destroy it before it gets there!</Original>
+                <Original>An armed OPFOR convoy is going to attack. Local population is asking for your help to destroy it before it gets there!</Original>
                 <Spanish>Un convoy armado de Oplitas va a atacar %1. La población local está pidiendo su ayuda para destruirlo antes de que llegue allí!</Spanish>
                 <German>Ein bewaffneter Konvoi der Oplitas will %1 angreifen. Schützen Sie die Bevölkerung in dem Sie den Konvoi zerstören bevor er dort ankommt</German>
                 <Portuguese>Um comboio armado inimigo vai atacar %1. Proteja a população local dentruindo o comboio antes que ele chegue</Portuguese>
