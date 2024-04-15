@@ -98,12 +98,8 @@ if (
     
 } forEach btc_city_all;
 
-//MAP MARKERS
+//MAP MARKERS - TRESSPASS
 { 
-    if (_y getVariable ["markert", ""] != "") then { 
-        deleteMarker (_y getVariable ["markert", ""]); 
-    }; 
-m
     private _type = _y getVariable ["type", ""];
     private _cachingRadius = _y getVariable ["cachingRadius", 500]; 
 
@@ -114,8 +110,6 @@ m
     _tresspass setMarkerBrush "SolidBorder";
     _tresspass setMarkerAlpha 0;
     };
-
-    _y setVariable ["markert", _tresspass]; 
     
 } forEach btc_city_all;
 
