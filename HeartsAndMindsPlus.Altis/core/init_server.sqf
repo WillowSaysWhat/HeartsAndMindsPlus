@@ -102,11 +102,11 @@ if (
 //MAP MARKERS - TRESSPASS
 { 
     private _type = _y getVariable ["type", ""];
-    private _cachingRadius = _y getVariable ["cachingRadius", 500]; 
+    private _cachingRadius = _y getVariable ["cachingRadius", 400]; 
 
     if (_y getVariable ["spawn_more", false]) then {
     private _tresspass = createMarker [format ["cityt_%1", position _y], position _y];
-    _tresspass setMarkerSize [_cachingRadius/1.5, _cachingRadius/1.5];
+    _tresspass setMarkerSize [_cachingRadius, _cachingRadius];
     _tresspass setMarkerShape "ELLIPSE"; 
     _tresspass setMarkerBrush "SolidBorder";
     _tresspass setMarkerAlpha 0;
