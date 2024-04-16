@@ -674,8 +674,8 @@ btc_construction_array =
     "_cGround_vehicles","_cAir_vehicles", "_cFortifications", "_cStatics", "_cAmmobox",
     "_cContainers", "_cSupplies", "_cFOB", "_cVehicle_logistic"
 ];
-btc_log_def_loadable = flatten (btc_construction_array select 1) + flatten btc_supplies_mat + btc_type_hazmat;
-btc_log_def_can_load = _cContainers + _cGround_vehicles + _cAir_vehicles;
+btc_log_def_loadable = _cContainers + _cFortifications + _cStatics + _cAmmobox + _cSupplies + _cFOB + _cVehicle_logistic + flatten btc_supplies_mat + btc_type_hazmat;
+btc_log_def_can_load = _cContainers + _cGround_vehicles + _cAir_vehicles + _cSupplies + _cAmmobox + _cVehicle_logistic;
 btc_log_def_placeable = (_cFortifications + _cContainers + _cSupplies + _cFOB + _cVehicle_logistic + flatten btc_supplies_mat + btc_type_hazmat) select {
     getNumber(_cfgVehicles >> _x >> "ace_dragging_canCarry") isEqualTo 0
 };

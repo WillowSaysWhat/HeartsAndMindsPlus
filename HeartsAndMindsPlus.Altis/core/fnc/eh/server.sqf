@@ -147,9 +147,16 @@ if (btc_p_respawn_ticketsAtStart >= 0) then {
     params ["_obj"];
     [_obj, 0] call ace_cargo_fnc_setSpace; // CONFIG - Changed FOB container size
 }, true, [], true] call CBA_fnc_addClassEventHandler;
+
 {
     [_x, "InitPost", {
         params ["_obj"];
-        [_obj, 50] call ace_cargo_fnc_setSpace;
+        private _type = typeOf _obj;
+        if (_type in btc_log_def_loadable) then {[_obj, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSize;};
+        if (_type in btc_log_def_can_load) then {[_obj, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSpace;};
     }, true, [], true] call CBA_fnc_addClassEventHandler;
-} forEach ["CUP_MTVR_Base", "Truck_01_base_F"];
+} forEach btc_log_def_loadable + btc_log_def_can_load;
+
+
+
+
