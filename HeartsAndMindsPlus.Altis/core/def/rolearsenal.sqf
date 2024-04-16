@@ -518,6 +518,12 @@ roleArsenal = {
 		//SECONDARY
 		"rhs_weap_M320",
 		//LAUNCHER
+		"avm224_W_M224_mortar_carry",
+		"NDS_M_6Rnd_60mm_SMOKE",
+		"NDS_M_6Rnd_60mm_ILLUM",
+		"avm224_M_6Rnd_60mm_ILLUM_IR",
+		"NDS_M_6Rnd_60mm_HE_0",
+		"NDS_M_6Rnd_60mm_HE",
 		"rhs_weap_fim92",
 		"rhs_weap_M136",
 		"rhs_weap_M136_hp",
