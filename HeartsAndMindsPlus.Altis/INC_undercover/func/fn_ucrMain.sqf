@@ -104,7 +104,7 @@ switch (_operation) do {
 		switch (!isPlayer _unit || {!(isClass(configFile >> "CfgPatches" >> "ace_interact_menu"))}) do {
 
 			case true: {
-
+				/*
 				[_unit, [
 
 					"<t color='#334FFF'>Conceal weapons</t>", {
@@ -141,7 +141,8 @@ switch (_operation) do {
 					},[],6,false,true,"","(_this == _target) && {_this getVariable ['INC_canConcealWeapon',false]}"
 
 				]] remoteExec ["addAction", _groupLead];
-
+			*/
+			/*
 				[_unit, [
 
 					"<t color='#FF33BB'>Get concealed weapons out</t>", {
@@ -179,6 +180,7 @@ switch (_operation) do {
 					},[],6,false,true,"","(_this == _target) && {_this getVariable ['INC_canGoLoud',false]}"
 
 				]] remoteExec ["addAction", _groupLead];
+				*/
 			};
 
 			case false: {
@@ -219,7 +221,7 @@ switch (_operation) do {
 					    };
 
 					},{player getVariable ['INC_canConcealWeapon',false]}] call ace_interact_menu_fnc_createAction;
-					[player, 1, ["ACE_SelfActions"], INC_concealWeaponsACE] call ace_interact_menu_fnc_addActionToObject;
+					//[player, 1, ["ACE_SelfActions"], INC_concealWeaponsACE] call ace_interact_menu_fnc_addActionToObject;
 
 
 					INC_unConcealWeaponsACE = ['Get Weapons Out','Get Concealed Weapons Out','',{
@@ -239,7 +241,7 @@ switch (_operation) do {
 					    };
 
 					},{player getVariable ['INC_canGoLoud',false]}] call ace_interact_menu_fnc_createAction;
-					[player, 1, ["ACE_SelfActions"], INC_unConcealWeaponsACE] call ace_interact_menu_fnc_addActionToObject;
+					//[player, 1, ["ACE_SelfActions"], INC_unConcealWeaponsACE] call ace_interact_menu_fnc_addActionToObject;
 				};
 			};
 		};
@@ -263,7 +265,7 @@ switch (_operation) do {
 					[[_unit,true,4],"SwapGearAction"] call INCON_ucr_fnc_ucrMain;
 				};
 			}];
-
+		/*
 			[_unit, [
 
 				"<t color='#F70707'>GROUP GO LOUD</t>", {
@@ -302,10 +304,11 @@ switch (_operation) do {
 				},[],4,false,true,"","(_this == _target) &&  {(count units _this > 1)}"
 
 			]] remoteExec ["addAction", _groupLead];
+			*/
 		};
 
 		if ((_dismiss || {!(_unit getVariable ["INC_notDismissable",false])}) && {_unit != leader _unit} && {!isPlayer _unit}) then {
-
+			/*
 			[_unit, [
 				"<t color='#9933FF'>Dismiss</t>", {
 
@@ -323,6 +326,7 @@ switch (_operation) do {
 
 				},[],5.8,false,true,"","((_this == _target) && {!isPlayer _this})"
 			]] remoteExec ["addAction", _groupLead];
+			*/
 		} else {
 			_unit setVariable ["INC_notDismissable",true];
 		};
@@ -383,8 +387,8 @@ switch (_operation) do {
 
 		_unit setVariable ["INC_switchUniformActionActive",true];
 
-		INC_switchUniformAction = _unit addAction [
-			"<t color='#33FF42'>Find new disguise nearby</t>", {
+		INC_switchUniformAction = [];//_unit addAction [
+			/*"<t color='#33FF42'>Find new disguise nearby</t>", {
 				params ["_unit"];
 
 				private ["_success"];
@@ -405,6 +409,7 @@ switch (_operation) do {
 
 			},[],5.5,false,true,"","((_this == _target) && (isPlayer _this || {_this getVariable ['INC_canSwitch',false]}))"
 		];
+		*/
 
 		if (_temporary) then {
 
@@ -436,7 +441,7 @@ switch (_operation) do {
 
 		_unit setVariable ["INC_swapActionActive",true];
 
-		INC_stealGear = _unit addAction [
+		INC_stealGear =  [] /*_unit addAction [
 			"<t color='#33FF42'>Swap Gear</t>", {
 				params ["_unit"];
 
@@ -457,7 +462,7 @@ switch (_operation) do {
 				};
 
 			},[],5.5,false,true,"","((_this == _target) && (isPlayer _this || {_this getVariable ['INC_canSwawp',false]}))"
-		];
+		];*/
 
 		if (_temporary) then {
 
