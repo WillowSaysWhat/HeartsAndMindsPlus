@@ -263,7 +263,7 @@ switch (_operation) do {
 					[[_unit,true,4],"SwapGearAction"] call INCON_ucr_fnc_ucrMain;
 				};
 			}];
-
+			/*
 			[_unit, [
 
 				"<t color='#F70707'>GROUP GO LOUD</t>", {
@@ -302,6 +302,7 @@ switch (_operation) do {
 				},[],4,false,true,"","(_this == _target) &&  {(count units _this > 1)}"
 
 			]] remoteExec ["addAction", _groupLead];
+			*/
 		};
 
 		if ((_dismiss || {!(_unit getVariable ["INC_notDismissable",false])}) && {_unit != leader _unit} && {!isPlayer _unit}) then {
