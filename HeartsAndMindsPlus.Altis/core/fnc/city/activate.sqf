@@ -43,7 +43,6 @@ if (btc_debug) then {
 _city enableSimulation false;
 _city setVariable ["active", true];
 
-
 // _citysound = getpos _city 
 // Attach the sound name as a variable - Use _city to get pos for a playsound3D
 
@@ -60,6 +59,15 @@ private _has_en = _city getVariable ["occupied", false];
 private _has_ho = _city getVariable ["has_ho", false];
 private _ieds = _city getVariable ["ieds", []];
 private _spawningRadius = _cachingRadius/2;
+
+// Tresspass Markers 
+if (_city getVariable ["spawn_more", false] || _city getVariable ["has_ho", false]) then {
+    private _tresspass = createMarker [format ["cityt_%1", position _city], position _city];
+    _tresspass setMarkerSize [_cachingRadius, _cachingRadius];
+    _tresspass setMarkerShape "ELLIPSE"; 
+    _tresspass setMarkerBrush "SolidBorder";
+    _tresspass setMarkerAlpha 0;
+};
 
 if (!(_city getVariable ["initialized", false])) then {
     private _numberOfIED = (switch _type do {

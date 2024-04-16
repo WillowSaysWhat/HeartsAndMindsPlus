@@ -42,9 +42,8 @@ _city setVariable ["spawn_more", true];
 
 waitUntil {!isNil "btc_vehicles"}; // Wait for loading vehicles from db
 
-private _heli_type = typeOf selectRandom ((btc_vehicles + btc_veh_respawnable) select {
-    _x isKindOf "air" &&
-    {!(unitIsUAV _x)}
+private _heli_type = selectRandom ((btc_fortify_vehicles) select { // btc_vehicles + btc_veh_respawnable
+    _x isKindOf "air"
 });
 private _heli = createVehicle [_heli_type, _pos, [], 0, "NONE"];
 _heli setVariable ["btc_dont_delete", true];
