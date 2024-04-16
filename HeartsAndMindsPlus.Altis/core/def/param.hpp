@@ -9,7 +9,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_A3_CFGVEHICLES_MODULEDATE_F_ARGUMENTS_HOUR_0"]);
         values[]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
         texts[]={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"};
-        default = 15;
+        default = 9;
     };
     class btc_p_acctime { // Acceleration time multiplier:
         title = __EVAL(format ["      %1", localize "STR_USRACT_TIME_INC"]);
@@ -51,7 +51,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_DB_ARESTARTTIME"]);
         values[]={0,1,2,3,4,5,6,7,8,9,10,11,12,24,48,72};
         texts[]={$STR_DISABLED, "1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","24h","48h","72h"};
-        default = 6;
+        default = 8;
     };
     class btc_p_db_autoRestartHour1 { // Hour of auto restart/shutdown server
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_DB_HRESTARTTIME"]);
@@ -93,7 +93,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_RESP_RALLYTIMER"]);
         values[]={0,5,10,30,60};
         texts[]={$STR_DISABLED,"5 min","10 min","30 min","60 min"};
-        default = 30;
+        default = 60;
     };
     class btc_p_respawn_ticketsAtStart { // Number of tickets at mission start:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_RESP_TICKETSATSTART"]);
