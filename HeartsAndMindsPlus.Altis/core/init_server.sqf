@@ -93,7 +93,8 @@ if (
     });
 
     _marker setMarkerColor "ColorCIV";
-    _marker setMarkerAlpha 1;
+    _marker setMarkerAlpha 0.7;
+    _marker setMarkerSize [0.8,0.8];
     _y setVariable ["marker", _marker]; 
     
 } forEach btc_city_all;
@@ -105,7 +106,7 @@ if (
 
     if (_y getVariable ["spawn_more", false]) then {
     private _tresspass = createMarker [format ["cityt_%1", position _y], position _y];
-    _tresspass setMarkerSize [_cachingRadius/1.5, _cachingRadius1.5];
+    _tresspass setMarkerSize [_cachingRadius/1.5, _cachingRadius/1.5];
     _tresspass setMarkerShape "ELLIPSE"; 
     _tresspass setMarkerBrush "SolidBorder";
     _tresspass setMarkerAlpha 0;

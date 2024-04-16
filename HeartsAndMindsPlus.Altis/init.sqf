@@ -17,9 +17,8 @@ Arsenal_typename = "C_supplyCrate_F"; // CONFIG - ARSENAL TYPE
 
     diag_log format ["ROLE ARSENAL EH Role: %1", roleDescription _player];
 
-    [_this,999] call ace_cargo_fnc_setSize;
-    [_this,0]call ace_cargo_fnc_setSpace;
-    [_this]call ace_common_fnc_claim;
+    [_box,999] call ace_cargo_fnc_setSize;
+    [_box,0]call ace_cargo_fnc_setSpace;
     ARSENAL_CRATES pushback _box;
     [roleArsenal, [_box, _player], 5] call CBA_fnc_waitAndExecute;
 },

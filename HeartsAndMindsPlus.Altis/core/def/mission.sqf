@@ -597,7 +597,6 @@ _FobStuffArray = [ // FOB Crate + FOB Objects
     ["Land_Medevac_house_V1_F",250],
     ["Land_RepairDepot_01_green_F",1000],
     ["Land_Cargo20_blue_F",2000],
-    ["C_supplyCrate_F",500],
     ["Land_Cargo_Patrol_V1_F", 100]
 ];
 
