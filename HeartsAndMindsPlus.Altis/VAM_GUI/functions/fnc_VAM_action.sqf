@@ -14,7 +14,7 @@ VAM_check_locality = compileFinal "
 VAM_action = compileFinal "
 	player addAction
 	[
-		'VAM',
+		'Apperance Manager',
 		{
 			if (VAM_cursor_condition) then {
 				VAM_targetvehicle = cursorObject;

@@ -2963,7 +2963,7 @@
                 <Czech>Nelze odtáhnout!&lt;br/&gt;(Toto vozidlo nemůže odtáhnout %1)</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_TOW_HOOK">
-                <Original>Towing vehicle selected, interact with the vehicle to tow!</Original>
+                <Original>Towing vehicle selected, interact with the vehicle you would like to tow!</Original>
                 <German>Abschleppendes Fahrzeug ausgewählt. Interagiere mit dem Fahrzeuge, welches abgeschleppt werden soll!</German>
                 <Chinesesimp>已选择牵引车, 与被牵引车互动以启用牵引!</Chinesesimp>
                 <Czech>Vybráno tažné vozidlo, interagujte s vozidlem, které chcete táhnout!</Czech>
