@@ -155,7 +155,7 @@ if (isServer) then {
 
     //Database
     btc_db_serverCommandPassword = "btc_password"; //Define the same password in server.cfg like this: serverCommandPassword = "btc_password";
-    btc_db_warningTimeAutoRestart = 15;
+    btc_db_warningTimeAutoRestart = 10;
     btc_db_warningTimeAutoRestart1 = 30;
     btc_db_warningTimeAutoRestart2 = 60;
 
