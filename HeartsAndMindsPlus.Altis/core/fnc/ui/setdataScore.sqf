@@ -56,7 +56,7 @@ params ["_Change","_UID","_type","_reputationchange"];
                 if (_type isKindOf "Ship") then {_SEAKILLS = _NUMSEAKILLS + 1;};
 		};
         	case "DEATH" : {
-                _DEATHS = _NUMDEATHS + 1;
+                _DEATHS = _NUMDEATHS + 1; 
 		};
             case "REP" : {
             _REPUTATION1 = _NUMREP + _reputationchange;
