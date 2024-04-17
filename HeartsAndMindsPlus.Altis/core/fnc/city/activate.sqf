@@ -69,6 +69,15 @@ if (_city getVariable ["spawn_more", false] || _city getVariable ["has_ho", fals
     _tresspass setMarkerAlpha 0;
 };
 
+// Recon Colors Map Markers 
+if (_city getVariable ["marker", ""] != "") then {
+    if (_city getVariable "occupied", false) then {
+        (_city getVariable ["marker", ""]) setMarkerColor "colorOPFOR"; // CONFIG OBJ Colors - OCCUPIED
+    } else {
+        (_city getVariable ["marker", ""]) setMarkerColor "colorCivilian"; // CONFIG OBJ Colors - CIVILIAN
+    };
+};
+
 if (!(_city getVariable ["initialized", false])) then {
     private _numberOfIED = (switch _type do {
         case "Hill" : {1};

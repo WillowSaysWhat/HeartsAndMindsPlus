@@ -47,6 +47,8 @@ params ["_Change","_UID","_type","_reputationchange"];
         _NUMDEATHS = parseNumber _DEATHS;
         _NUMREP = parseNumber _REPUTATION1;
 
+        if !(isNumber _NUMREP) then {_NUMREP = 0};
+
 	switch (_Change) do {
                 case "KILL" : {
                 if (side group _type == civilian) then {_CIVKILLS = _NUMCIVKILLS + 1;};
@@ -64,7 +66,7 @@ params ["_Change","_UID","_type","_reputationchange"];
 	};
 
     if (!(isnil "_UID") && !(isNil "_NAME")) then {
-	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION2, _FLIGHTPERM, _ARMOURPERM]joinString ":";
+	_OUTPUT = [_NAME,_BUILDPERM,_SALVAGEPERM,_COMMANDPERM,_MANKILLS,_VICKILLS,_AIRKILLS,_SEAKILLS,_CIVKILLS,_DEATHS, _REPUTATION1, _FLIGHTPERM, _ARMOURPERM]joinString ":";
 	BTC_Player_array set [_PlayerKey,_OUTPUT];
     };
 
