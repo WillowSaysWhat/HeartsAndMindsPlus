@@ -74,7 +74,7 @@ if (_city getVariable ["marker", ""] != "") then {
     if (_city getVariable "occupied", false) then {
         (_city getVariable ["marker", ""]) setMarkerColor "colorOPFOR"; // CONFIG OBJ Colors - OCCUPIED
     } else {
-        (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors - CLEAR/CIVILIAN
+        (_city getVariable ["marker", ""]) setMarkerColor "ColorCIV"; // CONFIG OBJ Colors - CLEAR/CIVILIAN
     };
 };
 
