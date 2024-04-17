@@ -166,11 +166,11 @@ roleArsenal = {
 		"B_Kitbag_tan",
 		"B_Bergen_mcamo_F",
 		"B_Bergen_hex_F",
+		"ace_gunbag",
+		"ace_gunbag_Tan",
 		//TFARbackpack
-		"TFAR_anarc164",
 		"TFAR_anarc210",
-		"TFAR_anprc155_coyote",
-		"TFAR_mr3000_multicam",
+		"TFAR_rt1523g_rhs",
 		"TFAR_rt1523g_big_rhs",
 		"TFAR_rt1523g_black",
 		"tfw_ilbe_a_coy",
@@ -189,6 +189,16 @@ roleArsenal = {
 		"tfw_ilbe_wd",
 		"tfw_ilbe_blade_wd",
 		"tfw_ilbe_dd_wd",
+		"tfw_ilbe_whip_wd2",
+		"tfw_ilbe_whip_ocp",
+		"tfw_ilbe_whip_mc",
+		"tfw_ilbe_whip_mct",
+		"tfw_ilbe_whip_wd",
+		"tfw_ilbe_whip_d",
+		"tfw_ilbe_whip_gr",
+		"tfw_ilbe_whip_coy",
+		"tfw_ilbe_whip_black",
+
         //FACEWARE
 		"G_Aviator",
 		"G_Balaclava_blk",
@@ -533,6 +543,9 @@ roleArsenal = {
 		"rhsusf_acc_harris_bipod",
 		"rhsusf_acc_aac_m14dcqd_silencer",
 		"rhsusf_acc_m14_flashsuppresor",
+		"rhsusf_acc_LEUPOLDMK4_2_mrds",
+		"rhsusf_acc_M8541_mrds",
+		"rhsusf_acc_nxs_3515x50_md",
 		//SECONDARY
 		"rhs_weap_M320",
 		//LAUNCHER
@@ -550,6 +563,7 @@ roleArsenal = {
 		"launch_NLAW_F",
 		"rhs_weap_fgm148",
 		"rhs_weap_m72a7",
+		"ACE_ATragMX",
 		//ROCKETSMISSILES
 		"rhs_fim92_mag",
 		"MRAWS_HE_F",
