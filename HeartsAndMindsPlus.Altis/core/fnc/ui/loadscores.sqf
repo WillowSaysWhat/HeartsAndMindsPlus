@@ -48,9 +48,7 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
 
 
     if (!(isnil "_UID") && !(isNil "_NAME")) then {
-    private _edit = [_NAME,"                        "] joinString "";
-    private _outputname = [_edit, 0,18] call BIS_fnc_trimString;
-    private _displayout = [_outputname,"|  Kills: ",_MANKILLS," |  Vic Kills: ",_VICKILLS," |  Air Kills: ",_AIRKILLS," |  Boat Kills: ",_SEAKILLS," |  Civ Kills: ",_CIVKILLS," |  Deaths: ",_DEATHS, " | Rep Change: ", _REPUTATION4] joinString ""; //,"    |     ",
+    private _displayout = ["Kills: ",_MANKILLS," |  Vic Kills: ",_VICKILLS," |  Air Kills: ",_AIRKILLS," |  Boat Kills: ",_SEAKILLS," |  Civ Kills: ",_CIVKILLS," |  Deaths: ",_DEATHS, " | Rep Change: ", _REPUTATION4,"  |  ", _NAME] joinString ""; //,"    |     ",
     private _index = lbAdd [89, _displayout];
     lbSetData [89, _index, _selected];
     //if (_i isEqualTo 0) then {lbSetCurSel [89, _index];};
