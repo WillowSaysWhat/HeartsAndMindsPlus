@@ -374,6 +374,7 @@ roleArsenal = {
 		"ACE_M26_Clacker",
 		//MEDICAL
 		"kat_IV_16",
+		"kat_CarbonateItem",
 		"ACE_fieldDressing",
 		"ACE_elasticBandage",
 		"ACE_packingBandage",
