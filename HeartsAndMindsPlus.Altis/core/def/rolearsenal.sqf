@@ -392,7 +392,7 @@ roleArsenal = {
         "kat_IV_16",
         "kat_naloxone",
         "kat_TXA",
-        "kat_Bubble_Wrap_Item"
+        "kat_Bubble_Wrap_Item",
         "kat_CaffeineItem",
         "kat_chestSeal",
         "kat_guedel",

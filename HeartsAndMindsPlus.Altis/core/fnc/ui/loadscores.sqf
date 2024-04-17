@@ -46,8 +46,6 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _FLIGHTPERM = _index select 11;
     _ARMOURPERM = _index select 12;
 
-    if !(isNumber _REPUTATION4) then {_REPUTATION4 = 0};
-
 
     if (!(isnil "_UID") && !(isNil "_NAME")) then {
     private _edit = [_NAME,"                        "] joinString "";

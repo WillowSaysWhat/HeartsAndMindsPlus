@@ -71,7 +71,7 @@ if (_city getVariable ["spawn_more", false] || _city getVariable ["has_ho", fals
 
 // Recon Colors Map Markers
 if (_city getVariable ["marker", ""] != "") then {
-    if (_city getVariable "occupied", false) then {
+    if (_city getVariable ["occupied", false]) then {
         (_city getVariable ["marker", ""]) setMarkerColor "colorOPFOR"; // CONFIG OBJ Colors - OCCUPIED
     } else {
         (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors - CLEAR/CIVILIAN

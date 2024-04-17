@@ -47,8 +47,6 @@ params ["_Change","_UID","_type","_reputationchange"];
         _NUMDEATHS = parseNumber _DEATHS;
         _NUMREP = parseNumber _REPUTATION1;
 
-        if !(isNumber _NUMREP) then {_NUMREP = 0};
-
 	switch (_Change) do {
                 case "KILL" : {
                 if (side group _type == civilian) then {_CIVKILLS = _NUMCIVKILLS + 1;};
