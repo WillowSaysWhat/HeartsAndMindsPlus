@@ -22,7 +22,6 @@ Author:
 
 lbClear 89;
 
-// Try changing to for each statements to avoid miscount fails
 
 for "_i" from 0 to ((count BTC_Player_array) -1) do {
 
@@ -46,6 +45,8 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _REPUTATION4 = _index select 10;
     _FLIGHTPERM = _index select 11;
     _ARMOURPERM = _index select 12;
+
+    if !(isNumber _REPUTATION4) then {_REPUTATION4 = 0};
 
 
     if (!(isnil "_UID") && !(isNil "_NAME")) then {

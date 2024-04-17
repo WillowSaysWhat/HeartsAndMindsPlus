@@ -69,16 +69,25 @@ if (_city getVariable ["spawn_more", false] || _city getVariable ["has_ho", fals
     _tresspass setMarkerAlpha 0;
 };
 
+// Recon Colors Map Markers
+if (_city getVariable ["marker", ""] != "") then {
+    if (_city getVariable "occupied", false) then {
+        (_city getVariable ["marker", ""]) setMarkerColor "colorOPFOR"; // CONFIG OBJ Colors - OCCUPIED
+    } else {
+        (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors - CLEAR/CIVILIAN
+    };
+};
+
 if (!(_city getVariable ["initialized", false])) then {
     private _numberOfIED = (switch _type do {
         case "Hill" : {1};
         case "VegetationFir" : {1};
         case "BorderCrossing" : {2};
-        case "NameLocal" : {2.5};
+        case "NameLocal" : {3};
         case "StrongpointArea" : {3};
-        case "NameVillage" : {3.5};
-        case "NameCity" : {5};
-        case "NameCityCapital" : {6};
+        case "NameVillage" : {4};
+        case "NameCity" : {6};
+        case "NameCityCapital" : {7};
         case "Airport" : {0};
         case "NameMarine" : {0};
         default {0};
@@ -161,8 +170,8 @@ if (_data_units isNotEqualTo []) then {
         // Spawn civilians
         private _numberOfCivi = (switch _type do {
             case "VegetationFir" : {0};
-            case "BorderCrossing" : {2};
-            case "NameLocal" : {10};
+            case "BorderCrossing" : {4};
+            case "NameLocal" : {13};
             case "StrongpointArea" : {0};
             case "NameVillage" : {15};
             case "NameCity" : {20};
