@@ -362,15 +362,30 @@ roleArsenal = {
 		"SmokeShellPurple",
 		"SmokeShellRed",
 		"rhs_mag_m67",
-		"rhs_mag_mk84",
 		"Chemlight_blue",
 		"Chemlight_green",
 		"ACE_Chemlight_IR",
 		"ACE_Chemlight_Orange",
 		"Chemlight_red",
 		"ACE_Chemlight_White",
+		"rhsusf_mag_6Rnd_M781_Practice",
+		"rhsusf_mag_6Rnd_m4009", 
+		"rhs_mag_m4009", 
+		"rhs_mag_M781_Practice",
+		"rhs_mag_M663_green_cluster", 
+		"rhs_mag_M585_white_cluster", 
+		"rhs_mag_M664_red_cluster", 
+		"ACE_M84", 
+		"ACE_CTS9",
+		"rhsusf_mag_6Rnd_M397_HET",
+        "rhsusf_mag_6Rnd_M433_HEDP",
+        "rhsusf_mag_6Rnd_M441_HE",
+        "rhsusf_mag_6Rnd_m4009",
+        "rhsusf_mag_6Rnd_M714_white",
+        "rhsusf_mag_6Rnd_M583A1_white", 
 		//EXPLOSIVES
 		"rhsusf_m112_mag",
+		"SLAMDirectionalMine_Wire_Mag",
 		//TOOLS
 		"ACE_RangeTable_82mm",
 		"ACE_artilleryTable",
@@ -452,6 +467,9 @@ roleArsenal = {
 		"ACE_SpareBarrel",
 		"ACE_WaterBottle",
 		"ACE_TacticalLadder_Pack",
+		"tfw_blade",
+        "tfw_whip",
+        "tfw_dd",
 		"ItemWatch"
     ];
 
@@ -706,9 +724,14 @@ roleArsenal = {
 		"rhs_weap_m16a4_imod_M203",
 		"rhs_weap_mk17_LB",
 		"rhs_weap_mk17_CQC",
+		"rhs_weap_m32",
 		//SECONDARY
 		"rhs_weap_M320",
-		 //LAUNCHER
+		//EXPLOSIVES
+		"ClaymoreDirectionalMine_Remote_Mag",
+		"ATMine_Range_Mag",
+		"ACE_FlareTripMine_Mag",
+		//LAUNCHER
 		"rhs_weap_fim92",
 		"rhs_weap_M136",
 		"rhs_weap_M136_hp",
