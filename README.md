@@ -29,7 +29,7 @@ HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the 
 - **Full undercover system** - Go undercover as a civ in mil objectives
 - **Full permissions system** - Per player persistant permissions for Build, Salvage, CAS/WEATHER/SIDEMISSIONS, Flight and Armour
 - **Vehicle Appearance manager** - Use the logic point at spawn to change the apperance of your vehicles persistantly
-- ** Peristant scoreboard** - Keep track of kills, and rep for each player!
+- **Peristant scoreboard** - Keep track of kills, and rep for each player!
 
 * Some features limited to latest builds
 
