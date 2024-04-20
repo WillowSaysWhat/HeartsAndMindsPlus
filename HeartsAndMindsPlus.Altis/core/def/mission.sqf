@@ -873,10 +873,9 @@ btc_door_breaking_time = 2;
 
 //Flag
 btc_flag_textures = [
-    "\A3\Data_F\Flags\flag_red_CO.paa",
-    "\A3\Data_F\Flags\flag_green_CO.paa",
-    "\A3\Data_F\Flags\flag_blue_CO.paa",
-    '#(argb,8,8,3)color(0.9,0.9,0,1)',
+    "\A3\Data_F\Flags\Flag_uno_CO.paa",
+    "\A3\Data_F\Flags\flag_rcrystal_CO.paa",
+    "\A3\Data_F\Flags\flag_us_CO.paa",
     "\A3\Data_F\Flags\flag_uk_CO.paa",
     "\A3\Data_F\Flags\flag_NATO_CO.paa"
 ];
