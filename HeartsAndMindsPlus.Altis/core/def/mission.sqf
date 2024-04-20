@@ -877,7 +877,8 @@ btc_flag_textures = [
     "\A3\Data_F\Flags\flag_rcrystal_CO.paa",
     "\A3\Data_F\Flags\flag_us_CO.paa",
     "\A3\Data_F\Flags\flag_uk_CO.paa",
-    "\A3\Data_F\Flags\flag_NATO_CO.paa"
+    "\A3\Data_F\Flags\flag_NATO_CO.paa",
+    "res\2.paa"
 ];
 
 //Respawn
