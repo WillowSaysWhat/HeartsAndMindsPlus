@@ -27,15 +27,6 @@ true,
 true
 ] call CBA_fnc_addClassEventHandler;
 
-{
-    [_x, "Init", {
-        params ["_obj"];
-        private _type = typeOf _obj;
-        if (_type in btc_log_def_loadable) then {[_obj, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSize;};
-        if (_type in btc_log_def_can_load) then {[_obj, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSpace;};
-    }, true, [], true] call CBA_fnc_addClassEventHandler;
-} forEach btc_log_def_loadable + btc_log_def_can_load;
-
 
 ["acex_fortify_objectPlaced", {
   params ["_player", "_side", "_objectPlaced"];
@@ -51,6 +42,12 @@ true
       createVehicleCrew _objectPlaced;
     };
     btc_global_economy = [west] call acex_fortify_fnc_getBudget;
+    if (_type in btc_log_def_loadable) then {
+      [_objectPlaced, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSize;
+    };
+    if (_type in btc_log_def_can_load) then {
+      [_objectPlaced, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSpace;
+    };
     clearWeaponCargoGlobal _objectPlaced;
     clearMagazineCargoGlobal _objectPlaced;
     clearBackpackCargoGlobal _objectPlaced;
