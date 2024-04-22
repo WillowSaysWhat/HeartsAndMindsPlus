@@ -27,6 +27,16 @@ true,
 true
 ] call CBA_fnc_addClassEventHandler;
 
+{
+    [_x, "InitPost", {
+        params ["_obj"];
+        private _type = typeOf _obj;
+        if (_type in btc_log_def_loadable) then {[_obj, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSize;};
+        if (_type in btc_log_def_can_load) then {[_obj, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSpace;};
+    }, true, [], true] call CBA_fnc_addClassEventHandler;
+} forEach btc_log_def_loadable + btc_log_def_can_load;
+
+
 ["acex_fortify_objectPlaced", {
   params ["_player", "_side", "_objectPlaced"];
     _type = typeOf _objectPlaced;
