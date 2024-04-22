@@ -28,7 +28,7 @@ true
 ] call CBA_fnc_addClassEventHandler;
 
 {
-    [_x, "InitPost", {
+    [_x, "Init", {
         params ["_obj"];
         private _type = typeOf _obj;
         if (_type in btc_log_def_loadable) then {[_obj, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSize;};
