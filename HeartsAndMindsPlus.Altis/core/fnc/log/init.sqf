@@ -35,13 +35,13 @@ if (isNil {_obj getVariable "btc_EDEN_defaultFuelCargo"}) then {
 if (isNil {_obj getVariable "btc_EDEN_defaultSupply"}) then {
     _obj setVariable ["btc_EDEN_defaultSupply", _obj call ace_rearm_fnc_getSupplyCount, true];
 };
-_type = typeOf _obj;
 
+_type = typeOf _obj;
 if (_type in btc_log_def_loadable) then {
-    [_obj, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSize;
+    [_obj, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSize;
 };
 if (_type in btc_log_def_can_load) then {
-    [_obj, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSpace;
+    [_obj, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSpace;
 };
 
  

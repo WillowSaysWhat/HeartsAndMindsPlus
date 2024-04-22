@@ -50,10 +50,10 @@ if (_isRepairVehicle && {!([_vehicle] call ace_repair_fnc_isRepairVehicle)}) the
 };
 _type = TypeOf _vehicle;
 if (_type in btc_log_def_loadable) then {
-    [_vehicle, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSize;
+    [_obj, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSize;
 };
 if (_type in btc_log_def_can_load) then {
-    [_vehicle, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSpace;
+    [_obj, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSpace;
 };
 if (_fuelSource isNotEqualTo []) then {
     _fuelSource params [
