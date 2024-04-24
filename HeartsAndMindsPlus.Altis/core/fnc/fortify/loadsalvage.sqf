@@ -45,6 +45,9 @@ for "_i" from 0 to ((count _array) - 1) do {
         case "Land_RepairDepot_01_green_F": {
             _classnameout = "Salvage Station";
         };
+        case "C_supplyCrate_F": {
+            _classname = "Arsenal";
+        };
         default {
             _classnameout = _display;
         };
