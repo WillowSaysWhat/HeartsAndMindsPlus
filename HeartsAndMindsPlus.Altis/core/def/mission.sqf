@@ -182,6 +182,7 @@ if (isServer) then {
     btc_fobs = [[], [], []];
     btc_fob_rallypointTimer = 60 * btc_p_rallypointTimer;
     btc_body_deadPlayers  = [];
+    btc_log_points = [];
 
     //Patrol
     btc_patrol_active = [];

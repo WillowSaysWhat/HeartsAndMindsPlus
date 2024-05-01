@@ -124,7 +124,7 @@ _action = ["Search_intel", localize "STR_A3_Showcase_Marksman_BIS_tskIntel_title
         }, {true}, {}, [_helipad], [0, 0, 0], 5] call ace_interact_menu_fnc_createAction;
         [_object, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
     };
-} forEach [[btc_create_object, btc_create_object_point]];
+} forEach [[btc_create_object, btc_create_object_point], btc_log_points select 0];
 
 //Place
 _action = ["Logistic", localize "STR_BTC_HAM_ACTION_LOC_MAIN", "\A3\ui_f\data\igui\cfg\simpleTasks\letters\L_ca.paa", {}, {true}] call ace_interact_menu_fnc_createAction;
