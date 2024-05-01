@@ -900,8 +900,8 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
  
 {  
     _cfgVehicles = configFile >> "CfgVehicles";  
-    _cost = getNumber(_cfgVehicles >> _x >> "cost");
-    _finalcost = ((_cost/1000) max 160) min 1600;
+    _cost = getNumber(_cfgVehicles >> _x >> "armor");
+    _finalcost = ((_cost * 10) max 160) min 3600;
     _alltopricearray pushback [_x,_finalcost];
 } foreach _alltoprice;
 

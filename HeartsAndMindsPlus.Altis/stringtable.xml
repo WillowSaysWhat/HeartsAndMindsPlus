@@ -4790,7 +4790,7 @@
                 <Czech>Není to vedlejší mise, nelze ji zrušit</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_O_COMMON_REBOOT">
-                <Original>Server reboot in %1min, Please RTB and Disconnect.</Original>
+                <Original>Server reboot in %1min</Original>
                 <German>Serverneustart in %1 Minuten. JETZT den Server verlassen</German>
                 <Chinesesimp>Server reboot in %1min, leave it NOW!</Chinesesimp>
                 <French>Redémarrage du serveur dans %1min, décconectez-vous maintenant !</French>

@@ -75,3 +75,15 @@ if (btc_p_respawn_location > 1) then {
     };
 };
 
+// MEDICAL VEHICLES
+if ((getNumber (configOf _veh >> "attendant")) > 0) then {
+    if (fullCrew [_veh, "cargo", true] isNotEqualTo []) then {
+            [
+                _veh,
+                "Deleted",
+                {_thisArgs call BIS_fnc_removeRespawnPosition},
+                [btc_player_side, _veh] call BIS_fnc_addRespawnPosition
+            ] call CBA_fnc_addBISEventHandler;
+        };
+};
+
