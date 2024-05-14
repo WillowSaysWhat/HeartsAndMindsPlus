@@ -478,57 +478,60 @@ btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, i
 // Add a further "Price Overwrite" category for adding custom vehicles
 
 _GroundVehArray = [ // Ground Vehicles
-    ["C_Offroad_01_F",200],                         //Offroad
-    ["Peral_AS32A",250],                            //TOWTRUCK
-    ["Peral_B600",250],                             //TOWTRUCK
-    ["Peral_USN6",250],                             //Forklift
-    ["rhsusf_mrzr4_d",300],                         //RZR
-    ["B_Boat_Transport_01_F",300],                  //RHIB 4 PAKS         
-    ["rhsusf_m1151_usarmy_wd",400],                 //Humvee    
-    ["rhsusf_m998_w_2dr_fulltop",450],              //Humvee 2DR 8 PAKS
-    ["rhsusf_m1151_m240_v2_usarmy_wd",500],         //Humvee M240
-    ["rhsusf_m1151_m2_v2_usarmy_wd",600],           //Humvee M2
-    ["rhsusf_m113_usarmy_medical",600],             //M113 Medevac
-    ["rhsusf_m1151_mk19_v2_usarmy_wd",700],         //Humvee MK19
-    ["rhsusf_m1165a1_gmv_m2_m240_socom_d",800],     //Humvee GMV M2 10 PAKS
-    ["B_T_Boat_Armed_01_minigun_F",800],            //Boat 11 PAKS
-    ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom", 800],   //OGRE tow truck
-    ["rhsusf_m1152_rsv_usarmy_wd",800],             //HUMVEE Ammo
-    ["rhsusf_m1165a1_gmv_m134d_m240_socom_d",1000], //Humvee GMV M134 10 PAKS
-    ["rhsusf_m1240a1_m2_usarmy_wd", 1000],          //JLTV M2
-    ["rhsusf_M1230a1_usarmy_wd",1000],              //Batttlebus Medevac
-    ["rhsusf_stryker_m1132_m2_wd",1200],            //Mine & Rubbish clearing stryker
-    ["rhsusf_M1232_M2_usarmy_wd",1200],             //Battlebus M2 11 PAKS
-    ["rhsusf_m966_w",1200],                         //Humvee TOW
-    ["rhsusf_M1237_M2_usarmy_wd",1400],             //Battlebus M2 W/RHINO 11 PAKS
-    ["rhsusf_stryker_m1127_m2_wd",1500],            //Stryker M2 LRAS3 10 PAKS
-    ["rhsusf_mkvsoc",1500],                         //BIGG Boat 33 PAKS
-    ["rhsusf_M977A4_usarmy_wd",1500],               //HEMTT
-    ["rhsusf_stryker_m1134_wd",1600],               //Stryker TOW
-    ["rhsusf_M977A4_AMMO_usarmy_wd",1800],          //HEMMT Ammo
-    ["rhsusf_M977A4_REPAIR_usarmy_wd",1800],        //HEMMT Repair
-    ["rhsusf_M1117_W",2000],                        //ASV
-    ["rhsusf_M978A4_usarmy_wd",2000],                //HEMTT Fuel
-    ["RHS_M2A3_BUSKI_wd",5000],                     //Bradley BUSK I
-    ["RHS_M6_wd",6000],                             //Linebacker
-    ["RHS_M2A3_BUSKIII_wd",7000],                   //Bradley BUSK III
-    ["rhsusf_m1a2sep1tuskiwd_usarmy",10000],        //Abrams TUSK I
-    ["rhsusf_m1a2sep1tuskiiwd_usarmy",12000]       //Abrams TUSK II
+["CUP_B_M1030_USMC",50],
+["B_Quadbike_01_F",50],
+["rhsusf_mrzr4_d",200],
+["CUP_B_nM997_USMC_DES",250],
+["CUP_B_LR_Ambulance_GB_D",250],
+["rhsusf_m1151_m240_v2_usarmy_d",500],
+["rhsusf_m1151_m2_v2_usarmy_d",500],
+["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",500],
+["rhsusf_M1083A1P2_B_M2_D_fmtv_usarmy",500],
+["rhsusf_M977A4_BKIT_M2_usarmy_d",500],
+["rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",500],
+["rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",500],
+["rhsusf_M978A4_BKIT_usarmy_d",500],
+["rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy",500],
+["rhsusf_m966_d",700],
+["rhsusf_m1165a1_gmv_m2_m240_socom_d",700],
+["rhsusf_m113d_usarmy",800],
+["rhsusf_m113d_usarmy_medical",800],
+["rhsusf_stryker_m1132_m2_d",800],
+["rhsusf_m1151_mk19_v2_usarmy_d",800],
+["rhsusf_M1117_D",800],
+["rhsusf_m1240a1_m2_uik_usarmy_d",800],
+["rhsusf_m1165a1_gmv_m134d_m240_socom_d",900],
+["rhsusf_M1237_M2_usarmy_d",1000],
+["rhsusf_M1230a1_usarmy_d",1200],
+["rhsusf_m1240a1_mk19_usarmy_d",1500],
+["rhsusf_m113d_usarmy_MK19",1500],
+["CUP_B_LAV25_desert_USMC",2000],
+["CUP_B_M1129_MC_MK19_Desert",4000],
+["RHS_M6",4000],
+["RHS_M2A3_BUSKI",5000],
+["RHS_M2A3_BUSKIII",7000],
+["rhsusf_M142_usarmy_D",7000],
+["rhsusf_m1a2sep2d_usarmy",10000]
 ];
 
 _AirVehArray = [ // Aircraft
-    ["RHS_MELB_MH6M",2500],
-    ["RHS_C130J",3000],
-    ["RHS_CH_47F_cargo",3000],
-    ["vtx_UH60M_SLICK",4000],
-    ["vtx_UH60M_MEDEVAC",4000],
-    ["rhsusf_CH53E_USMC_GAU21_D",5000],
-    ["RHS_MELB_AH6M",5000],
-    ["vtx_MH60M_DAP_MLASS",6000],
-    ["RHS_AH1Z",7500],
-    ["FIR_F15C_FL",10000],
-    ["FIR_A10C_MD",11000],
-    ["FIR_F15E_LN_492",12000]
+["FIR_A10C_47FS_Tigress",1200],
+["rhsusf_f22",1500],
+["RHS_MELB_MH6M",1500],
+["RHS_UH60M_d",3000],
+["RHS_UH60M_MEV_d",3000],
+["RHS_MELB_AH6M",3500],
+["RHS_CH_47F_10",3500],
+["CUP_B_MH47E_USA",4000],
+["CUP_B_AC47_Spooky_USA",5000],
+["CUP_B_CESSNA_T41_ARMED_USA",5000],
+["rhsusf_CH53E_USMC_GAU21_D",5000],
+["CUP_B_USMC_DYN_MQ9",6000],
+["RHS_C130J",6000],
+["CUP_B_MH60L_DAP_4x_US",6000],
+["CUP_B_MV22_USMC_RAMPGUN",6000],
+["CUP_B_AV8B_DYN_USMC",10000],
+["RHS_AH64D",15000]
 ];
 
 _FortsArray = [ // Fortifications
@@ -566,13 +569,13 @@ _FortsArray = [ // Fortifications
 ];
 
 _StaticsArray = [ // Statics
-    ["RHS_M119_WD",1000],
-    ["RHS_M252_WD",400],
-    ["RHS_Stinger_AA_pod_WD",400],
-    ["RHS_M2StaticMG_WD",250],
-    ["RHS_M2StaticMG_MiniTripod_WD",250],
-    ["RHS_TOW_TriPod_WD",300],
-    ["RHS_MK19_TriPod_WD",600]
+["RHS_M2StaticMG_D",200],
+["RHS_M2StaticMG_MiniTripod_D",200],
+["RHS_TOW_TriPod_D",250],
+["RHS_M252_D",250],
+["RHS_Stinger_AA_pod_D",300],
+["RHS_MK19_TriPod_D",500],
+["RHS_M119_D",1000]
 ];
 
 _AmmoBoxesArray =  [ // Ammo Boxes / Storage Boxes
@@ -774,58 +777,6 @@ btc_type_motorized_armed = _allclasse select 6;
 btc_type_mg = _allclasse select 7;
 btc_type_gl = _allclasse select 8;
 
-
-btc_type_motorized_armed = btc_type_motorized_armed + ["rhs_mig29s_vmf","RHS_Su25SM_vvs","RHS_TU95MS_vvs_old","rhs_t72bd_tv","rhs_t72be_tv","rhs_t80uk","rhs_t90sab_tv","RHS_Ka52_vvsc","rhs_ka60_c"];
-btc_type_units = [
-"rhs_vdv_aa",
-"rhs_vdv_at",
-"rhs_vdv_arifleman_rpk",
-"rhs_vdv_arifleman",
-"rhs_vdv_efreitor",
-"rhs_vdv_engineer",
-"rhs_vdv_grenadier_rpg",
-"rhs_vdv_strelok_rpg_assist",
-"rhs_vdv_junior_sergeant",
-"rhs_vdv_machinegunner",
-"rhs_vdv_machinegunner_assistant",
-"rhs_vdv_marksman",
-"rhs_vdv_marksman_asval",
-"rhs_vdv_medic",
-"rhs_vdv_officer_armored",
-"rhs_vdv_rifleman",
-"rhs_vdv_rifleman_asval",
-"rhs_vdv_grenadier",
-"rhs_vdv_LAT",
-"rhs_vdv_sergeant",
-"rhs_vdv_grenadier_alt",
-"rhs_vdv_rifleman_lite",
-"rhs_vdv_LAT",
-"rhs_vdv_RShG2",
-"rhs_vdv_recon_arifleman_rpk",
-"rhs_vdv_recon_arifleman",
-"rhs_vdv_recon_efreitor",
-"rhs_vdv_recon_machinegunner_assistant",
-"rhs_vdv_recon_marksman",
-"rhs_vdv_recon_marksman_asval",
-"rhs_vdv_recon_marksman_vss",
-"rhs_vdv_recon_medic",
-"rhs_vdv_recon_officer_armored",
-"rhs_vdv_recon_rifleman",
-"rhs_vdv_recon_rifleman_ak103",
-"rhs_vdv_recon_rifleman_akms",
-"rhs_vdv_recon_rifleman_asval",
-"rhs_vdv_recon_grenadier",
-"rhs_vdv_recon_rifleman_l",
-"rhs_vdv_recon_rifleman_lat",
-"rhs_vdv_recon_rifleman_scout_akm",
-"rhs_vdv_recon_rifleman_scout",
-"rhs_vdv_recon_grenadier_scout",
-"rhs_vdv_recon_arifleman_scout",
-"rhs_vdv_recon_arifleman_rpk_scout",
-"rhs_vdv_recon_sergeant",
-"rhs_vdv_rifleman_alt"
-];
-
 //TempFix
 btc_type_gl = btc_type_mg;
 
@@ -841,7 +792,7 @@ btc_rep_bonus_cache = 50; // WAI
 btc_rep_bonus_civ_hh = 0; // DISABLED
 btc_rep_bonus_disarm = 15; // WAI
 btc_rep_bonus_hideout = 100; // WAI
-btc_rep_bonus_mil_killed = 0.25; // WAI
+btc_rep_bonus_mil_killed = 0.5; // WAI
 btc_rep_bonus_IEDCleanUp = 5; // WAI
 btc_rep_bonus_removeTag = 5; // WAI
 btc_rep_bonus_removeTagLetter = 1; // WAI

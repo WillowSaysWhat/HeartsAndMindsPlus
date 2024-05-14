@@ -520,7 +520,6 @@ roleArsenal = {
 		"MRAWS_HEAT55_F",
 		"MRAWS_HEAT_F",
 		"rhs_fgm148_magazine_AT"
-		
       ];
 
       Private _RIFLEMAN = [
