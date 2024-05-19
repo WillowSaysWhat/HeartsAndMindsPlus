@@ -429,7 +429,7 @@ roleArsenal = {
 			"rhs_weap_M590_8RD",
 			
 			// Launcher
-			"rhs_weap_M136"
+			"rhs_weap_M136",
 			"rhs_weap_M136_hedp",
 			"rhs_weap_M136_hp",
 			"rhs_weap_fgm148",
