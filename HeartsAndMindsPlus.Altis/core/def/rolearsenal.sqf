@@ -227,6 +227,15 @@ roleArsenal = {
 			"rhsusf_5Rnd_300winmag_xm2010",
 			"rhsusf_100Rnd_762x51_m80a1epr",
 			"rhsusf_20Rnd_762x51_m62_Mag",
+			"rhsusf_200Rnd_556x45_mixed_soft_pouch",
+			"ranger_KAC_LAMG_150rnd_Box",
+			"ranger_KAC_LAMG_150rnd_Box_Mixed",
+			"ranger_KAC_LAMG_150rnd_Box_Tracer",
+			"NDS_M_6Rnd_60mm_SMOKE",
+			"NDS_M_6Rnd_60mm_ILLUM",
+			"avm224_M_6Rnd_60mm_ILLUM_IR",
+			"NDS_M_6Rnd_60mm_HE_0",
+			"NDS_M_6Rnd_60mm_HE",
 			
 			// MISC 
 			"ACE_RangeTable_82mm",
@@ -397,7 +406,13 @@ roleArsenal = {
 			"rhsusf_acc_tdstubby_blk",
 			"rhsusf_acc_grip3",
 			"bipod_01_F_blk",
-			"bipod_01_F_snd"
+			"bipod_01_F_snd",
+			"rhsusf_acc_nt4_black",
+			"CUP_acc_ANPEQ_2_Flashlight_Black_L",
+			"rhsusf_acc_grip4_bipod",
+			"rhsusf_acc_kac_grip_saw_bipod",
+			"75th_Ranger_sideLAMG_1_LASER",
+			"rhsusf_acc_harris_bipod"
 		
     	];
 
@@ -470,7 +485,10 @@ roleArsenal = {
       	Private _AUTORIFLEMAN = [
 			// Primary
 			"75th_Ranger_m240L",
-			"75th_ranger_mk48"
+			"75th_ranger_mk48",
+			"75th_LAMG_1",
+			"rhs_weap_m249_pip_S",
+			"75th_LAMG_1"
 
       	];
 
