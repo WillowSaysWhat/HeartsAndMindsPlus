@@ -46,7 +46,6 @@ roleArsenal = {
 			"ranger_patagonia_jtac_g2_mc",
 			"ranger_patagonia_med_g2_mc",
 			"ranger_rugby_1",
-			"U_C_Poloshirt_blue",
 
 			// Helment
 			"75th_opscore10_off",
@@ -260,6 +259,7 @@ roleArsenal = {
 			"ace_marker_flags_red",
 			"ACE_SpareBarrel",
 			"ACE_UAVBattery",
+			"Laserbatteries",
 
 			// Medical
 			"kat_IV_16",
@@ -403,8 +403,10 @@ roleArsenal = {
 
     	Private _CO = [
 			// Primary
+			"75th_Ranger_URGI_5",
 			"75th_Ranger_FSP_2",
 			"75th_Ranger_URGI_4",
+			"75th_Ranger_FSP_1",
 			"rhs_weap_m16a4",
 			"rhs_weap_m16a4_imod_M203",
 			"rhs_weap_m4_m203",
@@ -412,11 +414,22 @@ roleArsenal = {
 			"rhs_weap_m4a1_blockII_KAC",
 			"rhs_weap_m4a1_m320",
 			"rhs_weap_m32",
-			"rhs_weap_M590_8RD"
+			"rhs_weap_M590_8RD",
+			
+			// Launcher
+			"rhs_weap_M136",
+			"rhs_weap_M136_hedp",
+			"rhs_weap_M136_hp",
+			"rhs_weap_fgm148",
+			"rhs_weap_fim92",
+			"avm224_W_M224_mortar_carry",
+			"rhs_weap_maaws"
      	];
 
      	Private _RIFLEMAN = [
 			// Primary
+			"75th_Ranger_FSP_1",
+			"75th_Ranger_URGI_5",
 			"75th_Ranger_FSP_2",
 			"75th_Ranger_URGI_4",
 			"rhs_weap_m16a4",
@@ -440,6 +453,8 @@ roleArsenal = {
 
       	Private _MEDIC = [
 			// Primary
+			"75th_Ranger_URGI_5",
+			"75th_Ranger_FSP_1",
 			"75th_Ranger_FSP_2",
 			"75th_Ranger_URGI_4",
 			"rhs_weap_m16a4",
@@ -461,6 +476,8 @@ roleArsenal = {
 
       	Private _ENGINEER = [
 			// Primary
+			"75th_Ranger_URGI_5",
+			"75th_Ranger_FSP_1",
 			"75th_Ranger_FSP_2",
 			"75th_Ranger_URGI_4",
 			"rhs_weap_m16a4",
@@ -483,6 +500,8 @@ roleArsenal = {
 
       	Private _PILOT = [
 			// Primary
+			"75th_Ranger_URGI_5",
+			"75th_Ranger_FSP_1",
 			"75th_Ranger_FSP_2",
 			"75th_Ranger_URGI_4",
 			"rhs_weap_m16a4",
