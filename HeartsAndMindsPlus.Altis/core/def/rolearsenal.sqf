@@ -87,6 +87,7 @@ roleArsenal = {
 			"ace_gunbag_Tan",
 			"B_Parachute",
 			"kat_stretcherBag",
+			"B_UAV_01_backpack_F",
 
 			// Smokes/Grenades 
 			"ACE_M14",
