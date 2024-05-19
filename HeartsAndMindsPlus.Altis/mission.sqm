@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=1581;
+		nextID=1583;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=302;
+		nextID=319;
 	};
 	class Camera
 	{
-		pos[]={13511.278,77.284363,16258.214};
-		dir[]={-0.65741593,-0.22973962,-0.71765172};
-		up[]={-0.15518537,0.97325218,-0.16940424};
-		aside[]={-0.73737496,-7.4505806e-009,0.6754837};
+		pos[]={13474.256,60.265381,16281.271};
+		dir[]={-0.085056089,-0.69053286,0.71830499};
+		up[]={-0.081201248,0.72329426,0.68574971};
+		aside[]={0.99307996,3.7198333e-008,0.11759304};
 	};
 };
 binarizationWanted=0;
@@ -266,18 +266,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -286,6 +274,18 @@ class CustomAttributes
 				{
 					singleType="SCALAR";
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
 				};
 			};
 		};
@@ -315,7 +315,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=12;
+		items=13;
 		class Item0
 		{
 			dataType="Layer";
@@ -354,7 +354,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={13462.222,38.336487,16329.79};
-								angles[]={0,3.1593137,0};
+								angles[]={-0,3.1593137,0};
 							};
 							side="Empty";
 							flags=4;
@@ -581,8 +581,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={13462.862,38.337921,16312.706};
-										angles[]={0,6.14568,0};
+										position[]={13463.07,38.337925,16315.193};
+										angles[]={0,6.1456709,0};
 									};
 									side="West";
 									flags=6;
@@ -619,7 +619,6 @@ class Mission
 									};
 									id=8;
 									type="B_Competitor_F";
-									atlOffset=-3.8146973e-006;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -695,7 +694,6 @@ class Mission
 							{
 							};
 							id=7;
-							atlOffset=-3.8146973e-006;
 						};
 						class Item4
 						{
@@ -787,8 +785,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13464.247,38.450073,16310.898};
-								angles[]={0,6.0741506,0};
+								position[]={13464.455,38.455162,16313.386};
+								angles[]={-0,6.0741506,0};
 							};
 							side="Empty";
 							flags=4;
@@ -800,7 +798,6 @@ class Mission
 							};
 							id=1371;
 							type="Land_Camping_Light_F";
-							atlOffset=-0.0050888062;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -824,8 +821,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13462.737,39.190613,16309.922};
-								angles[]={0,3.0485587,0};
+								position[]={13462.945,39.228909,16312.409};
+								angles[]={-0,3.0485587,0};
 							};
 							side="Empty";
 							flags=4;
@@ -835,7 +832,6 @@ class Mission
 							};
 							id=1393;
 							type="C_supplyCrate_F";
-							atlOffset=-0.038295746;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -1475,7 +1471,7 @@ class Mission
 						};
 					};
 					id=1;
-					atlOffset=0.051433563;
+					atlOffset=0.050746918;
 				};
 				class Item1
 				{
@@ -1548,7 +1544,7 @@ class Mission
 						class Item2
 						{
 							dataType="Marker";
-							position[]={13462.261,38.337029,16330.021};
+							position[]={13462.251,38.336487,16329.714};
 							name="btc_log_point";
 							type="Empty";
 							alpha=0.42799053;
@@ -1556,11 +1552,10 @@ class Mission
 							b=0.5;
 							angle=72.98555;
 							id=37;
-							atlOffset=-3.0517578e-005;
 						};
 					};
 					id=34;
-					atlOffset=0.10065079;
+					atlOffset=0.10037994;
 				};
 				class Item4
 				{
@@ -1688,7 +1683,7 @@ class Mission
 				};
 			};
 			id=0;
-			atlOffset=-80.612267;
+			atlOffset=-80.613281;
 		};
 		class Item1
 		{
@@ -4713,8 +4708,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13461.499,38.336487,16312.558};
-						angles[]={0,6.23248,0};
+						position[]={13461.707,38.336487,16315.045};
+						angles[]={-0,6.23248,0};
 					};
 					side="Empty";
 					flags=4;
@@ -4761,7 +4756,7 @@ class Mission
 				};
 			};
 			id=1290;
-			atlOffset=-0.12606049;
+			atlOffset=-0.15177917;
 		};
 		class Item11
 		{
@@ -4769,6 +4764,32 @@ class Mission
 			name="VEHICLES";
 			id=1343;
 			atlOffset=-550.20874;
+		};
+		class Item12
+		{
+			dataType="Layer";
+			name="Team Map Intel";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13543,39.784348,16375.819};
+						angles[]={6.0547395,0,5.9554472};
+					};
+					side="Empty";
+					class Attributes
+					{
+						init="SLT_fnc_RE_Server = { " \n " params[""_arguments"",""_code""]; " \n " _varName = (""SLT""+str (round random 10000)); " \n " " \n " TempCode = compile (""if(!isServer) exitWith{};_this call ""+str _code+""; ""+(_varName+"" = nil;"")); " \n " TempArgs = _arguments; " \n " " \n " call compile (_varName +"" = [TempArgs,TempCode]; " \n " publicVariable '""+_varName+""'; " \n " " \n " [[], { " \n " (""+_varName+"" select 0) spawn (""+_varName+"" select 1); " \n " }] remoteExec ['spawn',2];""); " \n "}; " \n " " \n "with uiNamespace do {SLTScriptDisplayName = ""Team Map Intel"";}; " \n " " \n "SLT_fnc_enableScript = { " \n " { " \n "  [] spawn { " \n "    " \n "   if (isMultiplayer) then {waitUntil {sleep 0.1; getClientState == ""BRIEFING READ""};}; " \n "   waitUntil {sleep 0.1; !((findDisplay 12 displayCtrl 51) isEqualTo controlNull)}; " \n "    " \n "   if !(isNil ""RKAGRevealedGroups"") exitWith {}; " \n " " \n "   comment ""Parameters""; " \n "   RKAGOnlyShowMarkersOnMap = true; " \n "   RKAGIncludePlayerGroups = false; " \n "   RKAGHideFriendlyForces = true; " \n "   RKAGMinGroupSize = 2; " \n "   RKAGLastKnownLocationMarkerTime = 180; " \n "   RKAGBulletMarkerSpeed = 7.5; " \n "   RKAGBulletMarkerSize = [1,4]; " \n "   RKAGBulletMarkerColor = ""ColorWhite""; " \n "   RKAGBulletMarkerLifetime = 1; " \n "   RKAGBulletIncludePlayers = true; " \n " " \n "   setGroupIconsVisible [true,true]; " \n "   setGroupIconsSelectable true; " \n "   disableMapIndicators [RKAGHideFriendlyForces,true,false,false]; " \n "   uiNamespace setVariable [""_map"",findDisplay 12 displayCtrl 51];  " \n " " \n "   RKAG_fnc_createMapTooltip = { " \n "    with uiNamespace do { " \n "     _display = (finddisplay 12); " \n " " \n "     RKAGMapTooltipGroup = _display ctrlCreate [""RscControlsGroup"", 2300]; " \n "     RKAGMapTooltipGroup ctrlSetPosition [0, 0, 0.4625, 0.34]; " \n "     RKAGMapTooltipGroup ctrlCommit 0;  " \n " " \n "     RKAGMapInfantryTooltipHeader = _display ctrlCreate [""RscStructuredText"", 1100,RKAGMapTooltipGroup]; " \n "     RKAGMapInfantryTooltipHeader ctrlSetPosition [0.0125, 0.02, 0.4375, 0.04]; " \n "     RKAGMapInfantryTooltipHeader ctrlSetStructuredText parseText (""<t font='PuristaSemibold' valign='middle' size='1' shadow='0' align='center'>Infantry Intel</t>""); " \n "     RKAGMapInfantryTooltipHeader ctrlSetBackgroundColor [0.15,0.15,0.15,0.75]; " \n "     RKAGMapInfantryTooltipHeader ctrlCommit 0; " \n " " \n "     RKAGMapInfantryTooltipBody = _display ctrlCreate [""RscStructuredText"", 1101,RKAGMapTooltipGroup]; " \n "     RKAGMapInfantryTooltipBody ctrlSetPosition [0.0125, 0.06, 0.4375, 0.1]; " \n "     RKAGMapInfantryTooltipBody ctrlSetBackgroundColor [0.05,0.05,0.05,0.75]; " \n "     RKAGMapInfantryTooltipBody ctrlCommit 0; " \n " " \n "     RKAGMapVehicleTooltipHeader = _display ctrlCreate [""RscStructuredText"", 1102,RKAGMapTooltipGroup]; " \n "     RKAGMapVehicleTooltipHeader ctrlSetPosition [0.0125, 0.18, 0.4375, 0.04]; " \n "     RKAGMapVehicleTooltipHeader ctrlSetStructuredText parseText (""<t font='PuristaSemibold' valign='middle' size='1' shadow='0' align='center'>Vehicle Intel</t>""); " \n "     RKAGMapVehicleTooltipHeader ctrlSetBackgroundColor [0.15,0.15,0.15,0.75]; " \n "     RKAGMapVehicleTooltipHeader ctrlCommit 0; " \n " " \n "     RKAGMapVehicleTooltipBody = _display ctrlCreate [""RscStructuredText"", 1103,RKAGMapTooltipGroup]; " \n "     RKAGMapVehicleTooltipBody ctrlSetPosition [0.0125, 0.22, 0.4375, 0.1]; " \n "     RKAGMapVehicleTooltipBody ctrlSetBackgroundColor [0.05,0.05,0.05,0.75]; " \n "     RKAGMapVehicleTooltipBody ctrlCommit 0; " \n "    }; " \n " " \n "    addMissionEventHandler [""EachFrame"", { " \n "     with uiNamespace do  " \n "     { " \n "      _mousePos = getMousePosition; " \n "      RKAGMapTooltipGroup ctrlSetPosition [(getMousePosition select 0),(getMousePosition select 1)+0.05,0.4625, 0.34]; " \n "      RKAGMapTooltipGroup ctrlCommit 0; " \n "     }; " \n "    }]; " \n "   }; " \n " " \n "   RKAG_fnc_createMapHideMarkersCheckbox = { " \n "    with uiNamespace do { " \n "     private _display = finddisplay 12; " \n "     private _RscCheckbox_2800 = _display ctrlCreate [""RscCheckbox"", 2800]; " \n "     _RscCheckbox_2800 ctrlSetPosition [0.965937 * safezoneW + safezoneX, 0.948 * safezoneH + safezoneY, 0.018125 * safezoneW, 0.0336666 * safezoneH]; " \n "     _RscCheckbox_2800 ctrlSetTooltip ""Show Unit Markers: ON""; " \n "     _RscCheckbox_2800 cbSetChecked true; " \n "     _RscCheckbox_2800 ctrlSetBackgroundColor [0,0.5,0,1]; " \n "     _RscCheckbox_2800 ctrlCommit 0; " \n "     _RscCheckbox_2800 ctrlAddEventHandler [""CheckedChanged"",{ " \n "      params [""_control"", ""_checked""]; " \n " " \n "      if (_checked == 1) then  " \n "      { " \n "       setGroupIconsVisible [true,true]; " \n "       setGroupIconsSelectable true; " \n "       disableMapIndicators [RKAGHideFriendlyForces,true,false,false]; " \n "       _control ctrlSetTooltip ""Show Unit Markers: ON""; " \n "      } " \n "      else  " \n "      { " \n "       setGroupIconsVisible [false,false]; " \n "       setGroupIconsSelectable false; " \n "       _control ctrlSetTooltip ""Show Unit Markers: OFF""; " \n "      }; " \n "     }]; " \n "    }; " \n "   }; " \n " " \n "   RKAG_fnc_getGroupNATOMarkerType = { " \n "    params[""_group""]; " \n "    private _side = sideUnknown; " \n "    private _mkr = """"; " \n " " \n "    private _prefix = """"; " \n "    _prefix = switch (side _group) do  " \n "    { " \n "     case west: {""b_""}; " \n "     case east: {""o_""}; " \n "     case independent: {""n_""}; " \n "     default {""""}; " \n "    }; " \n " " \n "    private [""_grp"",""_vehlist"",""_infantry"",""_cars"",""_apcs"",""_tanks"",""_aa"",""_helis"",""_planes"",""_boats"",""_veh"",""_type""]; " \n " " \n "    _grp = _group; " \n " " \n "    _vehlist = []; " \n "    _infantry = 0; " \n "    _cars = 0; " \n "    _apcs = 0; " \n "    _tanks = 0; " \n "    _aa = 0; " \n "    _helis = 0; " \n "    _planes = 0; " \n "    _uavs = 0; " \n "    _boats = 0; " \n "    _artys = 0; " \n "    _mortars = 0; " \n "    _support_reammo = 0; " \n "    _support_repair = 0; " \n "    _support_refuel = 0; " \n "    _support_medic = 0; " \n "    _support = 0; " \n "    { " \n "     if (!canstand vehicle _x && alive vehicle _x && !(vehicle _x in _vehlist)) then { " \n "      _veh = vehicle _x; " \n "      _vehlist = _vehlist + [_veh]; " \n " " \n "      if (_veh iskindof ""car"") then {_cars = _cars + 1}; " \n "      if (_veh iskindof ""tank"") then {_tanks = _tanks + 1;}; " \n "      if (getnumber(configfile >> ""cfgvehicles"" >> typeof _veh >> ""artilleryScanner"") > 0) then{_artys = _artys + 1;}; " \n "      if (_veh iskindof ""Wheeled_APC_F"" || _veh iskindof ""APC_Tracked_01_base_F"" " \n "      || _veh iskindof ""APC_Tracked_02_base_F"" || _veh iskindof ""APC_Tracked_03_base_F"") then {_apcs = _apcs + 1}; " \n "      if (getnumber(configfile >> ""cfgvehicles"" >> typeof _veh >> ""radarType"") > 0) then {_aa = _aa + 1}; " \n "      if (_veh iskindof ""helicopter"") then {_helis = _helis + 1}; " \n "      if (_veh iskindof ""plane"") then {_planes = _planes + 1;}; " \n "      if (_veh in allUnitsUAV) then {_uavs = _uavs + 1;}; " \n "      if (_veh iskindof ""staticcanon"") then {_artys = _artys + 1}; " \n "      if (_veh iskindof ""staticmortar"") then {_mortars = _mortars + 1}; " \n "      if (_veh iskindof ""ship"") then {_boats = _boats + 1}; " \n "      _canHeal = getnumber (configfile >> ""cfgvehicles"" >> typeof _veh >> ""attendant"") > 0; " \n "      _canReammo = getnumber (configfile >> ""cfgvehicles"" >> typeof _veh >> ""transportAmmo"") > 0; " \n "      _canRefuel = getnumber (configfile >> ""cfgvehicles"" >> typeof _veh >> ""transportFuel"") > 0; " \n "      _canRepair = getnumber (configfile >> ""cfgvehicles"" >> typeof _veh >> ""transportRepair"") > 0; " \n "      if (_canHeal) then {_support_medic = _support_medic + 1}; " \n "      if (_canReammo) then {_support_reammo = _support_reammo + 1}; " \n "      if (_canRefuel) then {_support_refuel = _support_refuel + 1}; " \n "      if (_canRepair) then {_support_repair = _support_repair + 1}; " \n "     }; " \n "     if ((vehicle _x isEqualTo _x)) then {_infantry = (_infantry + 1)}; " \n "    } foreach units _grp; " \n " " \n "    _type = ""unknown""; " \n "    if (_infantry >= 1) then {_type = ""inf""}; " \n "    if (_cars >= 1) then {_type = ""motor_inf""}; " \n "    if (_tanks >= 1) then {_type = ""armor""}; " \n "    if (_apcs >= 1) then {_type = ""mech_inf""}; " \n "    if (_aa >= 1) then {_type = ""antiair""}; " \n "    if (_artys >= 1) then {_type = ""art""}; " \n "    if (_mortars >= 1) then {_type = ""mortar""}; " \n "    if ((_support_reammo + _support_refuel) >= 1) then {_type = ""support""}; " \n "    if (_support_repair >= 1) then {_type = ""maint""}; " \n "    if (_support_medic >= 1) then {_type = ""med""}; " \n "    if ((_support_medic + _support_reammo + _support_refuel + _support_repair) > 1) then {_type = ""support""}; " \n "    if (_boats >= 1) then {_type = ""naval""}; " \n "    if (_helis >= 1) then {_type = ""air""}; " \n "    if (_planes >= 1) then {_type = ""plane""}; " \n "    if (_uavs >= 1) then {_type = ""uav""}; " \n "     " \n "    _mkr = (_prefix+_type); " \n "    _mkr " \n "   }; " \n " " \n "   RKAG_fnc_spawnRevealGroup = { " \n "    params[""_group""]; " \n " " \n "    clearGroupIcons (_group); " \n "    private _mkrType = [_group] call RKAG_fnc_getGroupNATOMarkerType; " \n "    private _id = (_group) addGroupIcon [_mkrType, [0,0]]; " \n "    _group setGroupIconParams [([side _group, false] call BIS_fnc_sideColor),"""",1,true]; " \n " " \n "    while {!(_group isEqualTo grpNull) && (_group in RKAGRevealedGroups)} do  " \n "    { " \n "     _mkrType = [_group] call RKAG_fnc_getGroupNATOMarkerType; " \n "     _group setGroupIcon [_id, _mkrType]; " \n " " \n "     comment ""Check if any units are alive""; " \n "     private _i = units _group findIf {alive _x}; " \n "     if (_i < 0) then {_group setGroupIconParams [[0,0,0,0.75],"""",1,true];}; " \n " " \n "     sleep 1; " \n "    }; " \n " " \n "    comment ""Show last location""; " \n "    private _j = units _group findIf {alive _x}; " \n "    if (!(_group isEqualTo grpNull) && (_j > -1) && (side _group != side player)) then {[_group] spawn RKAG_fnc_spawnLastKnownPositionMarker;}; " \n " " \n "    clearGroupIcons (_group); " \n "   }; " \n " " \n "   RKAG_fnc_hideGroup = { " \n "    params[""_group""]; " \n "    RKAGRevealedGroups = (RKAGRevealedGroups-[_group]); " \n "   }; " \n " " \n "   RKAG_fnc_hideMapTooltip = { " \n "    with uiNamespace do  " \n "    { " \n "     RKAGMapTooltipGroup ctrlShow false; " \n "     RKAGMapInfantryTooltipHeader ctrlShow false; " \n "     RKAGMapInfantryTooltipBody ctrlShow false; " \n "     RKAGMapVehicleTooltipHeader ctrlShow false; " \n "     RKAGMapVehicleTooltipBody ctrlShow false; " \n "    }; " \n "   }; " \n " " \n "   RKAG_fnc_showMapTooltip = { " \n "    params[""_group"",""_vehicleCount"",""_footCount""]; " \n " " \n "    with uiNamespace do  " \n "    { " \n "     private _sideColor = ([side _group, false] call BIS_fnc_sideColor); " \n "     _sideColor set[3,0.75]; " \n "     RKAGMapInfantryTooltipHeader ctrlSetBackgroundColor (_sideColor); " \n "     RKAGMapVehicleTooltipHeader ctrlSetBackgroundColor (_sideColor); " \n "     RKAGMapTooltipGroup ctrlShow true; " \n " " \n "     private _footText = """"; " \n "     private _vehicleText = """"; " \n "     private _vehs = []; " \n "     { " \n "      private _unit = _x; " \n " " \n "      if (!alive _unit) then {continue}; " \n " " \n "      if (_footCount > 0 && (vehicle _unit isEqualTo _unit)) then  " \n "      { " \n "       _iconName = getText (configFile >> ""CfgVehicles"" >> typeOf _unit >> ""icon""); " \n "       _iconPath = getText(configfile >> ""CfgVehicleIcons"" >> _iconName); " \n "       _footText=(_footText+""<img image='""+_iconPath+""' shadow='0' size='1.2' valign='middle'></img>""); " \n "      }; " \n "     " \n "      if (_vehicleCount > 0 && !(vehicle _unit isEqualTo _unit) && !(vehicle _unit in _vehs)) then " \n "      { " \n "       _vehs pushBack vehicle _unit; " \n "        " \n " " \n "       _vehicleText=(_vehicleText+""<img image='""+(getText (configfile >> 'CfgVehicles' >> typeOf vehicle _unit >> 'picture'))+""' shadow='0' size='1.33' valign='middle'></img>""); " \n "      }; " \n "     } foreach units _group; " \n " " \n "     if !(_footText isEqualTo """") then  " \n "     { " \n "      RKAGMapInfantryTooltipHeader ctrlShow true; " \n "      RKAGMapInfantryTooltipBody ctrlShow true; " \n "      RKAGMapInfantryTooltipBody ctrlSetStructuredText parseText (""<t size='0.1'>&#160;</t><br/>""+_footText); " \n "      RKAGMapInfantryTooltipBody ctrlCommit 0; " \n "     } " \n "     else  " \n "     { " \n "      RKAGMapInfantryTooltipHeader ctrlShow false; " \n "      RKAGMapInfantryTooltipBody ctrlShow false; " \n "     }; " \n " " \n "     if !(_vehicleText isEqualTo """") then  " \n "     { " \n "      RKAGMapVehicleTooltipHeader ctrlShow true; " \n "      RKAGMapVehicleTooltipBody ctrlShow true; " \n "      RKAGMapVehicleTooltipBody ctrlSetStructuredText parseText (""<t size='0.5'>&#160;</t><br/>""+_vehicleText); " \n "      RKAGMapVehicleTooltipBody ctrlCommit 0; " \n " " \n "      if (_footText isEqualTo """") then  " \n "      { " \n "       RKAGMapVehicleTooltipHeader ctrlSetPosition [0.0125, 0.02, 0.4375, 0.04]; " \n "       RKAGMapVehicleTooltipBody ctrlSetPosition [0.0125, 0.06, 0.4375, 0.1]; " \n "       RKAGMapVehicleTooltipHeader ctrlcommit 0.05; " \n "       RKAGMapVehicleTooltipBody ctrlcommit 0.05; " \n "      } " \n "      else  " \n "      { " \n "       RKAGMapVehicleTooltipHeader ctrlSetPosition [0.0125, 0.18, 0.4375, 0.04]; " \n "       RKAGMapVehicleTooltipBody ctrlSetPosition [0.0125, 0.22, 0.4375, 0.1]; " \n "       RKAGMapVehicleTooltipHeader ctrlCommit 0.05; " \n "       RKAGMapVehicleTooltipBody ctrlCommit 0.05; " \n " " \n "      }; " \n "     } " \n "     else  " \n "     {  " \n "      RKAGMapVehicleTooltipHeader ctrlShow false; " \n "      RKAGMapVehicleTooltipBody ctrlShow false; " \n "     }; " \n "    }; " \n "   }; " \n " " \n "   RKAG_fnc_spawnLastKnownPositionMarker = { " \n "    params[""_group""]; " \n "     " \n "    private _mkr = createMarkerLocal [""marker_""+str(count allMapMarkers),getPos leader _group]; " \n "    _mkr setMarkerTypeLocal ""mil_unknown""; " \n " " \n "    _colorName = switch (side _group) do  " \n "    { " \n "     case west: {""colorBLUFOR""}; " \n "     case east: {""colorOPFOR""}; " \n "     case independent: {""colorIndependent""}; " \n "     case civilian: {""colorCivilian""}; " \n "     default {""ColorUNKNOWN""}; " \n "    }; " \n "    _mkr setMarkerColorLocal _colorName; " \n "    _mkr setMarkerSizeLocal [0.5,0.5]; " \n " " \n "    _time = 0; " \n "    _maxTime = RKAGLastKnownLocationMarkerTime; " \n "    while {!(_group isEqualTo grpNull) && !(_group in RKAGRevealedGroups)} do  " \n "    { " \n "     uisleep 1; " \n "     _time=_time+1; " \n "     if (_time >= _maxTime) exitWith {}; " \n "    }; " \n "    deleteMarkerLocal _mkr; " \n "   }; " \n " " \n "   RKAG_fnc_spawnFireEffect = { " \n "    params[""_unit""]; " \n " " \n "    private _group = group _unit; " \n "    _group spawn  " \n "    { " \n "     _this setGroupIconParams [[1,1,0.9,0.75],"""",1,true]; " \n "     uisleep 0.05; " \n "     _this setGroupIconParams [([side _this, false] call BIS_fnc_sideColor),"""",1,true]; " \n "    }; " \n " " \n "    _unit spawn  " \n "    {  " \n "     comment ""Calculate vector forward for turret or man and convert to direction angle""; " \n "     private _forwardVectorFlat = [0,0,0]; " \n "     private _angle = 0; " \n "      " \n "     _forwardVectorFlat = (vehicle _this weaponDirection ((weaponState [vehicle _this,(vehicle _this unitTurret _this)]) select 0)); " \n "     if (_forwardVectorFlat isEqualTo [0,0,0]) then {_forwardVectorFlat = _this weaponDirection currentWeapon _this;}; " \n "     _forwardVectorFlat set[2,0]; " \n "     _forwardVectorFlat = vectorNormalized _forwardVectorFlat; " \n " " \n "     _angle = acos ([0,1,0] vectorDotProduct _forwardVectorFlat); " \n "     if ((_forwardVectorFlat select 0) < 0) then {_angle = _angle * -1}; " \n " " \n "     private _bulletMkr = createMarkerLocal [""marker_""+str(round random 1000000),getPosWorldVisual _this]; " \n "     _bulletMkr setMarkerShapeLocal ""RECTANGLE""; " \n "     _bulletMkr setMarkerBrushLocal ""SolidFull""; " \n "     _bulletMkr setMarkerColorLocal RKAGBulletMarkerColor; " \n "     _bulletMkr setMarkerSizeLocal RKAGBulletMarkerSize; " \n "     _bulletMkr setMarkerDirLocal _angle; " \n "     private _frameEvent = addMissionEventHandler [""EachFrame"",{ " \n "      private _unit = _thisArgs select 0; " \n "      private _bulletMkr = _thisArgs select 1; " \n "      private _forwardVector = _thisArgs select 2; " \n "      private _currentPos = getMarkerPos _bulletMkr; " \n "      _bulletMkr setMarkerPosLocal (_currentPos vectorAdd (_forwardVector vectorMultiply RKAGBulletMarkerSpeed)); " \n "     },[_this,_bulletMkr,_forwardVectorFlat]]; " \n " " \n "     uisleep RKAGBulletMarkerLifetime; " \n " " \n "     removeMissionEventHandler [""EachFrame"",_frameEvent]; " \n "     deleteMarkerLocal _bulletMkr; " \n "    }; " \n "   }; " \n " " \n "   RKAG_fnc_tryInitUnit = { " \n "    params[""_unit""]; " \n "     " \n "    private _initValue = _unit getVariable ""RKAGInit""; " \n "    if (isNil ""_initValue"") then  " \n "    { " \n "     _unit addEventHandler [""FiredMan"",{ " \n "      params[""_unit""]; " \n "      [_unit] spawn RKAG_fnc_spawnFireEffect; " \n "     }]; " \n "     _unit setVariable [""RKAGInit"",true]; " \n "    }; " \n "   }; " \n " " \n "   onGroupIconOverEnter " \n "   { " \n "    private _group = _this select 1; " \n "    private _mkrType = [_group] call RKAG_fnc_getGroupNATOMarkerType; " \n "    private _text = (getText(configfile >> ""CfgMarkers"" >> _mkrType >> ""name"")); " \n "    private _vehCount = 0; " \n "    private _footCount = 0; " \n "    private _vehName = ''; " \n "    private _vehs = []; " \n " " \n "    comment ""Determine marker name based on vehicle count and type""; " \n "    { " \n "     if (!(vehicle _x isEqualTo _x) && !(vehicle _x in _vehs)) then  " \n "     { " \n "      _vehCount = (_vehCount+1); " \n "      _vehs pushBack vehicle _x; " \n "      if (_vehName isEqualTo '') then {_vehName = [configFile >> ""CfgVehicles"" >> typeOf vehicle _x] call BIS_fnc_displayName;}; " \n "     }; " \n "     if (vehicle _x isEqualTo _x) then {_footCount = (_footCount+1);}; " \n "    } foreach units _group; " \n "    if (_vehCount == 1) then {_text = _vehName;}; " \n " " \n "    comment ""Check if any units alive""; " \n "    _i = units _group findIf {alive _x}; " \n "    if (_i < 0) then {_group setGroupIconParams [[0,0,0,0.75],_text+"" (DEAD)"",1.25,true];} " \n "    else {_group setGroupIconParams [([side _group, false] call BIS_fnc_sideColor),_text,1.25,true];}; " \n " " \n "    comment ""Show map tooltip""; " \n "    if (visibleMap) then {[_group,_vehCount,_footCount] call RKAG_fnc_showMapTooltip;}; " \n "   }; " \n " " \n "   onGroupIconOverLeave " \n "   { " \n "    private _group = _this select 1; " \n "    _group setGroupIconParams [([side _group, false] call BIS_fnc_sideColor),"""",1,true]; " \n "    call RKAG_fnc_hideMapTooltip; " \n "   }; " \n " " \n "   RKAGRevealedGroups = []; " \n " " \n "   call RKAG_fnc_createMapTooltip; " \n "   call RKAG_fnc_hideMapTooltip; " \n "   call RKAG_fnc_createMapHideMarkersCheckbox; " \n " " \n "   addMissionEventHandler  " \n "   [ ""Map"",{  " \n "    params [""_isOpened"",""_isForced""];  " \n "     " \n "    if (RKAGOnlyShowMarkersOnMap && !_isOpened) then  " \n "    { " \n "     setGroupIconsVisible [false,false]; " \n "     setGroupIconsSelectable false; " \n "    }; " \n " " \n "    if (RKAGOnlyShowMarkersOnMap && _isOpened) then  " \n "    { " \n "     setGroupIconsVisible [true,true]; " \n "     setGroupIconsSelectable true; " \n "    }; " \n " " \n "    if (!_isOpened) then {call RKAG_fnc_hideMapTooltip;}; " \n "   }]; " \n " " \n "   if (RKAGOnlyShowMarkersOnMap) then  " \n "   { " \n "    setGroupIconsVisible [false,false]; " \n "    setGroupIconsSelectable false; " \n "   }; " \n " " \n "   while {!isNil ""RKAGRevealedGroups""} do  " \n "   { " \n "    if (alive player) then  " \n "    { " \n "     { " \n "      private _group = _x; " \n "      _inVehicle = !(vehicle (units _group select 0) isEqualTo (units _group select 0)); " \n "      if (isNil ""_inVehicle"") then {_inVehicle = false;}; " \n "       " \n "      private _i = -1; " \n "      if (RKAGIncludePlayerGroups) then {_i = -1;} " \n "      else {_i = units _group findIf {_x in allPlayers};}; " \n "       " \n "      if (_i > -1 || (side _group isEqualTo side player && (count units _group <= 1) && !_inVehicle) || side _group isEqualTo civilian) then {continue}; " \n " " \n "      private _spottedAnyGroupMember = false; " \n "      { " \n "       _spottedAnyGroupMember = ((side player) knowsAbout vehicle _x == 4); " \n "       [_x] call RKAG_fnc_tryInitUnit; " \n "      } forEach units _group; " \n " " \n "      if (_spottedAnyGroupMember) then  " \n "      { " \n "       if (_group in RKAGRevealedGroups) exitWith {}; " \n "       if (count units _group < RKAGMinGroupSize && ((vehicle (units _group select 0)) isEqualTo (units _group select 0))) exitWith {}; " \n "       RKAGRevealedGroups pushBack _group; " \n "       [_group] spawn RKAG_fnc_spawnRevealGroup; " \n "      } " \n "      else  " \n "      { " \n "       [_group] call RKAG_fnc_hideGroup; " \n "      }; " \n "     } foreach allGroups; " \n " " \n "     comment ""Try Init Players""; " \n "     if (RKAGBulletIncludePlayers) then {  " \n "      { " \n "       if !(side _x isEqualTo side player) then {continue}; " \n "       [_x] call RKAG_fnc_tryInitUnit; " \n "      } foreach allPlayers; " \n "     }; " \n "    }; " \n "    RKAGRevealedGroups = (RKAGRevealedGroups - [grpNull]); " \n "    {deleteGroup _x;} foreach allGroups; " \n "    uisleep 1; " \n "   }; " \n "  }; " \n " } remoteExec [""BIS_fnc_call"",0,""JIP_ID_ShowRKAGMilitaryMarkers""]; " \n "}; " \n " " \n "SLT_fnc_disableScript = { " \n "}; " \n " " \n "SLT_fnc_init = { " \n " params[[""_useToggleOptions"",true]]; " \n " " \n " with uiNamespace do { " \n "   " \n "  createDialog ""RscDisplayEmpty""; " \n "  private _display = findDisplay -1; " \n "  {_x ctrlShow false;} foreach allControls _display; " \n " " \n "  private _ctrlHeader = _display ctrlCreate [""RscStructuredText"",-1]; " \n "  _ctrlHeader ctrlSetPosition [0.396875 * safezoneW + safezoneX,0.445 * safezoneH + safezoneY,0.20625 * safezoneW,0.022 * safezoneH]; " \n "  _ctrlHeader ctrlSetBackgroundColor [1,0.7,0,0.66]; " \n "  _ctrlHeader ctrlSetStructuredText parseText (""<t size='0.85' font='PuristaMedium'>""+toUpper SLTScriptDisplayName+""</t>""); " \n "  _ctrlHeader ctrlCommit 0; " \n " " \n "  private _ctrlBorder = _display ctrlCreate [""RscPicture"",-1]; " \n "  _ctrlBorder ctrlSetPosition [0.396875 * safezoneW + safezoneX,0.467 * safezoneH + safezoneY,0.20625 * safezoneW,0.077 * safezoneH]; " \n "  _ctrlBorder ctrlSetText ""#(rgb,1,1,1)color(1,1,1,1)""; " \n "  _ctrlBorder ctrlSetTextColor [0,0,0,0.5]; " \n "  _ctrlBorder ctrlCommit 0; " \n " " \n "  private _ctrlBackground = _display ctrlCreate [""RscPicture"",-1]; " \n "  _ctrlBackground ctrlSetPosition [0.402031 * safezoneW + safezoneX,0.478 * safezoneH + safezoneY,0.195937 * safezoneW,0.055 * safezoneH]; " \n "  _ctrlBackground ctrlSetText ""#(rgb,1,1,1)color(1,1,1,1)""; " \n "  _ctrlBackground ctrlSetTextColor [0.1,0.1,0.1,0.75]; " \n "  _ctrlBackground ctrlCommit 0; " \n " " \n "  SLTEnableButton = _display ctrlCreate [""RscButtonMenu"",-1]; " \n "  SLTEnableButton ctrlSetPosition [0.407187 * safezoneW + safezoneX,0.489 * safezoneH + safezoneY,0.0928125 * safezoneW,0.033 * safezoneH]; " \n "  SLTEnableButton ctrlSetText ""ENABLE""; " \n "  SLTEnableButton ctrlCommit 0; " \n "  SLTEnableButton ctrlAddEventHandler [""ButtonClick"",{ " \n "   [[],missionNamespace getVariable ""SLT_fnc_enableScript""] call (missionNamespace getVariable ""SLT_fnc_RE_Server""); " \n "   closeDialog 0; " \n "  }]; " \n " " \n "  SLTDisableButton = _display ctrlCreate [""RscButtonMenu"",-1]; " \n "  SLTDisableButton ctrlSetPosition [0.5 * safezoneW + safezoneX,0.489 * safezoneH + safezoneY,0.0928125 * safezoneW,0.033 * safezoneH]; " \n "  SLTDisableButton ctrlSetText ""DISABLE""; " \n "  SLTDisableButton ctrlCommit 0; " \n "  SLTDisableButton ctrlAddEventHandler [""ButtonClick"",{ " \n "   [[],missionNamespace getVariable ""SLT_fnc_disableScript""] call (missionNamespace getVariable ""SLT_fnc_RE_Server""); " \n "   closeDialog 0; " \n "  }]; " \n " " \n "  if (!_useToggleOptions) then  " \n "  { " \n "   SLTEnableButton ctrlSetText ""ARE YOU SURE?""; " \n "   SLTEnableButton ctrlSetTooltip ""This script cannot be disabled!""; " \n "   SLTEnableButton ctrlCommit 0; " \n " " \n "   SLTDisableButton ctrlSetText ""CANCEL""; " \n "   SLTDisableButton ctrlCommit 0; " \n "  }; " \n " }; " \n " deleteVehicle this; " \n "}; " \n " " \n "if (time < 1) then  " \n "{ " \n " call SLT_fnc_enableScript; " \n "} " \n "else  " \n "{ " \n " [false] call SLT_fnc_init; " \n "};";
+					};
+					id=1581;
+					type="Land_HelipadEmpty_F";
+				};
+			};
+			id=1582;
 		};
 	};
 };
