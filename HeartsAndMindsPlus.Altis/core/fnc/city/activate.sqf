@@ -125,17 +125,17 @@ if (_data_units isNotEqualTo []) then {
 } else {
     // Maximum number of enemy group
     private _numberOfGroup = (switch _type do {
-        case "Hill" : {8};
-        case "VegetationFir" : {8};
-        case "BorderCrossing" : {12};
-        case "NameLocal" : {16};
-        case "StrongpointArea" : {18};
+        case "Hill" : {10};
+        case "VegetationFir" : {10};
+        case "BorderCrossing" : {16};
+        case "NameLocal" : {18};
+        case "StrongpointArea" : {20};
         case "NameVillage" : {18};
-        case "NameCity" : {20};
+        case "NameCity" : {22};
         case "NameCityCapital" : {25};
-        case "Airport" : {20};
+        case "Airport" : {22};
         case "NameMarine" : {5}; 
-        case "VegetationVineyard" : {8};
+        case "VegetationVineyard" : {10};
         case "Strategic" : {16};
         default {0};
     });
@@ -232,7 +232,7 @@ if (_city getVariable ["spawn_more", false]) then {
         ] call btc_mil_fnc_create_group;
     };
     if (btc_p_veh_armed_spawn_more) then {
-        [[_city, _spawningRadius, 1, btc_type_motorized_armed, 1 + round random 3], btc_city_fnc_send] call btc_delay_fnc_exec;
+        [[_city, _spawningRadius, 1, btc_type_motorized_armed, 1 + round random 4], btc_city_fnc_send] call btc_delay_fnc_exec;
     };
 };
 
@@ -252,7 +252,7 @@ if (
         [btc_cache_pos, 8, 3, "HOUSE"] call btc_mil_fnc_create_group;
         [btc_cache_pos, 50, 4, "SENTRY"] call btc_mil_fnc_create_group;
         if (btc_p_veh_armed_spawn_more) then {
-            [[_city, _spawningRadius, 1, btc_type_motorized_armed, 1 + round random 3], btc_city_fnc_send] call btc_delay_fnc_exec;
+            [[_city, _spawningRadius, 1, btc_type_motorized_armed, 1 + round random 4], btc_city_fnc_send] call btc_delay_fnc_exec;
         };
     };
 };
@@ -277,7 +277,7 @@ if (_has_ho && {!(_city getVariable ["ho_units_spawned", false])}) then {
         };
     };
     if (btc_p_veh_armed_ho) then {
-        [[_city, _spawningRadius, 1, btc_type_motorized_armed, 2 + round random 3], btc_city_fnc_send] call btc_delay_fnc_exec;
+        [[_city, _spawningRadius, 1, btc_type_motorized_armed, 2 + round random 4], btc_city_fnc_send] call btc_delay_fnc_exec;
     };
 };
 
