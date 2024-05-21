@@ -815,13 +815,13 @@ btc_spect_range = 1000;
 btc_spect_updateOn = -1;
 
 //Rep
-btc_rep_bonus_cache = 50; // WAI
+btc_rep_bonus_cache = 40; // WAI
 btc_rep_bonus_civ_hh = 0; // DISABLED
-btc_rep_bonus_disarm = 15; // WAI
-btc_rep_bonus_hideout = 100; // WAI
-btc_rep_bonus_mil_killed = 0.5; // WAI
+btc_rep_bonus_disarm = 10; // WAI
+btc_rep_bonus_hideout = 75; // WAI
+btc_rep_bonus_mil_killed = 0.25; // WAI
 btc_rep_bonus_IEDCleanUp = 5; // WAI
-btc_rep_bonus_removeTag = 5; // WAI
+btc_rep_bonus_removeTag = 3; // WAI
 btc_rep_bonus_removeTagLetter = 1; // WAI
 btc_rep_bonus_foodGive = 2; // WAI
 btc_rep_bonus_vehicle = 10; // WAI
