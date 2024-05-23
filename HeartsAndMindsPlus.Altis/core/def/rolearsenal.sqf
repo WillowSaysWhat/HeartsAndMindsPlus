@@ -237,6 +237,7 @@ roleArsenal = {
 			"avm224_M_6Rnd_60mm_ILLUM_IR",
 			"NDS_M_6Rnd_60mm_HE_0",
 			"NDS_M_6Rnd_60mm_HE",
+			"avm224_M_6Rnd_60mm_ILLUM_IR_csw",
 			
 			// MISC 
 			"ACE_RangeTable_82mm",
