@@ -55,6 +55,9 @@ roleArsenal = {
 			"75th_opscore11",
 			"75th_opscore8_off",
 			"75th_opscore6",
+			"CUP_H_USA_Cap_Mcam_DEF",
+			"CUP_H_USA_Cap_PUNISHER_DEF",
+			"CUP_H_PMC_Cap_Back_EP_Tan",
 
 			// Vests
 			"ranger_avs_1pl",
@@ -238,6 +241,7 @@ roleArsenal = {
 			"NDS_M_6Rnd_60mm_HE_0",
 			"NDS_M_6Rnd_60mm_HE",
 			"avm224_M_6Rnd_60mm_ILLUM_IR_csw",
+
 			
 			// MISC 
 			"ACE_RangeTable_82mm",
@@ -332,6 +336,8 @@ roleArsenal = {
 			"ACE_suture",
 			"ACE_tourniquet",
 			"kat_TXA",
+			"kat_amiodarone",
+			"kat_atropine",
 
 			// Attachments
 			"acc_flashlight_pistol",
@@ -491,7 +497,6 @@ roleArsenal = {
 			"75th_LAMG_1",
 			"rhs_weap_m249_pip_S",
 			"75th_LAMG_1"
-
       	];
 
       	Private _ENGINEER = [
@@ -531,7 +536,19 @@ roleArsenal = {
 			"rhs_weap_m4a1_blockII_KAC",
 			"rhs_weap_m4a1_m320",
 			"rhs_weap_m32",
-			"rhs_weap_M590_8RD"
+			"rhs_weap_M590_8RD",
+			"FIR_JHMCS_Type2",
+			"FIR_JHMCS_II",
+			"rhsusf_hgu56p_visor_mask_tan",
+			"rhsusf_hgu56p_visor_mask_black_skull",
+			"rhsusf_hgu56p_visor_mask_Empire_black",
+			"rhsusf_hgu56p_visor_mask_black",
+			"rhsusf_ihadss",
+			"FIR_Fighter_Pilot_USAF_agg_64agrs_Nomex7",
+			"FIR_Fighter_Pilot_USMC_Nomex2",
+			"FIR_Fighter_Pilot_USMC_Nomex7",
+			"FIR_pilot_vest",
+			"fir_usarmy_pilot_vest"
       	];
 
 	

@@ -484,6 +484,7 @@ _GroundVehArray = [ // Ground Vehicles
 ["rhsusf_mrzr4_d",200],
 ["CUP_B_nM997_USMC_DES",250],
 ["CUP_B_LR_Ambulance_GB_D",250],
+["CUP_I_SUV_ION",300],
 ["rhsusf_m1151_m240_v2_usarmy_d",500],
 ["rhsusf_m1151_m2_v2_usarmy_d",500],
 ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",500],
@@ -493,6 +494,7 @@ _GroundVehArray = [ // Ground Vehicles
 ["rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",500],
 ["rhsusf_M978A4_BKIT_usarmy_d",500],
 ["rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy",500],
+["CUP_I_SUV_Armored_ION",600],
 ["rhsusf_m966_d",700],
 ["rhsusf_m1165a1_gmv_m2_m240_socom_d",700],
 ["rhsusf_m113d_usarmy",800],
@@ -506,9 +508,11 @@ _GroundVehArray = [ // Ground Vehicles
 ["rhsusf_M1230a1_usarmy_d",1200],
 ["rhsusf_m1240a1_mk19_usarmy_d",1500],
 ["rhsusf_m113d_usarmy_MK19",1500],
-["CUP_B_LAV25_desert_USMC",2000],
-["CUP_B_M1129_MC_MK19_Desert",4000],
+["CUP_B_nM1097_AVENGER_USA_DES",2500],
+["CUP_B_LAV25_desert_USMC",4000],
 ["RHS_M6",4000],
+["CUP_B_M1129_MC_MK19_Desert",4500],
+["CUP_B_M1128_MGS_Desert",4500],
 ["RHS_M2A3_BUSKI",5000],
 ["RHS_M2A3_BUSKIII",7000],
 ["rhsusf_M142_usarmy_D",7000],
@@ -580,10 +584,10 @@ _StaticsArray = [ // Statics
 ];
 
 _AmmoBoxesArray =  [ // Ammo Boxes / Storage Boxes
-    ["ACE_medicalSupplyCrate",20],
-    ["ACE_medicalSupplyCrate_advanced",25],
-    ["ACE_Box_Chemlights",25],
-    ["Land_WoodenBox_F",25]
+    ["ACE_medicalSupplyCrate",10],
+    ["ACE_medicalSupplyCrate_advanced",15],
+    ["ACE_Box_Chemlights",10],
+    ["Land_WoodenBox_F",10]
 ];
 
 
@@ -601,10 +605,10 @@ _SupplysArray = [ // Side Supplies
 
 
 _FobStuffArray = [ // FOB Crate + FOB Objects
+    ["Land_Cargo_Patrol_V1_F", 100],
     ["Land_Medevac_house_V1_F",250],
-    ["Land_RepairDepot_01_green_F",1000],
-    ["Land_Cargo20_blue_F",2000],
-    ["Land_Cargo_Patrol_V1_F", 100]
+    ["Land_Cargo20_blue_F",1000],
+    ["Land_RepairDepot_01_green_F",1500]
 ];
 
 
