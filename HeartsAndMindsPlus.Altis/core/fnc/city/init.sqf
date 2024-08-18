@@ -27,7 +27,7 @@ params [
 private _locations = configfile >> "cfgworlds" >> worldname >> "names";
 
 //MAP CONFIG - Remove unwanted objective types
-private _citiesType = ["NameVillage", "NameCity", "NameCityCapital", "NameLocal", "Hill", "Airport", "VegetationFir", "VegetationVineyard", "Strategic"]; // , "StrongpointArea", "BorderCrossing"
+private _citiesType = ["NameVillage", "NameCity", "NameCityCapital", "NameLocal", "Hill", "Airport", "VegetationFir", "Strategic", "BorderCrossing"]; // "VegetationVineyard", "StrongpointArea"
 if (btc_p_sea) then {_citiesType pushBack "NameMarine";};
 
 btc_city_all = createHashMap;
