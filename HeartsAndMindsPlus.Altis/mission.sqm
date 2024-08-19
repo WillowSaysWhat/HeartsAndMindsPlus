@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1590;
+		nextID=1592;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=336;
+		nextID=354;
 	};
 	class Camera
 	{
-		pos[]={5152.3779,36.648975,2307.7141};
-		dir[]={-0.76882082,-0.59438598,0.23587665};
-		up[]={-0.56824982,0.80417621,0.17434058};
-		aside[]={0.2933121,-6.3068001e-008,0.95602727};
+		pos[]={5144.4253,37.899048,2308.0815};
+		dir[]={0.16281223,-0.38248688,0.90952319};
+		up[]={0.067397095,0.92395502,0.3765088};
+		aside[]={0.98436809,2.5765803e-007,-0.17620851};
 	};
 };
 binarizationWanted=0;
@@ -245,18 +245,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -265,6 +253,18 @@ class CustomAttributes
 				{
 					singleType="SCALAR";
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
 				};
 			};
 		};
@@ -315,7 +315,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5151.8872,12.60682,2366.325};
-								angles[]={0,0.12756716,-0};
+								angles[]={0,0.12756716,0};
 							};
 							side="Empty";
 							flags=5;
@@ -333,7 +333,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5135.3574,8.8943129,2343.4963};
-								angles[]={-0,2.2038243,0.049293593};
+								angles[]={0,2.2038243,0.049293593};
 							};
 							side="Empty";
 							flags=4;
@@ -429,7 +429,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={5149.6382,8.6314344,2366.6648};
-										angles[]={-0,3.5262718,0};
+										angles[]={0,3.5262718,0};
 									};
 									side="West";
 									flags=6;
@@ -562,7 +562,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={5147.0625,9.0014343,2335.5562};
-										angles[]={-0,5.1901817,0};
+										angles[]={0,5.1901817,0};
 									};
 									side="West";
 									flags=6;
@@ -683,7 +683,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5147.2354,9.521327,2367.8945};
-								angles[]={-0,3.6184635,0};
+								angles[]={0,3.6184635,0};
 							};
 							side="Empty";
 							flags=4;
@@ -731,7 +731,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5157.2524,8.8867083,2379.9019};
-								angles[]={-0,1.022774,0};
+								angles[]={0,1.022774,0};
 							};
 							side="Empty";
 							class Attributes
@@ -767,7 +767,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5149.6646,9.1178436,2335.1851};
-								angles[]={-0,5.1187925,0};
+								angles[]={0,5.1187925,0};
 							};
 							side="Empty";
 							flags=4;
@@ -804,7 +804,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5150.7954,9.8864441,2334.9617};
-								angles[]={-0,3.7708573,0};
+								angles[]={0,3.7708573,0};
 							};
 							side="Empty";
 							flags=4;
@@ -852,7 +852,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5150.8081,8.7486219,2366.5955};
-								angles[]={-0,1.8908703,0};
+								angles[]={0,1.8908703,0};
 							};
 							side="Empty";
 							flags=4;
@@ -889,7 +889,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5146.6421,8.7485304,2368.5466};
-								angles[]={-0,1.8905518,0};
+								angles[]={0,1.8905518,0};
 							};
 							side="Empty";
 							flags=4;
@@ -974,7 +974,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5163.375,8.7480116,2359.5859};
-								angles[]={-0,1.1526881,0};
+								angles[]={0,1.1526881,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1048,7 +1048,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5156.7363,9.1174774,2335.1416};
-								angles[]={-0,1.1526881,0};
+								angles[]={0,1.1526881,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1085,7 +1085,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5126.644,8.7481031,2358.2139};
-								angles[]={-0,1.152843,0};
+								angles[]={0,1.152843,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1122,7 +1122,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5121.7046,8.7477674,2349.531};
-								angles[]={-0,0.92419416,0};
+								angles[]={0,0.92419416,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1159,7 +1159,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5109.5718,8.8866167,2371.3203};
-								angles[]={-0,0.99066019,0};
+								angles[]={0,0.99066019,0};
 							};
 							side="Empty";
 							class Attributes
@@ -1195,7 +1195,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5156.5186,9.6572161,2378.9299};
-								angles[]={-0,2.1071208,0};
+								angles[]={0,2.1071208,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1243,7 +1243,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5121.1777,9.5155592,2348.7188};
-								angles[]={-0,2.0088513,0};
+								angles[]={0,2.0088513,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1291,7 +1291,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5108.981,9.6565447,2370.6287};
-								angles[]={-0,2.0753171,0};
+								angles[]={0,2.0753171,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1339,7 +1339,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5134.0762,9.5176954,2372.0635};
-								angles[]={-0,2.052067,0};
+								angles[]={0,2.052067,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1387,7 +1387,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5134.8872,8.7480421,2373.1829};
-								angles[]={-0,0.96756518,0};
+								angles[]={0,0.96756518,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1424,7 +1424,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5139.6011,8.7486744,2373.3755};
-								angles[]={-0,0.96756518,0};
+								angles[]={0,0.96756518,0};
 							};
 							side="Empty";
 							flags=4;
@@ -1471,7 +1471,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5166.2861,8.6300001,2361.7649};
-								angles[]={-0,6.0521164,0};
+								angles[]={0,6.0521164,0};
 							};
 							id=30;
 						};
@@ -1491,7 +1491,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5167.5791,8.6300001,2363.9529};
-								angles[]={-0,6.0505996,0};
+								angles[]={0,6.0505996,0};
 							};
 							id=32;
 						};
@@ -1523,7 +1523,7 @@ class Mission
 							position[]={5138.6357,8.6300001,2366.5088};
 							name="respawn_west";
 							type="Empty";
-							angle=133.71382;
+							angle=133.71381;
 							id=36;
 						};
 						class Item2
@@ -1535,7 +1535,7 @@ class Mission
 							alpha=0.42799053;
 							a=0.5;
 							b=0.5;
-							angle=18.240038;
+							angle=18.24003;
 							id=37;
 							atlOffset=9.5367432e-007;
 						};
@@ -1556,7 +1556,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5165.6987,8.6300001,2360.2793};
-								angles[]={-0,6.0449214,0};
+								angles[]={0,6.0449214,0};
 							};
 							name="btc_hc_1";
 							isPlayable=1;
@@ -1569,7 +1569,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5167.2285,8.6300001,2362.7053};
-								angles[]={-0,6.0432596,0};
+								angles[]={0,6.0432596,0};
 							};
 							name="btc_hc_2";
 							isPlayable=1;
@@ -1582,7 +1582,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5168.5127,8.6300001,2364.9338};
-								angles[]={-0,6.0402727,0};
+								angles[]={0,6.0402727,0};
 							};
 							name="btc_hc_3";
 							isPlayable=1;
@@ -1595,7 +1595,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5167.042,8.6300001,2362.8398};
-								angles[]={-0,2.0401385,0};
+								angles[]={0,2.0401385,0};
 							};
 							id=42;
 							type="ModuleCurator_F";
@@ -1732,7 +1732,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.9751,8.6314344,2369.7715};
-						angles[]={0,2.4895456,-0};
+						angles[]={0,2.4895456,0};
 					};
 					side="West";
 					flags=7;
@@ -1795,7 +1795,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5138.0044,8.6314344,2370.7686};
-						angles[]={0,2.7365739,-0};
+						angles[]={0,2.7365739,0};
 					};
 					side="West";
 					flags=5;
@@ -1828,7 +1828,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.8516,8.6314344,2370.9507};
-						angles[]={0,2.7365739,-0};
+						angles[]={0,2.7365739,0};
 					};
 					side="West";
 					flags=5;
@@ -1861,7 +1861,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.5728,8.6314344,2370.8508};
-						angles[]={0,2.7365739,-0};
+						angles[]={0,2.7365739,0};
 					};
 					side="West";
 					flags=5;
@@ -1894,7 +1894,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.6084,8.6314344,2371.2253};
-						angles[]={0,2.7365739,-0};
+						angles[]={0,2.7365739,0};
 					};
 					side="West";
 					flags=5;
@@ -1927,7 +1927,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.9814,8.6314344,2371.0066};
-						angles[]={0,2.7365739,-0};
+						angles[]={0,2.7365739,0};
 					};
 					side="West";
 					flags=5;
@@ -1960,7 +1960,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5138.4902,8.6314344,2371.0608};
-						angles[]={0,2.7365739,-0};
+						angles[]={0,2.7365739,0};
 					};
 					side="West";
 					flags=5;
@@ -1993,7 +1993,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.4023,8.6314344,2370.6113};
-						angles[]={0,2.5807827,-0};
+						angles[]={0,2.5807827,0};
 					};
 					side="West";
 					flags=5;
@@ -2026,7 +2026,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.5347,8.6314344,2370.801};
-						angles[]={0,2.5807827,-0};
+						angles[]={0,2.5807827,0};
 					};
 					side="West";
 					flags=5;
@@ -2059,7 +2059,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.8311,8.6314344,2370.7969};
-						angles[]={0,2.5807827,-0};
+						angles[]={0,2.5807827,0};
 					};
 					side="West";
 					flags=5;
@@ -2092,7 +2092,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.5938,8.6314344,2370.7551};
-						angles[]={0,2.5807827,-0};
+						angles[]={0,2.5807827,0};
 					};
 					side="West";
 					flags=5;
@@ -2125,7 +2125,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.752,8.6314344,2370.4482};
-						angles[]={0,2.5807827,-0};
+						angles[]={0,2.5807827,0};
 					};
 					side="West";
 					flags=5;
@@ -2158,7 +2158,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.3872,8.6314344,2370.853};
-						angles[]={0,2.5807827,-0};
+						angles[]={0,2.5807827,0};
 					};
 					side="West";
 					flags=5;
@@ -2191,7 +2191,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.0405,8.6314344,2371.4543};
-						angles[]={0,3.0925539,-0};
+						angles[]={0,3.0925539,0};
 					};
 					side="West";
 					flags=5;
@@ -2224,7 +2224,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5138.6953,8.6314344,2371.5979};
-						angles[]={0,3.0925539,-0};
+						angles[]={0,3.0925539,0};
 					};
 					side="West";
 					flags=5;
@@ -2257,7 +2257,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.144,8.6314344,2371.8293};
-						angles[]={0,3.0925539,-0};
+						angles[]={0,3.0925539,0};
 					};
 					side="West";
 					flags=5;
@@ -2290,7 +2290,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.0576,8.6314344,2371.5916};
-						angles[]={0,3.0925539,-0};
+						angles[]={0,3.0925539,0};
 					};
 					side="West";
 					flags=5;
@@ -2323,7 +2323,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.3555,8.6314344,2371.3254};
-						angles[]={0,3.0925539,-0};
+						angles[]={0,3.0925539,0};
 					};
 					side="West";
 					flags=5;
@@ -2356,7 +2356,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.1167,8.6314344,2371.7588};
-						angles[]={0,3.0925539,-0};
+						angles[]={0,3.0925539,0};
 					};
 					side="West";
 					flags=5;
@@ -2389,7 +2389,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5138.6323,8.6314344,2370.8955};
-						angles[]={0,2.5394456,-0};
+						angles[]={0,2.5394456,0};
 					};
 					side="West";
 					flags=5;
@@ -2439,7 +2439,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5138.2622,8.6314344,2370.729};
-						angles[]={0,2.5394456,-0};
+						angles[]={0,2.5394456,0};
 					};
 					side="West";
 					flags=5;
@@ -2489,7 +2489,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.1094,8.6314344,2370.7666};
-						angles[]={0,2.3836544,-0};
+						angles[]={0,2.3836544,0};
 					};
 					side="West";
 					flags=5;
@@ -2539,7 +2539,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.0811,8.6314344,2370.5393};
-						angles[]={0,2.3836544,-0};
+						angles[]={0,2.3836544,0};
 					};
 					side="West";
 					flags=5;
@@ -2589,7 +2589,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.4199,8.6314344,2371.5029};
-						angles[]={0,2.8954256,-0};
+						angles[]={0,2.8954256,0};
 					};
 					side="West";
 					flags=5;
@@ -2639,7 +2639,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.1641,8.6314344,2371.1533};
-						angles[]={0,2.8954256,-0};
+						angles[]={0,2.8954256,0};
 					};
 					side="West";
 					flags=5;
@@ -2689,7 +2689,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5138.585,8.6314344,2370.8435};
-						angles[]={0,2.561095,-0};
+						angles[]={0,2.561095,0};
 					};
 					side="West";
 					flags=5;
@@ -2778,7 +2778,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5138.4067,8.6314344,2371.1001};
-						angles[]={0,2.561095,-0};
+						angles[]={0,2.561095,0};
 					};
 					side="West";
 					flags=5;
@@ -2867,7 +2867,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.0371,8.6314344,2370.9988};
-						angles[]={0,2.4053028,-0};
+						angles[]={0,2.4053028,0};
 					};
 					side="West";
 					flags=5;
@@ -2956,7 +2956,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.8755,8.6314344,2371.072};
-						angles[]={0,2.4053028,-0};
+						angles[]={0,2.4053028,0};
 					};
 					side="West";
 					flags=5;
@@ -3045,7 +3045,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.3506,8.6314344,2371.7822};
-						angles[]={0,2.9170749,-0};
+						angles[]={0,2.9170749,0};
 					};
 					side="West";
 					flags=5;
@@ -3134,7 +3134,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.1255,8.6314344,2371.7556};
-						angles[]={0,2.9170749,-0};
+						angles[]={0,2.9170749,0};
 					};
 					side="West";
 					flags=5;
@@ -3223,7 +3223,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.6611,8.6314344,2370.6333};
-						angles[]={0,2.3537977,-0};
+						angles[]={0,2.3537977,0};
 					};
 					side="West";
 					flags=5;
@@ -3286,7 +3286,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.812,8.6314344,2370.9883};
-						angles[]={0,2.5095899,-0};
+						angles[]={0,2.5095899,0};
 					};
 					side="West";
 					flags=5;
@@ -3349,7 +3349,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5138.061,8.6314344,2371.0369};
-						angles[]={0,2.5095899,-0};
+						angles[]={0,2.5095899,0};
 					};
 					side="West";
 					flags=5;
@@ -3412,7 +3412,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.5532,8.6314344,2370.6755};
-						angles[]={0,2.3537977,-0};
+						angles[]={0,2.3537977,0};
 					};
 					side="West";
 					flags=5;
@@ -3475,7 +3475,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5139.0352,8.6314344,2371.4246};
-						angles[]={0,2.8655698,-0};
+						angles[]={0,2.8655698,0};
 					};
 					side="West";
 					flags=5;
@@ -3538,7 +3538,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5138.8413,8.6314344,2371.344};
-						angles[]={0,2.8655698,-0};
+						angles[]={0,2.8655698,0};
 					};
 					side="West";
 					flags=5;
@@ -3632,7 +3632,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5137.1006,8.6314344,2369.231};
-						angles[]={0,2.2632823,-0};
+						angles[]={0,2.2632823,0};
 					};
 					side="West";
 					flags=7;
@@ -3720,7 +3720,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5136.6797,8.6314344,2369.7712};
-						angles[]={0,2.2632823,-0};
+						angles[]={0,2.2632823,0};
 					};
 					side="West";
 					flags=5;
@@ -3839,7 +3839,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5148.2476,9,2334.1028};
-						angles[]={-0,2.1485524,0};
+						angles[]={0,2.1485524,0};
 					};
 					side="Empty";
 					flags=4;
@@ -3873,7 +3873,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5149.2119,9.23384,2365.8171};
-						angles[]={-0,3.627583,0};
+						angles[]={0,3.627583,0};
 					};
 					side="Empty";
 					flags=4;
@@ -3896,34 +3896,6 @@ class Mission
 			atlOffset=51.599998;
 		};
 		class Item12
-		{
-			dataType="Layer";
-			name="Team Map Intel";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5169.6646,8.6300154,2367.0046};
-						angles[]={0,3.8655519,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-						init="SLT_fnc_RE_Server = { " \n " params[""_arguments"",""_code""]; " \n " _varName = (""SLT""+str (round random 10000)); " \n " " \n " TempCode = compile (""if(!isServer) exitWith{};_this call ""+str _code+""; ""+(_varName+"" = nil;"")); " \n " TempArgs = _arguments; " \n " " \n " call compile (_varName +"" = [TempArgs,TempCode]; " \n " publicVariable '""+_varName+""'; " \n " " \n " [[], { " \n " (""+_varName+"" select 0) spawn (""+_varName+"" select 1); " \n " }] remoteExec ['spawn',2];""); " \n "}; " \n " " \n "with uiNamespace do {SLTScriptDisplayName = ""Team Map Intel"";}; " \n " " \n "SLT_fnc_enableScript = { " \n " { " \n "  [] spawn { " \n "    " \n "   if (isMultiplayer) then {waitUntil {sleep 0.1; getClientState == ""BRIEFING READ""};}; " \n "   waitUntil {sleep 0.1; !((findDisplay 12 displayCtrl 51) isEqualTo controlNull)}; " \n "    " \n "   if !(isNil ""RKAGRevealedGroups"") exitWith {}; " \n " " \n "   comment ""Parameters""; " \n "   RKAGOnlyShowMarkersOnMap = true; " \n "   RKAGIncludePlayerGroups = false; " \n "   RKAGHideFriendlyForces = true; " \n "   RKAGMinGroupSize = 2; " \n "   RKAGLastKnownLocationMarkerTime = 180; " \n "   RKAGBulletMarkerSpeed = 7.5; " \n "   RKAGBulletMarkerSize = [1,4]; " \n "   RKAGBulletMarkerColor = ""ColorYellow""; " \n "   RKAGBulletMarkerLifetime = 1; " \n "   RKAGBulletIncludePlayers = true; " \n " " \n "   setGroupIconsVisible [true,true]; " \n "   setGroupIconsSelectable true; " \n "   disableMapIndicators [RKAGHideFriendlyForces,true,false,false]; " \n "   uiNamespace setVariable [""_map"",findDisplay 12 displayCtrl 51];  " \n " " \n "   RKAG_fnc_createMapTooltip = { " \n "    with uiNamespace do { " \n "     _display = (finddisplay 12); " \n " " \n "     RKAGMapTooltipGroup = _display ctrlCreate [""RscControlsGroup"", 2300]; " \n "     RKAGMapTooltipGroup ctrlSetPosition [0, 0, 0.4625, 0.34]; " \n "     RKAGMapTooltipGroup ctrlCommit 0;  " \n " " \n "     RKAGMapInfantryTooltipHeader = _display ctrlCreate [""RscStructuredText"", 1100,RKAGMapTooltipGroup]; " \n "     RKAGMapInfantryTooltipHeader ctrlSetPosition [0.0125, 0.02, 0.4375, 0.04]; " \n "     RKAGMapInfantryTooltipHeader ctrlSetStructuredText parseText (""<t font='PuristaSemibold' valign='middle' size='1' shadow='0' align='center'>Infantry Intel</t>""); " \n "     RKAGMapInfantryTooltipHeader ctrlSetBackgroundColor [0.15,0.15,0.15,0.75]; " \n "     RKAGMapInfantryTooltipHeader ctrlCommit 0; " \n " " \n "     RKAGMapInfantryTooltipBody = _display ctrlCreate [""RscStructuredText"", 1101,RKAGMapTooltipGroup]; " \n "     RKAGMapInfantryTooltipBody ctrlSetPosition [0.0125, 0.06, 0.4375, 0.1]; " \n "     RKAGMapInfantryTooltipBody ctrlSetBackgroundColor [0.05,0.05,0.05,0.75]; " \n "     RKAGMapInfantryTooltipBody ctrlCommit 0; " \n " " \n "     RKAGMapVehicleTooltipHeader = _display ctrlCreate [""RscStructuredText"", 1102,RKAGMapTooltipGroup]; " \n "     RKAGMapVehicleTooltipHeader ctrlSetPosition [0.0125, 0.18, 0.4375, 0.04]; " \n "     RKAGMapVehicleTooltipHeader ctrlSetStructuredText parseText (""<t font='PuristaSemibold' valign='middle' size='1' shadow='0' align='center'>Vehicle Intel</t>""); " \n "     RKAGMapVehicleTooltipHeader ctrlSetBackgroundColor [0.15,0.15,0.15,0.75]; " \n "     RKAGMapVehicleTooltipHeader ctrlCommit 0; " \n " " \n "     RKAGMapVehicleTooltipBody = _display ctrlCreate [""RscStructuredText"", 1103,RKAGMapTooltipGroup]; " \n "     RKAGMapVehicleTooltipBody ctrlSetPosition [0.0125, 0.22, 0.4375, 0.1]; " \n "     RKAGMapVehicleTooltipBody ctrlSetBackgroundColor [0.05,0.05,0.05,0.75]; " \n "     RKAGMapVehicleTooltipBody ctrlCommit 0; " \n "    }; " \n " " \n "    addMissionEventHandler [""EachFrame"", { " \n "     with uiNamespace do  " \n "     { " \n "      _mousePos = getMousePosition; " \n "      RKAGMapTooltipGroup ctrlSetPosition [(getMousePosition select 0),(getMousePosition select 1)+0.05,0.4625, 0.34]; " \n "      RKAGMapTooltipGroup ctrlCommit 0; " \n "     }; " \n "    }]; " \n "   }; " \n " " \n "   RKAG_fnc_createMapHideMarkersCheckbox = { " \n "    with uiNamespace do { " \n "     private _display = finddisplay 12; " \n "     private _RscCheckbox_2800 = _display ctrlCreate [""RscCheckbox"", 2800]; " \n "     _RscCheckbox_2800 ctrlSetPosition [0.965937 * safezoneW + safezoneX, 0.948 * safezoneH + safezoneY, 0.018125 * safezoneW, 0.0336666 * safezoneH]; " \n "     _RscCheckbox_2800 ctrlSetTooltip ""Show Unit Markers: ON""; " \n "     _RscCheckbox_2800 cbSetChecked true; " \n "     _RscCheckbox_2800 ctrlSetBackgroundColor [0,0.5,0,1]; " \n "     _RscCheckbox_2800 ctrlCommit 0; " \n "     _RscCheckbox_2800 ctrlAddEventHandler [""CheckedChanged"",{ " \n "      params [""_control"", ""_checked""]; " \n " " \n "      if (_checked == 1) then  " \n "      { " \n "       setGroupIconsVisible [true,true]; " \n "       setGroupIconsSelectable true; " \n "       disableMapIndicators [RKAGHideFriendlyForces,true,false,false]; " \n "       _control ctrlSetTooltip ""Show Unit Markers: ON""; " \n "      } " \n "      else  " \n "      { " \n "       setGroupIconsVisible [false,false]; " \n "       setGroupIconsSelectable false; " \n "       _control ctrlSetTooltip ""Show Unit Markers: OFF""; " \n "      }; " \n "     }]; " \n "    }; " \n "   }; " \n " " \n "   RKAG_fnc_getGroupNATOMarkerType = { " \n "    params[""_group""]; " \n "    private _side = sideUnknown; " \n "    private _mkr = """"; " \n " " \n "    private _prefix = """"; " \n "    _prefix = switch (side _group) do  " \n "    { " \n "     case west: {""b_""}; " \n "     case east: {""o_""}; " \n "     case independent: {""n_""}; " \n "     default {""""}; " \n "    }; " \n " " \n "    private [""_grp"",""_vehlist"",""_infantry"",""_cars"",""_apcs"",""_tanks"",""_aa"",""_helis"",""_planes"",""_boats"",""_veh"",""_type""]; " \n " " \n "    _grp = _group; " \n " " \n "    _vehlist = []; " \n "    _infantry = 0; " \n "    _cars = 0; " \n "    _apcs = 0; " \n "    _tanks = 0; " \n "    _aa = 0; " \n "    _helis = 0; " \n "    _planes = 0; " \n "    _uavs = 0; " \n "    _boats = 0; " \n "    _artys = 0; " \n "    _mortars = 0; " \n "    _support_reammo = 0; " \n "    _support_repair = 0; " \n "    _support_refuel = 0; " \n "    _support_medic = 0; " \n "    _support = 0; " \n "    { " \n "     if (!canstand vehicle _x && alive vehicle _x && !(vehicle _x in _vehlist)) then { " \n "      _veh = vehicle _x; " \n "      _vehlist = _vehlist + [_veh]; " \n " " \n "      if (_veh iskindof ""car"") then {_cars = _cars + 1}; " \n "      if (_veh iskindof ""tank"") then {_tanks = _tanks + 1;}; " \n "      if (getnumber(configfile >> ""cfgvehicles"" >> typeof _veh >> ""artilleryScanner"") > 0) then{_artys = _artys + 1;}; " \n "      if (_veh iskindof ""Wheeled_APC_F"" || _veh iskindof ""APC_Tracked_01_base_F"" " \n "      || _veh iskindof ""APC_Tracked_02_base_F"" || _veh iskindof ""APC_Tracked_03_base_F"") then {_apcs = _apcs + 1}; " \n "      if (getnumber(configfile >> ""cfgvehicles"" >> typeof _veh >> ""radarType"") > 0) then {_aa = _aa + 1}; " \n "      if (_veh iskindof ""helicopter"") then {_helis = _helis + 1}; " \n "      if (_veh iskindof ""plane"") then {_planes = _planes + 1;}; " \n "      if (_veh in allUnitsUAV) then {_uavs = _uavs + 1;}; " \n "      if (_veh iskindof ""staticcanon"") then {_artys = _artys + 1}; " \n "      if (_veh iskindof ""staticmortar"") then {_mortars = _mortars + 1}; " \n "      if (_veh iskindof ""ship"") then {_boats = _boats + 1}; " \n "      _canHeal = getnumber (configfile >> ""cfgvehicles"" >> typeof _veh >> ""attendant"") > 0; " \n "      _canReammo = getnumber (configfile >> ""cfgvehicles"" >> typeof _veh >> ""transportAmmo"") > 0; " \n "      _canRefuel = getnumber (configfile >> ""cfgvehicles"" >> typeof _veh >> ""transportFuel"") > 0; " \n "      _canRepair = getnumber (configfile >> ""cfgvehicles"" >> typeof _veh >> ""transportRepair"") > 0; " \n "      if (_canHeal) then {_support_medic = _support_medic + 1}; " \n "      if (_canReammo) then {_support_reammo = _support_reammo + 1}; " \n "      if (_canRefuel) then {_support_refuel = _support_refuel + 1}; " \n "      if (_canRepair) then {_support_repair = _support_repair + 1}; " \n "     }; " \n "     if ((vehicle _x isEqualTo _x)) then {_infantry = (_infantry + 1)}; " \n "    } foreach units _grp; " \n " " \n "    _type = ""unknown""; " \n "    if (_infantry >= 1) then {_type = ""inf""}; " \n "    if (_cars >= 1) then {_type = ""motor_inf""}; " \n "    if (_tanks >= 1) then {_type = ""armor""}; " \n "    if (_apcs >= 1) then {_type = ""mech_inf""}; " \n "    if (_aa >= 1) then {_type = ""antiair""}; " \n "    if (_artys >= 1) then {_type = ""art""}; " \n "    if (_mortars >= 1) then {_type = ""mortar""}; " \n "    if ((_support_reammo + _support_refuel) >= 1) then {_type = ""support""}; " \n "    if (_support_repair >= 1) then {_type = ""maint""}; " \n "    if (_support_medic >= 1) then {_type = ""med""}; " \n "    if ((_support_medic + _support_reammo + _support_refuel + _support_repair) > 1) then {_type = ""support""}; " \n "    if (_boats >= 1) then {_type = ""naval""}; " \n "    if (_helis >= 1) then {_type = ""air""}; " \n "    if (_planes >= 1) then {_type = ""plane""}; " \n "    if (_uavs >= 1) then {_type = ""uav""}; " \n "     " \n "    _mkr = (_prefix+_type); " \n "    _mkr " \n "   }; " \n " " \n "   RKAG_fnc_spawnRevealGroup = { " \n "    params[""_group""]; " \n " " \n "    clearGroupIcons (_group); " \n "    private _mkrType = [_group] call RKAG_fnc_getGroupNATOMarkerType; " \n "    private _id = (_group) addGroupIcon [_mkrType, [0,0]]; " \n "    _group setGroupIconParams [([side _group, false] call BIS_fnc_sideColor),"""",1,true]; " \n " " \n "    while {!(_group isEqualTo grpNull) && (_group in RKAGRevealedGroups)} do  " \n "    { " \n "     _mkrType = [_group] call RKAG_fnc_getGroupNATOMarkerType; " \n "     _group setGroupIcon [_id, _mkrType]; " \n " " \n "     comment ""Check if any units are alive""; " \n "     private _i = units _group findIf {alive _x}; " \n "     if (_i < 0) then {_group setGroupIconParams [[0,0,0,0.75],"""",1,true];}; " \n " " \n "     sleep 1; " \n "    }; " \n " " \n "    comment ""Show last location""; " \n "    private _j = units _group findIf {alive _x}; " \n "    if (!(_group isEqualTo grpNull) && (_j > -1) && (side _group != side player)) then {[_group] spawn RKAG_fnc_spawnLastKnownPositionMarker;}; " \n " " \n "    clearGroupIcons (_group); " \n "   }; " \n " " \n "   RKAG_fnc_hideGroup = { " \n "    params[""_group""]; " \n "    RKAGRevealedGroups = (RKAGRevealedGroups-[_group]); " \n "   }; " \n " " \n "   RKAG_fnc_hideMapTooltip = { " \n "    with uiNamespace do  " \n "    { " \n "     RKAGMapTooltipGroup ctrlShow false; " \n "     RKAGMapInfantryTooltipHeader ctrlShow false; " \n "     RKAGMapInfantryTooltipBody ctrlShow false; " \n "     RKAGMapVehicleTooltipHeader ctrlShow false; " \n "     RKAGMapVehicleTooltipBody ctrlShow false; " \n "    }; " \n "   }; " \n " " \n "   RKAG_fnc_showMapTooltip = { " \n "    params[""_group"",""_vehicleCount"",""_footCount""]; " \n " " \n "    with uiNamespace do  " \n "    { " \n "     private _sideColor = ([side _group, false] call BIS_fnc_sideColor); " \n "     _sideColor set[3,0.75]; " \n "     RKAGMapInfantryTooltipHeader ctrlSetBackgroundColor (_sideColor); " \n "     RKAGMapVehicleTooltipHeader ctrlSetBackgroundColor (_sideColor); " \n "     RKAGMapTooltipGroup ctrlShow true; " \n " " \n "     private _footText = """"; " \n "     private _vehicleText = """"; " \n "     private _vehs = []; " \n "     { " \n "      private _unit = _x; " \n " " \n "      if (!alive _unit) then {continue}; " \n " " \n "      if (_footCount > 0 && (vehicle _unit isEqualTo _unit)) then  " \n "      { " \n "       _iconName = getText (configFile >> ""CfgVehicles"" >> typeOf _unit >> ""icon""); " \n "       _iconPath = getText(configfile >> ""CfgVehicleIcons"" >> _iconName); " \n "       _footText=(_footText+""<img image='""+_iconPath+""' shadow='0' size='1.2' valign='middle'></img>""); " \n "      }; " \n "     " \n "      if (_vehicleCount > 0 && !(vehicle _unit isEqualTo _unit) && !(vehicle _unit in _vehs)) then " \n "      { " \n "       _vehs pushBack vehicle _unit; " \n "        " \n " " \n "       _vehicleText=(_vehicleText+""<img image='""+(getText (configfile >> 'CfgVehicles' >> typeOf vehicle _unit >> 'picture'))+""' shadow='0' size='1.33' valign='middle'></img>""); " \n "      }; " \n "     } foreach units _group; " \n " " \n "     if !(_footText isEqualTo """") then  " \n "     { " \n "      RKAGMapInfantryTooltipHeader ctrlShow true; " \n "      RKAGMapInfantryTooltipBody ctrlShow true; " \n "      RKAGMapInfantryTooltipBody ctrlSetStructuredText parseText (""<t size='0.1'>&#160;</t><br/>""+_footText); " \n "      RKAGMapInfantryTooltipBody ctrlCommit 0; " \n "     } " \n "     else  " \n "     { " \n "      RKAGMapInfantryTooltipHeader ctrlShow false; " \n "      RKAGMapInfantryTooltipBody ctrlShow false; " \n "     }; " \n " " \n "     if !(_vehicleText isEqualTo """") then  " \n "     { " \n "      RKAGMapVehicleTooltipHeader ctrlShow true; " \n "      RKAGMapVehicleTooltipBody ctrlShow true; " \n "      RKAGMapVehicleTooltipBody ctrlSetStructuredText parseText (""<t size='0.5'>&#160;</t><br/>""+_vehicleText); " \n "      RKAGMapVehicleTooltipBody ctrlCommit 0; " \n " " \n "      if (_footText isEqualTo """") then  " \n "      { " \n "       RKAGMapVehicleTooltipHeader ctrlSetPosition [0.0125, 0.02, 0.4375, 0.04]; " \n "       RKAGMapVehicleTooltipBody ctrlSetPosition [0.0125, 0.06, 0.4375, 0.1]; " \n "       RKAGMapVehicleTooltipHeader ctrlcommit 0.05; " \n "       RKAGMapVehicleTooltipBody ctrlcommit 0.05; " \n "      } " \n "      else  " \n "      { " \n "       RKAGMapVehicleTooltipHeader ctrlSetPosition [0.0125, 0.18, 0.4375, 0.04]; " \n "       RKAGMapVehicleTooltipBody ctrlSetPosition [0.0125, 0.22, 0.4375, 0.1]; " \n "       RKAGMapVehicleTooltipHeader ctrlCommit 0.05; " \n "       RKAGMapVehicleTooltipBody ctrlCommit 0.05; " \n " " \n "      }; " \n "     } " \n "     else  " \n "     {  " \n "      RKAGMapVehicleTooltipHeader ctrlShow false; " \n "      RKAGMapVehicleTooltipBody ctrlShow false; " \n "     }; " \n "    }; " \n "   }; " \n " " \n "   RKAG_fnc_spawnLastKnownPositionMarker = { " \n "    params[""_group""]; " \n "     " \n "    private _mkr = createMarkerLocal [""marker_""+str(count allMapMarkers),getPos leader _group]; " \n "    _mkr setMarkerTypeLocal ""mil_unknown""; " \n " " \n "    _colorName = switch (side _group) do  " \n "    { " \n "     case west: {""colorBLUFOR""}; " \n "     case east: {""colorOPFOR""}; " \n "     case independent: {""colorIndependent""}; " \n "     case civilian: {""colorCivilian""}; " \n "     default {""ColorUNKNOWN""}; " \n "    }; " \n "    _mkr setMarkerColorLocal _colorName; " \n "    _mkr setMarkerSizeLocal [0.5,0.5]; " \n " " \n "    _time = 0; " \n "    _maxTime = RKAGLastKnownLocationMarkerTime; " \n "    while {!(_group isEqualTo grpNull) && !(_group in RKAGRevealedGroups)} do  " \n "    { " \n "     uisleep 1; " \n "     _time=_time+1; " \n "     if (_time >= _maxTime) exitWith {}; " \n "    }; " \n "    deleteMarkerLocal _mkr; " \n "   }; " \n " " \n "   RKAG_fnc_spawnFireEffect = { " \n "    params[""_unit""]; " \n " " \n "    private _group = group _unit; " \n "    _group spawn  " \n "    { " \n "     _this setGroupIconParams [[1,1,0.9,0.75],"""",1,true]; " \n "     uisleep 0.05; " \n "     _this setGroupIconParams [([side _this, false] call BIS_fnc_sideColor),"""",1,true]; " \n "    }; " \n " " \n "    _unit spawn  " \n "    {  " \n "     comment ""Calculate vector forward for turret or man and convert to direction angle""; " \n "     private _forwardVectorFlat = [0,0,0]; " \n "     private _angle = 0; " \n "      " \n "     _forwardVectorFlat = (vehicle _this weaponDirection ((weaponState [vehicle _this,(vehicle _this unitTurret _this)]) select 0)); " \n "     if (_forwardVectorFlat isEqualTo [0,0,0]) then {_forwardVectorFlat = _this weaponDirection currentWeapon _this;}; " \n "     _forwardVectorFlat set[2,0]; " \n "     _forwardVectorFlat = vectorNormalized _forwardVectorFlat; " \n " " \n "     _angle = acos ([0,1,0] vectorDotProduct _forwardVectorFlat); " \n "     if ((_forwardVectorFlat select 0) < 0) then {_angle = _angle * -1}; " \n " " \n "     private _bulletMkr = createMarkerLocal [""marker_""+str(round random 1000000),getPosWorldVisual _this]; " \n "     _bulletMkr setMarkerShapeLocal ""RECTANGLE""; " \n "     _bulletMkr setMarkerBrushLocal ""SolidFull""; " \n "     _bulletMkr setMarkerColorLocal RKAGBulletMarkerColor; " \n "     _bulletMkr setMarkerSizeLocal RKAGBulletMarkerSize; " \n "     _bulletMkr setMarkerDirLocal _angle; " \n "     private _frameEvent = addMissionEventHandler [""EachFrame"",{ " \n "      private _unit = _thisArgs select 0; " \n "      private _bulletMkr = _thisArgs select 1; " \n "      private _forwardVector = _thisArgs select 2; " \n "      private _currentPos = getMarkerPos _bulletMkr; " \n "      _bulletMkr setMarkerPosLocal (_currentPos vectorAdd (_forwardVector vectorMultiply RKAGBulletMarkerSpeed)); " \n "     },[_this,_bulletMkr,_forwardVectorFlat]]; " \n " " \n "     uisleep RKAGBulletMarkerLifetime; " \n " " \n "     removeMissionEventHandler [""EachFrame"",_frameEvent]; " \n "     deleteMarkerLocal _bulletMkr; " \n "    }; " \n "   }; " \n " " \n "   RKAG_fnc_tryInitUnit = { " \n "    params[""_unit""]; " \n "     " \n "    private _initValue = _unit getVariable ""RKAGInit""; " \n "    if (isNil ""_initValue"") then  " \n "    { " \n "     _unit addEventHandler [""FiredMan"",{ " \n "      params[""_unit""]; " \n "      [_unit] spawn RKAG_fnc_spawnFireEffect; " \n "     }]; " \n "     _unit setVariable [""RKAGInit"",true]; " \n "    }; " \n "   }; " \n " " \n "   onGroupIconOverEnter " \n "   { " \n "    private _group = _this select 1; " \n "    private _mkrType = [_group] call RKAG_fnc_getGroupNATOMarkerType; " \n "    private _text = (getText(configfile >> ""CfgMarkers"" >> _mkrType >> ""name"")); " \n "    private _vehCount = 0; " \n "    private _footCount = 0; " \n "    private _vehName = ''; " \n "    private _vehs = []; " \n " " \n "    comment ""Determine marker name based on vehicle count and type""; " \n "    { " \n "     if (!(vehicle _x isEqualTo _x) && !(vehicle _x in _vehs)) then  " \n "     { " \n "      _vehCount = (_vehCount+1); " \n "      _vehs pushBack vehicle _x; " \n "      if (_vehName isEqualTo '') then {_vehName = [configFile >> ""CfgVehicles"" >> typeOf vehicle _x] call BIS_fnc_displayName;}; " \n "     }; " \n "     if (vehicle _x isEqualTo _x) then {_footCount = (_footCount+1);}; " \n "    } foreach units _group; " \n "    if (_vehCount == 1) then {_text = _vehName;}; " \n " " \n "    comment ""Check if any units alive""; " \n "    _i = units _group findIf {alive _x}; " \n "    if (_i < 0) then {_group setGroupIconParams [[0,0,0,0.75],_text+"" (DEAD)"",1.25,true];} " \n "    else {_group setGroupIconParams [([side _group, false] call BIS_fnc_sideColor),_text,1.25,true];}; " \n " " \n "    comment ""Show map tooltip""; " \n "    if (visibleMap) then {[_group,_vehCount,_footCount] call RKAG_fnc_showMapTooltip;}; " \n "   }; " \n " " \n "   onGroupIconOverLeave " \n "   { " \n "    private _group = _this select 1; " \n "    _group setGroupIconParams [([side _group, false] call BIS_fnc_sideColor),"""",1,true]; " \n "    call RKAG_fnc_hideMapTooltip; " \n "   }; " \n " " \n "   RKAGRevealedGroups = []; " \n " " \n "   call RKAG_fnc_createMapTooltip; " \n "   call RKAG_fnc_hideMapTooltip; " \n "   call RKAG_fnc_createMapHideMarkersCheckbox; " \n " " \n "   addMissionEventHandler  " \n "   [ ""Map"",{  " \n "    params [""_isOpened"",""_isForced""];  " \n "     " \n "    if (RKAGOnlyShowMarkersOnMap && !_isOpened) then  " \n "    { " \n "     setGroupIconsVisible [false,false]; " \n "     setGroupIconsSelectable false; " \n "    }; " \n " " \n "    if (RKAGOnlyShowMarkersOnMap && _isOpened) then  " \n "    { " \n "     setGroupIconsVisible [true,true]; " \n "     setGroupIconsSelectable true; " \n "    }; " \n " " \n "    if (!_isOpened) then {call RKAG_fnc_hideMapTooltip;}; " \n "   }]; " \n " " \n "   if (RKAGOnlyShowMarkersOnMap) then  " \n "   { " \n "    setGroupIconsVisible [false,false]; " \n "    setGroupIconsSelectable false; " \n "   }; " \n " " \n "   while {!isNil ""RKAGRevealedGroups""} do  " \n "   { " \n "    if (alive player) then  " \n "    { " \n "     { " \n "      private _group = _x; " \n "      _inVehicle = !(vehicle (units _group select 0) isEqualTo (units _group select 0)); " \n "      if (isNil ""_inVehicle"") then {_inVehicle = false;}; " \n "       " \n "      private _i = -1; " \n "      if (RKAGIncludePlayerGroups) then {_i = -1;} " \n "      else {_i = units _group findIf {_x in allPlayers};}; " \n "       " \n "      if (_i > -1 || (side _group isEqualTo side player && (count units _group <= 1) && !_inVehicle) || side _group isEqualTo civilian) then {continue}; " \n " " \n "      private _spottedAnyGroupMember = false; " \n "      { " \n "       _spottedAnyGroupMember = ((side player) knowsAbout vehicle _x == 4); " \n "       [_x] call RKAG_fnc_tryInitUnit; " \n "      } forEach units _group; " \n " " \n "      if (_spottedAnyGroupMember) then  " \n "      { " \n "       if (_group in RKAGRevealedGroups) exitWith {}; " \n "       if (count units _group < RKAGMinGroupSize && ((vehicle (units _group select 0)) isEqualTo (units _group select 0))) exitWith {}; " \n "       RKAGRevealedGroups pushBack _group; " \n "       [_group] spawn RKAG_fnc_spawnRevealGroup; " \n "      } " \n "      else  " \n "      { " \n "       [_group] call RKAG_fnc_hideGroup; " \n "      }; " \n "     } foreach allGroups; " \n " " \n "     comment ""Try Init Players""; " \n "     if (RKAGBulletIncludePlayers) then {  " \n "      { " \n "       if !(side _x isEqualTo side player) then {continue}; " \n "       [_x] call RKAG_fnc_tryInitUnit; " \n "      } foreach allPlayers; " \n "     }; " \n "    }; " \n "    RKAGRevealedGroups = (RKAGRevealedGroups - [grpNull]); " \n "    {deleteGroup _x;} foreach allGroups; " \n "    uisleep 1; " \n "   }; " \n "  }; " \n " } remoteExec [""BIS_fnc_call"",0,""JIP_ID_ShowRKAGMilitaryMarkers""]; " \n "}; " \n " " \n "SLT_fnc_disableScript = { " \n "}; " \n " " \n "SLT_fnc_init = { " \n " params[[""_useToggleOptions"",true]]; " \n " " \n " with uiNamespace do { " \n "   " \n "  createDialog ""RscDisplayEmpty""; " \n "  private _display = findDisplay -1; " \n "  {_x ctrlShow false;} foreach allControls _display; " \n " " \n "  private _ctrlHeader = _display ctrlCreate [""RscStructuredText"",-1]; " \n "  _ctrlHeader ctrlSetPosition [0.396875 * safezoneW + safezoneX,0.445 * safezoneH + safezoneY,0.20625 * safezoneW,0.022 * safezoneH]; " \n "  _ctrlHeader ctrlSetBackgroundColor [1,0.7,0,0.66]; " \n "  _ctrlHeader ctrlSetStructuredText parseText (""<t size='0.85' font='PuristaMedium'>""+toUpper SLTScriptDisplayName+""</t>""); " \n "  _ctrlHeader ctrlCommit 0; " \n " " \n "  private _ctrlBorder = _display ctrlCreate [""RscPicture"",-1]; " \n "  _ctrlBorder ctrlSetPosition [0.396875 * safezoneW + safezoneX,0.467 * safezoneH + safezoneY,0.20625 * safezoneW,0.077 * safezoneH]; " \n "  _ctrlBorder ctrlSetText ""#(rgb,1,1,1)color(1,1,1,1)""; " \n "  _ctrlBorder ctrlSetTextColor [0,0,0,0.5]; " \n "  _ctrlBorder ctrlCommit 0; " \n " " \n "  private _ctrlBackground = _display ctrlCreate [""RscPicture"",-1]; " \n "  _ctrlBackground ctrlSetPosition [0.402031 * safezoneW + safezoneX,0.478 * safezoneH + safezoneY,0.195937 * safezoneW,0.055 * safezoneH]; " \n "  _ctrlBackground ctrlSetText ""#(rgb,1,1,1)color(1,1,1,1)""; " \n "  _ctrlBackground ctrlSetTextColor [0.1,0.1,0.1,0.75]; " \n "  _ctrlBackground ctrlCommit 0; " \n " " \n "  SLTEnableButton = _display ctrlCreate [""RscButtonMenu"",-1]; " \n "  SLTEnableButton ctrlSetPosition [0.407187 * safezoneW + safezoneX,0.489 * safezoneH + safezoneY,0.0928125 * safezoneW,0.033 * safezoneH]; " \n "  SLTEnableButton ctrlSetText ""ENABLE""; " \n "  SLTEnableButton ctrlCommit 0; " \n "  SLTEnableButton ctrlAddEventHandler [""ButtonClick"",{ " \n "   [[],missionNamespace getVariable ""SLT_fnc_enableScript""] call (missionNamespace getVariable ""SLT_fnc_RE_Server""); " \n "   closeDialog 0; " \n "  }]; " \n " " \n "  SLTDisableButton = _display ctrlCreate [""RscButtonMenu"",-1]; " \n "  SLTDisableButton ctrlSetPosition [0.5 * safezoneW + safezoneX,0.489 * safezoneH + safezoneY,0.0928125 * safezoneW,0.033 * safezoneH]; " \n "  SLTDisableButton ctrlSetText ""DISABLE""; " \n "  SLTDisableButton ctrlCommit 0; " \n "  SLTDisableButton ctrlAddEventHandler [""ButtonClick"",{ " \n "   [[],missionNamespace getVariable ""SLT_fnc_disableScript""] call (missionNamespace getVariable ""SLT_fnc_RE_Server""); " \n "   closeDialog 0; " \n "  }]; " \n " " \n "  if (!_useToggleOptions) then  " \n "  { " \n "   SLTEnableButton ctrlSetText ""ARE YOU SURE?""; " \n "   SLTEnableButton ctrlSetTooltip ""This script cannot be disabled!""; " \n "   SLTEnableButton ctrlCommit 0; " \n " " \n "   SLTDisableButton ctrlSetText ""CANCEL""; " \n "   SLTDisableButton ctrlCommit 0; " \n "  }; " \n " }; " \n " deleteVehicle this; " \n "}; " \n " " \n "if (time < 1) then  " \n "{ " \n " call SLT_fnc_enableScript; " \n "} " \n "else  " \n "{ " \n " [false] call SLT_fnc_init; " \n "};";
-					};
-					id=1581;
-					type="Land_HelipadEmpty_F";
-					atlOffset=1.5258789e-005;
-				};
-			};
-			id=1582;
-			atlOffset=1.5258789e-005;
-		};
-		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3957,13 +3929,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={5135.5444,14.612179,2374.9927};
-				angles[]={0,4.3776426,-0};
+				angles[]={0,4.3776426,0};
 			};
 			side="Empty";
 			flags=5;
@@ -3993,13 +3965,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={5119.3521,14.649971,2346.7339};
-				angles[]={0,3.3630261,-0};
+				angles[]={0,3.3630261,0};
 			};
 			side="Empty";
 			flags=5;
@@ -4029,13 +4001,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={5166.1353,14.98218,2329.3542};
-				angles[]={0,1.5426419,-0};
+				angles[]={0,1.5426419,0};
 			};
 			side="Empty";
 			flags=5;
@@ -4063,6 +4035,13 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item16
+		{
+			dataType="Layer";
+			name="Team Map Intel";
+			id=1591;
+			atlOffset=51.599998;
 		};
 	};
 };
