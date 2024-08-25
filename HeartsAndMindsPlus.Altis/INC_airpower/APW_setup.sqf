@@ -28,7 +28,7 @@ _altitudeMin = 5000;                    //Minimum altitude of ordnance launch
 _altitudeRandom = 5000;                 //Random additional altitude above minimum for ordnance launch
 _radius = 1500;                         //Radius of launch position around player in meters
 _rtbOnNoAmmo = true; 					//Should the unit RTB when out of ammo? (Set to false if you want the unit to continue tracking after it has run out of ammo)
-_playTime = 5;                         //Amount of time aircraft will remain on station (in minutes) - i.e. over the target area
+_playTime = 15;                         //Amount of time aircraft will remain on station (in minutes) - i.e. over the target area
 _playTimeVar = 2;                      //Variation in minutes for time on station (must be significantly less than _playtime to avoid errors)
 _requestInterval = 5;                  //Maximum amount of time in minutes between unsuccessful aircraft requests (will be able to request again once this timer is done)
 _maxSorties = 1000;                        //Max number of sorties
@@ -43,7 +43,7 @@ _missile = 4;                           //How many AT missiles the air unit carr
 _allowSensitive = false;
 
 //Mission aborted if more than this number of civilians are in the probable kill radius (only civilians visible from overhead will be counted, more may be present in reality)
-_maxCollateral = 0;
+_maxCollateral = 1;
 
 //Cancel strike if units of this side are in kill zone
 _sideFriendly = west;
