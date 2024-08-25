@@ -59,3 +59,5 @@ if (btc_debug) then {
     private _id = _city getVariable "id";
     (format ["loc_%1", _id]) setMarkerColor "colorBLUFOR";
 };
+
+

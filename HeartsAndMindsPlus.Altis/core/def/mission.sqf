@@ -843,6 +843,7 @@ btc_startDate = [1990, 5, 17, 12, 15];
 _alltoprice = flatten btc_type_boats + flatten btc_type_motorized + flatten btc_type_motorized_armed; 
 _alltopricearray = []; 
 ALLTOPRICETOTAL = [];
+
  
 for "_i" from 0 to count _customPrices - 1 do { 
 _class = (_customprices select _i) select 0; 
@@ -858,3 +859,4 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
 
 ALLTOPRICETOTAL = _alltopricearray + _customprices;
 
+city_remaining = [];

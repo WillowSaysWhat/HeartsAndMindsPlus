@@ -22,9 +22,33 @@ Author:
 ---------------------------------------------------------------------------- */
 
 lbClear 81;
+
 btc_construction_array params ["_main_class", "_sub_class"];
-for "_i" from 0 to ((count _main_class) - 1) do {
-    private _lb = lbAdd [81, _main_class select _i];
+
+_main_class1 = _main_class; // done to avoid any global issues.
+
+// Unlock System
+city_remaining = [];  
+// Check if cities are occupied and count them
+{  
+if (_y getVariable ["occupied", false]) then {  
+    city_remaining pushBack _y;  
+};  
+} forEach btc_city_all; 
+
+// Turns it into a %
+VictoryPercentage = 100 - (((count city_remaining) / (count btc_city_all)) *100);
+
+// then use the victory % to decide if the categories should be added
+for "_i" from 0 to (count _main_class - 5) do {  // -5 is the number of base cateogires to always have
+   level = (_i / count _main_class) *100; // This decides what level each class is, currently % based - Would need a min/max, or possibly an inflated rate e.g: +30 to start inline with initial unlocks
+if (level<VictoryPercentage) then {_main_class1 deleteAt _i}; // Remove the selected class if its above victory level
+};
+
+
+
+for "_i" from 0 to ((count _main_class1) - 1) do {
+    private _lb = lbAdd [81, _main_class1 select _i];
     if (_i isEqualTo 0) then {
         lbSetCurSel [81, _lb];
     };

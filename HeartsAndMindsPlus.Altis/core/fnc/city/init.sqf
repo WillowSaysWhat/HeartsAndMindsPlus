@@ -85,3 +85,4 @@ private _numberOfCity = round ((count _cities) * _density_of_occupiedCity);
 if !(isNil "btc_custom_loc") then {
     {_x call btc_city_fnc_create;} forEach btc_custom_loc;
 };
+
