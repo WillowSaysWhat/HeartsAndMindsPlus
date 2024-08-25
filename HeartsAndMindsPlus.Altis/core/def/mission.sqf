@@ -512,22 +512,21 @@ _GroundVehArray = [ // Ground Vehicles
     ["rhsusf_M1220_M2_usarmy_d",3500],
     ["rhsusf_M1230_M2_usarmy_d",3500],
     ["rhsusf_M1232_M2_usarmy_d",3500],
-    ["RHS_M2A2",5000],
-    ["RHS_M2A2_BUSKI",6000],
-    ["RHS_M2A3_BUSKIII",8000],
-    ["rhsusf_m1a2sep2d_usarmy",10000]
+    ["RHS_M2A2",8000],
+    ["RHS_M2A2_BUSKI",10000],
+    ["RHS_M2A3_BUSKIII",12000],
+    ["rhsusf_m1a2sep2d_usarmy",14000]
 ];
 
 _AirVehArray = [ // Aircraft
-    ["RHS_MELB_MH6M",2000],
-    ["B_UAV_02_F", 3000],
-    ["RHS_UH60M_d",4000],
-    ["RHSGREF_A29B_HIDF",5000],
-    ["RHS_CH_47F_10",6000],
-    ["RHS_C130J",7000],
-    ["RHS_MELB_AH6M",8000],
-    ["B_Plane_Fighter_01_F",12000],
-    ["RHS_AH64D",10000]
+    ["RHS_MELB_MH6M",4000],
+    ["RHS_CH_47F_10",5500],
+    ["B_UAV_02_F", 6000],
+    ["RHS_UH60M_d",8000],
+    ["RHSGREF_A29B_HIDF",10000],
+    ["RHS_MELB_AH6M",12000],
+    ["RHS_AH64D",15000],
+    ["B_Plane_Fighter_01_F",20000]
 ];
 
 _FortsArray = [ // Fortifications
