@@ -41,6 +41,7 @@ HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the 
 
 ### COMING SOON!
 
+- Progressive tiered vehicle unlocks
 - Dynamic objective sounds
 - Dynamic civilian interaction improvmenets
 - Removal of selectivly deprecated code.
