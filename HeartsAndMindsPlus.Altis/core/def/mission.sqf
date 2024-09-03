@@ -732,7 +732,7 @@ btc_construction_array =
     "_cContainers", "_cSupplies", "_cFOB", "_cVehicle_logistic"
 ];
 btc_log_def_loadable = _cContainers + _cFortifications + _cStatics + _cAmmobox + _cSupplies + _cFOB + _cVehicle_logistic + flatten btc_supplies_mat + btc_type_hazmat;
-btc_log_def_can_load = _cContainers /*+ _cGround_vehicles + _cAir_vehicles*/ + _cTier0 + _cTier1 + _cTier2 + _cTier3 + _cTier4 + _cTier5 + _cSupplies + _cAmmobox + _cVehicle_logistic;
+btc_log_def_can_load = _cContainers /*+ _cGround_vehicles + _cAir_vehicles*/ + _cTier0 + _cTier1 + _cTier2 + _cTier3 + _cTier4 + _cTier5 + _cSupplies + _cVehicle_logistic;
 btc_log_def_placeable = (_cFortifications + _cContainers + _cSupplies + _cFOB + _cVehicle_logistic + flatten btc_supplies_mat + btc_type_hazmat) select {
     getNumber(_cfgVehicles >> _x >> "ace_dragging_canCarry") isEqualTo 0
 };
@@ -841,24 +841,24 @@ btc_spect_range = 1000;
 btc_spect_updateOn = -1;
 
 //Rep
-btc_rep_bonus_cache = 40; // WAI
+btc_rep_bonus_cache = 30; // WAI
 btc_rep_bonus_civ_hh = 0; // DISABLED
-btc_rep_bonus_disarm = 10; // WAI
-btc_rep_bonus_hideout = 75; // WAI
-btc_rep_bonus_mil_killed = 0.25; // WAI
-btc_rep_bonus_IEDCleanUp = 5; // WAI
-btc_rep_bonus_removeTag = 3; // WAI
-btc_rep_bonus_removeTagLetter = 1; // WAI
-btc_rep_bonus_foodGive = 2; // WAI
-btc_rep_bonus_vehicle = 10; // WAI
+btc_rep_bonus_disarm = 20; // WAI
+btc_rep_bonus_hideout = 50; // WAI
+btc_rep_bonus_mil_killed = 0; // WAI
+btc_rep_bonus_IEDCleanUp = 10; // WAI
+btc_rep_bonus_removeTag = 5; // WAI
+btc_rep_bonus_removeTagLetter = 2; // WAI
+btc_rep_bonus_foodGive = 5; // WAI
+btc_rep_bonus_vehicle = 0; // WAI
 
 btc_rep_malus_veh_killed = 0; // DISABLE
 btc_rep_malus_civ_hd = 0 ; // DISABLE
 btc_rep_malus_animal_hd = 0 ; // DISABLE
-btc_rep_malus_civ_killed = - 100 ; // HIGH
+btc_rep_malus_civ_killed = - 50 ; // HIGH
 btc_rep_malus_animal_killed = - 10; // MID
 btc_rep_malus_civ_suppressed = 0 ; // DISABLED
-btc_rep_malus_player_respawn = - 2; // LOW
+btc_rep_malus_player_respawn = - 0; // LOW
 btc_rep_malus_building_damaged = - 3; // LOW
 btc_rep_malus_building_destroyed = - 30; // HIGH
 btc_rep_malus_foodRemove = - btc_rep_bonus_foodGive; // WAI
