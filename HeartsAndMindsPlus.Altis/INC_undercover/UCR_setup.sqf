@@ -33,7 +33,7 @@ _globalSuspicionModifier = 1;           //Scales the level of suspicion of enemi
 //-------------------------Civilian Disguise settings-------------------------
 
 
-_civFactions = ["CIV_F","DEFAULT"]; //Array of factions whose vests are safe for undercover units to wear
+_civFactions = ["CIV_F","DEFAULT","CIV_IDAP_F","CUP_C_CHERNARUS","CUP_C_SAHRANI","CUP_C_TK","CUP_C_RU"]; //Array of factions whose vests are safe for undercover units to wear
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
 _civilianVests = [];

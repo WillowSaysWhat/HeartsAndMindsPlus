@@ -89,6 +89,8 @@ if (
         case "NameCityCapital" : {_marker setMarkerType "o_motor_inf";};
         case "Airport" : {_marker setMarkerType "o_air";};
         case "NameMarine" : {_marker setMarkerType "o_naval";};
+        case "VegetationVineyard" : {_marker setMarkerType "o_unknown";};
+        case "Strategic" : {_marker setMarkerType "o_art";};
         default {_marker setMarkerType "o_unknown";};
     });
 
