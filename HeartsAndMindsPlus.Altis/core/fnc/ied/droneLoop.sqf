@@ -29,6 +29,7 @@ Author:
     private _group = group _driver_drone;
     if (alive _driver_drone && !isNull _driver_drone) then {
         private _array = _driver_drone nearEntities [btc_player_type, 200];
+        _array = _array select {side group _x isEqualTo btc_player_side && {!captive _x}};
         if (_array isEqualTo []) then {
             if (waypoints _group isEqualTo []) then {
                 [_group, _rpos, _area, 4] call CBA_fnc_taskPatrol;
