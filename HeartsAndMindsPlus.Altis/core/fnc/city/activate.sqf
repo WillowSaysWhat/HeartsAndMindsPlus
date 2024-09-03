@@ -36,6 +36,9 @@ params [
     ["_p_patrol_max", btc_p_patrol_max, [0]]
 ];
 
+if (Points_Active >= 4) exitWith {["Point Proc Limit Reached"] remoteExec ["hint"];};
+Points_Active = Points_Active + 1;
+
 if (btc_debug) then {
     _city setVariable ["serverTime", serverTime];
 };

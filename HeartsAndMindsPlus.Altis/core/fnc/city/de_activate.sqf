@@ -26,6 +26,8 @@ params [
 
 if !(_city getVariable ["active", false]) exitWith {};
 
+Points_Active = Points_Active - 1;
+
 if (btc_debug) then {
     private _id = _city getVariable "id";
     [str _id, __FILE__, [btc_debug, btc_debug_log, true]] call btc_debug_fnc_message;
