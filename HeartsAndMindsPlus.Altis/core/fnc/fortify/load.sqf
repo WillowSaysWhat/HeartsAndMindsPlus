@@ -28,17 +28,33 @@ btc_construction_array params ["_main_class", "_sub_class"];
 _cats = []; 
 _cats = _cats + _main_class;
 
-/**/
-
 //UNLOCK SYSTEM
 [] remoteExecCall ["tet_fortify_progress", [2]]; 
 for "_i" from (count _main_class) to 0 step -1 do {
-   level = (_i / (count _main_class)) * 100; // Probably needs to be a case file - Each level + What percent unlock.
+    switch (_i) do {
+        case 1: {
+            _level = 10;
+        };
+        case 2: {
+            _level = 25;
+        };
+        case 3: {
+            _level = 40;
+        };
+        case 4: {
+            _level = 55;
+        };
+        case 5: {
+            _level = 70;
+        };
+        default {
+            _level = 0;
+        };
+    };
    if (level >= VictoryPercentage) then {
        _cats deleteAt _i;
    };
 };
-/**/
 
 // Add categories
 for "_i" from 0 to ((count _cats) - 1) do {
