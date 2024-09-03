@@ -478,79 +478,89 @@ btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, i
 
 // Add a further "Price Overwrite" category for adding custom vehicles
 
-_GroundVehArray = [ // Ground Vehicles
-    ["rhsusf_mrzr4_d",100],
-    ["rhsusf_m1045_d",450],
-    ["rhsusf_m998_d_2dr_fulltop",450],
-    ["rhsusf_m998_d_2dr_halftop",450],
-    ["rhsusf_m998_d_2dr",450],
-    ["UK3CB_B_M939_Recovery_DES",500],
-    ["rhsusf_m998_d_4dr_fulltop",550],
-    ["rhsusf_m998_d_4dr_halftop",550],
-    ["rhsusf_m1152_usarmy_d",550],
-    ["UK3CB_FIA_B_Hilux_Ambulance",600],
-    ["rhsusf_m1151_m2_v1_usarmy_d",850],
-    ["rhsusf_m1151_m2_v2_usarmy_d",850],
-    ["rhsusf_m1043_d_m2",1000],
-    ["rhsusf_m1165a1_gmv_m2_m240_socom_d",1500],
-	["B_APC_Tracked_01_CRV_F",1500],
-    ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",1500],
-    ["rhsusf_M1117_D",1800],
-    ["B_T_Boat_Armed_01_minigun_F",2000],
-    ["rhsusf_m1151_mk19_v2_usarmy_d",2000],
-    ["rhsusf_m1151_mk19_v1_usarmy_d",2000],
-    ["UK3CB_B_M939_Closed_DES",2000],
-    ["UK3CB_B_M939_Guntruck_DES",2500],
-    ["UK3CB_B_M939_Open_DES",2000],
-    ["UK3CB_B_M939_Reammo_DES",2500],
-    ["UK3CB_B_M939_Refuel_DES",2500],
-    ["UK3CB_B_M939_Repair_DES",2500],
-    ["rhsusf_stryker_m1127_m2_d",3000],
-    ["rhsusf_M1220_usarmy_d",3000],
-    ["rhsusf_m1240a1_m2_uik_usarmy_d",3000],
-    ["UK3CB_B_MaxxPro_M2_US",3000],
-    ["rhsusf_M1220_M2_usarmy_d",3500],
-    ["rhsusf_M1230_M2_usarmy_d",3500],
-    ["rhsusf_M1232_M2_usarmy_d",3500],
-    ["RHS_M2A2",8000],
-    ["RHS_M2A2_BUSKI",10000],
-    ["RHS_M2A3_BUSKIII",12000],
-    ["rhsusf_m1a2sep2d_usarmy",14000]
-];
-
-_AirVehArray = [ // Aircraft
-    ["RHS_MELB_MH6M",4000],
-    ["RHS_CH_47F_10",5500],
-    ["B_UAV_02_F", 6000],
-    ["RHS_UH60M_d",8000],
-    ["RHSGREF_A29B_HIDF",10000],
-    ["RHS_MELB_AH6M",12000],
-    ["RHS_AH64D",15000],
-    ["B_Plane_Fighter_01_F",20000]
-];
 
 _Tier0Array = [
-    
+    // Hilux
+    // Dirt Bikes
+    ["rhsusf_mrzr4_d",100], //RZR 4
+    ["UK3CB_B_M939_Recovery_DES",500], //recovery truck
+    ["UK3CB_FIA_B_Hilux_Ambulance",600] //Ambo
 ];
 
 _Tier1Array = [
-
+    // Medical M113
+    // Unarmed UAV
+    ["RHS_M252_D",150], //Mortar M252
+    ["rhsusf_m998_d_2dr",450], //uncovered HMMWV no doors and roof
+    ["rhsusf_m998_d_2dr_halftop",450], //uncovered transport HMMWV
+    ["rhsusf_m998_d_2dr_fulltop",450], //Tarp covered transport HMMWV
+    ["rhsusf_m998_d_4dr_halftop",550], //uncovered Cargo transport HMMWV
+    ["rhsusf_m998_d_4dr_fulltop",550], //covered Cargo transport HMMWV
+    ["rhsusf_m1045_d",450], //TOW HMMWV
+    ["rhsusf_m1152_usarmy_d",550],  //Two seater HMMWV uncovered
+    ["rhsusf_m1151_m2_v1_usarmy_d",850], //Shielded M2 HMMWV
+    ["rhsusf_m1151_m2_v2_usarmy_d",850], //Shielded M2 HMMWV + DUKE
+    ["rhsusf_m1043_d_m2",1000], //Open gunner M2 HMMWV
+    ["B_APC_Tracked_01_CRV_F",1500], //Nemmera
+    ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",1500], //SOV utility
+    ["B_T_Boat_Armed_01_minigun_F",2000], //Minigun Speedboat
+    ["UK3CB_B_M939_Closed_DES",2000], // TBD
+    ["UK3CB_B_M939_Guntruck_DES",2500], // TBD
+    ["UK3CB_B_M939_Open_DES",2000], // TBD
+    ["UK3CB_B_M939_Reammo_DES",2500], // Reammo M939
+    ["UK3CB_B_M939_Refuel_DES",2500], // Refuel M939
+    ["UK3CB_B_M939_Repair_DES",2500] // Repair M939
 ];
 
 _Tier2Array = [
-    
+    //Unarmed MRAP
+    //["UK3CB_KRG_B_AC47", 1], //Spooky
+    //["B_UGV_01_F", 1], //UGV unarmed
+    ["RHS_M119_D",250], //M119A2 105mm
+    ["rhsusf_m1165a1_gmv_m2_m240_socom_d",1500], //Shielded M2 + 2x M240 HMMWV
+    ["rhsusf_M1117_D",1800], //M1117 ASV
+    ["rhsusf_stryker_m1127_m2_d",3000], //LRAS3 stryker
+    ["rhsusf_M1220_usarmy_d",3000], // DUKE battle bus
+    ["RHS_MELB_MH6M",4000] //MH-6M
 ];
 
 _Tier3Array = [
-    
+    // T-41
+    // LAV
+    // AAVP
+    //["RHSGREF_A29B_HIDF",10000], //A29 Super Tucano
+    ["rhsusf_m1151_mk19_v1_usarmy_d",2000], //Shielded Mk19 HMMWV
+    ["rhsusf_m1151_mk19_v2_usarmy_d",2000], //Mk19 HMMWV + O-GPK
+    ["rhsusf_m1240a1_m2_uik_usarmy_d",3000], //M2 MRAP DUKE + cage
+    ["UK3CB_B_MaxxPro_M2_US",3000], //Armed MRAP MaxxPro
+    ["rhsusf_M1220_M2_usarmy_d",3500], //M2 Battle bus
+    ["rhsusf_M1230_M2_usarmy_d",3500], //Plated Armor + DUKE + M2 Battle bus
+    ["rhsusf_M1232_M2_usarmy_d",3500], //Longer M2 Battle bus
+    ["B_UAV_02_F", 6000], //YABHON R3
+    ["RHS_UH60M_d",8000] //Blackhawk
 ];
 
 _Tier4Array = [
-    
+    // Paladin
+    // Super Stallion
+    // Sentinel UAV
+    // Armed UGV
+    // CROWS vehicle
+    ["RHS_M2A2",8000], // M2A2
+    ["RHS_M2A2_BUSKI",10000], // M2A2 BUSK1
+    ["RHS_CH_47F_10",5500], //Chinook
+    ["RHS_MELB_AH6M",12000] //AH-6M
 ];
 
 _Tier5Array = [
-    
+    // HIMARS
+    // MV-22 Osprey
+    // A-10
+    // F-22
+    //["B_Plane_Fighter_01_F",20000] //FA-181
+    ["RHS_M2A3_BUSKIII",12000], //M2A3 BUSK III
+    ["rhsusf_m1a2sep2d_usarmy",14000], //M1A2 ABRAMS
+    ["RHS_AH64D",15000] //APACHE
 ];
 
 _FortsArray = [ // Fortifications
@@ -594,8 +604,6 @@ _StaticsArray = [ // Statics
     ["RHS_M2StaticMG_MiniTripod_D",50],
     ["RHS_Stinger_AA_pod_D",100],
     ["RHS_TOW_TriPod_D",100],
-    ["RHS_M252_D",150],
-    ["RHS_M119_D",250],
     ["B_HMG_01_A_F",300],
     ["B_GMG_01_A_F",500]
 ];
