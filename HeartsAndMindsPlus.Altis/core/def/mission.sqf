@@ -187,7 +187,7 @@ if (isServer) then {
 
     //Patrol
     btc_patrol_active = [];
-    btc_patrol_area = 4000;
+    btc_patrol_area = 2000;
 
     //Rep
     btc_rep_militia_call_time = 600;
