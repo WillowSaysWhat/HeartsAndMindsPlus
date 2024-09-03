@@ -19,20 +19,56 @@ Examples:
 Author:
     Tetlys
 
----------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */ 
 
 lbClear 81;
-btc_construction_array params ["_main_class", "_sub_class"];
-for "_i" from 0 to ((count _main_class) - 1) do {
-    private _lb = lbAdd [81, _main_class select _i];
+
+btc_construction_array params ["_main_class", "_sub_class"]; 
+ 
+_cats = []; 
+_cats = _cats + _main_class;
+
+//UNLOCK SYSTEM
+[] remoteExecCall ["tet_fortify_progress", [2]]; 
+for "_i" from (count _main_class) to 0 step -1 do {
+    switch (_i) do {
+        case 1: {
+            _level = 10;
+        };
+        case 2: {
+            _level = 25;
+        };
+        case 3: {
+            _level = 40;
+        };
+        case 4: {
+            _level = 55;
+        };
+        case 5: {
+            _level = 70;
+        };
+        default {
+            _level = 0;
+        };
+    };
+   if (level >= VictoryPercentage) then {
+       _cats deleteAt _i;
+   };
+};
+
+// Add categories
+for "_i" from 0 to ((count _cats) - 1) do {
+    private _lb = lbAdd [81, _cats select _i];
     if (_i isEqualTo 0) then {
         lbSetCurSel [81, _lb];
     };
 };
 
+// Title funds bar
 _ecom = ["FUNDS: [$", btc_global_economy, "]"] joinString "";
 lbAdd [84, _ecom];
 
+// Add items to categories
 private _category = _sub_class select 0;
 lbClear 82;
 for "_i" from 0 to ((count _category) - 1) do {

@@ -38,9 +38,3 @@ if (
 ) then {
     _this remoteExecCall ["btc_rep_fnc_hh", 2];
 };
-
-if (alive _target && side _target == east) then {
-    if (_caller getvariable ["isUndercover",false]) then {
-        _caller setVariable ["INC_trespassAlert",true];
-    };
-};

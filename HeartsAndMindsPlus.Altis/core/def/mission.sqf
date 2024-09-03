@@ -529,6 +529,30 @@ _AirVehArray = [ // Aircraft
     ["B_Plane_Fighter_01_F",20000]
 ];
 
+_Tier0Array = [
+    
+];
+
+_Tier1Array = [
+
+];
+
+_Tier2Array = [
+    
+];
+
+_Tier3Array = [
+    
+];
+
+_Tier4Array = [
+    
+];
+
+_Tier5Array = [
+    
+];
+
 _FortsArray = [ // Fortifications
     ["Land_BagFence_End_F",1],
     ["Land_BagFence_Long_F",1],
@@ -621,8 +645,17 @@ _VehLogisticsArray = [ // Vehicle Logistics
 
 // LEAVE BLANK!
 _CustomPriceOverride = [];
-_GroundVeh = [];
-_AirVeh = [];
+
+//_GroundVeh = [];
+//_AirVeh = [];
+
+_Tier0 = [];
+_Tier1 = [];
+_Tier2 = [];
+_Tier3 = [];
+_Tier4 = [];
+_Tier5 = [];
+
 _Forts = [];
 _Statics = [];
 _AmmoBoxes = [];
@@ -631,8 +664,16 @@ _Supplys = [];
 _FobStuff = [];
 _vehLogistics = [];
 
-{_obj = _x select 0; _GroundVeh pushBackUnique _obj;} foreach _GroundVehArray;
-{_obj = _x select 0; _AirVeh pushBackUnique _obj;} foreach _AirVehArray;
+//{_obj = _x select 0; _GroundVeh pushBackUnique _obj;} foreach _GroundVehArray;
+//{_obj = _x select 0; _AirVeh pushBackUnique _obj;} foreach _AirVehArray;
+
+{_obj = _x select 0; _Tier0 pushBackUnique _obj;} foreach _Tier0Array;
+{_obj = _x select 0; _Tier1 pushBackUnique _obj;} foreach _Tier1Array;
+{_obj = _x select 0; _Tier2 pushBackUnique _obj;} foreach _Tier2Array;
+{_obj = _x select 0; _Tier3 pushBackUnique _obj;} foreach _Tier3Array;
+{_obj = _x select 0; _Tier4 pushBackUnique _obj;} foreach _Tier4Array;
+{_obj = _x select 0; _Tier5 pushBackUnique _obj;} foreach _Tier5Array;
+
 {_obj = _x select 0; _Forts pushBackUnique _obj;} foreach _FortsArray;
 {_obj = _x select 0; _Statics pushBackUnique _obj;} foreach _StaticsArray;
 {_obj = _x select 0; _AmmoBoxes pushBackUnique _obj;} foreach _AmmoBoxesArray;
@@ -642,15 +683,21 @@ _vehLogistics = [];
 {_obj = _x select 0; _vehLogistics pushBackUnique _obj;} foreach _VehLogisticsArray;
 
 
-_CustomPrices = _GroundVehArray + _AirVehArray + _FortsArray + _StaticsArray + _AmmoBoxesArray + _Containers1Array + _SupplysArray + _FobStuffArray + _VehLogisticsArray + _CustomPriceOverride;
+_CustomPrices = /*_GroundVehArray + _AirVehArray*/ _Tier0Array + _Tier1Array + _Tier2Array + _Tier3Array + _Tier4Array + _Tier5Array + _FortsArray + _StaticsArray + _AmmoBoxesArray + _Containers1Array + _SupplysArray + _FobStuffArray + _VehLogisticsArray + _CustomPriceOverride;
 
 
 //Log  
 btc_construction_array =
 [
     [
-        "Ground Vehicles",
-        "Air Vehicles",
+        //"Ground Vehicles",
+        //"Air Vehicles",
+        "Basic",
+        "Standard",
+        "Light",
+        "Medium",
+        "Heavy",
+        "Super Heavy",
         "Fortifications",
         "Static",
         "Ammobox",
@@ -660,8 +707,14 @@ btc_construction_array =
         "Vehicle Logistic"
     ],
     [
-        _GroundVeh,
-        _AirVeh,
+        //_GroundVeh,
+        //_AirVeh,
+        _Tier0,
+        _Tier1,
+        _Tier2,
+        _Tier3,
+        _Tier4,
+        _Tier5,
         _Forts,
         _Statics,
         _AmmoBoxes,
@@ -675,11 +728,11 @@ btc_construction_array =
 // seperate arrays for pricing into seperate variables. Add variables together for pricing. Use the select code to seperate the classnames into modified arrays to build the btc_construction_array
 
 (btc_construction_array select 1) params [
-    "_cGround_vehicles","_cAir_vehicles", "_cFortifications", "_cStatics", "_cAmmobox",
+    /*"_cGround_vehicles","_cAir_vehicles",*/"_cTier0", "_cTier1", "_cTier2", "_cTier3", "_cTier4", "_cTier5","_cFortifications", "_cStatics", "_cAmmobox",
     "_cContainers", "_cSupplies", "_cFOB", "_cVehicle_logistic"
 ];
 btc_log_def_loadable = _cContainers + _cFortifications + _cStatics + _cAmmobox + _cSupplies + _cFOB + _cVehicle_logistic + flatten btc_supplies_mat + btc_type_hazmat;
-btc_log_def_can_load = _cContainers + _cGround_vehicles + _cAir_vehicles + _cSupplies + _cAmmobox + _cVehicle_logistic;
+btc_log_def_can_load = _cContainers /*+ _cGround_vehicles + _cAir_vehicles*/ + _cTier0 + _cTier1 + _cTier2 + _cTier3 + _cTier4 + _cTier5 + _cSupplies + _cAmmobox + _cVehicle_logistic;
 btc_log_def_placeable = (_cFortifications + _cContainers + _cSupplies + _cFOB + _cVehicle_logistic + flatten btc_supplies_mat + btc_type_hazmat) select {
     getNumber(_cfgVehicles >> _x >> "ace_dragging_canCarry") isEqualTo 0
 };
@@ -687,7 +740,8 @@ btc_tow_vehicleTowing = objNull;
 btc_log_placing_max_h = 12;
 btc_log_placing = false;
 btc_log_obj_created = [];
-btc_fortify_vehicles = _cGround_Vehicles + _cAir_Vehicles;
+//btc_fortify_vehicles = _cGround_Vehicles + _cAir_Vehicles;
+btc_fortify_vehicles = _cTier0 + _cTier1 + _cTier2 + _cTier3 + _cTier4 + _cTier5;
 btc_containers_mat = _cContainers;
 btc_containers_log = btc_log_def_placeable + _cAmmobox;
 btc_all_obj = _cVehicle_logistic + _cFOB + _cSupplies + _cContainers + _cAmmobox + _cStatics + _cFortifications;
@@ -843,6 +897,7 @@ btc_startDate = [1990, 5, 17, 12, 15];
 _alltoprice = flatten btc_type_boats + flatten btc_type_motorized + flatten btc_type_motorized_armed; 
 _alltopricearray = []; 
 ALLTOPRICETOTAL = [];
+
  
 for "_i" from 0 to count _customPrices - 1 do { 
 _class = (_customprices select _i) select 0; 
@@ -858,3 +913,4 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
 
 ALLTOPRICETOTAL = _alltopricearray + _customprices;
 
+city_remaining = [];
