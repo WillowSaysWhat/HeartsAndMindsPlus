@@ -60,15 +60,6 @@ private _has_ho = _city getVariable ["has_ho", false];
 private _ieds = _city getVariable ["ieds", []];
 private _spawningRadius = _cachingRadius/2;
 
-// Tresspass Markers 
-if (_city getVariable ["spawn_more", false] || _city getVariable ["has_ho", false]) then {
-    private _tresspass = createMarker [format ["cityt_%1", position _city], position _city];
-    _tresspass setMarkerSize [_cachingRadius, _cachingRadius];
-    _tresspass setMarkerShape "ELLIPSE"; 
-    _tresspass setMarkerBrush "SolidBorder";
-    _tresspass setMarkerAlpha 0;
-};
-
 // Recon Colors Map Markers
 if (_city getVariable ["marker", ""] != "") then {
     if (_city getVariable ["occupied", false]) then {
