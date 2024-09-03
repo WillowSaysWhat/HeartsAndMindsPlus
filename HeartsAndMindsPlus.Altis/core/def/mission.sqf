@@ -478,6 +478,7 @@ btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, i
 
 // Add a further "Price Overwrite" category for adding custom vehicles
 
+// Unlock levels for tiers can be set in fortify>load.sqf
 
 _Tier0Array = [
     // Hilux
