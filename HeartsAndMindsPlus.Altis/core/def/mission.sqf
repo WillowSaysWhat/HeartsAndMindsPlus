@@ -102,7 +102,7 @@ btc_global_reputation = "btc_p_rep" call BIS_fnc_getParamValue;
 btc_p_rep_notify = "btc_p_rep_notify" call BIS_fnc_getParamValue;
 btc_city_radiusOffset = ("btc_p_city_radiusOffset" call BIS_fnc_getParamValue) * 100;
 btc_p_trigger = if (("btc_p_trigger" call BIS_fnc_getParamValue) isEqualTo 1) then {
-    "this && (false in (thisList apply {_x isKindOf 'Plane'})) && (false in (thisList apply {(_x isKindOf 'Helicopter') && (speed _x > 190)}))"
+    "this && (false in (thisList apply {_x isKindOf 'Plane'})) && (false in (thisList apply {(_x isKindOf 'Helicopter') && (speed _x > 130)}))"
 } else {
     "this"
 };
@@ -914,3 +914,5 @@ if (_class in _alltoprice) then {_alltoprice deleteat (_alltoprice find _class);
 ALLTOPRICETOTAL = _alltopricearray + _customprices;
 
 city_remaining = [];
+
+Points_Active = 0;
