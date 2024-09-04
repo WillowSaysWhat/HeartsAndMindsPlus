@@ -36,6 +36,9 @@ params [
     ["_p_patrol_max", btc_p_patrol_max, [0]]
 ];
 
+if (Points_Active >= 4) exitWith {["Point Proc Limit Reached"] remoteExec ["hint"];};
+Points_Active = Points_Active + 1;
+
 if (btc_debug) then {
     _city setVariable ["serverTime", serverTime];
 };
@@ -48,8 +51,8 @@ _city setVariable ["active", true];
 
 
 // Added Player Scaling Variable
-//private _CurrentPlayers = count allPlayers;
-//private _PlayerScale = ((_CurrentPlayers * 0.03) max 0.5) min 1;
+private _CurrentPlayers = count allPlayers;
+private _PlayerScale = ((_CurrentPlayers * 0.06) max 1) min 4;
 
 private _data_units = _city getVariable ["data_units", []];
 private _data_animals = _city getVariable ["data_animals", []];
@@ -59,15 +62,6 @@ private _has_en = _city getVariable ["occupied", false];
 private _has_ho = _city getVariable ["has_ho", false];
 private _ieds = _city getVariable ["ieds", []];
 private _spawningRadius = _cachingRadius/2;
-
-// Tresspass Markers 
-if (_city getVariable ["spawn_more", false] || _city getVariable ["has_ho", false]) then {
-    private _tresspass = createMarker [format ["cityt_%1", position _city], position _city];
-    _tresspass setMarkerSize [_cachingRadius, _cachingRadius];
-    _tresspass setMarkerShape "ELLIPSE"; 
-    _tresspass setMarkerBrush "SolidBorder";
-    _tresspass setMarkerAlpha 0;
-};
 
 // Recon Colors Map Markers
 if (_city getVariable ["marker", ""] != "") then {
@@ -141,7 +135,7 @@ if (_data_units isNotEqualTo []) then {
     });
 
     if (_has_en) then {
-        private _finalNumberOfGroup = floor (_p_mil_group_ratio * _numberOfGroup); // Player Scaling Adjusted  * _PlayerScale
+        private _finalNumberOfGroup = floor (_p_mil_group_ratio * _numberOfGroup * _PlayerScale); // Player Scaling Adjusted  * _PlayerScale
         private _numberOfHouseGroup = _finalNumberOfGroup * btc_p_mil_wp_houseDensity;
         for "_i" from 1 to round _finalNumberOfGroup do {
             [
@@ -161,28 +155,28 @@ if (_data_units isNotEqualTo []) then {
                 case "VegetationFir" : {3};
                 case "BorderCrossing" : {6};
                 case "NameLocal" : {4};
-                case "StrongpointArea" : {6};
-                case "NameVillage" : {6};
-                case "NameCity" : {8};
-                case "NameCityCapital" : {10};
+                case "StrongpointArea" : {8};
+                case "NameVillage" : {8};
+                case "NameCity" : {10};
+                case "NameCityCapital" : {12};
                 case "Airport" : {6};
                 case "VegetationVineyard" : {3};
                 case "Strategic" : {6};
                 default {0};
             });
-            [_housesEntrerable+_housesNotEntrerable, round (_p_mil_static_group_ratio * _numberOfStatic), _city] call btc_mil_fnc_create_staticOnRoof;
+            [_housesEntrerable+_housesNotEntrerable, round (_p_mil_static_group_ratio * _numberOfStatic * _PlayerScale), _city] call btc_mil_fnc_create_staticOnRoof;
         };
 
         // Spawn civilians
         private _numberOfCivi = (switch _type do {
             case "VegetationFir" : {0};
             case "BorderCrossing" : {4};
-            case "NameLocal" : {13};
+            case "NameLocal" : {8};
             case "StrongpointArea" : {0};
-            case "NameVillage" : {15};
-            case "NameCity" : {20};
-            case "NameCityCapital" : {25};
-            case "Airport" : {10};
+            case "NameVillage" : {10};
+            case "NameCity" : {15};
+            case "NameCityCapital" : {18};
+            case "Airport" : {8};
             case "VegetationVineyard" : {0};
             case "Strategic" : {0};
             default {5};
@@ -232,7 +226,7 @@ if (_city getVariable ["spawn_more", false]) then {
         ] call btc_mil_fnc_create_group;
     };
     if (btc_p_veh_armed_spawn_more) then {
-        [[_city, _spawningRadius, 1, btc_type_motorized_armed, 1 + round random 4], btc_city_fnc_send] call btc_delay_fnc_exec;
+        [[_city, _spawningRadius, 1, btc_type_motorized_armed, 1 + round random 3 + round _PlayerScale], btc_city_fnc_send] call btc_delay_fnc_exec;
     };
 };
 

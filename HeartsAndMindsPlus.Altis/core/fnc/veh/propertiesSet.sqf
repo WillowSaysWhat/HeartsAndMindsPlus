@@ -92,7 +92,11 @@ if (_supplyVehicle isNotEqualTo []) then {
     ];
 
     if (_isSupplyVehicle) then {
-        [_vehicle, _currentSupply] call ace_rearm_fnc_makeSource;
+                if (_currentSupply isEqualTo -1) then {
+            [_vehicle, 0] call ace_rearm_fnc_makeSource;
+        } else {
+            [_vehicle, _currentSupply] call ace_rearm_fnc_makeSource;
+        }
     };
     _vehicle setVariable ["btc_EDEN_defaultSupply", _defaultSupply, true];
 };

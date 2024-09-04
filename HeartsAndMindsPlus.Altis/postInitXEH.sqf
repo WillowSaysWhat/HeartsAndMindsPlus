@@ -30,6 +30,3 @@ if (_unit getVariable ["initLoopRunning",false]) exitWith {};
 if (_unit getVariable ["noChanges",false]) exitWith {};
 
 _unit setVariable ["initLoopRunning", true, true];
-
-//Recruitment script
-#include "INC_undercover\Scripts\unitInitsUndercover.sqf"

@@ -166,6 +166,4 @@ if (_taskID call BIS_fnc_taskState in ["CANCELED", "FAILED"]) exitWith {};
     [west, 600, false] call acex_fortify_fnc_updateBudget; 
     btc_global_economy = btc_global_economy + 600;
 
-_rep call btc_rep_fnc_change;
-
 [_taskID, "SUCCEEDED"] call btc_task_fnc_setState;

@@ -38,7 +38,6 @@ class RscTitles {
 class CfgFunctions
 {
 	#include "INC_airPower\cfgFunctions.hpp"
-    #include "INC_undercover\cfgFunctions.hpp"
 
 };
 
@@ -49,7 +48,6 @@ class CfgRemoteExec
        mode = 2;
        jip = 1;
        #include "INC_airPower\functionsWhitelist.hpp"
-       #include "INC_undercover\functionsWhitelist.hpp"
    };
 };
 
