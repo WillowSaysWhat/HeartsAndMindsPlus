@@ -36,7 +36,7 @@ params [
     ["_p_patrol_max", btc_p_patrol_max, [0]]
 ];
 
-if (Points_Active >= 4) exitWith {["Point Proc Limit Reached"] remoteExec ["hint"];};
+if (Points_Active >= 4) exitWith {["Point Proc Limit Reached"] remoteExec ["CBA_fnc_notify"];};
 Points_Active = Points_Active + 1;
 
 if (btc_debug) then {
@@ -65,6 +65,7 @@ private _spawningRadius = _cachingRadius/2;
 
 // Recon Colors Map Markers
 if (_city getVariable ["marker", ""] != "") then {
+    (_city getVariable ["marker", ""]) setMarkerAlpha 1;
     if (_city getVariable ["occupied", false]) then {
         (_city getVariable ["marker", ""]) setMarkerColor "colorOPFOR"; // CONFIG OBJ Colors - OCCUPIED
     } else {

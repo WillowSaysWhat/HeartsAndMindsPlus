@@ -33,6 +33,11 @@ if (btc_debug) then {
     [str _id, __FILE__, [btc_debug, btc_debug_log, true]] call btc_debug_fnc_message;
 };
 
+// Recon Colors Map Markers
+if (_city getVariable ["marker", ""] != "") then {
+    (_city getVariable ["marker", ""]) setMarkerAlpha 0.7;
+};
+
 //Save all and delete
 private _cachingRadius = _city getVariable ["cachingRadius", 0];
 private _has_en = _city getVariable ["occupied", false];
