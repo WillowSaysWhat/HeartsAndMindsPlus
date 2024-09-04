@@ -25,10 +25,10 @@ HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the 
 - **Building Damage Modifiers changed:** - Changed to better suit larger full warefare scenarios. 
 - **Improved Map Markers** - Improved on the existing system towards a large multiplayer environment.
 - **Automation** - Lots of QOL improvmenets to missions creators, E.g: Enemy vehicles self fill to the salvage array.
-- **Full undercover system** - Go undercover as a civ in mil objectives
 - **Full permissions system** - Per player persistant permissions for Build, Salvage, CAS/WEATHER/SIDEMISSIONS, Flight and Armour
 - **Vehicle Appearance manager** - Use the logic point at spawn to change the apperance of your vehicles persistantly
 - **Peristant scoreboard** - Keep track of kills, and rep for each player!
+- **Map based progression system** - Unlock new assets as you progress through the map!
 
 * Some features limited to latest builds
 
@@ -41,7 +41,6 @@ HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the 
 
 ### COMING SOON!
 
-- Progressive tiered vehicle unlocks
 - Dynamic objective sounds
 - Dynamic civilian interaction improvmenets
 - Removal of selectivly deprecated code.
