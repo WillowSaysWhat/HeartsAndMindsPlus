@@ -9,6 +9,7 @@ if !(isNil "btc_custom_loc") then {
 btc_intro_done = [] spawn btc_respawn_fnc_intro;
 [] call btc_int_fnc_shortcuts;
 [] call btc_lift_fnc_shortcuts;
+[] remoteExecCall ["tet_fortify_progress", [2]];
 
 [{!isNull player}, {
     [] call compileScript ["core\doc.sqf"];
