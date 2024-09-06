@@ -36,8 +36,18 @@ params [
     ["_p_patrol_max", btc_p_patrol_max, [0]]
 ];
 
-if (Points_Active >= 4) exitWith {["Point Proc Limit Reached"] remoteExec ["CBA_fnc_notify"];};
+// CHANGE THE NUMBER VV HERE TO LOWER OR RAISE POINT CAP
+if (Points_Active >= 5) exitWith {["Point Proc Limit Reached"] remoteExec ["CBA_fnc_notify"];};
 Points_Active = Points_Active + 1;
+
+publicVariable "Points_Active";
+
+// CHAT UPDATER
+_globalChatFunction = {
+    _message = format ["Point Activated  %1 / 5", Points_Active];
+    systemChat _message;
+};
+[_globalChatFunction] remoteExec ["call", 0, true];
 
 if (btc_debug) then {
     _city setVariable ["serverTime", serverTime];
