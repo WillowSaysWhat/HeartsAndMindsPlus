@@ -44,7 +44,7 @@ if (btc_debug) then {
 
 // Recon Colors Map Markers
 if (_city getVariable ["marker", ""] != "") then {
-    (_city getVariable ["marker", ""]) setMarkerAlpha 0.7;
+    (_city getVariable ["marker", ""]) setMarkerAlpha 0.6;
 };
 
 //Save all and delete
