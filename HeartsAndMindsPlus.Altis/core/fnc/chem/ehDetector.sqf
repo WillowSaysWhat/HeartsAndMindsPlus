@@ -35,7 +35,7 @@ Author:
 
             [{visibleWatch}, btc_chem_fnc_updateDetector, [_obj]] call CBA_fnc_waitUntilAndExecute;
         };
-/*
+
         // OPTIONAL : DLC Remover
         if (
             (_key in actionKeys "Watch" || _key in actionKeys "WatchToggle") &&
@@ -47,6 +47,6 @@ Author:
 
             [{visibleWatch}, btc_chem_fnc_updateDetector, [_obj]] call CBA_fnc_waitUntilAndExecute;
         };
-*/
+
     }];
 }] call CBA_fnc_waitUntilAndExecute;
