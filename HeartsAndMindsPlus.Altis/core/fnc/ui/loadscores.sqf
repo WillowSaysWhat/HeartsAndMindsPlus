@@ -54,7 +54,3 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     //if (_i isEqualTo 0) then {lbSetCurSel [89, _index];};
     };
 };
-
-
-
-

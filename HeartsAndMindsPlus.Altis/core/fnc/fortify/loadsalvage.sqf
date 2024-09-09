@@ -54,7 +54,7 @@ for "_i" from 0 to ((count _array) - 1) do {
     };
  
     private _cost = [west, _classname] call ace_fortify_fnc_getCost;
-	private _costadjusted = floor (_cost * 0.6);
+	private _costadjusted = floor (_cost * 0.5);
 
     _costdisplay = [" [$", _costadjusted, "]"] joinString "";
     _displayout = [_costdisplay, _classnameout] joinString "       ";
