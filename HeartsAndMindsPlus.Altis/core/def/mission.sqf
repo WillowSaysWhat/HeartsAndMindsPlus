@@ -626,7 +626,9 @@ _Containers1Array = [ // Storage/Transport Containers
 
 
 _SupplysArray = [ // Side Supplies
-    ["Land_Cargo20_IDAP_F",100]
+    ["Land_Cargo20_IDAP_F",100],
+    ["DeconShower_01_F",100],
+    ["DeconShower_02_F",100]
 ];
 
 

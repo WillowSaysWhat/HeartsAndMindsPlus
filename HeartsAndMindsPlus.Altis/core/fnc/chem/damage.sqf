@@ -40,7 +40,8 @@ private _protection = 0;
 // OPTIONAL : DLC Remover
 if (
       [
-    "G_Respirator_base_F"
+    "kat_mask_M04",
+    "kat_mask_M50"
       ] findIf {_googles isKindOf [_x, _cfgGlasses]} > -1 
     ) then { _protection = _protection + 1; 
 };
