@@ -89,7 +89,7 @@ if (btc_p_auto_db) then {
 };
 if (btc_p_chem) then {
     //["ace_cargoLoaded", btc_chem_fnc_propagate] call CBA_fnc_addEventHandler;
-    ["AllVehicles", "GetIn", {[_this select 0, _this select 2] call btc_chem_fnc_propagate}] call CBA_fnc_addClassEventHandler;
+    //["AllVehicles", "GetIn", {[_this select 0, _this select 2] call btc_chem_fnc_propagate}] call CBA_fnc_addClassEventHandler;
     ["DeconShower_01_F", "init", {
         btc_chem_decontaminate pushBack (_this select 0);
         (_this select 0) setVariable ['bin_deconshower_disableAction', true];
