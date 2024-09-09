@@ -483,7 +483,8 @@ roleArsenal = {
 		"tfw_whip",
 		"tfw_dd",
 		"ItemWatch",
-		// CHEM 
+		// CHEM
+		"ChemicalDetector_01_watch_F",
 		"kat_mask_M04",
         "kat_mask_M50"
     ];
