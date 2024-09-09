@@ -482,7 +482,10 @@ roleArsenal = {
 		"tfw_blade",
 		"tfw_whip",
 		"tfw_dd",
-		"ItemWatch"
+		"ItemWatch",
+		// CHEM 
+		"kat_mask_M04",
+        "kat_mask_M50"
     ];
 
     Private _CO = [
