@@ -33,7 +33,7 @@ private _bodyParts = ["head","body","hand_l","hand_r","leg_l","leg_r"];
     {
         _allUnitsUAV append crew _x;
     } forEach allUnitsUAV;
-    private _units = allUnits - _allUnitsUAV;
+    private _units = allPlayers;
     private _objtToDecontaminate = [];
     private _unitsContaminated = _contaminated arrayIntersect _units;
     {
