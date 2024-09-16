@@ -16,7 +16,7 @@ class tet_ui_dlg_permissions
 			text = "";
 			colorBackground[] = {0.1412,0.1373,0.1373,0.7059};
 			colorText[] = {0.3922,0.7255,0.3843,1};
-			font = "PuristaMedium";
+			font = "EtelkaMonospaceProBold";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
@@ -36,7 +36,7 @@ class tet_ui_dlg_permissions
 			text = "Permissions                                                                                                                                                                 ( ALL CHANGES REQUIRE USER TO RELOG TO TAKE EFFECT ) ";
 			colorBackground[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			sizeEx = (((((safezoneW / safezoneH) min 1.3) / 1.1) / 25) * 1);
 			
 		};
@@ -59,7 +59,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {0.702,0.702,0.702,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -85,7 +85,7 @@ class tet_ui_dlg_permissions
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelect[] = {1,0.8738,0.0943,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
+			font = "EtelkaMonospaceProBold";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.4) / 25) * 1);
@@ -121,7 +121,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -153,7 +153,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -185,7 +185,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0.302,0.302,0.302,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -217,7 +217,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -249,7 +249,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -281,7 +281,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -313,7 +313,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -345,7 +345,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -377,7 +377,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -409,7 +409,7 @@ class tet_ui_dlg_permissions
 			colorFocused[] = {0.302,0.302,0.302,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;

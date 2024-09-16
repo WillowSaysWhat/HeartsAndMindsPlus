@@ -16,7 +16,7 @@ class tet_fortify_preview
 			text = "";
 			colorBackground[] = {0.1412,0.1373,0.1373,0.7059};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
@@ -36,7 +36,7 @@ class tet_fortify_preview
 			text = "Preview";
 			colorBackground[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.5) / 22) * 1.5);
 			
 		};
@@ -59,7 +59,7 @@ class tet_fortify_preview
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {0.8,0.8,0.8,1};
-			font = "PuristaBold";
+			font = "EtelkaMonospaceProBold";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -84,7 +84,7 @@ class tet_fortify_preview
 			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
+			font = "EtelkaMonospaceProBold";
 			sizeEx = 0;
 			
 		};

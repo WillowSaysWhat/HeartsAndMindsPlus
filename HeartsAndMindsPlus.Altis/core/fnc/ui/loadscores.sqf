@@ -65,28 +65,28 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     }; 
     
     // Define the maximum length for padding 
-    private _maxLength = 15;  // Adjust as needed for alignment 
+    private _maxLength = 12;  // Adjust as needed for alignment 
     
     // Apply padding to each section 
     private _paddedMankills = [(format ["Kills: %1", _MANKILLS]), _maxLength] call _padString; 
-    private _paddedVicKills = [(format ["Vic Kills: %1", _VICKILLS]), _maxLength] call _padString; 
-    private _paddedAirKills = [(format ["Air Kills: %1", _AIRKILLS]), _maxLength] call _padString; 
-    private _paddedSeaKills = [(format ["Boat Kills: %1", _SEAKILLS]), _maxLength] call _padString; 
-    private _paddedCivKills = [(format ["Civ Kills: %1", _CIVKILLS]), _maxLength] call _padString; 
-    private _paddedDeaths = [(format ["Deaths: %1", _DEATHS]), _maxLength] call _padString; 
-    private _paddedReputation = [(format ["Rep Change: %1", _REPUTATION4]), _maxLength] call _padString; 
-    private _paddedName = format ["Name: %1", _NAME]; 
+    private _paddedVicKills = [(format ["Vehicles: %1", _VICKILLS]), 15] call _padString; 
+    private _paddedAirKills = [(format ["Aircraft: %1", _AIRKILLS]), 15] call _padString; 
+    private _paddedSeaKills = [(format ["Boats: %1", _SEAKILLS]), _maxLength] call _padString; 
+    private _paddedCivKills = [(format ["Civs: %1", _CIVKILLS]), _maxLength] call _padString; 
+    private _paddedDeaths =   [(format ["Deaths: %1", _DEATHS]), 14] call _padString; 
+    private _paddedReputation = [(format ["Rep: %1", _REPUTATION4]), _maxLength] call _padString; 
+    private _paddedName = [(format ["%1", _NAME]), 25] call _padString; 
     
     // Combine into final output 
-    private _output = [ 
+    private _output = [
+        _paddedName,
         _paddedMankills, 
         _paddedVicKills, 
         _paddedAirKills, 
         _paddedSeaKills, 
         _paddedCivKills, 
         _paddedDeaths, 
-        _paddedReputation, 
-        _paddedName 
+        _paddedReputation
     ] joinString " | "; 
 
     if (!(isnil "_UID") && !(isNil "_NAME")) then {
