@@ -65,7 +65,7 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     }; 
     
     // Define the maximum length for padding 
-    private _maxLength = 20;  // Adjust as needed for alignment 
+    private _maxLength = 15;  // Adjust as needed for alignment 
     
     // Apply padding to each section 
     private _paddedMankills = [(format ["Kills: %1", _MANKILLS]), _maxLength] call _padString; 
