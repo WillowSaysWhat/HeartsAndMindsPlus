@@ -28,15 +28,15 @@ class tet_ui_dlg_scoreboard
 		{
 			type = 0;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.24375;
-			y = safeZoneY + safeZoneH * 0.18444445;
+			x = safeZoneX + safeZoneW * 0.14648438;
+			y = safeZoneY + safeZoneH * 0.18402778;
 			w = safeZoneW * 0.70800782;
-			h = safeZoneH * 0.03222223;
+			h = safeZoneH * 0.03298612;
 			style = 0;
 			text = "Scoreboard";
 			colorBackground[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
-			font = "EtelkaMonospacePro";
+			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.3) / 1.1) / 25) * 1.3);
 			
 		};
@@ -59,7 +59,7 @@ class tet_ui_dlg_scoreboard
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {0.702,0.702,0.702,1};
-			font = "EtelkaMonospacePro";
+			font = "PuristaMedium";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
