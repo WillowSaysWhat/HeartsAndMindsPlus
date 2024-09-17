@@ -30,7 +30,7 @@ class tet_ui_dlg_scoreboard
 			idc = -1;
 			x = safeZoneX + safeZoneW * 0.24375;
 			y = safeZoneY + safeZoneH * 0.18444445;
-			w = safeZoneW * 0.5125;
+			w = safeZoneW * 0.70800782;
 			h = safeZoneH * 0.03222223;
 			style = 0;
 			text = "Scoreboard";
@@ -44,10 +44,10 @@ class tet_ui_dlg_scoreboard
 		{
 			type = 1;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.743125;
-			y = safeZoneY + safeZoneH * 0.18555556;
-			w = safeZoneW * 0.0125;
-			h = safeZoneH * 0.03;
+			x = safeZoneX + safeZoneW * 0.84082032;
+			y = safeZoneY + safeZoneH * 0.18576389;
+			w = safeZoneW * 0.01269532;
+			h = safeZoneH * 0.02951389;
 			style = 2;
 			text = "X";
 			borderSize = 0;
