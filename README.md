@@ -1,21 +1,34 @@
-# HeartsAndMindsPlus 🚀
+<p align="center">
+<img src="/docs/assets/handm.jpg"/>
+</p>
 
-**Custom Arma 3 Gamemode by Tetlys** 🎮
+[![GitHub Release](https://img.shields.io/github/v/release/Tetlys/HeartsAndMindsPlus?include_prereleases&color=success)](https://github.com/Tetlys/HeartsAndMindsPlus/releases/tag/Beta1.0) [![Discord](https://img.shields.io/discord/1234567890?label=Discord&logo=discord&color=blue)](https://discord.gg/ZAJmb5C6xC)
 
-Enhanced air support, player scaling, permissions, custom UI, dynamic economy, and more! 🌟
+ Original gamemode by [vdauphin](https://vdauphin.github.io/HeartsAndMinds/).
 
-[![GitHub Release](https://img.shields.io/github/v/release/Tetlys/HeartsAndMindsPlus?include_prereleases&color=success)](https://github.com/Tetlys/HeartsAndMindsPlus/releases/tag/Beta1.0)
-[![Discord](https://img.shields.io/discord/1234567890?label=Discord&logo=discord&color=blue)](https://discord.gg/4DdMKvJjMa)
+***Enhanced air support, player scaling, permissions, custom UI, dynamic economy, and more!*** 
 
 ## Overview 🌐
+<p align="justify">
+HeartsAndMindsPlus (H&M+) is a customized Arma 3 gamemode by Tetlys, building upon the original work by <strong>vdauphin</strong>. Play as a modern day occupying army that is forced to secure 100+ key points accross the map while maintaining law & order throughout captured terriory. Help citizens, clear IEDs, talk to locals and search for enemy hideouts in order to build a "green zone" for safe passage of logistics and rear echelon activites. Your forces are never safe as enemy fighting patrols probe your ingress and exfil paths to FOBs. 
 
-HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the original work by [vdauphin](https://vdauphin.github.io/HeartsAndMinds/). This version includes a range of enhancements and modifications.
+H&M+ has a role for everyone. Command, logistics, medical, infatry, armour and air are all combined in a typical mission. Each loss is felt. Whether it be a vehicle or a soldier. 
+
+The gamemode works on a ticket system that keeps the server open to players. When the tickets get to zero. The server is locked and a cash penalty is paid to re-open the server.
+
+As the USMC motto states. "No man left behind" and H&M+ demands the same. The deceased will need to be repatriated to the FOB for process. This grants tickets. Wounded enemy can be stablised and process for a larger ticket bonus.
+
+Damaged and wrecked vehicles can also be recovered and repaired.
+
+This makes recovery missions a large part of H&M+.
+
+</p>
 
 ### Features 🛠️
 
 - **CAS Script:** In-depth air support with laser, smoke, and tracking effects. Full ROE and collateral damage chat response
 - **Custom UI:** Fully custom UI interface for interacting with the new systems.
-- **Build System:** Construct at any FOB using the all-new economy.
+- **Build System:** Customise any FOB using the all-new economy.
 - **Salvage System:** Earn money by salvaging enemy vehicles.
 - **Economy:** Full system based on kills, side missions, salvage, and recovery.
 - **Updated String-Table and Side Missions:** Improved user experience.
@@ -43,7 +56,7 @@ HeartsAndMindsPlus is a customized Arma 3 gamemode by Tetlys, building upon the 
 
 - Dynamic objective sounds
 - Dynamic civilian interaction improvmenets
-- Removal of selectivly deprecated code.
+- Removal of selectively deprecated code.
 
 ## Installation 🚀
 
