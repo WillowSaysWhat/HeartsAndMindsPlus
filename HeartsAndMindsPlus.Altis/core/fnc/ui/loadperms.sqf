@@ -44,8 +44,28 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _FLIGHTPERM = _index select 11;
     _ARMOURPERM = _index select 12;
 
+    _padString = { 
+    params ["_input", "_desiredLength"]; 
+    
+        private _currentLength = count _input; 
+        private _padding = _desiredLength - _currentLength; 
+        
+        // Create the padding string as an array of spaces 
+        private _paddingArray = []; 
+        for "_i" from 1 to _padding do { 
+            _paddingArray pushBack " "; 
+        }; 
+        
+        private _paddingString = _paddingArray joinString ""; 
+        _input = _input + _paddingString; 
+        
+        _input 
+    }; 
+
+    private _NAMEPADDED = [(format ["%1", (_NAME select [0,20])]), 20] call _padString;
+
     if (!(isnil "_UID") && !(isNil "_NAME")) then {
-    private _displayout = ["CanBuild: ",_BUILDPERM,"  |  ","CanSalvage: ",_SALVAGEPERM,"  |  ","CanCommand: ",_COMMANDPERM,"  |  ","CanFlight: ",_FLIGHTPERM,"  |  ","CanArmour: ",_ARMOURPERM,"  |  ",_NAME] joinString "";
+    private _displayout = [_NAMEPADDED," |","Build: ",_BUILDPERM," |","Salvage: ",_SALVAGEPERM," |","Command: ",_COMMANDPERM," |","Flight: ",_FLIGHTPERM," |","Armour: ",_ARMOURPERM] joinString "";
     private _index = lbAdd [88, _displayout];
     lbSetData [88, _index, _UID];
     //if (_i isEqualTo 0) then {lbSetCurSel [88, _index];};
