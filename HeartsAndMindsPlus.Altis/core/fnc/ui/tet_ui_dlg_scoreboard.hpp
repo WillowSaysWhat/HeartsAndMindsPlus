@@ -16,7 +16,7 @@ class tet_ui_dlg_scoreboard
 			text = "";
 			colorBackground[] = {0.1393,0.1382,0.1382,0.7059};
 			colorText[] = {1,1,1,1};
-			font = "EtelkaMonospaceProBold";
+			font = "EtelkaMonospacePro";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
@@ -36,7 +36,7 @@ class tet_ui_dlg_scoreboard
 			text = "Scoreboard";
 			colorBackground[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
-			font = "EtelkaMonospaceProBold";
+			font = "EtelkaMonospacePro";
 			sizeEx = (((((safezoneW / safezoneH) min 1.3) / 1.1) / 25) * 1.3);
 			
 		};
@@ -59,7 +59,7 @@ class tet_ui_dlg_scoreboard
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {0.702,0.702,0.702,1};
-			font = "EtelkaMonospaceProBold";
+			font = "EtelkaMonospacePro";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -85,10 +85,10 @@ class tet_ui_dlg_scoreboard
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelect[] = {1,0.8745,0.0941,1};
 			colorText[] = {1,1,1,1};
-			font = "EtelkaMonospaceProBold";
+			font = "EtelkaMonospacePro";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.3) / 25) * 1);
+			sizeEx = (((((safezoneW / safezoneH) min 1) / 1.3) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			colorSelectBackground[] = {1,1,1,0.5059};
 			class ListScrollBar
