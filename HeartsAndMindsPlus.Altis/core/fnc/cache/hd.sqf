@@ -76,9 +76,9 @@ if (
     //Notification
     //[0] remoteExecCall ["btc_fnc_show_hint", 0];
     //ADDNOTIF CACHE DESTROYED
-    [parseText "<t color='#FACE00' font='PuristaBold' align = 'right' shadow = '1.5' size='2'>+ Enemy Cache Destroyed! </t><br /><t  align = 'right' shadow = '1.5' size='1.5'>+$100</t>", [0, 0.5, 1, 1], nil, 5, 1.7, 0] remoteExec ["BIS_fnc_textTiles", 0];
-    [west, 100, false] call acex_fortify_fnc_updateBudget; 
-    btc_global_economy = btc_global_economy + 100;
+    [parseText "<t color='#FACE00' font='PuristaBold' align = 'right' shadow = '1.5' size='2'>+ Enemy Cache Destroyed! </t><br /><t  align = 'right' shadow = '1.5' size='1.5'>+$500</t>", [0, 0.5, 1, 1], nil, 5, 1.7, 0] remoteExec ["BIS_fnc_textTiles", 0];
+    [west, 500, false] call acex_fortify_fnc_updateBudget; 
+    btc_global_economy = btc_global_economy + 500;
 
     [btc_cache_n + 1, btc_cache_pictures] call btc_cache_fnc_init;
 } else {

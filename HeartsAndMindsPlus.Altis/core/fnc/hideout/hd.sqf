@@ -72,9 +72,9 @@ if (
     if (btc_hideouts isEqualTo []) then {[] spawn btc_fnc_final_phase;};
 
     //ADDNOTIF HIDEOUT DESTROYED
-    [parseText "<t color='#FACE00' font='PuristaBold' align = 'right' shadow = '1.5' size='2'>+ Enemy Hideout Destroyed! </t><br /><t  align = 'right' shadow = '1.5' size='1.5'>+$100</t>", [0, 0.5, 1, 1], nil, 5, 1.7, 0] remoteExec ["BIS_fnc_textTiles", 0];
-    [west, 100, false] call acex_fortify_fnc_updateBudget; 
-    btc_global_economy = btc_global_economy + 100;
+    [parseText "<t color='#FACE00' font='PuristaBold' align = 'right' shadow = '1.5' size='2'>+ Enemy Hideout Destroyed! </t><br /><t  align = 'right' shadow = '1.5' size='1.5'>+$600</t>", [0, 0.5, 1, 1], nil, 5, 1.7, 0] remoteExec ["BIS_fnc_textTiles", 0];
+    [west, 600, false] call acex_fortify_fnc_updateBudget; 
+    btc_global_economy = btc_global_economy + 600;
 
     if (btc_debug_log) then {
         [format ["_this = %1 ; POS %2 ID %3", _this, getPos _hideout, _id], __FILE__, [false]] call btc_debug_fnc_message;
