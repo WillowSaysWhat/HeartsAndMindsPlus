@@ -16,7 +16,7 @@ class tet_fortify_dlg
 			text = "";
 			colorBackground[] = {0.1412,0.1373,0.1373,0.7059};
 			colorText[] = {1,1,1,1};
-			font = "PuristaSemiBold";
+			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
@@ -36,7 +36,7 @@ class tet_fortify_dlg
 			text = "Build Menu";
 			colorBackground[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.8) / 24) * 1.8);
 			
 		};
@@ -53,7 +53,7 @@ class tet_fortify_dlg
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelect[] = {1,0.8745,0.0941,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
@@ -86,7 +86,7 @@ class tet_fortify_dlg
 			colorSelect[] = {1,0.8745,0.0941,1};
 			colorSelectBackground[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
@@ -124,7 +124,7 @@ class tet_fortify_dlg
 			colorFocused[] = {0.1412,0.1373,0.1373,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "PuristaMedium";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -157,7 +157,7 @@ class tet_fortify_dlg
 			colorFocused[] = {0.1412,0.1373,0.1373,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "PuristaMedium";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;
@@ -184,7 +184,7 @@ class tet_fortify_dlg
 			colorDisabled[] = {1,1,1,0};
 			colorSelect[] = {1,1,1,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaBold";
+			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
@@ -221,7 +221,7 @@ class tet_fortify_dlg
 			colorFocused[] = {1,0.8745,0.0941,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {0.702,0.702,0.702,1};
-			font = "PuristaBold";
+			font = "PuristaMedium";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
 			offsetX = 0;

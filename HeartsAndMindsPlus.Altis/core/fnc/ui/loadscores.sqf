@@ -22,7 +22,6 @@ Author:
 
 lbClear 89;
 
-
 for "_i" from 0 to ((count BTC_Player_array) -1) do {
 
     _array = keys BTC_Player_array;
@@ -46,11 +45,50 @@ for "_i" from 0 to ((count BTC_Player_array) -1) do {
     _FLIGHTPERM = _index select 11;
     _ARMOURPERM = _index select 12;
 
+    // Function to pad a string with spaces to a fixed length 
+    _padString = { 
+        params ["_input", "_desiredLength"]; 
+        
+        private _currentLength = count _input; 
+        private _padding = _desiredLength - _currentLength; 
+        
+        // Create the padding string as an array of spaces 
+        private _paddingArray = []; 
+        for "_i" from 1 to _padding do { 
+            _paddingArray pushBack " "; 
+        }; 
+        
+        private _paddingString = _paddingArray joinString ""; 
+        _input = _input + _paddingString; 
+        
+        _input 
+    }; 
+    
+    // Apply padding to each section 
+    private _paddedMankills = [(format ["Kills: %1", _MANKILLS]), 12] call _padString; // MAX LENGTH KILLS: 9999
+    private _paddedVicKills = [(format ["Vehicles: %1", _VICKILLS]), 14] call _padString; // MAX LENGTH Vehicles: 999
+    private _paddedAirKills = [(format ["Aircraft: %1", _AIRKILLS]), 14] call _padString; // MAX LENGTH Aircraft: 999
+    private _paddedSeaKills = [(format ["Boats: %1", _SEAKILLS]), 9] call _padString; // MAX LENGTH Boats: 99
+    private _paddedCivKills = [(format ["Civs: %1", _CIVKILLS]), 9] call _padString; // MAX LENGTH Civs: 99
+    private _paddedDeaths =   [(format ["Deaths: %1", _DEATHS]), 12] call _padString; // MAX LENGTH Deaths: 999
+    private _paddedReputation = [(format ["Rep: %1", _REPUTATION4]), 14] call _padString; // MAX LENGTH Rep: -9999.99
+    private _paddedName = [(format ["%1", (_NAME select [0,24])]), 24] call _padString; // MAX LENGTH 20
+    
+    // Combine into final output 
+    private _output = [
+        _paddedName,
+        _paddedMankills, 
+        _paddedVicKills, 
+        _paddedAirKills, 
+        _paddedSeaKills, 
+        _paddedCivKills, 
+        _paddedDeaths, 
+        _paddedReputation
+    ] joinString " | "; 
 
     if (!(isnil "_UID") && !(isNil "_NAME")) then {
-    private _displayout = ["Kills: ",_MANKILLS," |  Vic Kills: ",_VICKILLS," |  Air Kills: ",_AIRKILLS," |  Boat Kills: ",_SEAKILLS," |  Civ Kills: ",_CIVKILLS," |  Deaths: ",_DEATHS, " | Rep Change: ", _REPUTATION4,"  |  ", _NAME] joinString ""; //,"    |     ",
+    private _displayout = _output;
     private _index = lbAdd [89, _displayout];
     lbSetData [89, _index, _selected];
-    //if (_i isEqualTo 0) then {lbSetCurSel [89, _index];};
     };
 };
