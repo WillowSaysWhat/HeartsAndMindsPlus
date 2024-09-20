@@ -42,13 +42,6 @@ Points_Active = Points_Active + 1;
 
 publicVariable "Points_Active";
 
-// CHAT UPDATER
-_globalChatFunction = {
-    _message = format ["Point Activated  %1 / 5", Points_Active];
-    systemChat _message;
-};
-[_globalChatFunction] remoteExec ["call", 0, true];
-
 if (btc_debug) then {
     _city setVariable ["serverTime", serverTime];
 };

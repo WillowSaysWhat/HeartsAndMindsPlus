@@ -30,13 +30,6 @@ Points_Active = Points_Active - 1;
 
 publicVariable "Points_Active";
 
-// CHAT UPDATER
-_globalChatFunction = {
-    _message = format ["Point Deactivated   %1 / 5", Points_Active];
-    systemChat _message;
-};
-[_globalChatFunction] remoteExec ["call", 0, true];
-
 if (btc_debug) then {
     private _id = _city getVariable "id";
     [str _id, __FILE__, [btc_debug, btc_debug_log, true]] call btc_debug_fnc_message;
