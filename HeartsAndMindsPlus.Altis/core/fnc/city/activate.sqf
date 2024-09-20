@@ -70,9 +70,9 @@ private _spawningRadius = _cachingRadius/2;
 if (_city getVariable ["marker", ""] != "") then {
     (_city getVariable ["marker", ""]) setMarkerAlpha 1;
     if (_city getVariable ["occupied", false]) then {
-        (_city getVariable ["marker", ""]) setMarkerColor "colorOPFOR"; // CONFIG OBJ Colors - OCCUPIED
+        (_city getVariable ["marker", ""]) setMarkerColor "ColorRed"; // CONFIG OBJ Colors - OCCUPIED
     } else {
-        (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors - CLEAR/CIVILIAN
+        (_city getVariable ["marker", ""]) setMarkerColor "ColorBlue"; // CONFIG OBJ Colors - CLEAR/CIVILIAN
     };
 };
 

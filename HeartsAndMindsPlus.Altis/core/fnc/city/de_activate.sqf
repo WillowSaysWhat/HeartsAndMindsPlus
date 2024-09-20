@@ -37,9 +37,13 @@ if (btc_debug) then {
 
 // Recon Colors Map Markers
 if (_city getVariable ["marker", ""] != "") then {
-    (_city getVariable ["marker", ""]) setMarkerAlpha 0.6;
+    (_city getVariable ["marker", ""]) setMarkerAlpha 0.5;
+    if (_city getVariable ["occupied", false]) then {
+        (_city getVariable ["marker", ""]) setMarkerColor "colorOPFOR"; // CONFIG OBJ Colors - OCCUPIED
+    } else {
+        (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors - CLEAR/CIVILIAN
+    };
 };
-
 //Save all and delete
 private _cachingRadius = _city getVariable ["cachingRadius", 0];
 private _has_en = _city getVariable ["occupied", false];
