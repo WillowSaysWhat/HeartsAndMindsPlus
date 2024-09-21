@@ -547,9 +547,9 @@ _Tier4Array = [
     // Sentinel UAV
     // Armed UGV
     // CROWS vehicle
+    ["RHS_CH_47F_10",5500], //Chinook
     ["RHS_M2A2",8000], // M2A2
     ["RHS_M2A2_BUSKI",10000], // M2A2 BUSK1
-    ["RHS_CH_47F_10",5500], //Chinook
     ["RHS_MELB_AH6M",12000] //AH-6M
 ];
 
