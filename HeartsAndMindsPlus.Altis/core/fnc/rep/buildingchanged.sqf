@@ -44,10 +44,10 @@ if (
     {"Mil" in _classname}
 ) exitWith {};
 
-if (_from in tet_buildings_changed) exitwith {};
+//if (_from in tet_buildings_changed) exitwith {};
 
 btc_buildings_changed pushBack _to;
-tet_buildings_changed pushback _from;
+//tet_buildings_changed pushback _from;
 
 {
     _x params ["_buildings_classname", "_malus_multipliers"];
@@ -74,4 +74,4 @@ if (btc_debug) then {
 
 _malus call btc_rep_fnc_change;
 
-[{tet_limiter = false;}, [1], delay] call CBA_fnc_waitAndExecute;
+[{tet_limiter = false;},[], 0.1] call CBA_fnc_waitAndExecute;
