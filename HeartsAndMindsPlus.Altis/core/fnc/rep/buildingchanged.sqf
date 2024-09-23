@@ -28,8 +28,8 @@ params [
     ["_isRuin", false, [false]]
 ];
 
-if (tet_limiter == true) exitwith {};
-tet_limiter = true;
+//if (tet_limiter == true) exitwith {};
+//tet_limiter = true;
 private _classname = toUpper typeOf _from;
 private _malus = [btc_rep_malus_building_damaged, btc_rep_malus_building_destroyed] select _isRuin;
 private _skipCategories = false;
@@ -44,10 +44,10 @@ if (
     {"Mil" in _classname}
 ) exitWith {};
 
-//if (_from in tet_buildings_changed) exitwith {};
+if (_from in tet_buildings_changed) exitwith {};
 
 btc_buildings_changed pushBack _to;
-//tet_buildings_changed pushback _from;
+tet_buildings_changed pushback _from;
 
 {
     _x params ["_buildings_classname", "_malus_multipliers"];
@@ -74,4 +74,4 @@ if (btc_debug) then {
 
 _malus call btc_rep_fnc_change;
 
-[{tet_limiter = false;},[], 0.1] call CBA_fnc_waitAndExecute;
+//[{tet_limiter = false;},[], 0.1] call CBA_fnc_waitAndExecute;

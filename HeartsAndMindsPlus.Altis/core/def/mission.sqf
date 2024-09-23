@@ -870,12 +870,12 @@ btc_rep_malus_civ_killed = - 50 ; // HIGH
 btc_rep_malus_animal_killed = - 10; // MID
 btc_rep_malus_civ_suppressed = 0 ; // DISABLED
 btc_rep_malus_player_respawn = - 3; // LOW
-btc_rep_malus_building_damaged = - 5; // LOW
-btc_rep_malus_building_destroyed = - 30; // HIGH
+btc_rep_malus_building_damaged = - 10; // LOW
+btc_rep_malus_building_destroyed = - 50; // HIGH
 btc_rep_malus_foodRemove = - btc_rep_bonus_foodGive; // WAI
-btc_rep_malus_breakDoor = - 0.5; // WAI
+btc_rep_malus_breakDoor = - 2; // WAI
 btc_rep_malus_wheelChange = 0; // DISABLED
-btc_rep_malus_mil_killed = - 5;
+btc_rep_malus_mil_killed = - 15;
 
 btc_rep_level_veryLow = 0;
 btc_rep_level_low = 200;
