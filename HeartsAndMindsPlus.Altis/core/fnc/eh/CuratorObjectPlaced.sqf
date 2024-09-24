@@ -40,5 +40,7 @@ if !((_object_placed isKindOf "allVehicles") || (_object_placed isKindOf "Module
 if ((typeof _object_placed in btc_fortify_vehicles) && (_object_placed isKindOf "allVehicles")) then {
     
     [_object_placed] remoteExecCall ["btc_veh_fnc_add", 2];
+    [typeof _object_placed] remoteExecCall ["btc_veh_fnc_init", 2];
+    
     
 };
