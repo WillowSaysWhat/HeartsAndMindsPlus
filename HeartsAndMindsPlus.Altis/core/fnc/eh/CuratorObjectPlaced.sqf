@@ -41,17 +41,5 @@ if ((typeof _object_placed in btc_fortify_vehicles) && (_object_placed isKindOf 
     
     [_object_placed] remoteExecCall ["btc_veh_fnc_add", 2];
     [typeof _object_placed] remoteExecCall ["btc_veh_fnc_init", 2];
-
-    if (typeof _object_placed in btc_log_def_loadable) then {
-      [_object_placed, round ((sizeOf _object_placed)/1.5)] call ace_cargo_fnc_setSize;
-    };
-    if (typeof _object_placed in btc_log_def_can_load) then {
-      [_object_placed, round ((sizeOf _object_placed)*1.5)] call ace_cargo_fnc_setSpace;
-    };
-    clearWeaponCargoGlobal _object_placed;
-    clearMagazineCargoGlobal _object_placed;
-    clearBackpackCargoGlobal _object_placed;
-    [_object_placed] call tet_fortify_fill;
-    
-    
+    [_object_placed] remoteExecCall ["btc_log_fnc_init_v", 2];
 };
