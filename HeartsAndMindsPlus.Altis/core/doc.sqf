@@ -8,7 +8,7 @@ player createDiaryRecord [_mainCategory, [localize "STR_BTC_HAM_DOC_HEADLESS_TIT
 player createDiaryRecord [_mainCategory, [localize "STR_BTC_HAM_DOC_DOOR_TITLE", localize "STR_BTC_HAM_DOC_DOOR_TEXT"]];
 
 //Chemical warfare
-// player createDiaryRecord [_mainCategory, [localize "STR_BTC_HAM_DOC_CHEMICALWARFARE_TITLE", localize "STR_BTC_HAM_DOC_CHEMICALWARFARE_TEXT"]];
+player createDiaryRecord [_mainCategory, [localize "STR_BTC_HAM_DOC_CHEMICALWARFARE_TITLE", localize "STR_BTC_HAM_DOC_CHEMICALWARFARE_TEXT"]];
 
 //Spectrum devices
 player createDiaryRecord [_mainCategory, [localize "STR_BTC_HAM_DOC_SPECTRUMDEVICES_TITLE", localize "STR_BTC_HAM_DOC_SPECTRUMDEVICES_TEXT"]];
