@@ -43,15 +43,14 @@ true
     };
     btc_global_economy = [west] call acex_fortify_fnc_getBudget;
     if (_type in btc_log_def_loadable) then {
-      [_objectPlaced, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSize;
+      [_objectPlaced, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSize;
     };
     if (_type in btc_log_def_can_load) then {
-      [_objectPlaced, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSpace;
+      [_objectPlaced, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSpace; 
     };
     clearWeaponCargoGlobal _objectPlaced;
     clearMagazineCargoGlobal _objectPlaced;
     clearBackpackCargoGlobal _objectPlaced;
-    [_objectPlaced] call tet_fortify_fill;
 }] call CBA_fnc_addEventHandler;
 
 ["acex_fortify_objectDeleted", {
