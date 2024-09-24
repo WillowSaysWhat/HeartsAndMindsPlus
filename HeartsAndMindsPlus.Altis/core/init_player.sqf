@@ -92,17 +92,17 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
             _myHudControl ctrlSetTextColor [1,1,1,1]; 
             
             _respawnTickets = [player, nil, true] call BIS_fnc_respawnTickets;
-            if (btc_p_respawn_ticketsAtStart == 0) then {
-                _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1", _myNumber, _currentplayers]; 
-            } else {
+            //if (btc_p_respawn_ticketsAtStart == 0) then {
+            //    _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1", _myNumber, _currentplayers]; 
+            //} else {
                 _myHudControl ctrlSetText format ["Online Players : %2 | Current Funds : $%1 | Player Tickets : %3", _myNumber, _currentplayers, _respawnTickets]; 
-            };
+            //};
             
-           if (btc_p_respawn_ticketsAtStart == 0) then {
-            _hudX = safeZoneX + 0.30 * safeZoneW; // ADJUST TO SMALLER SIZE
-            } else {
+           //if (btc_p_respawn_ticketsAtStart == 0) then {
+            //_hudX = safeZoneX + 0.30 * safeZoneW; // ADJUST TO SMALLER SIZE
+           // } else {
             _hudX = safeZoneX + 0.36 * safeZoneW;
-            };
+            //};
             _hudY = safeZoneY; 
             _hudW = safeZoneW * 0.5;
             _hudH = safeZoneH / 40;

@@ -486,7 +486,22 @@ roleArsenal = {
 		// CHEM
 		"ChemicalDetector_01_watch_F",
 		"kat_mask_M04",
-        "kat_mask_M50"
+        "kat_mask_M50",
+		//FOOD 
+		"ACE_MRE_BeefStew",
+		"ACE_MRE_ChickenTikkaMasala",
+		"ACE_MRE_ChickenHerbDumplings",
+		"ACE_MRE_CreamChickenSoup",
+		"ACE_MRE_CreamTomatoSoup",
+		"ACE_MRE_LambCurry",
+		"ACE_MRE_MeatballsPasta",
+		"ACE_MRE_SteakVegetables",
+		"ACE_Sunflower_Seeds",
+		"ACE_WaterBottle",
+		"ACE_Can_Franta",
+		"ACE_Can_RedGull",
+		"ACE_Can_Spirit",
+		"ACE_Canteen"
     ];
 
     Private _CO = [
