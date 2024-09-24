@@ -37,24 +37,7 @@ This makes recovery missions a large part of H&M+.
 * [Change Map](/docs/Change-MAP-of-Hearts-and-Minds.md)
 * [APrevent AI Spawning on Base](/docs/Prevent-AI-from-spawning-near-the-base.md)
 
-### Features 🛠️
 
-- **CAS Script:** In-depth air support with laser, smoke, and tracking effects. Full ROE and collateral damage chat response
-- **Custom UI:** Fully custom UI interface for interacting with the new systems.
-- **Build System:** Customise any FOB using the all-new economy.
-- **Salvage System:** Earn money by salvaging enemy vehicles.
-- **Economy:** Full system based on kills, side missions, salvage, and recovery.
-- **Updated String-Table and Side Missions:** Improved user experience.
-- **Role-Specific Arsenal:** Tailored loadouts for different roles.
-- **Improved VIV and Object Loading:** Enhancements for better gameplay.
-- **Modified Map Markers:** - Changed to better suit larger groups of players.
-- **Building Damage Modifiers changed:** - Changed to better suit larger full warefare scenarios. 
-- **Improved Map Markers** - Improved on the existing system towards a large multiplayer environment.
-- **Automation** - Lots of QOL improvmenets to missions creators, E.g: Enemy vehicles self fill to the salvage array.
-- **Full permissions system** - Per player persistant permissions for Build, Salvage, CAS/WEATHER/SIDEMISSIONS, Flight and Armour
-- **Vehicle Appearance manager** - Use the logic point at spawn to change the apperance of your vehicles persistantly
-- **Peristant scoreboard** - Keep track of kills, and rep for each player!
-- **Map based progression system** - Unlock new assets as you progress through the map!
 
 * Some features limited to latest builds
 

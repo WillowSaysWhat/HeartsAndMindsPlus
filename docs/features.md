@@ -21,6 +21,12 @@
 - [**Peristant scoreboard** - Keep track of kills, and rep for each player!]()
 - [**Map based progression system** - Unlock new assets as you progress through the map!]()
 
+## Build Menu
+
+<p align="center">
+<img src="/docs/assets/build menu.gif"/>
+</p>
+
 ## Salvage System
 
 The Salvage System lets you recover damaged enemy vehicles and either tow them back to base using the towing system, or mount it on to a recovery truck. Once at base: 
@@ -28,10 +34,24 @@ The Salvage System lets you recover damaged enemy vehicles and either tow them b
 * the enemy vehicle will need to be placed in proximity of the salvage bay.  
 * the savage menu will need to be opened using ACE interact.
 * And the vehicle sold by highlighting it and selecting `sell`.
+  
+<p align="center">
+<img src="/docs/assets/salvage menu.gif"/>
+</p>
 
 ## Role-Specific Arsenal
 
 It's important to have a full range of weapons for an infantry squad, however, getting your team to actually use them can be difficult. That is why H&M+ utilises a restricted arsenal. Each role within a squad is present in the lobby and each slot-type has access to equipment necessary to fulfill that role. For example, an Autorifleman has access to different types of squad support weapons and machine guns. It does not have access to assault rifles. This ensures that a squad will have an autorifleman with a weapon that will create a force multipler and point suppression. 
 
-However, this can be altered within the `rolearsenal.sqf` file located in `/Vanilla Files`.
+## Vehicle Management
+<p align="center">
+<img src="/docs/assets/Vehicle Management.gif"/>
+</p>
+
+## Persistent Scoreboard
+<p align="center">
+<img src="/docs/assets/scoreboardGif.gif"/>
+</p>
+
+However, this can be altered within the `rolearsenal.sqf` file located in `/core/def`.
 
