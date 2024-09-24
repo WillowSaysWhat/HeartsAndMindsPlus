@@ -9,6 +9,7 @@
 ***Enhanced air support, player scaling, permissions, custom UI, dynamic economy, and more!*** 
 
 ## Overview 🌐
+
 <p align="justify">
 HeartsAndMindsPlus (H&M+) is a customized Arma 3 gamemode by Tetlys, building upon the original work by <strong>vdauphin</strong>. Play as a modern day occupying army that is forced to secure 100+ key points accross the map while maintaining law & order throughout captured terriory. Help citizens, clear IEDs, talk to locals and search for enemy hideouts in order to build a "green zone" for safe passage of logistics and rear echelon activites. Your forces are never safe as enemy fighting patrols probe your ingress and exfil paths to FOBs. 
 
@@ -21,8 +22,20 @@ As the USMC motto states. "No man left behind" and H&M+ demands the same. The de
 Damaged and wrecked vehicles can also be recovered and repaired.
 
 This makes recovery missions a large part of H&M+.
-
 </p>
+
+# Table of Contents
+
+* [What is Hearts Annd Minds?]()
+* [Actions Have Consequences](/docs/Action-has-consequences.md)
+* [Ticket System]()
+* [Commander]()
+
+#### Dev Hub
+
+* [Add Faction](/docs/Add-factions.md)
+* [Change Map](/docs/Change-MAP-of-Hearts-and-Minds.md)
+* [APrevent AI Spawning on Base](/docs/Prevent-AI-from-spawning-near-the-base.md)
 
 ### Features 🛠️
 
