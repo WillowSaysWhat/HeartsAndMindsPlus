@@ -18,10 +18,15 @@ The "currency" for population sentiment and actions is visualised through **Repu
 
 High reputation makes travel through liberated easier. It prevents sudden attacks from bi-partisan forces and generally is the aim of H&M+ Here are some activities that raise Reputation.
 
-* [Secure/Liberate Towns](#secure-towns-and-cities)
-* [Clear IEDs](#clear-ieds)
-* [Remove Graffiti](#remove-graffiti)
-* [Complete side missions](#remove-graffiti)
+- [Overview](#overview)
+  - [Raise Reputation](#raise-reputation)
+    - [Secure Towns and Cities](#secure-towns-and-cities)
+    - [Clear IEDs](#clear-ieds)
+    - [Remove Graffiti](#remove-graffiti)
+    - [Complete side Missions](#complete-side-missions)
+  - [Lower Reputation](#lower-reputation)
+- [Interaction flow chart](#interaction-flow-chart)
+  - [Full reputation variables](#full-reputation-variables)
 
 ### Secure Towns and Cities
 
@@ -76,6 +81,7 @@ Poor behaviour from players will see a reduction of Reputaion. This means that s
 * Damage a civilian building
 * Kill a civilian
 * kill an animal
+* kill a suicide bomber (yes, we know)
 
 *NOTE:* These are just some of the settings that can change reputation. For a full list of reputation settings, see [full reputation variables](#full-reputation-variables)
 
