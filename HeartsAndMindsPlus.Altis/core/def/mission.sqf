@@ -679,6 +679,7 @@ _CustomPrices = _Tier0Array + _Tier1Array + _Tier2Array + _Tier3Array + _Tier4Ar
 //Log  
 btc_construction_array =
 [
+    [
         "Basic",
         "Standard",
         "Light",
