@@ -675,6 +675,7 @@ _vehLogistics = [];
 
 _CustomPrices = _Tier0Array + _Tier1Array + _Tier2Array + _Tier3Array + _Tier4Array + _Tier5Array + _FortsArray + _StaticsArray + _AmmoBoxesArray + _Containers1Array + _SupplysArray + _FobStuffArray + _VehLogisticsArray + _CustomPriceOverride;
 
+btc_vehicles = [];
 
 //Log  
 btc_construction_array =

@@ -601,6 +601,9 @@ roleArsenal = {
 		"rhs_weap_mk18_d",
 		"rhs_weap_m16a4_imod",
 		"rhs_weap_mk17_CQC",
+		"75th_Ranger_URGI_5",
+		"75th_Ranger_URGI_3",
+		"75th_Ranger_FSP_2",
 		//VEST
 		"rhsusf_weap_MP7A2",
 		"rhsusf_weap_MP7A2_desert",
@@ -663,6 +666,7 @@ roleArsenal = {
 		"75th_Ranger_URGI_5",
 		"75th_Ranger_URGI_3",
 		"75th_Ranger_FSP_2",
+		"avm224_W_M224_mortar_carry",
 		//SECONDARY
 		"rhs_weap_M320",
 		 //LAUNCHER
