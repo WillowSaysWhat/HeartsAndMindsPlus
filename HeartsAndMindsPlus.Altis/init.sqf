@@ -69,3 +69,4 @@ true
  
  //VIRTUAL GARAGE
  [] execVM "VAM_GUI\VAM_GUI_init.sqf";
+
