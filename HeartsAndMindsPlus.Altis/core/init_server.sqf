@@ -95,7 +95,7 @@ if (
     });
 
     _marker setMarkerColor "ColorCIV";
-    _marker setMarkerAlpha 0.7;
+    _marker setMarkerAlpha 0.5;
     _marker setMarkerSize [0.8,0.8];
     _y setVariable ["marker", _marker]; 
     

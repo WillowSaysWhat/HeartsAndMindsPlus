@@ -32,9 +32,7 @@ switch true do {
     case (_type isKindOf "StaticWeapon") : {};
     case (_type isKindOf "LandVehicle" || {_type isKindOf "Ship"}) : {
         _type call btc_tow_fnc_int;
-
         _type call btc_flag_fnc_int;
-        
     };
     case (_type isKindOf "Helicopter") : {
         _type call btc_tow_fnc_int;

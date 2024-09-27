@@ -34,6 +34,7 @@ true
     if (_objectPlaced isKindof "AllVehicles")then{
       _objectPlaced call btc_veh_fnc_add;
       [_type] call btc_veh_fnc_init;
+      [_objectPlaced] call btc_log_fnc_init_v;
     };
     if !(_objectPlaced isKindof "AllVehicles")then{
       [_objectPlaced] call btc_log_fnc_init;
@@ -42,16 +43,6 @@ true
       createVehicleCrew _objectPlaced;
     };
     btc_global_economy = [west] call acex_fortify_fnc_getBudget;
-    if (_type in btc_log_def_loadable) then {
-      [_objectPlaced, round ((sizeOf _type)*1.5)] call ace_cargo_fnc_setSize;
-    };
-    if (_type in btc_log_def_can_load) then {
-      [_objectPlaced, round ((sizeOf _type)/1.5)] call ace_cargo_fnc_setSpace;
-    };
-    clearWeaponCargoGlobal _objectPlaced;
-    clearMagazineCargoGlobal _objectPlaced;
-    clearBackpackCargoGlobal _objectPlaced;
-    [_objectPlaced] call tet_fortify_fill;
 }] call CBA_fnc_addEventHandler;
 
 ["acex_fortify_objectDeleted", {

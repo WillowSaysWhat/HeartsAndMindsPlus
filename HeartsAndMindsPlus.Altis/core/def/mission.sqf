@@ -102,7 +102,7 @@ btc_global_reputation = "btc_p_rep" call BIS_fnc_getParamValue;
 btc_p_rep_notify = "btc_p_rep_notify" call BIS_fnc_getParamValue;
 btc_city_radiusOffset = ("btc_p_city_radiusOffset" call BIS_fnc_getParamValue) * 100;
 btc_p_trigger = if (("btc_p_trigger" call BIS_fnc_getParamValue) isEqualTo 1) then {
-    "this && (false in (thisList apply {_x isKindOf 'Plane'})) && (false in (thisList apply {(_x isKindOf 'Helicopter') && (speed _x > 90)}))"
+    "this && (false in (thisList apply {_x isKindOf 'Plane'})) && (false in (thisList apply {(_x isKindOf 'Helicopter') && ((getPosATL _x) select 2 > 100)})) && (false in (thisList apply {(_x isKindOf 'Helicopter') && (speed _x > 100)}))"
 } else {
     "this"
 };
@@ -860,12 +860,13 @@ btc_rep_malus_animal_hd = 0 ; // DISABLE
 btc_rep_malus_civ_killed = - 50 ; // HIGH
 btc_rep_malus_animal_killed = - 10; // MID
 btc_rep_malus_civ_suppressed = 0 ; // DISABLED
-btc_rep_malus_player_respawn = - 0; // LOW
-btc_rep_malus_building_damaged = - 3; // LOW
+btc_rep_malus_player_respawn = - 3; // LOW
+btc_rep_malus_building_damaged = - 5; // LOW
 btc_rep_malus_building_destroyed = - 30; // HIGH
 btc_rep_malus_foodRemove = - btc_rep_bonus_foodGive; // WAI
 btc_rep_malus_breakDoor = - 0.5; // WAI
 btc_rep_malus_wheelChange = 0; // DISABLED
+btc_rep_malus_mil_killed = - 5;
 
 btc_rep_level_veryLow = 0;
 btc_rep_level_low = 200;
