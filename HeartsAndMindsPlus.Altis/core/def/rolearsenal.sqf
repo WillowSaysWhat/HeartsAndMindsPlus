@@ -53,7 +53,6 @@ roleArsenal = {
 		"75th_opscore_com_XO",
 		"75th_opscore_com_XO_SF",
         //UNIFORM
-		"ranger_pcu1",
 		"ranger_patagonia_r_jtac_g2_mc_4",
 		"ranger_patagonia_r_jtac_g2_mc_3",
 		"ranger_patagonia_r_med_mc_4",
@@ -64,7 +63,6 @@ roleArsenal = {
 		"ranger_patagonia_mc_4",
 		"ranger_patagonia_mc_3",
 		"ranger_patagonia_mc_2",
-		"ranger_rugby_1",
         //VEST
 		"ranger_avs_1pl",
 		"ranger_avs_1ps",
@@ -87,26 +85,13 @@ roleArsenal = {
 		"UK3CB_B_B_Backpack_Radio_Chem_OLI",
 		"UK3CB_B_Backpack_Pocket",
 		"UK3CB_B_Backpack_Pocket_OLI",
-		"B_Carryall_blk",
 		"B_Carryall_cbr",
 		"B_Carryall_khk",
-		"B_Carryall_mcamo",
 		"B_Carryall_oli",
-		"B_Carryall_oucamo",
 		"B_Kitbag_cbr",
-		"B_Kitbag_rgr",
-		"B_Kitbag_mcamo",
 		"B_Kitbag_tan",
-		"B_Bergen_mcamo_F",
-		"B_Bergen_hex_F",
 		"B_Parachute",
 		//TFARbackpack
-		"TFAR_anarc164",
-		"TFAR_anarc210",
-		"TFAR_anprc155_coyote",
-		"TFAR_mr3000_multicam",
-		"TFAR_rt1523g_big_rhs",
-		"TFAR_rt1523g_black",
 		"tfw_ilbe_whip_coy",
 		"tfw_ilbe_whip_d",
 		"tfw_ilbe_whip_gr",
@@ -136,7 +121,7 @@ roleArsenal = {
 		"75th_m_frame_tanclear",
 		"75th_m_frame_blackshaded",
 		"75th_m_frame_blackpurple",
-		"75th_rayban_perscription",,
+		"75th_rayban_perscription",
 		"G_Shades_Red",
 		"rhsusf_shemagh_grn",
 		"rhsusf_shemagh2_grn",
@@ -257,6 +242,7 @@ roleArsenal = {
 		"rhsusf_acc_SFMB556",
 		"rhs_acc_dtk1l",
 		"rhs_acc_pbs1",
+		"75th_Ranger_SOCOM1",
 		//BIPOD
 		"rhsusf_acc_grip3",
 		"rhsusf_acc_tdstubby_tan",
@@ -305,6 +291,8 @@ roleArsenal = {
 		"rhsusf_mag_6Rnd_m4009",
 		"rhsusf_mag_6Rnd_M714_white",
 		"rhsusf_mag_6Rnd_M583A1_white",
+		"ranger_100rnd_762_M80",
+		"ranger_100rnd_762_M62",
 		//SECAMMO
 		"rhsusf_mag_17Rnd_9x19_FMJ",
 		"rhsusf_mag_17Rnd_9x19_JHP",
@@ -480,29 +468,13 @@ roleArsenal = {
 		"kat_mask_M04",
         "kat_mask_M50",
 		//FOOD 
-		"ACE_MRE_BeefStew",
-		"ACE_MRE_ChickenTikkaMasala",
-		"ACE_MRE_ChickenHerbDumplings",
-		"ACE_MRE_CreamChickenSoup",
-		"ACE_MRE_CreamTomatoSoup",
-		"ACE_MRE_LambCurry",
-		"ACE_MRE_MeatballsPasta",
-		"ACE_MRE_SteakVegetables",
 		"ACE_Sunflower_Seeds",
 		"ACE_WaterBottle",
-		"ACE_Can_Franta",
-		"ACE_Can_RedGull",
-		"ACE_Can_Spirit",
 		"ACE_Canteen"
     ];
 
     Private _CO = [
         //VEST
-		"rhsusf_plateframe_teamleader",
-		"rhsusf_spc_squadleader",
-		"rhsusf_spc_teamleader",
-		"rhsusf_iotv_ocp_Squadleader",
-		"rhsusf_iotv_ucp_Squadleader",
 		 //PRIMARY
 		"rhs_weap_hk416d10",
 		"rhs_weap_hk416d10_m320",
@@ -522,17 +494,18 @@ roleArsenal = {
 		"rhs_weap_mk17_LB",
 		"rhs_weap_mk17_CQC",
 		"rhs_weap_sr25_ec_d",
+		"75th_Ranger_URGI_5",
+		"75th_Ranger_URGI_3",
+		"75th_Ranger_FSP_2",
 		"rhsusf_20Rnd_762x51_SR25_m62_Mag",
 		"rhsusf_20Rnd_762x51_SR25_m993_Mag",
 		"rhsusf_20Rnd_762x51_SR25_mk316_special_Mag",
-		"rhs_weap_SCARH_USA_STD",
 		//SECONDARY
 		"rhs_weap_M320",
 		 //LAUNCHER
 		"rhs_weap_fim92",
 		"rhs_weap_M136",
 		"launch_MRAWS_green_F",
-		"launch_NLAW_F",
 		"rhs_weap_fgm148",
 		"rhs_weap_m72a7",
 		"rhs_weap_M136_hp",
@@ -566,6 +539,9 @@ roleArsenal = {
 		"rhs_weap_mk17_LB",
 		"rhs_weap_mk17_CQC",
 		"rhs_weap_sr25_ec_d",
+		"75th_Ranger_URGI_5",
+		"75th_Ranger_URGI_3",
+		"75th_Ranger_FSP_2",
 		"rhsusf_20Rnd_762x51_SR25_m62_Mag",
 		"rhsusf_20Rnd_762x51_SR25_m993_Mag",
 		"rhsusf_20Rnd_762x51_SR25_mk316_special_Mag",
@@ -577,7 +553,6 @@ roleArsenal = {
 		"rhs_weap_M136_hp",
 		"rhs_weap_M136_hedp",
 		"launch_MRAWS_green_F",
-		"launch_NLAW_F",
 		"rhs_weap_fgm148",
 		"rhs_weap_m72a7",
 		//ROCKETSMISSILES
@@ -627,10 +602,6 @@ roleArsenal = {
 		"rhs_weap_m16a4_imod",
 		"rhs_weap_mk17_CQC",
 		//VEST
-		"rhsusf_plateframe_medic",
-		"rhsusf_mabv_medic",
-		"rhsusf_iotv_ocp_Medic",
-		"rhsusf_iotv_ucp_Medic",
 		"rhsusf_weap_MP7A2",
 		"rhsusf_weap_MP7A2_desert",
 		"rhsusf_mag_40Rnd_46x30_AP",
@@ -643,6 +614,8 @@ roleArsenal = {
       Private _AUTORIFLEMAN = [
         //PRIMARY
 		"rhs_weap_m240B",
+		"75th_Ranger_m240L",
+		"75th_ranger_mk48",
 		"rhsusf_acc_ACOG_MDO",
 		"rhs_weap_m249_pip_ris",
 		"rhsusf_acc_saw_bipod",
@@ -654,11 +627,6 @@ roleArsenal = {
 		"muzzle_snds_H_MG_blk_F",
 		"LMG_Mk200_F",
 		//VEST
-		"rhsusf_plateframe_machinegunner",
-		"rhsusf_iotv_ocp_SAW",
-		"rhsusf_iotv_ucp_SAW",
-		"rhsusf_mabv_mg",
-		"rhsusf_spc_mg",
 		//LAUNCHER
 		"rhs_weap_m72a7",
 		"rhs_weap_m136",
@@ -692,6 +660,9 @@ roleArsenal = {
 		"rhs_weap_mk17_LB",
 		"rhs_weap_mk17_CQC",
 		"rhs_weap_m32",
+		"75th_Ranger_URGI_5",
+		"75th_Ranger_URGI_3",
+		"75th_Ranger_FSP_2",
 		//SECONDARY
 		"rhs_weap_M320",
 		 //LAUNCHER
@@ -722,6 +693,9 @@ roleArsenal = {
 		"rhs_weap_mk18_d",
 		"rhs_weap_m16a4_imod",
 		"rhs_weap_mk17_CQC",
+		"75th_Ranger_URGI_5",
+		"75th_Ranger_URGI_3",
+		"75th_Ranger_FSP_2",
         //HELM
 		"H_CrewHelmetHeli_B",
 		"H_PilotHelmetHeli_B",

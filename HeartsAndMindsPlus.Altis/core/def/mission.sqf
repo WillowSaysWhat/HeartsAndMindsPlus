@@ -472,13 +472,7 @@ btc_player_side = west;
 btc_respawn_marker = "respawn_west";
 btc_player_type = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, independent] find btc_player_side);
 
-
-// Repeate for each category -> place into btc_construction_array
-// Add all unmodified arrays together to build the custom price array.
-
-// Add a further "Price Overwrite" category for adding custom vehicles
-
-// Unlock levels for tiers can be set in fortify>load.sqf
+// Setup each vehicle with price into tiers here.
 
 _Tier0Array = [
     ["UK3CB_B_M1030_NATO", 80],
@@ -648,9 +642,6 @@ _VehLogisticsArray = [ // Vehicle Logistics
 // LEAVE BLANK!
 _CustomPriceOverride = [];
 
-//_GroundVeh = [];
-//_AirVeh = [];
-
 _Tier0 = [];
 _Tier1 = [];
 _Tier2 = [];
@@ -665,9 +656,6 @@ _Containers1 = [];
 _Supplys = [];
 _FobStuff = [];
 _vehLogistics = [];
-
-//{_obj = _x select 0; _GroundVeh pushBackUnique _obj;} foreach _GroundVehArray;
-//{_obj = _x select 0; _AirVeh pushBackUnique _obj;} foreach _AirVehArray;
 
 {_obj = _x select 0; _Tier0 pushBackUnique _obj;} foreach _Tier0Array;
 {_obj = _x select 0; _Tier1 pushBackUnique _obj;} foreach _Tier1Array;
@@ -685,15 +673,12 @@ _vehLogistics = [];
 {_obj = _x select 0; _vehLogistics pushBackUnique _obj;} foreach _VehLogisticsArray;
 
 
-_CustomPrices = /*_GroundVehArray + _AirVehArray*/ _Tier0Array + _Tier1Array + _Tier2Array + _Tier3Array + _Tier4Array + _Tier5Array + _FortsArray + _StaticsArray + _AmmoBoxesArray + _Containers1Array + _SupplysArray + _FobStuffArray + _VehLogisticsArray + _CustomPriceOverride;
+_CustomPrices = _Tier0Array + _Tier1Array + _Tier2Array + _Tier3Array + _Tier4Array + _Tier5Array + _FortsArray + _StaticsArray + _AmmoBoxesArray + _Containers1Array + _SupplysArray + _FobStuffArray + _VehLogisticsArray + _CustomPriceOverride;
 
 
 //Log  
 btc_construction_array =
 [
-    [
-        //"Ground Vehicles",
-        //"Air Vehicles",
         "Basic",
         "Standard",
         "Light",
@@ -734,7 +719,7 @@ btc_construction_array =
     "_cContainers", "_cSupplies", "_cFOB", "_cVehicle_logistic"
 ];
 btc_log_def_loadable = _cContainers + _cFortifications + _cStatics + _cAmmobox + _cSupplies + _cFOB + _cVehicle_logistic + flatten btc_supplies_mat + btc_type_hazmat;
-btc_log_def_can_load = _cContainers /*+ _cGround_vehicles + _cAir_vehicles*/ + _cTier0 + _cTier1 + _cTier2 + _cTier3 + _cTier4 + _cTier5 + _cSupplies + _cVehicle_logistic;
+btc_log_def_can_load = _cContainers + _cTier0 + _cTier1 + _cTier2 + _cTier3 + _cTier4 + _cTier5 + _cSupplies;// + _cVehicle_logistic;
 btc_log_def_placeable = (_cFortifications + _cContainers + _cSupplies + _cFOB + _cVehicle_logistic + flatten btc_supplies_mat + btc_type_hazmat) select {
     getNumber(_cfgVehicles >> _x >> "ace_dragging_canCarry") isEqualTo 0
 };
@@ -742,7 +727,6 @@ btc_tow_vehicleTowing = objNull;
 btc_log_placing_max_h = 12;
 btc_log_placing = false;
 btc_log_obj_created = [];
-//btc_fortify_vehicles = _cGround_Vehicles + _cAir_Vehicles;
 btc_fortify_vehicles = _cTier0 + _cTier1 + _cTier2 + _cTier3 + _cTier4 + _cTier5;
 btc_containers_mat = _cContainers;
 btc_containers_log = btc_log_def_placeable + _cAmmobox;
