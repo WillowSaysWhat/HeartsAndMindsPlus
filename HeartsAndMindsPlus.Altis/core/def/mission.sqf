@@ -160,6 +160,7 @@ if (isServer) then {
     btc_db_warningTimeAutoRestart2 = 60;
 
     //Hideout
+    btc_hideout_cityID = [];
     btc_hideouts = []; publicVariable "btc_hideouts";
     btc_hideouts_radius = 800;
     if (btc_hideout_n isEqualTo 99) then {
