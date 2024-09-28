@@ -166,7 +166,7 @@ if (isServer) then {
         btc_hideout_n = round random 10;
     };
     btc_hideout_safezone = 4000;
-    btc_hideout_range = 6000;
+    btc_hideout_range = 3500;
     btc_hideout_cap_time = 1800;
     btc_hideout_minRange = btc_hideout_range;
 
