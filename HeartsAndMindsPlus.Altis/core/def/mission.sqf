@@ -160,14 +160,14 @@ if (isServer) then {
     btc_db_warningTimeAutoRestart2 = 60;
 
     //Hideout
-    btc_hideout_cityID = [];
+    btc_hideout_cityID = []; // List of city ID visible in debug mode for custom hideout location
     btc_hideouts = []; publicVariable "btc_hideouts";
     btc_hideouts_radius = 800;
     if (btc_hideout_n isEqualTo 99) then {
         btc_hideout_n = round random 10;
     };
     btc_hideout_safezone = 4000;
-    btc_hideout_range = 6000;
+    btc_hideout_range = 3500;
     btc_hideout_cap_time = 1800;
     btc_hideout_minRange = btc_hideout_range;
 
