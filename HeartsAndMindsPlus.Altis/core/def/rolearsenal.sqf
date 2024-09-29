@@ -63,7 +63,7 @@ roleArsenal = {
 		"ranger_patagonia_mc_4",
 		"ranger_patagonia_mc_3",
 		"ranger_patagonia_mc_2",
-        //VEST
+        //VEST 
 		"ranger_avs_1pl",
 		"ranger_avs_1ps",
 		"ranger_avs_1sg",
