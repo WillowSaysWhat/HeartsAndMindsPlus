@@ -650,6 +650,7 @@ roleArsenal = {
 		"rhsusf_m112x4_mag",
 		"SatchelCharge_Remote_Mag",
 		"ATMine_Range_Mag",
+		"B_UGV_02_Science_backpack_F",
 		//PRIMARY
 		"rhs_weap_hk416d10",
 		"rhs_weap_hk416d10_m320",
