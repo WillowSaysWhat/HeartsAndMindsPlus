@@ -585,6 +585,7 @@ _FortsArray = [ // Fortifications
 ];
 
 _StaticsArray = [ // Statics
+    ["avm224_M224_mortar",5],
     ["UK3CB_B_Searchlight_NATO",25],
     ["B_Static_Designator_01_F",25],
     ["RHS_M2StaticMG_D",50],
