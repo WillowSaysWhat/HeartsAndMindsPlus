@@ -63,7 +63,7 @@ roleArsenal = {
 		"ranger_patagonia_mc_4",
 		"ranger_patagonia_mc_3",
 		"ranger_patagonia_mc_2",
-        //VEST 
+        //VEST
 		"ranger_avs_1pl",
 		"ranger_avs_1ps",
 		"ranger_avs_1sg",
@@ -80,7 +80,6 @@ roleArsenal = {
 		"ranger_pack_3",
 		"ranger_pack_1_wc",
 		"ranger_pack_1",
-		"CAG_117G",
 		"UK3CB_B_B_Backpack_Radio_Chem",
 		"UK3CB_B_B_Backpack_Radio_Chem_OLI",
 		"UK3CB_B_Backpack_Pocket",
