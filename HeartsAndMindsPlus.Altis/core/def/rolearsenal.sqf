@@ -270,6 +270,8 @@ roleArsenal = {
 		"bipod_01_F_blk",
 		"bipod_01_F_snd",
 		//PRIMARYAMMO
+		"rhs_mag_30Rnd_556x45_Mk318_PMAG",
+		"rhs_mag_30Rnd_556x45_Mk318_PMAG_Tan",
 		"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 		"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 		"rhs_mag_30Rnd_556x45_M855_Stanag",
