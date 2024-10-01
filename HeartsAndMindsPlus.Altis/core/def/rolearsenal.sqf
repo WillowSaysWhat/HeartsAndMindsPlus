@@ -602,6 +602,9 @@ roleArsenal = {
 		"kat_TXA",
 		"ACE_personalAidKit",
 		 //PRIMARY
+		"75th_Ranger_URGI_5",
+		"75th_Ranger_URGI_3",
+		"75th_Ranger_FSP_2",
 		"rhs_weap_hk416d10",
 		"rhs_weap_m16a4_imod",
 		"rhs_weap_m27iar",
