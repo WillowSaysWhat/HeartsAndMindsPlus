@@ -108,7 +108,27 @@ for "_i" from 0 to ((count _category) - 1) do {
 
     _costdisplay = [" [$", _cost, "]"] joinString "";
 
-    _displayout = [_costdisplay, _classname] joinString "       ";
+    _padString = { 
+        params ["_input", "_desiredLength"]; 
+        
+        private _currentLength = count _input; 
+        private _padding = _desiredLength - _currentLength; 
+        
+        // Create the padding string as an array of spaces 
+        private _paddingArray = []; 
+        for "_i" from 1 to _padding do { 
+            _paddingArray pushBack " "; 
+        }; 
+        
+        private _paddingString = _paddingArray joinString ""; 
+        _input = _input + _paddingString; 
+        
+        _input 
+    };
+
+    private _paddedcostdisplay = [(format ["%1", _costdisplay]), 10] call _padString;
+    
+    _displayout = [_paddedcostdisplay, _classname] joinString "";
     
     private _index = lbAdd [82, _displayout];
     lbSetPictureRight [82, _index, _icon];

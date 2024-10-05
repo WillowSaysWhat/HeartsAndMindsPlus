@@ -53,7 +53,7 @@ class tet_fortify_dlg
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelect[] = {1,0.8745,0.0941,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
+			font = "EtelkaMonospacePro";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
@@ -86,7 +86,7 @@ class tet_fortify_dlg
 			colorSelect[] = {1,0.8745,0.0941,1};
 			colorSelectBackground[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
+			font = "EtelkaMonospacePro";
 			maxHistoryDelay = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};

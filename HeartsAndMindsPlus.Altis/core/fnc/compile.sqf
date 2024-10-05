@@ -205,6 +205,7 @@ if (isServer) then {
     //LOG
     btc_log_fnc_createVehicle = compileScript ["core\fnc\log\createVehicle.sqf"];
     btc_log_fnc_init = compileScript ["core\fnc\log\init.sqf"];
+    btc_log_fnc_init_v = compileScript ["core\fnc\log\init_v.sqf"];
     btc_log_fnc_server_delete = compileScript ["core\fnc\log\server_delete.sqf"];
     btc_log_fnc_create_s = compileScript ["core\fnc\log\create_s.sqf"];
     btc_log_fnc_server_repair_wreck = compileScript ["core\fnc\log\server_repair_wreck.sqf"];

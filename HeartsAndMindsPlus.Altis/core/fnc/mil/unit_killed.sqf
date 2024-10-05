@@ -37,7 +37,16 @@ if (random 100 > btc_info_intel_chance) then {
 
 
 if (isPlayer _instigator) then {
-    [btc_rep_bonus_mil_killed, _instigator] call btc_rep_fnc_change;
+    private _repValue = btc_rep_bonus_mil_killed;
+    if (
+        _unit getVariable ["ace_captives_isHandcuffed", false] ||
+        _unit getVariable ["ace_captives_isSurrendering", false]
+    ) then {
+        if (_causeOfDeath isNotEqualTo "CardiacArrest:Bleedout") then {
+            _repValue = btc_rep_malus_mil_killed;
+        };
+    };
+    [_repValue, _instigator] call btc_rep_fnc_change;
 
     //ECONOMY
     [west, 1, false] call acex_fortify_fnc_updateBudget;
