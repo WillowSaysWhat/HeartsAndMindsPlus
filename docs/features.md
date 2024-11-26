@@ -23,6 +23,10 @@
 
 ## Build Menu
 
+The build menu lets you spawn vehicles and systems into the world and is an essential part to H&M+. This is where you will get your ambulances, choppers, APCs, IFV, and tanks. The build menu also supports ammo and suppy box spawning. 
+
+To access the build menu, access ACE self-interact and select the build menu option located at the top of the radial menu. This will open the build window. Use the dropdown sector to find the item heading. If an item will not spawn, check the finds available and enusre you have sufficient space to drop the item or vehicle.
+
 <p align="center">
 <img src="/docs/assets/build menu.gif"/>
 </p>
@@ -43,15 +47,20 @@ The Salvage System lets you recover damaged enemy vehicles and either tow them b
 
 It's important to have a full range of weapons for an infantry squad, however, getting your team to actually use them can be difficult. That is why H&M+ utilises a restricted arsenal. Each role within a squad is present in the lobby and each slot-type has access to equipment necessary to fulfill that role. For example, an Autorifleman has access to different types of squad support weapons and machine guns. It does not have access to assault rifles. This ensures that a squad will have an autorifleman with a weapon that will create a force multipler and point suppression. 
 
+However, this can be altered within the `rolearsenal.sqf` file located in `/core/def`.
+
 ## Vehicle Management
+
+To access vehicle management, sit in the car/truck/tank and scroll-wheel down to the management option. This will open a menu that allows the user to decorate the vehicle with addon features and different camo shades. This is a cosmetic function, and nothing added will affect the vehicle. It is essentially "Battle-Barbie-ing" for your vics. Enjoy. 
 <p align="center">
 <img src="/docs/assets/Vehicle Management.gif"/>
 </p>
 
 ## Persistent Scoreboard
+The scoreboard began as a side project, but upon test completion, the community requested that it be implemented. It is persistent for its current map.  
 <p align="center">
 <img src="/docs/assets/scoreboardGif.gif"/>
 </p>
 
-However, this can be altered within the `rolearsenal.sqf` file located in `/core/def`.
+
 

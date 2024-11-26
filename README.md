@@ -26,16 +26,14 @@ This makes recovery missions a large part of H&M+.
 
 # Table of Contents
 
-* [What is Hearts Annd Minds?]()
+* [Hearts & Minds Features](/docs/features.md)
 * [Actions Have Consequences](/docs/Action-has-consequences.md)
-* [Ticket System]()
-* [Commander]()
 
 #### Dev Hub
 
 * [Add Faction](/docs/Add-factions.md)
 * [Change Map](/docs/Change-MAP-of-Hearts-and-Minds.md)
-* [APrevent AI Spawning on Base](/docs/Prevent-AI-from-spawning-near-the-base.md)
+* [Prevent AI Spawning on Base](/docs/Prevent-AI-from-spawning-near-the-base.md)
 
 
 

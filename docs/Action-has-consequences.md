@@ -16,7 +16,7 @@ The "currency" for population sentiment and actions is visualised through **Repu
 
 ## Raise Reputation
 
-High reputation makes travel through liberated easier. It prevents sudden attacks from bi-partisan forces and generally is the aim of H&M+ Here are some activities that raise Reputation.
+High reputation makes travel through liberated towns easier. It prevents sudden attacks from bi-partisan forces and generally is the aim of H&M+ Here are some activities that raise Reputation.
 
 - [Overview](#overview)
   - [Raise Reputation](#raise-reputation)
