@@ -28,7 +28,7 @@ if (isPlayer _killer) then {
 _uid = getplayerUID _killer;
 ["KILL", _uid, _unit] call tet_ui_setdatascore;
 [btc_rep_bonus_vehicle, _killer] remoteExecCall ["btc_rep_fnc_change", 2]; // Rep Reward
-[20] remoteExecCall ["tet_fortify_eco", 2]; // CASH REWARD FOR VEHICLE KILLS
+[50] remoteExecCall ["tet_fortify_eco", 2]; // CASH REWARD FOR VEHICLE KILLS
 
 };
 

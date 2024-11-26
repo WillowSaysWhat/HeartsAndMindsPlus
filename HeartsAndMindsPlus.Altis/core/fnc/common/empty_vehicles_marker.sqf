@@ -6,7 +6,7 @@ _markedveh1 = [];
 _cfg = configFile >> "cfgVehicles";
 _vehtomark = [];
 
-_vehtomark = btc_fortify_vehicles + ["C_Offroad_01_F"]; // Manually added respawnable vics for now.
+_vehtomark = btc_fortify_vehicles;
 
 // Misc variables
 markers_reset = [99999,99999,0];

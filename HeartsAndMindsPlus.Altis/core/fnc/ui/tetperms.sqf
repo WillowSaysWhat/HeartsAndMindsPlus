@@ -17,4 +17,4 @@ if (_vehicle isKindOf "tank") then {
 	if !(player getvariable ["allow_armour",false]) then {moveOut player};
 };
 
-if !(_vehicle in btc_vehicles) then {moveOut player};
+if (!(_vehicle in btc_vehicles) && !(_vehicle isKindOf "StaticWeapon")) then {moveOut player};

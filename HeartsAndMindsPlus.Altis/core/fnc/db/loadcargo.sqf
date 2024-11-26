@@ -31,7 +31,8 @@ Author:
             ["_isContaminated", false, [false]],
             ["_dogtagDataTaken", [], [[]]],
             ["_turretMagazines", [], [[]]],
-            ["_customName", "", [""]]
+            ["_customName", "", [""]],
+            ["_properties", [], [[]]]
         ];
 
         private _l = createVehicle [_type, getPosATL _obj, [], 0, "CAN_COLLIDE"];
@@ -61,6 +62,11 @@ Author:
         if (unitIsUAV _l) then {
             createVehicleCrew _l;
         };
+
+        if (_properties isNotEqualTo []) then {
+            ([_l] + _properties) call btc_veh_fnc_propertiesSet;
+        };
+
     } forEach _cargo;
 
     //set inventory content for weapons, magazines and items

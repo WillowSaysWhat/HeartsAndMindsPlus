@@ -57,7 +57,28 @@ for "_i" from 0 to ((count _array) - 1) do {
 	private _costadjusted = floor (_cost * 0.5);
 
     _costdisplay = [" [$", _costadjusted, "]"] joinString "";
-    _displayout = [_costdisplay, _classnameout] joinString "       ";
+
+    _padString = { 
+        params ["_input", "_desiredLength"]; 
+        
+        private _currentLength = count _input; 
+        private _padding = _desiredLength - _currentLength; 
+        
+        // Create the padding string as an array of spaces 
+        private _paddingArray = []; 
+        for "_i" from 1 to _padding do { 
+            _paddingArray pushBack " "; 
+        }; 
+        
+        private _paddingString = _paddingArray joinString ""; 
+        _input = _input + _paddingString; 
+        
+        _input 
+    };
+
+    private _paddedcostdisplay = [(format ["%1", _costdisplay]), 10] call _padString;
+    
+    _displayout = [_paddedcostdisplay, _classname] joinString "";
 
     //ICON
     _icon = getText ( configFile >> "cfgVehicles" >> _classname >> "icon");

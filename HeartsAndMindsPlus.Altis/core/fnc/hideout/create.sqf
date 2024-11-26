@@ -47,7 +47,7 @@ if (_pos isEqualTo []) then {
             !(_x getVariable ["active", false]) &&
             {_x distance (getMarkerPos btc_respawn_marker) > btc_hideout_safezone} &&
             {!(_x getVariable ["has_ho", false])} &&
-            {_x getVariable ["type", ""] in ["NameLocal", "Hill", "NameVillage", "Airport"]}
+            {_x getVariable ["type", ""] in ["NameCity","NameLocal", "Hill", "NameVillage", "Airport"]}
         };
         private _inHoRange = values btc_city_all select {
             private _city = _x;
@@ -63,9 +63,8 @@ if (_pos isEqualTo []) then {
         _city = btc_city_all get (btc_hideout_cityID deleteAt 0);
     };
 
-
     private _cachingRadius = _city getVariable ["cachingRadius", 0];
-    private _random_pos = [getPos _city, _cachingRadius] call btc_fnc_randomize_pos;
+    private _random_pos = [getPos _city, _cachingRadius/2] call btc_fnc_randomize_pos;
     _pos = [_random_pos, 0, 100, 2, false] call btc_fnc_findsafepos;
 
     _id = _city getVariable ["id", 0];

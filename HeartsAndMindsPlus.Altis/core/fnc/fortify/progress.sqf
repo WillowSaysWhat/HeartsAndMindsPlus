@@ -36,3 +36,4 @@ if (_y getVariable ["occupied", false]) then {
 VictoryPercentage = 100 - (((count city_remaining) / (count btc_city_all)) *100);
 
 publicVariable "VictoryPercentage";
+publicVariable "btc_vehicles";

@@ -85,10 +85,10 @@ class tet_ui_dlg_permissions
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelect[] = {1,0.8738,0.0943,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
+			font = "EtelkaMonospacePro";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.4) / 25) * 1);
+			sizeEx = (((((safezoneW / safezoneH) min 1) / 1.3) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			colorSelectBackground[] = {1,1,1,0.5176};
 			class ListScrollBar

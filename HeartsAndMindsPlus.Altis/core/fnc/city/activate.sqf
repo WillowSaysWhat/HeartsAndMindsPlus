@@ -42,13 +42,6 @@ Points_Active = Points_Active + 1;
 
 publicVariable "Points_Active";
 
-// CHAT UPDATER
-_globalChatFunction = {
-    _message = format ["Point Activated  %1 / 5", Points_Active];
-    systemChat _message;
-};
-[_globalChatFunction] remoteExec ["call", 0, true];
-
 if (btc_debug) then {
     _city setVariable ["serverTime", serverTime];
 };
@@ -77,9 +70,9 @@ private _spawningRadius = _cachingRadius/2;
 if (_city getVariable ["marker", ""] != "") then {
     (_city getVariable ["marker", ""]) setMarkerAlpha 1;
     if (_city getVariable ["occupied", false]) then {
-        (_city getVariable ["marker", ""]) setMarkerColor "colorOPFOR"; // CONFIG OBJ Colors - OCCUPIED
+        (_city getVariable ["marker", ""]) setMarkerColor "ColorRed"; // CONFIG OBJ Colors - OCCUPIED
     } else {
-        (_city getVariable ["marker", ""]) setMarkerColor "colorBLUFOR"; // CONFIG OBJ Colors - CLEAR/CIVILIAN
+        (_city getVariable ["marker", ""]) setMarkerColor "ColorBlue"; // CONFIG OBJ Colors - CLEAR/CIVILIAN
     };
 };
 

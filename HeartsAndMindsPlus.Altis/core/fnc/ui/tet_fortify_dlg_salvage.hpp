@@ -53,7 +53,7 @@ class tet_fortify_dlg_salvage
 			colorDisabled[] = {0,0,0,1};
 			colorSelect[] = {1,0.8745,0.0941,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
+			font = "EtelkaMonospacePro";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
